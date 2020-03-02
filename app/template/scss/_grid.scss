@@ -48,6 +48,14 @@
 	}
 }
 
+@media (min-width: 1800px) {
+	.container {
+		width: 1840px;
+		max-width: 1840px;
+	}
+}
+
+
 
 @each $breakpoint in map-keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {

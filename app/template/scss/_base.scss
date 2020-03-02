@@ -2,15 +2,7 @@
 html,body,ul,ol,li,dl,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,a,img,label{margin:0;padding:0;border:0}
 header, section, footer, aside, nav, article {display:block}
 ul{list-style:none}
-$color1:#000;
-$color2:#fff;
 
-$color3:#f4f4f4;
-$color4:#1a237e;
-$color5:#666;
-$color6:#ff5722;
-$color7:#80bbde;
-$color8:#292929;
 
 
 * {
@@ -34,9 +26,9 @@ html {
 
 
 body{
-	@include font-size(1.4);
+	@include font-size(2);
 	font-display: swap;
-	// height: 100vh;
+	font-family: "Futura Book C", Arial;
 }
 
 html, body{
@@ -140,7 +132,7 @@ strong em,
 em strong
 {
 	font-weight: normal;
-	font-family: "SegoeUIBoldItalic";
+	// font-family: "SegoeUIBoldItalic";
 }
 
 
@@ -174,7 +166,7 @@ em strong
 
 /* =header
 ---------------------------*/
-header{
+.header{
 }
 
 /* =/header
@@ -184,9 +176,42 @@ header{
 
 /* =navigation
 ---------------------------*/
+.navmenu{
+	.nav{
+		display: flex;
+		font-size: 1.6rem;
+		a{
+			color: $color5;
+		}
+	}	
+}
 /* =/navigation
 ---------------------------*/
 
+.langs{
+	display: flex;
+	font-size: 1.5rem;
+	$color: $color7;
+	a{
+		color: $color6;
+		text-decoration: none;
+		&:hover{
+			color: $color;
+		}
+	}
+	a, span{
+		display: flex;
+		align-items: center;
+		height: 3rem;
+		padding: 0 1.4rem;
+	}
+	.current{
+		background-color: $color;
+		color: #fff;
+		height: 3rem;
+		border-radius: 3rem;
+	}
+}
 
 /* =main
 ---------------------------*/
