@@ -180,8 +180,39 @@ em strong
 	.nav{
 		display: flex;
 		font-size: 1.6rem;
+		li{
+			letter-spacing: 1.6px;
+			margin: 0 2.5rem;
+		}
 		a{
 			color: $color5;
+			padding: 1rem .1rem;
+			position: relative;
+			&:after,
+			&:before{
+				@extend .before;
+				left: 0;
+				width: 100%;	
+				transition: .3s;			
+			}
+			&:before{
+				border-bottom: 3px solid $color7;
+				top: 0;
+			}
+			&:after{
+				border-bottom: 3px solid $color7;
+				bottom: 0;
+			}
+			&:hover{
+				text-decoration: none;
+				color: $color7;
+				&:before{
+					top: -6px;
+				}
+				&:after{
+					bottom: -6px;
+				}
+			}
 		}
 	}	
 }
@@ -189,9 +220,10 @@ em strong
 ---------------------------*/
 
 .langs{
+	$color: $color7;
 	display: flex;
 	font-size: 1.5rem;
-	$color: $color7;
+	margin-top: 1.2rem;
 	a{
 		color: $color6;
 		text-decoration: none;
@@ -203,7 +235,7 @@ em strong
 		display: flex;
 		align-items: center;
 		height: 3rem;
-		padding: 0 1.4rem;
+		padding: 0 1.5rem;
 	}
 	.current{
 		background-color: $color;
