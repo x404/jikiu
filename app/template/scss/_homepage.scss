@@ -172,4 +172,77 @@
 	/* =/cifres
 	---------------------------*/
 
+
+	.car{
+		margin-left: -140px;
+		margin-top: -23px;
+		overflow: hidden;
+	}
+
+	.dot{
+		position: absolute;
+		&-button{
+			background: url(../images/dot.png) no-repeat left top;
+			border: none;
+			cursor: pointer;
+			height: 44px;
+			width: 44px;
+			&:hover{
+				background-position: left -44px;
+				& + .plate{
+					opacity: 1;
+					z-index: 20;
+				}
+			}
+		}
+
+		&-1{left: 88px; top: 568px;
+			.plate{
+				width: 22rem;
+			}
+		}
+		&-2{left: 88px; top: 430px}
+		&-3{left: 99px; top: 322px}
+		&-4{left: 200px; top: 255px}
+		&-5{left: 310px; top: 322px}
+		&-6{left: 385px; top: 380px}
+		&-7{left: 378px; top: 464px}
+		&-8{left: 330px; top: 523px}
+		&-9{left: 372px; top: 578px}
+		&-10{left: 450px; top: 595px}
+		&-11{left: 564px; top: 595px}
+		&-12{left: 480px; top: 316px}
+		&-13{left: 602px; top: 383px}
+		&-14{left: 725px; top: 270px}
+	}
+
+	.plate{
+		align-items: center;
+		background-color: #fff;
+		border-radius: 8rem;
+		box-shadow: 2px 3px 5px rgba(31, 115, 255, 0.75);
+		display: flex;
+		height: 8rem;
+		opacity: 0;
+		padding: .4rem 1rem .4rem .4rem;
+		position: absolute;
+		left: calc(100% + 9px);
+		top: -20px;
+		transition: opacity .3s;
+		width: 17.5rem;
+
+		&__pic{
+			clip-path: circle(35px);
+			width: 70px;
+			height: 70px;
+		}
+		&__title{
+			font-family: "Futura Book C";
+			font-size: 1.6rem;
+			color: $color11;
+			line-height: 1.2;
+			margin-left: 1.2rem;
+		}
+	}
+
 }

@@ -3863,6 +3863,91 @@ em strong {
     color: #909090;
     font-family: "Futura Book C";
     font-size: 1.7rem; }
+  .header-intro .car {
+    margin-left: -140px;
+    margin-top: -23px;
+    overflow: hidden; }
+  .header-intro .dot {
+    position: absolute; }
+    .header-intro .dot-button {
+      background: url(../images/dot.png) no-repeat left top;
+      border: none;
+      cursor: pointer;
+      height: 44px;
+      width: 44px; }
+      .header-intro .dot-button:hover {
+        background-position: left -44px; }
+        .header-intro .dot-button:hover + .plate {
+          opacity: 1;
+          z-index: 20; }
+    .header-intro .dot-1 {
+      left: 88px;
+      top: 568px; }
+      .header-intro .dot-1 .plate {
+        width: 22rem; }
+    .header-intro .dot-2 {
+      left: 88px;
+      top: 430px; }
+    .header-intro .dot-3 {
+      left: 99px;
+      top: 322px; }
+    .header-intro .dot-4 {
+      left: 200px;
+      top: 255px; }
+    .header-intro .dot-5 {
+      left: 310px;
+      top: 322px; }
+    .header-intro .dot-6 {
+      left: 385px;
+      top: 380px; }
+    .header-intro .dot-7 {
+      left: 378px;
+      top: 464px; }
+    .header-intro .dot-8 {
+      left: 330px;
+      top: 523px; }
+    .header-intro .dot-9 {
+      left: 372px;
+      top: 578px; }
+    .header-intro .dot-10 {
+      left: 450px;
+      top: 595px; }
+    .header-intro .dot-11 {
+      left: 564px;
+      top: 595px; }
+    .header-intro .dot-12 {
+      left: 480px;
+      top: 316px; }
+    .header-intro .dot-13 {
+      left: 602px;
+      top: 383px; }
+    .header-intro .dot-14 {
+      left: 725px;
+      top: 270px; }
+  .header-intro .plate {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8rem;
+    box-shadow: 2px 3px 5px rgba(31, 115, 255, 0.75);
+    display: flex;
+    height: 8rem;
+    opacity: 0;
+    padding: .4rem 1rem .4rem .4rem;
+    position: absolute;
+    left: calc(100% + 9px);
+    top: -20px;
+    transition: opacity .3s;
+    width: 17.5rem; }
+    .header-intro .plate__pic {
+      clip-path: circle(35px);
+      width: 70px;
+      height: 70px; }
+    .header-intro .plate__title {
+      font-family: "Futura Book C";
+      font-size: 1.6rem;
+      color: #0d0d0d;
+      line-height: 1.2;
+      margin-left: 1.2rem; }
 
 /* =mobile-menu
 ---------------------------*/
