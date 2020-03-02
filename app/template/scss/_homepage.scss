@@ -34,12 +34,9 @@
 		position: relative;
 		z-index: 10;
 		margin-top: 5rem;
-	}
-
-	.about{
 		padding-left: 12rem;
-		padding-top: 60px;
 		position: relative;
+		padding-top: 60px;
 		&:before{
 			@extend .before;
 			background: url(../images/radial-circle.png) no-repeat center;
@@ -47,7 +44,17 @@
 			width: 258px;
 			left: 0;
 			top: 0;
-		}
+		}		
+	}
+
+
+
+	/* =about
+	---------------------------*/
+	.about{
+		
+		
+
 		&__title{
 			font-size: 2rem;
 			color: $color8;
@@ -74,5 +81,51 @@
 			}
 		}
 	}
+	/* =/about
+	---------------------------*/
+
+
+	/* =catalog
+	---------------------------*/
+	.catalog{
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		&__item{
+			flex-basis: 50%;
+			font-size: 2.2rem;
+			margin-top: .8rem;
+			width: 50%;			
+		}
+		&__pic{
+			margin-right: 2.5rem;
+			width: 75px;
+			img{
+				filter: none;
+				transform: .3s;
+			}			
+		}
+
+		a{
+			display: flex;
+			align-items: center;
+			border-radius: 9rem;
+			height: 9rem;
+			line-height: 1.2;
+			padding: 1.2rem 2rem;
+			width: 95%;
+			&:hover{
+				background-color: $color9;
+				box-shadow: 2px 3px 5px rgba(31, 115, 255, 0.75);
+				color: #fff;
+				text-decoration: none;
+				img{
+					filter: grayscale(1) invert(1) brightness(5);
+				}
+			}
+		}
+	}
+	/* =/catalog
+	---------------------------*/
 
 }

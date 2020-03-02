@@ -3644,7 +3644,7 @@ em strong {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .navmenu .nav a:after, .navmenu .nav a:before, .header-intro:before, .header-intro:after, .header-intro .about:before {
+.before, .navmenu .nav a:after, .navmenu .nav a:before, .header-intro:before, .header-intro:after, .header-intro .intro:before {
   content: "";
   display: block;
   position: absolute; }
@@ -3744,7 +3744,15 @@ em strong {
   /*PIE*/
   min-height: 950px;
   position: relative;
-  padding-top: 1rem; }
+  padding-top: 1rem;
+  /* =about
+	---------------------------*/
+  /* =/about
+	---------------------------*/
+  /* =catalog
+	---------------------------*/
+  /* =/catalog
+	---------------------------*/ }
   .header-intro:before {
     width: 0;
     height: 0;
@@ -3762,38 +3770,67 @@ em strong {
   .header-intro .intro {
     position: relative;
     z-index: 10;
-    margin-top: 5rem; }
-  .header-intro .about {
+    margin-top: 5rem;
     padding-left: 12rem;
-    padding-top: 60px;
-    position: relative; }
-    .header-intro .about:before {
+    position: relative;
+    padding-top: 60px; }
+    .header-intro .intro:before {
       background: url(../images/radial-circle.png) no-repeat center;
       height: 258px;
       width: 258px;
       left: 0;
       top: 0; }
-    .header-intro .about__title {
-      font-size: 2rem;
-      color: #fffefe;
-      position: relative; }
-      .header-intro .about__title span {
-        align-items: center;
-        background-color: #d82027;
-        border-radius: 4rem;
-        display: inline-flex;
-        height: 4rem;
-        padding: 0 1.8rem; }
-    .header-intro .about__text {
-      color: #d82027;
-      font-size: 4.5rem;
-      font-weight: 400;
-      font-family: 'Futura Demi C';
-      text-transform: uppercase; }
-      .header-intro .about__text span {
-        font-family: 'Futura BT';
-        color: #000;
-        font-weight: 700; }
+  .header-intro .about__title {
+    font-size: 2rem;
+    color: #fffefe;
+    position: relative; }
+    .header-intro .about__title span {
+      align-items: center;
+      background-color: #d82027;
+      border-radius: 4rem;
+      display: inline-flex;
+      height: 4rem;
+      padding: 0 1.8rem; }
+  .header-intro .about__text {
+    color: #d82027;
+    font-size: 4.5rem;
+    font-weight: 400;
+    font-family: 'Futura Demi C';
+    text-transform: uppercase; }
+    .header-intro .about__text span {
+      font-family: 'Futura BT';
+      color: #000;
+      font-weight: 700; }
+  .header-intro .catalog {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap; }
+    .header-intro .catalog__item {
+      flex-basis: 50%;
+      font-size: 2.2rem;
+      margin-top: .8rem;
+      width: 50%; }
+    .header-intro .catalog__pic {
+      margin-right: 2.5rem;
+      width: 75px; }
+      .header-intro .catalog__pic img {
+        filter: none;
+        transform: .3s; }
+    .header-intro .catalog a {
+      display: flex;
+      align-items: center;
+      border-radius: 9rem;
+      height: 9rem;
+      line-height: 1.2;
+      padding: 1.2rem 2rem;
+      width: 95%; }
+      .header-intro .catalog a:hover {
+        background-color: #2065d8;
+        box-shadow: 2px 3px 5px rgba(31, 115, 255, 0.75);
+        color: #fff;
+        text-decoration: none; }
+        .header-intro .catalog a:hover img {
+          filter: grayscale(1) invert(1) brightness(5); }
 
 /* =mobile-menu
 ---------------------------*/
