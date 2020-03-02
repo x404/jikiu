@@ -3644,7 +3644,7 @@ em strong {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .navmenu .nav a:after, .navmenu .nav a:before, .header-intro:before, .header-intro:after, .header-intro .intro:before {
+.before, .navmenu .nav a:after, .navmenu .nav a:before, .header-intro:before, .header-intro:after, .header-intro .intro:before, .header-intro .cifres__item:not(:last-child):after {
   content: "";
   display: block;
   position: absolute; }
@@ -3752,6 +3752,10 @@ em strong {
   /* =catalog
 	---------------------------*/
   /* =/catalog
+	---------------------------*/
+  /* =cifres
+	---------------------------*/
+  /* =/cifres
 	---------------------------*/ }
   .header-intro:before {
     width: 0;
@@ -3768,18 +3772,20 @@ em strong {
     position: relative;
     z-index: 10; }
   .header-intro .intro {
-    position: relative;
-    z-index: 10;
     margin-top: 5rem;
     padding-left: 12rem;
+    padding-top: 60px;
     position: relative;
-    padding-top: 60px; }
+    z-index: 90; }
     .header-intro .intro:before {
       background: url(../images/radial-circle.png) no-repeat center;
       height: 258px;
       width: 258px;
       left: 0;
       top: 0; }
+    .header-intro .intro-bg {
+      background: url(../images/rubber-parts.png) no-repeat right 120px;
+      position: relative; }
   .header-intro .about__title {
     font-size: 2rem;
     color: #fffefe;
@@ -3831,6 +3837,32 @@ em strong {
         text-decoration: none; }
         .header-intro .catalog a:hover img {
           filter: grayscale(1) invert(1) brightness(5); }
+  .header-intro .cifres {
+    position: relative;
+    padding-top: 15rem;
+    padding-bottom: 75px; }
+    .header-intro .cifres__item {
+      position: relative; }
+      .header-intro .cifres__item:not(:last-child) {
+        padding-right: 2.5rem;
+        margin-right: 3rem; }
+        .header-intro .cifres__item:not(:last-child):after {
+          background: #000;
+          height: 55px;
+          opacity: 0.1;
+          right: 0;
+          top: 10px;
+          width: 1px;
+          z-index: 10; }
+  .header-intro .item__cifr-title {
+    color: #000;
+    font-family: "Futura Demi C";
+    font-size: 3rem;
+    font-weight: 400; }
+  .header-intro .item__cifr-desc {
+    color: #909090;
+    font-family: "Futura Book C";
+    font-size: 1.7rem; }
 
 /* =mobile-menu
 ---------------------------*/

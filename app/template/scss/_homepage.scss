@@ -31,12 +31,11 @@
 
 
 	.intro{
-		position: relative;
-		z-index: 10;
 		margin-top: 5rem;
 		padding-left: 12rem;
-		position: relative;
 		padding-top: 60px;
+		position: relative;
+		z-index: 90;
 		&:before{
 			@extend .before;
 			background: url(../images/radial-circle.png) no-repeat center;
@@ -44,7 +43,12 @@
 			width: 258px;
 			left: 0;
 			top: 0;
-		}		
+		}
+
+		&-bg{
+			background: url(../images/rubber-parts.png) no-repeat right 120px;
+			position: relative;
+		}
 	}
 
 
@@ -52,9 +56,6 @@
 	/* =about
 	---------------------------*/
 	.about{
-		
-		
-
 		&__title{
 			font-size: 2rem;
 			color: $color8;
@@ -126,6 +127,49 @@
 		}
 	}
 	/* =/catalog
+	---------------------------*/
+
+
+
+	/* =cifres
+	---------------------------*/
+	.cifres{
+		position: relative;
+		padding-top: 15rem;
+		padding-bottom: 75px;
+		&__item{
+			position: relative;
+			&:not(:last-child){
+				padding-right: 2.5rem;
+				margin-right: 3rem;				
+				&:after{
+					@extend .before;
+					background: #000;
+					height: 55px;
+					opacity: 0.1;
+					right: 0;
+					top: 10px;
+					width: 1px;
+					z-index: 10;
+				}
+			}
+		}
+	}
+
+	.item__cifr{
+		&-title{
+			color: #000;
+			font-family: "Futura Demi C";
+			font-size: 3rem;
+			font-weight: 400;
+		}
+		&-desc{
+			color: $color10;
+			font-family: "Futura Book C";
+			font-size: 1.7rem;
+		}
+	}
+	/* =/cifres
 	---------------------------*/
 
 }
