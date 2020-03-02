@@ -1,17 +1,28 @@
 @font-face {
-	font-family: 'Avanti';
-	src: local('Avanti'),
-		 url('../fonts/Avanti/Avanti.woff2') format('woff2'),
-		 url('../fonts/Avanti/Avanti.woff') format('woff');
+	font-family: 'Futura BT';
+	src: local('Futura BT'),
+		 url('../fonts/Futura Md BT Medium.woff2') format('woff2'),
+		 url('../fonts/Futura Md BT Medium.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
+
 @font-face {
-	font-family: 'Avanti';
-	src: local('Avanti Bold'), local('Avanti-Bold'),
-		 url('../fonts/Avanti/Avanti-Bold.woff2') format('woff2'),
-		 url('../fonts/Avanti/Avanti-Bold.woff') format('woff');
-	font-weight: bold;
+	font-family: 'Futura Demi C';
+	src: local('Futura Demi C'),
+		 url('../fonts/FuturaDemiC.woff2') format('woff2'),
+		 url('../fonts/FuturaDemiC.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Futura Book C';
+	src: local('Futura Book C'),
+		 url('../fonts/FuturaBookC.woff2') format('woff2'),
+		 url('../fonts/FuturaBookC.woff') format('woff');
+	font-weight: normal;
 	font-style: normal;
 }
