@@ -17,11 +17,11 @@
 	}	
 	&:after{
 		@extend .before;
-		left: 0;
-		bottom: 0;
 		background: url(../images/bg-line.png) repeat-x left bottom;
-		width: 100%;
+		bottom: 0;
 		height: 43px;
+		left: 0;
+		width: 100%;
 	}
 
 	.header{
@@ -29,5 +29,50 @@
 		z-index: 10;
 	}
 
+
+	.intro{
+		position: relative;
+		z-index: 10;
+		margin-top: 5rem;
+	}
+
+	.about{
+		padding-left: 12rem;
+		padding-top: 60px;
+		position: relative;
+		&:before{
+			@extend .before;
+			background: url(../images/radial-circle.png) no-repeat center;
+			height: 258px;
+			width: 258px;
+			left: 0;
+			top: 0;
+		}
+		&__title{
+			font-size: 2rem;
+			color: $color8;
+			position: relative;
+			span{
+				align-items: center;
+				background-color: $color7;
+				border-radius: 4rem;
+				display: inline-flex;
+				height: 4rem;
+				padding: 0 1.8rem;				
+			}
+		}		
+		&__text{
+			color: $color7;
+			font-size: 4.5rem;
+			font-weight: 400;
+			font-family: 'Futura Demi C';
+			text-transform: uppercase;
+			span{
+				font-family: 'Futura BT';
+				color: #000;
+				font-weight: 700;
+			}
+		}
+	}
 
 }
