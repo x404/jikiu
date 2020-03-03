@@ -3808,6 +3808,9 @@ em strong {
       width: 258px;
       left: 0;
       top: 0; }
+    .header-intro .intro-wrapper {
+      margin-right: 0;
+      overflow: hidden; }
     .header-intro .intro-bg {
       background: url(../images/rubber-parts.png) no-repeat right 120px;
       position: relative; }
@@ -3889,27 +3892,38 @@ em strong {
     font-family: "Futura Book C";
     font-size: 1.7rem; }
   .header-intro .car {
-    margin-left: -140px;
-    margin-top: -23px;
+    margin: -23px -40px 0 -140px;
     overflow: hidden; }
   .header-intro .dot {
-    position: absolute; }
+    overflow: hidden;
+    position: absolute;
+    height: 44px;
+    width: 44px;
+    z-index: 101; }
+    .header-intro .dot:hover {
+      z-index: 102;
+      overflow: unset; }
     .header-intro .dot-button {
       background: url(../images/dot.png) no-repeat left top;
       border: none;
       cursor: pointer;
       height: 44px;
+      margin: 0;
+      padding: 0;
       width: 44px; }
       .header-intro .dot-button:hover {
         background-position: left -44px; }
         .header-intro .dot-button:hover + .plate {
           opacity: 1;
           z-index: 20; }
-    .header-intro .dot.active .plate {
-      opacity: 1;
-      z-index: 20; }
-    .header-intro .dot.active .dot-button {
-      background-position: left -44px; }
+    .header-intro .dot.active {
+      overflow: inherit;
+      z-index: 102; }
+      .header-intro .dot.active .plate {
+        opacity: 1;
+        z-index: 20; }
+      .header-intro .dot.active .dot-button {
+        background-position: left -44px; }
     .header-intro .dot-1 {
       left: 88px;
       top: 568px; }
@@ -3967,7 +3981,8 @@ em strong {
     left: calc(100% + 9px);
     top: -20px;
     transition: opacity .3s;
-    width: 19rem; }
+    width: 19rem;
+    z-index: -1; }
     .header-intro .plate__pic {
       clip-path: circle(35px);
       width: 70px;
@@ -4089,6 +4104,34 @@ em strong {
 
 /* =/lastnews
 ---------------------------*/
+.scene-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  overflow: hidden; }
+
+#scene {
+  height: 100%; }
+
+.layer {
+  width: 100%;
+  height: 100%; }
+  .layer-1 {
+    background: url(../images/parallax/gray-1.png) no-repeat 150px 55px; }
+  .layer-2 {
+    background: url(../images/parallax/gray-2.png) no-repeat 91% 475px; }
+  .layer-3 {
+    background: url(../images/parallax/blue-1.png) no-repeat 120px 115px; }
+  .layer-4 {
+    background: url(../images/parallax/blue-2.png) no-repeat 98% 95px; }
+  .layer-5 {
+    background: url(../images/parallax/blue-3.png) no-repeat 73% 425px; }
+
 /* =mobile-menu
 ---------------------------*/
 .show-sm,

@@ -51,6 +51,11 @@
 			top: 0;
 		}
 
+		&-wrapper{
+			margin-right: 0;
+			overflow: hidden;
+		}
+
 		&-bg{
 			background: url(../images/rubber-parts.png) no-repeat right 120px;
 			position: relative;
@@ -181,18 +186,28 @@
 
 
 	.car{
-		margin-left: -140px;
-		margin-top: -23px;
+		margin: -23px -40px 0 -140px;
 		overflow: hidden;
 	}
 
+
 	.dot{
+		overflow: hidden;
 		position: absolute;
+		height: 44px;
+		width: 44px;
+		z-index: 101;
+		&:hover{
+			z-index: 102;
+			overflow: unset;
+		}
 		&-button{
 			background: url(../images/dot.png) no-repeat left top;
 			border: none;
 			cursor: pointer;
 			height: 44px;
+			margin: 0;
+			padding: 0;
 			width: 44px;
 			&:hover{
 				background-position: left -44px;
@@ -204,6 +219,8 @@
 		}
 
 		&.active{
+			overflow: inherit;
+			z-index: 102;
 			.plate{
 				opacity: 1;
 				z-index: 20;
@@ -248,6 +265,7 @@
 		top: -20px;
 		transition: opacity .3s;
 		width: 19rem;
+		z-index: -1;
 
 		&__pic{
 			clip-path: circle(35px);
@@ -429,3 +447,42 @@
 
 /* =/lastnews
 ---------------------------*/
+
+
+.scene-wrapper{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	right: 0;
+	bottom: 0;
+	z-index: 99;
+	overflow: hidden;
+}
+
+#scene{
+	height: 100%;
+}
+
+
+.layer{
+	width: 100%;
+	height: 100%;
+
+	&-1{
+		background: url(../images/parallax/gray-1.png) no-repeat 150px 55px;
+	}
+	&-2{
+		background: url(../images/parallax/gray-2.png) no-repeat 91% 475px;
+	}
+	&-3{
+		background: url(../images/parallax/blue-1.png) no-repeat 120px 115px;
+	}
+	&-4{
+		background: url(../images/parallax/blue-2.png) no-repeat 98% 95px;
+	}
+	&-5{
+		background: url(../images/parallax/blue-3.png) no-repeat 73% 425px;
+	}
+}

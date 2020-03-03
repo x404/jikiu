@@ -89,7 +89,7 @@
 		<!-- =/header -->		
 
 		<!-- =intro -->
-		<div class="container">
+		<div class="container intro-wrapper">
 			<div class="row intro-bg">
 				<div class="col-lg-5">
 					<div class="intro">
@@ -151,8 +151,22 @@
 					<div class="car">
 						<picture>
 							<source srcset="/template/images/parallax/car.webp" type="image/webp">
-							<img src="/template/images/parallax/car.jpg" alt="">						
+							<img src="/template/images/parallax/car.jpg" alt="">
 						</picture>
+
+						<!-- =parallax -->
+						<div class="scene-wrapper">
+							<div id="scene" data-hover-only="true" data-relative-input="true" class="scene border">
+								<div class="layer layer-1" data-depth="0.10"></div>
+								<div class="layer layer-2" data-depth="0.20"></div>
+								<div class="layer layer-3" data-depth="0.30"></div>
+								<div class="layer layer-4" data-depth="0.50"></div>
+								<div class="layer layer-5" data-depth="0.90"></div>
+							</div>	
+						</div>
+						<!-- =/parallax -->
+
+						<!-- =dots -->
 						<div class="dots">
 							<div class="dot dot-1" data-cat="cat1">
 								<button type="button" class="dot-button"></button>
@@ -281,6 +295,7 @@
 								</div>								
 							</div>
 						</div>
+						<!-- =/dots -->
 					</div>
 				</div>
 			</div>
@@ -501,6 +516,12 @@
 
 <div id="outdated"></div>
 <script type="text/javascript" src="/template/js/slick.min.js"></script>
+<script type="text/javascript" src="/template/js/parallax.min.js"></script>
+<script>
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+</script>
+
 <script src="/template/js/engine.js"></script>
 </body>
 </html>
