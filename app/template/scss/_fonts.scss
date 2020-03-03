@@ -1,9 +1,18 @@
 @font-face {
 	font-family: 'Futura BT';
 	src: local('Futura BT'),
-		 url('../fonts/Futura Md BT Medium.woff2') format('woff2'),
-		 url('../fonts/Futura Md BT Medium.woff') format('woff');
+		 url('../fonts/Futura_Md_BT_Medium.woff2') format('woff2'),
+		 url('../fonts/Futura_Md_BT_Medium.woff') format('woff');
 	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Futura BT';
+	src: local('Futura BT'),
+		 url('../fonts/futura_md_bt_bold.woff2') format('woff2'),
+		 url('../fonts/futura_md_bt_bold.woff') format('woff');
+	font-weight: 700;
 	font-style: normal;
 }
 
