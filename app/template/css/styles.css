@@ -299,8 +299,14 @@ template {
 
 @font-face {
   font-family: 'Futura BT';
-  src: local("Futura BT"), url("../fonts/Futura Md BT Medium.woff2") format("woff2"), url("../fonts/Futura Md BT Medium.woff") format("woff");
+  src: local("Futura BT"), url("../fonts/Futura_Md_BT_Medium.woff2") format("woff2"), url("../fonts/Futura_Md_BT_Medium.woff") format("woff");
   font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Futura BT';
+  src: local("Futura BT"), url("../fonts/futura_md_bt_bold.woff2") format("woff2"), url("../fonts/futura_md_bt_bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal; }
 
 @font-face {
@@ -3555,8 +3561,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-size: 20px;
   font-size: 2rem;
+  color: #000;
   font-display: swap;
   font-family: "Futura Book C", Arial; }
 
@@ -3705,8 +3711,6 @@ em strong {
     height: 3rem;
     border-radius: 3rem; }
 
-/* =main
----------------------------*/
 .tab-content > .tab-pane {
   display: none; }
 
@@ -3722,8 +3726,14 @@ em strong {
 
 @font-face {
   font-family: 'Futura BT';
-  src: local("Futura BT"), url("../fonts/Futura Md BT Medium.woff2") format("woff2"), url("../fonts/Futura Md BT Medium.woff") format("woff");
+  src: local("Futura BT"), url("../fonts/Futura_Md_BT_Medium.woff2") format("woff2"), url("../fonts/Futura_Md_BT_Medium.woff") format("woff");
   font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Futura BT';
+  src: local("Futura BT"), url("../fonts/futura_md_bt_bold.woff2") format("woff2"), url("../fonts/futura_md_bt_bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal; }
 
 @font-face {
@@ -3953,6 +3963,48 @@ em strong {
       color: #0d0d0d;
       line-height: 1.2;
       margin-left: 1.2rem; }
+
+.new-products {
+  padding-top: 4.5rem; }
+  .new-products .title {
+    font-size: 4rem;
+    font-family: "Futura BT";
+    text-transform: uppercase;
+    font-weight: 700; }
+  .new-products .all {
+    display: inline-flex;
+    align-items: center;
+    color: #d82027;
+    border: 2px solid #d82027;
+    border-radius: 3.5rem;
+    height: 3.5rem;
+    margin-left: 2.5rem;
+    font-family: "Futura Demi C";
+    font-size: 1.5rem;
+    padding: 0 1.2rem;
+    height: 3.5rem; }
+    .new-products .all:hover {
+      background-color: #d82027;
+      color: #fff;
+      text-decoration: none; }
+  .new-products #newproducts-carousel {
+    padding: 2rem 0 5rem; }
+  .new-products .item-product__link {
+    text-align: center; }
+    .new-products .item-product__link:hover {
+      color: #2065d8;
+      text-decoration: none; }
+  .new-products .item-product__pic {
+    text-align: center; }
+    .new-products .item-product__pic img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
+  .new-products .item-product__title {
+    font-family: "Futura BT";
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-top: 1.5rem; }
 
 /* =mobile-menu
 ---------------------------*/
@@ -4191,6 +4243,11 @@ em strong {
 
 .slick-arrow.slick-hidden {
   display: none; }
+
+.slick-init {
+  display: flex; }
+  .slick-init.slick-initialized {
+    display: block; }
 
 /* =mobile-menu
 ---------------------------*/

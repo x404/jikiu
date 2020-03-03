@@ -225,7 +225,7 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 	var buildCss = gulp.src([ // Переносим CSS стили в продакшен
 		config.templateDir + '/css/styles.css',
 		config.templateDir + '/css/styles.min.css',
-		config.templateDir + '/css/jquery.fancybox.min.css',
+		// config.templateDir + '/css/jquery.fancybox.min.css',
 		config.templateDir + '/css/tiny.css'
 	])
 	.pipe(gulp.dest(config.templateDestDir + '/css'));

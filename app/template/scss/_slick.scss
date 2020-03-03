@@ -96,3 +96,11 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+
+.slick-init{
+	display: flex;
+	&.slick-initialized{
+		display: block;
+	}
+}

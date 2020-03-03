@@ -32,4 +32,77 @@ $(document).ready(function(){
 		$('[data-cat="' + cat + '"]').removeClass('active');
 	});
 
+
+	$('#newproducts-carousel').slick({
+		dots: false,
+		slidesToShow: 11,
+		slidesToScroll: 1,
+		autoplay: false,
+		arrows : false,
+		responsive: [
+			{
+				breakpoint: 1400,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 960,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 560,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 450,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: '80px'
+				}
+			},
+			{
+				breakpoint: 400,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: '55px'
+				}
+			},
+			{
+				breakpoint: 350,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: '35px'
+				}
+			}
+		]
+	});
+
 });
