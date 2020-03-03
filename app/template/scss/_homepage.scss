@@ -33,7 +33,7 @@
 	.intro{
 		margin-top: 5rem;
 		padding-left: 12rem;
-		padding-top: 60px;
+		padding-top: 83px;
 		position: relative;
 		z-index: 90;
 		&:before{
@@ -135,8 +135,9 @@
 	---------------------------*/
 	.cifres{
 		position: relative;
-		padding-top: 15rem;
+		// padding-top: 15rem;
 		padding-bottom: 75px;
+		margin-top: -9rem;
 		&__item{
 			position: relative;
 			&:not(:last-child){
@@ -193,6 +194,17 @@
 					opacity: 1;
 					z-index: 20;
 				}
+			}
+		}
+
+		&.active{
+			.plate{
+				opacity: 1;
+				z-index: 20;
+			}
+
+			.dot-button{
+				background-position: left -44px;
 			}
 		}
 
