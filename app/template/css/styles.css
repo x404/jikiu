@@ -3714,7 +3714,7 @@ em strong {
 .footer {
   color: #fff;
   font-size: 1.4rem;
-  padding: 2rem 0 8.5rem; }
+  padding: 2rem 0 4rem; }
   .footer .logos img {
     margin-right: 3rem; }
   .footer .copyright {
@@ -3824,7 +3824,7 @@ em strong {
       padding: 0 1.8rem; }
   .header-intro .about__text {
     color: #d82027;
-    font-size: 4.5rem;
+    font-size: 4.4rem;
     font-weight: 400;
     font-family: 'Futura Demi C';
     text-transform: uppercase; }
@@ -3967,7 +3967,7 @@ em strong {
     left: calc(100% + 9px);
     top: -20px;
     transition: opacity .3s;
-    width: 17.5rem; }
+    width: 19rem; }
     .header-intro .plate__pic {
       clip-path: circle(35px);
       width: 70px;
