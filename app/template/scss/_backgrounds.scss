@@ -1,0 +1,25 @@
+.webp{
+	.header-intro{
+		.intro{
+			&:before{
+				background-image: url(../images/radial-circle.webp)
+			}
+			&-bg{
+				background-image: url(../images/rubber-parts.webp)
+			}
+		}
+	}
+}
+
+
+
+.header-intro{
+	.intro{
+		&:before{
+			background-image: url(../images/radial-circle.png)
+		}
+		&-bg{
+			background-image: url(../images/rubber-parts.png)
+		}
+	}
+}

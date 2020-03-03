@@ -44,7 +44,8 @@
 		z-index: 90;
 		&:before{
 			@extend .before;
-			background: url(../images/radial-circle.png) no-repeat center;
+			background-repeat: no-repeat;
+			background-position: center;
 			height: 258px;
 			width: 258px;
 			left: 0;
@@ -57,7 +58,8 @@
 		}
 
 		&-bg{
-			background: url(../images/rubber-parts.png) no-repeat right 120px;
+			background-repeat: no-repeat;
+			background-position: right 120px;
 			position: relative;
 		}
 	}

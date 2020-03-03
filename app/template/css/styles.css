@@ -3757,6 +3757,18 @@ em strong {
   font-weight: normal;
   font-style: normal; }
 
+.webp .header-intro .intro:before {
+  background-image: url(../images/radial-circle.webp); }
+
+.webp .header-intro .intro-bg {
+  background-image: url(../images/rubber-parts.webp); }
+
+.header-intro .intro:before {
+  background-image: url(../images/radial-circle.png); }
+
+.header-intro .intro-bg {
+  background-image: url(../images/rubber-parts.png); }
+
 .homepage .footer {
   background: #083989; }
   .homepage .footer .container {
@@ -3803,7 +3815,8 @@ em strong {
     position: relative;
     z-index: 90; }
     .header-intro .intro:before {
-      background: url(../images/radial-circle.png) no-repeat center;
+      background-repeat: no-repeat;
+      background-position: center;
       height: 258px;
       width: 258px;
       left: 0;
@@ -3812,7 +3825,8 @@ em strong {
       margin-right: 0;
       overflow: hidden; }
     .header-intro .intro-bg {
-      background: url(../images/rubber-parts.png) no-repeat right 120px;
+      background-repeat: no-repeat;
+      background-position: right 120px;
       position: relative; }
   .header-intro .about__title {
     font-size: 2rem;
