@@ -253,6 +253,21 @@ em strong
 }
 
 
+.footer{
+	color: #fff;
+	font-size: 1.4rem;
+	padding: 2rem 0 8.5rem;
+	.logos{
+		img{
+			margin-right: 3rem;
+		}
+	}
+	.copyright{
+		padding-left: .5rem;
+	}
+}
+
+
 .tab-content {
 	> .tab-pane {
 		display: none;

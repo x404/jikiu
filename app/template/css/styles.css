@@ -3711,6 +3711,15 @@ em strong {
     height: 3rem;
     border-radius: 3rem; }
 
+.footer {
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 2rem 0 8.5rem; }
+  .footer .logos img {
+    margin-right: 3rem; }
+  .footer .copyright {
+    padding-left: .5rem; }
+
 .tab-content > .tab-pane {
   display: none; }
 
@@ -3747,6 +3756,12 @@ em strong {
   src: local("Futura Book C"), url("../fonts/FuturaBookC.woff2") format("woff2"), url("../fonts/FuturaBookC.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+
+.homepage .footer {
+  background: #083989; }
+  .homepage .footer .container {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2rem; }
 
 .header-intro {
   background-color: #f7f7f7;
@@ -4012,7 +4027,7 @@ em strong {
 .lastnews {
   background: #083989;
   margin-top: 27px;
-  padding: 4.3rem 0 8.5rem; }
+  padding: 4.3rem 0 6.5rem; }
   .lastnews .title {
     font-family: "Futura BT";
     font-size: 5rem;
