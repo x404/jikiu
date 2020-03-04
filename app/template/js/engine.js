@@ -48,6 +48,20 @@ $(document).ready(function(){
 				}
 			},
 			{
+				breakpoint: 1400,
+				settings: {
+					slidesToShow: 9,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 1250,
+				settings: {
+					slidesToShow: 8,
+					slidesToScroll: 1
+				}
+			},
+			{
 				breakpoint: 992,
 				settings: {
 					slidesToShow: 4,

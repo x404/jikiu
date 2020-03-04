@@ -2,7 +2,10 @@
 	.header-intro{
 		.intro{
 			&:before{
-				background-image: url(../images/radial-circle.webp)
+				background-image: url(../images/radial-circle.webp);
+				@media (max-width: 1399px){
+					background-image: url(../images/radial-circle-1200.webp);
+				}
 			}
 		}
 	}
@@ -13,12 +16,18 @@
 .header-intro{
 	.intro{
 		&:before{
-			background-image: url(../images/radial-circle.png)
+			background-image: url(../images/radial-circle.png);
+			@media (max-width: 1399px){
+				background-image: url(../images/radial-circle-1200.png);
+			}
 		}
 		&-bg{
 			background-image: url(../images/rubber-parts.png);
 			@media (max-width: 1750px){
 				background-image: url(../images/rubber-parts-1600.png);				
+			}
+			@media (max-width: 1399px){
+				background-image: url(../images/rubber-parts-1200.png);				
 			}
 		}
 	}

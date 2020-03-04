@@ -3328,19 +3328,15 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media (min-width: 768px) {
   .container {
-    max-width: 730px; } }
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 940px; } }
+    max-width: 98%; } }
 
 @media (min-width: 1199px) {
   .container {
-    max-width: 1100px; } }
+    max-width: 98%; } }
 
 @media (min-width: 1400px) {
   .container {
-    max-width: 1260px; } }
+    max-width: 98%; } }
 
 @media (min-width: 1500px) {
   .container {
@@ -3774,15 +3770,24 @@ em strong {
 
 .webp .header-intro .intro:before {
   background-image: url(../images/radial-circle.webp); }
+  @media (max-width: 1399px) {
+    .webp .header-intro .intro:before {
+      background-image: url(../images/radial-circle-1200.webp); } }
 
 .header-intro .intro:before {
   background-image: url(../images/radial-circle.png); }
+  @media (max-width: 1399px) {
+    .header-intro .intro:before {
+      background-image: url(../images/radial-circle-1200.png); } }
 
 .header-intro .intro-bg {
   background-image: url(../images/rubber-parts.png); }
   @media (max-width: 1750px) {
     .header-intro .intro-bg {
       background-image: url(../images/rubber-parts-1600.png); } }
+  @media (max-width: 1399px) {
+    .header-intro .intro-bg {
+      background-image: url(../images/rubber-parts-1200.png); } }
 
 .homepage .footer {
   background: #083989; }
@@ -4039,6 +4044,49 @@ em strong {
       .header-intro .dot-14 {
         left: 560px;
         top: 205px; } }
+    @media (max-width: 1399px) {
+      .header-intro .dot-1 {
+        left: 15px;
+        top: 375px; }
+      .header-intro .dot-2 {
+        left: 15px;
+        top: 280px; }
+      .header-intro .dot-3 {
+        left: 20px;
+        top: 200px; }
+      .header-intro .dot-4 {
+        left: 100px;
+        top: 160px; }
+      .header-intro .dot-5 {
+        left: 170px;
+        top: 195px; }
+      .header-intro .dot-6 {
+        left: 220px;
+        top: 240px; }
+      .header-intro .dot-7 {
+        left: 220px;
+        top: 290px; }
+      .header-intro .dot-8 {
+        left: 180px;
+        top: 350px; }
+      .header-intro .dot-9 {
+        left: 220px;
+        top: 385px; }
+      .header-intro .dot-10 {
+        left: 270px;
+        top: 405px; }
+      .header-intro .dot-11 {
+        left: 330px;
+        top: 395px; }
+      .header-intro .dot-12 {
+        left: 280px;
+        top: 195px; }
+      .header-intro .dot-13 {
+        left: 370px;
+        top: 250px; }
+      .header-intro .dot-14 {
+        left: 460px;
+        top: 170px; } }
   .header-intro .plate {
     align-items: center;
     background-color: #fff;
@@ -4213,6 +4261,17 @@ em strong {
       background: url(../images/parallax/blue-2-1600.png) no-repeat 85% 95px; }
     .layer-5 {
       background: url(../images/parallax/blue-3-1600.png) no-repeat 55% 425px; } }
+  @media (max-width: 1399px) {
+    .layer-1 {
+      background: url(../images/parallax/gray-1-1200.png) no-repeat 60px 40px; }
+    .layer-2 {
+      background: url(../images/parallax/gray-2-1200.png) no-repeat 73% 325px; }
+    .layer-3 {
+      background: url(../images/parallax/blue-1-1200.png) no-repeat 20px 85px; }
+    .layer-4 {
+      background: url(../images/parallax/blue-2-1200.png) no-repeat 77% 80px; }
+    .layer-5 {
+      background: url(../images/parallax/blue-3-1200.png) no-repeat 50% 325px; } }
 
 /* =mobile-menu
 ---------------------------*/
@@ -4625,6 +4684,13 @@ em strong {
 ::-ms-clear {
   display: none; }
 
+@media (max-width: 1399px) {
+  .header-intro:before {
+    border-right-width: 800px;
+    border-top-width: 500px; }
+  .navmenu {
+    margin-top: 1.5rem; } }
+
 @media (max-width: 1800px) {
   .header-intro .about__text {
     font-size: 4rem;
@@ -4660,3 +4726,47 @@ em strong {
     font-size: 2.8rem; }
   .header-intro .intro .about {
     padding-bottom: 1.5rem; } }
+
+@media (max-width: 1500px) {
+  .header-intro .catalog__item {
+    font-size: 1.8rem; }
+  .header-intro .catalog__pic {
+    margin-right: 1.5rem; } }
+
+@media (max-width: 1399px) {
+  .header-intro:after {
+    background-image: url(../images/bg-line-1200.png);
+    height: 33px; }
+  .header-intro .about {
+    padding-bottom: .7rem; }
+    .header-intro .about__title {
+      font-size: 1.7rem; }
+    .header-intro .about__text {
+      font-size: 3.8rem;
+      line-height: 1.2;
+      margin-top: .5rem;
+      white-space: normal; }
+  .header-intro .intro {
+    padding-left: 100px; }
+    .header-intro .intro-wrapper {
+      max-width: 100%; }
+    .header-intro .intro:before {
+      left: 0;
+      background-position: 0 top; }
+  .header-intro .catalog a {
+    height: 8rem;
+    width: 100%; }
+  .header-intro .catalog__pic {
+    margin-right: 1rem;
+    width: 55px; }
+  .header-intro .cifres {
+    margin-top: 8rem; }
+  .new-products .title,
+  .lastnews .title {
+    font-size: 3.6rem; }
+  .new-products .item-product__title {
+    font-size: 1.6rem; } }
+
+@media (max-width: 1250px) {
+  .lastnews .item-news {
+    margin-bottom: 5.5rem; } }

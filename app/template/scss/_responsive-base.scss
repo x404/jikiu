@@ -1,4 +1,13 @@
-@media (max-width: 1199px){
+@media (max-width: 1399px){
+	.header-intro:before{
+		border-right-width: 800px;
+		border-top-width: 500px
+	}
+	.navmenu{
+		margin-top: 1.5rem;
+	}
+
+
 }
 
 @media (max-width: 1024px){

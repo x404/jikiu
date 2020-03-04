@@ -268,6 +268,23 @@
 			&-13{left: 460px; top: 310px}
 			&-14{left: 560px; top: 205px}
 		}
+
+		@media (max-width: 1399px) {
+			&-1{left: 15px; top: 375px;}
+			&-2{left: 15px; top: 280px}
+			&-3{left: 20px; top: 200px}
+			&-4{left: 100px; top: 160px}
+			&-5{left: 170px; top: 195px}
+			&-6{left: 220px; top: 240px}
+			&-7{left: 220px; top: 290px}
+			&-8{left: 180px; top: 350px}
+			&-9{left: 220px; top: 385px}
+			&-10{left: 270px; top: 405px}
+			&-11{left: 330px; top: 395px}
+			&-12{left: 280px; top: 195px}
+			&-13{left: 370px; top: 250px}
+			&-14{left: 460px; top: 170px}
+		}
 	}
 
 	.plate{
@@ -520,6 +537,24 @@
 		}
 		&-5{
 			background: url(../images/parallax/blue-3-1600.png) no-repeat 55% 425px;
+		}		
+	}
+
+	@media (max-width: 1399px) {
+		&-1{
+			background: url(../images/parallax/gray-1-1200.png) no-repeat 60px 40px;
+		}
+		&-2{
+			background: url(../images/parallax/gray-2-1200.png) no-repeat 73% 325px;
+		}
+		&-3{
+			background: url(../images/parallax/blue-1-1200.png) no-repeat 20px 85px;
+		}
+		&-4{
+			background: url(../images/parallax/blue-2-1200.png) no-repeat 77% 80px;
+		}
+		&-5{
+			background: url(../images/parallax/blue-3-1200.png) no-repeat 50% 325px;
 		}		
 	}
 }

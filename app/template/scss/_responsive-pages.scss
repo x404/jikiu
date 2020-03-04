@@ -56,9 +56,6 @@
 
 @media (max-width: 1600px){
 	.header-intro{
-		.cifres{
-
-		}
 		.item__cifr{
 			&-title{
 				font-size: 2.8rem;
@@ -69,5 +66,88 @@
 			padding-bottom: 1.5rem;
 		}
 	}
+}
 
+
+@media (max-width: 1500px){
+	.header-intro{
+		.catalog{
+			&__item{
+				font-size: 1.8rem;
+			}
+			&__pic{
+				margin-right: 1.5rem;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 1399px){
+	.header-intro{
+		&:after{
+			background-image: url(../images/bg-line-1200.png);
+			height: 33px;
+		}
+		.about{
+			padding-bottom: .7rem;
+			&__title{
+				font-size: 1.7rem;
+			}
+			&__text{
+				font-size: 3.8rem;
+				line-height: 1.2;
+				margin-top: .5rem;
+				white-space: normal;
+			}
+		}
+
+		.intro{
+			padding-left: 100px;
+			&-wrapper{
+				max-width: 100%;
+			}
+			&:before{
+				left: 0;
+				background-position: 0 top;
+			}
+		}
+
+		.catalog{
+			a{
+				height: 8rem;
+				width: 100%;
+			}
+			&__pic{
+				margin-right: 1rem;
+				width: 55px;
+			}
+		}
+
+		.cifres{
+			margin-top: 8rem;
+		}
+	}
+
+	.new-products,
+	.lastnews{
+		.title{
+			font-size: 3.6rem;
+		}
+	}
+
+	.new-products{
+		.item-product__title{
+			font-size: 1.6rem;
+		}
+	}
+}
+
+
+
+
+@media (max-width: 1250px){
+	.lastnews .item-news{
+		margin-bottom: 5.5rem;
+	}
 }
