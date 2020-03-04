@@ -27,5 +27,14 @@
 @media (max-width: 767px){
 }
 
-@media (max-width: 545px){
+@media (max-width: 576px){
+	.navbar-toggle{
+		margin-left: 2rem;
+	}
+
+	.langs{
+		a, span{
+			padding: 0 1.1rem;
+		}
+	}
 }

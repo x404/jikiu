@@ -249,6 +249,10 @@
 
 @media (max-width: 991px){
 	.header-intro{
+		&:before{
+			border-right-width: 600px;
+			border-top-width: 300px;
+		}
 		.intro{
 			padding-left: 0;
 			&:before{
@@ -288,6 +292,11 @@
 		.cifres{
 			margin-top: 5.5rem;
 		}
+
+
+		.cifres__item:not(:last-child){
+			margin-right: 2rem;
+		}
 	}
 
 	.lastnews,
@@ -301,7 +310,88 @@
 	.dots{
 		display: none;
 	}
-
-
 }
 
+
+@media (max-width: 767px){
+	.header-intro{
+		.catalog{
+			&__item{
+				max-width: 230px;
+			}
+			&__link{
+				padding-left: 1rem;
+			}
+		}
+
+		.car{
+			picture,
+			img{
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
+
+	.new-products{
+		&-arrows{
+			display: flex;
+		}
+	}
+}
+
+
+@media (max-width: 650px){
+	.header-intro{
+		&:before{
+			border-right-width: 350px;
+			border-top-width: 200px;
+		}
+	}
+}
+
+
+@media (max-width: 576px){
+	.header-intro{
+		.cifres{
+			.d-flex{
+				flex-wrap: wrap
+			}
+
+			&__item{
+				margin-top: 2.5rem;
+			}
+		}
+		.item{
+			&__cifr{
+				&-title{
+					font-size: 2rem;
+				}
+			}
+		}
+
+		.intro{
+			padding-top: 0;
+			margin-top: 4rem;
+		}
+
+		.cifres{
+			margin-top: 0;
+			padding-bottom: 6rem;
+		}
+
+		.about__text{
+			font-size: 3rem;
+			padding-right: 0;
+		}
+	}
+
+	.lastnews,
+	.new-products{
+		padding-top: 5rem;
+		.title{
+			font-size: 3rem;
+		}
+	}
+}

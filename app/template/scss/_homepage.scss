@@ -378,7 +378,7 @@
 
 	&-arrows{
 		flex-grow: 1;
-		display: flex;
+		display: none;
 		justify-content: flex-end;
 		padding-right: 2rem;
 		.slick{
@@ -615,6 +615,24 @@
 		}
 		&-5{
 			background: url(../images/parallax/blue-3-768.png) no-repeat 60% 220px;
+		}		
+	}
+
+	@media (max-width: 576px) {
+		&-1{
+			background: url(../images/parallax/gray-1-420.png) no-repeat 130px 20px;
+		}
+		&-2{
+			background: url(../images/parallax/gray-2-420.png) no-repeat 65% 170px;
+		}
+		&-3{
+			background: url(../images/parallax/blue-1-420.png) no-repeat 110px 35px;
+		}
+		&-4{
+			background: url(../images/parallax/blue-2-420.png) no-repeat 90% 20px;
+		}
+		&-5{
+			background: url(../images/parallax/blue-3-420.png) no-repeat 50% 140px;
 		}		
 	}
 }

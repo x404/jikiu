@@ -38,7 +38,10 @@ $(document).ready(function(){
 		slidesToShow: 11,
 		slidesToScroll: 1,
 		autoplay: false,
-		arrows : false,
+		arrows : true,
+		appendArrows: '.new-products-arrows',
+		prevArrow: '<button type="button" class="slick-prev slick-arrow"></button>',
+		nextArrow: '<button type="button" class="slick-next slick-arrow"></button>',
 		responsive: [
 			{
 				breakpoint: 1700,
@@ -79,31 +82,27 @@ $(document).ready(function(){
 				breakpoint: 992,
 				settings: {
 					slidesToShow: 5,
-					slidesToScroll: 1,
-					arrows : true,
-					appendArrows: '.new-products-arrows',
-					prevArrow: '<button type="button" class="slick-prev slick-arrow"></button>',
-					nextArrow: '<button type="button" class="slick-next slick-arrow"></button>'
-				}
-			},
-			{
-				breakpoint: 960,
-				settings: {
-					slidesToShow: 3,
 					slidesToScroll: 1
 				}
 			},
 			{
 				breakpoint: 768,
 				settings: {
-					slidesToShow: 2,
+					slidesToShow: 5,
 					slidesToScroll: 1
 				}
 			},
 			{
-				breakpoint: 560,
+				breakpoint: 720,
 				settings: {
-					slidesToShow: 2,
+					slidesToShow: 4,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 3,
 					slidesToScroll: 1
 				}
 			},

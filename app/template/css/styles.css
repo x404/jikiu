@@ -3323,8 +3323,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media (max-width: 767px) {
   .container {
-    padding-left: 15px;
-    padding-right: 15px; } }
+    max-width: 98%; } }
 
 @media (min-width: 768px) {
   .container {
@@ -4170,7 +4169,7 @@ em strong {
     margin-top: 1.5rem; }
   .new-products-arrows {
     flex-grow: 1;
-    display: flex;
+    display: none;
     justify-content: flex-end;
     padding-right: 2rem; }
     .new-products-arrows .slick-arrow {
@@ -4324,6 +4323,17 @@ em strong {
       background: url(../images/parallax/blue-2-768.png) no-repeat 110% 80px; }
     .layer-5 {
       background: url(../images/parallax/blue-3-768.png) no-repeat 60% 220px; } }
+  @media (max-width: 576px) {
+    .layer-1 {
+      background: url(../images/parallax/gray-1-420.png) no-repeat 130px 20px; }
+    .layer-2 {
+      background: url(../images/parallax/gray-2-420.png) no-repeat 65% 170px; }
+    .layer-3 {
+      background: url(../images/parallax/blue-1-420.png) no-repeat 110px 35px; }
+    .layer-4 {
+      background: url(../images/parallax/blue-2-420.png) no-repeat 90% 20px; }
+    .layer-5 {
+      background: url(../images/parallax/blue-3-420.png) no-repeat 50% 140px; } }
 
 /* =mobile-menu
 ---------------------------*/
@@ -4481,6 +4491,12 @@ em strong {
   .navmenu {
     display: none; } }
 
+@media (max-width: 576px) {
+  .navbar-toggle {
+    margin-left: 2rem; }
+  .langs a, .langs span {
+    padding: 0 1.1rem; } }
+
 @media (max-width: 1800px) {
   .header-intro .about__text {
     font-size: 4rem;
@@ -4613,6 +4629,9 @@ em strong {
     padding-bottom: .5rem; } }
 
 @media (max-width: 991px) {
+  .header-intro:before {
+    border-right-width: 600px;
+    border-top-width: 300px; }
   .header-intro .intro {
     padding-left: 0; }
     .header-intro .intro:before {
@@ -4633,8 +4652,51 @@ em strong {
     height: 7rem; }
   .header-intro .cifres {
     margin-top: 5.5rem; }
+  .header-intro .cifres__item:not(:last-child) {
+    margin-right: 2rem; }
   .lastnews .title,
   .new-products .title {
     font-size: 3.2rem; }
   .dots {
     display: none; } }
+
+@media (max-width: 767px) {
+  .header-intro .catalog__item {
+    max-width: 230px; }
+  .header-intro .catalog__link {
+    padding-left: 1rem; }
+  .header-intro .car picture,
+  .header-intro .car img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .new-products-arrows {
+    display: flex; } }
+
+@media (max-width: 650px) {
+  .header-intro:before {
+    border-right-width: 350px;
+    border-top-width: 200px; } }
+
+@media (max-width: 576px) {
+  .header-intro .cifres .d-flex {
+    flex-wrap: wrap; }
+  .header-intro .cifres__item {
+    margin-top: 2.5rem; }
+  .header-intro .item__cifr-title {
+    font-size: 2rem; }
+  .header-intro .intro {
+    padding-top: 0;
+    margin-top: 4rem; }
+  .header-intro .cifres {
+    margin-top: 0;
+    padding-bottom: 6rem; }
+  .header-intro .about__text {
+    font-size: 3rem;
+    padding-right: 0; }
+  .lastnews,
+  .new-products {
+    padding-top: 5rem; }
+    .lastnews .title,
+    .new-products .title {
+      font-size: 3rem; } }
