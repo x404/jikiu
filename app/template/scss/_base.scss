@@ -168,6 +168,10 @@ em strong
 /* =header
 ---------------------------*/
 .header{
+	&__left{
+		align-items: center;
+		display: flex;
+	}
 }
 
 /* =/header

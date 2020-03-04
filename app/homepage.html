@@ -41,17 +41,21 @@
 		<header class="header">
 			<div class="container">
 				<div class="d-flex justify-content-between align-items-center">
-					<div class="logo">
-						<a href="#" title="">
-							<picture>
-								<source srcset="/template/images/logo1200.webp" type="image/webp"  media="(max-width: 1400px)">
-							    <source srcset="/template/images/logo.webp" type="image/webp">
+					<div class="header__left">
+						<div class="logo">
+							<a href="#" title="">
+								<picture>
+									<source srcset="/template/images/logo1200.webp" type="image/webp"  media="(max-width: 1400px)">
+								    <source srcset="/template/images/logo.webp" type="image/webp">
 
-								<source srcset="/template/images/logo1200.png" type="image/png"  media="(max-width: 1400px)">
-							    <img src="/template/images/logo.png" alt="" />
-							</picture>
-						</a>
+									<source srcset="/template/images/logo1200.png" type="image/png"  media="(max-width: 1400px)">
+								    <img src="/template/images/logo.png" alt="" />
+								</picture>
+							</a>
+						</div>
+						<button type="button" class="navbar-toggle" aria-label="">Menu</button>
 					</div>
+
 					<!-- =nav -->
 					<div class="navmenu">
 						<div class="navmenu__inner">
@@ -69,12 +73,7 @@
 							</nav>	
 							<button type="button" class="close-menu"><img src="/template/images/close.png" alt="Закрыть меню" /></button>
 						</div>
-					</div>
-					<button type="button" class="navbar-toggle" aria-label="Показать/Скрыть меню">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
+					</div>					
 					<!-- =/nav -->
 
 					<!-- =lang -->
@@ -539,8 +538,8 @@
 </div>
 
 <div id="outdated"></div>
-<script type="text/javascript" src="/template/js/slick.min.js"></script>
-<script type="text/javascript" src="/template/js/parallax.min.js"></script>
+<script src="/template/js/slick.min.js"></script>
+<script src="/template/js/parallax.min.js"></script>
 <script>
 	var scene = document.getElementById('scene');
 	var parallax = new Parallax(scene);
