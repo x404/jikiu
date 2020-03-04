@@ -120,7 +120,7 @@
 			}			
 		}
 
-		a{
+		&__link{
 			display: flex;
 			align-items: center;
 			border-radius: 9rem;
@@ -463,6 +463,7 @@
 			color: #fff;
 			font-family: "Futura BT";
 			font-weight: 700;
+			font-size: 1.7rem;
 			line-height: 1.47;
 			text-transform: uppercase;
 		}
@@ -555,6 +556,25 @@
 		}
 		&-5{
 			background: url(../images/parallax/blue-3-1200.png) no-repeat 50% 325px;
+		}		
+	}
+
+
+	@media (max-width: 1199px) {
+		&-1{
+			background: url(../images/parallax/gray-1-1000.png) no-repeat 60px 40px;
+		}
+		&-2{
+			background: url(../images/parallax/gray-2-1000.png) no-repeat 95% 325px;
+		}
+		&-3{
+			background: url(../images/parallax/blue-1-1000.png) no-repeat 20px 85px;
+		}
+		&-4{
+			background: url(../images/parallax/blue-2-1000.png) no-repeat 110% 80px;
+		}
+		&-5{
+			background: url(../images/parallax/blue-3-1000.png) no-repeat 80% 300px;
 		}		
 	}
 }

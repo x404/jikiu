@@ -3788,6 +3788,9 @@ em strong {
   @media (max-width: 1399px) {
     .header-intro .intro-bg {
       background-image: url(../images/rubber-parts-1200.png); } }
+  @media (max-width: 1199px) {
+    .header-intro .intro-bg {
+      background-image: url(../images/rubber-parts-1000.png); } }
 
 .homepage .footer {
   background: #083989; }
@@ -3883,7 +3886,7 @@ em strong {
       .header-intro .catalog__pic img {
         filter: none;
         transform: .3s; }
-    .header-intro .catalog a {
+    .header-intro .catalog__link {
       display: flex;
       align-items: center;
       border-radius: 9rem;
@@ -3891,12 +3894,12 @@ em strong {
       line-height: 1.2;
       padding: 1.2rem 2rem;
       width: 95%; }
-      .header-intro .catalog a:hover {
+      .header-intro .catalog__link:hover {
         background-color: #2065d8;
         box-shadow: 2px 3px 5px rgba(31, 115, 255, 0.75);
         color: #fff;
         text-decoration: none; }
-        .header-intro .catalog a:hover img {
+        .header-intro .catalog__link:hover img {
           filter: grayscale(1) invert(1) brightness(5); }
   .header-intro .cifres {
     position: relative;
@@ -4209,6 +4212,7 @@ em strong {
     color: #fff;
     font-family: "Futura BT";
     font-weight: 700;
+    font-size: 1.7rem;
     line-height: 1.47;
     text-transform: uppercase; }
   .lastnews .item-news__text {
@@ -4272,6 +4276,17 @@ em strong {
       background: url(../images/parallax/blue-2-1200.png) no-repeat 77% 80px; }
     .layer-5 {
       background: url(../images/parallax/blue-3-1200.png) no-repeat 50% 325px; } }
+  @media (max-width: 1199px) {
+    .layer-1 {
+      background: url(../images/parallax/gray-1-1000.png) no-repeat 60px 40px; }
+    .layer-2 {
+      background: url(../images/parallax/gray-2-1000.png) no-repeat 95% 325px; }
+    .layer-3 {
+      background: url(../images/parallax/blue-1-1000.png) no-repeat 20px 85px; }
+    .layer-4 {
+      background: url(../images/parallax/blue-2-1000.png) no-repeat 110% 80px; }
+    .layer-5 {
+      background: url(../images/parallax/blue-3-1000.png) no-repeat 80% 300px; } }
 
 /* =mobile-menu
 ---------------------------*/
@@ -4691,6 +4706,10 @@ em strong {
   .navmenu {
     margin-top: 1.5rem; } }
 
+@media (max-width: 1199px) {
+  .navmenu {
+    display: none; } }
+
 @media (max-width: 1800px) {
   .header-intro .about__text {
     font-size: 4rem;
@@ -4770,3 +4789,54 @@ em strong {
 @media (max-width: 1250px) {
   .lastnews .item-news {
     margin-bottom: 5.5rem; } }
+
+@media (max-width: 1199px) {
+  .header-intro {
+    min-height: 0; }
+    .header-intro:after {
+      background-image: url(../images/bg-line-1000.png);
+      height: 27px; }
+    .header-intro .intro {
+      padding-left: 8rem; }
+    .header-intro .catalog__link {
+      padding-left: .5rem; }
+    .header-intro .catalog__title {
+      font-size: 1.7rem; }
+    .header-intro .about__text {
+      font-size: 3.6rem; }
+    .header-intro .cifres {
+      margin-top: 6rem;
+      padding-bottom: 8.5rem; }
+    .header-intro .item__cifr-title {
+      font-size: 2.4rem; }
+    .header-intro .item__cifr-desc {
+      font-size: 1.5rem; }
+    .header-intro .plate__title {
+      font-size: 1.5rem;
+      margin-left: .7rem; }
+  .new-products,
+  .lastnews {
+    padding-top: 6rem; }
+    .new-products .title,
+    .lastnews .title {
+      font-size: 3.4rem; }
+  .dot-button {
+    transform: scale(0.8); }
+  .news__list {
+    margin-top: 3rem; }
+  .lastnews .item-news {
+    margin-bottom: 3.5rem; }
+    .lastnews .item-news__link {
+      align-items: start; } }
+
+@media (max-width: 1050px) {
+  .header-intro .intro {
+    padding-top: 1.2rem; }
+    .header-intro .intro .about {
+      padding-bottom: 1rem; }
+  .header-intro .catalog__link {
+    padding-left: .7rem; }
+  .header-intro .cifres {
+    margin-top: 2rem; }
+  .header-intro .item__cifr-title {
+    padding-bottom: .5rem; } }

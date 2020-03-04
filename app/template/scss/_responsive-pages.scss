@@ -144,10 +144,106 @@
 }
 
 
-
-
 @media (max-width: 1250px){
 	.lastnews .item-news{
 		margin-bottom: 5.5rem;
+	}
+}
+
+
+@media (max-width: 1199px){
+	.header-intro{
+		&:after{
+			background-image: url(../images/bg-line-1000.png);
+			height: 27px;
+		}
+
+		min-height: 0;
+		.intro{
+			padding-left: 8rem;
+		}
+
+		.catalog{
+			&__link{
+				padding-left: .5rem;
+			}
+
+			&__title{
+				font-size: 1.7rem;
+			}
+		}
+
+		.about__text{
+			font-size: 3.6rem;
+		}
+
+		.cifres{
+			margin-top: 6rem;
+			padding-bottom: 8.5rem;
+		}
+
+		.item__cifr{
+			&-title{
+				font-size: 2.4rem;
+			}
+			&-desc{
+				font-size: 1.5rem;
+			}
+		}
+
+		.plate__title{
+			font-size: 1.5rem;
+			margin-left: .7rem;
+		}
+	}
+
+	.new-products,
+	.lastnews{
+		padding-top: 6rem;
+		.title{
+			font-size: 3.4rem;
+		}
+	}
+
+	.dot-button{
+		transform: scale(0.8);
+	}	
+
+
+	.news__list{
+		margin-top: 3rem;
+	}
+
+	.lastnews .item-news{
+		margin-bottom: 3.5rem;
+		&__link{
+			align-items: start
+		}
+	}
+
+}
+
+
+@media (max-width: 1050px){
+	.header-intro{
+		.intro{
+			padding-top: 1.2rem;
+			.about{
+				padding-bottom: 1rem;
+			}
+		}
+		.catalog{
+			&__link{
+				padding-left: .7rem;
+			}
+		}
+
+		.cifres{
+			margin-top: 2rem;
+		}
+		.item__cifr-title{
+			padding-bottom: .5rem;
+		}
+
 	}
 }
