@@ -577,4 +577,22 @@
 			background: url(../images/parallax/blue-3-1000.png) no-repeat 80% 300px;
 		}		
 	}
+
+	@media (max-width: 991px) {
+		&-1{
+			background: url(../images/parallax/gray-1-768.png) no-repeat 25px 20px;
+		}
+		&-2{
+			background: url(../images/parallax/gray-2-768.png) no-repeat 75% 265px;
+		}
+		&-3{
+			background: url(../images/parallax/blue-1-768.png) no-repeat 10px 55px;
+		}
+		&-4{
+			background: url(../images/parallax/blue-2-768.png) no-repeat 110% 80px;
+		}
+		&-5{
+			background: url(../images/parallax/blue-3-768.png) no-repeat 60% 220px;
+		}		
+	}
 }

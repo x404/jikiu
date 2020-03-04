@@ -24,7 +24,7 @@ $(document).ready(function(){
 	// });	
 
 
-	$(".homepage .catalog_link").mouseenter(function() {
+	$(".homepage .catalog__link").mouseenter(function() {
 		const cat = $(this).data('cat');
 		$('[data-cat="' + cat + '"]').addClass('active');
 	}).mouseleave(function() {
@@ -78,7 +78,7 @@ $(document).ready(function(){
 			{
 				breakpoint: 992,
 				settings: {
-					slidesToShow: 4,
+					slidesToShow: 5,
 					slidesToScroll: 1
 				}
 			},

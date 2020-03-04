@@ -3798,6 +3798,9 @@ em strong {
   @media (max-width: 1199px) {
     .header-intro .intro-bg {
       background-image: url(../images/rubber-parts-1000.png); } }
+  @media (max-width: 991px) {
+    .header-intro .intro-bg {
+      background-image: url(../images/rubber-parts-768.png); } }
 
 .homepage .footer {
   background: #083989; }
@@ -4294,6 +4297,17 @@ em strong {
       background: url(../images/parallax/blue-2-1000.png) no-repeat 110% 80px; }
     .layer-5 {
       background: url(../images/parallax/blue-3-1000.png) no-repeat 80% 300px; } }
+  @media (max-width: 991px) {
+    .layer-1 {
+      background: url(../images/parallax/gray-1-768.png) no-repeat 25px 20px; }
+    .layer-2 {
+      background: url(../images/parallax/gray-2-768.png) no-repeat 75% 265px; }
+    .layer-3 {
+      background: url(../images/parallax/blue-1-768.png) no-repeat 10px 55px; }
+    .layer-4 {
+      background: url(../images/parallax/blue-2-768.png) no-repeat 110% 80px; }
+    .layer-5 {
+      background: url(../images/parallax/blue-3-768.png) no-repeat 60% 220px; } }
 
 /* =mobile-menu
 ---------------------------*/
@@ -4513,7 +4527,7 @@ em strong {
     .header-intro .intro:before {
       left: 0;
       background-position: 0 top; }
-  .header-intro .catalog a {
+  .header-intro .catalog__link {
     height: 8rem;
     width: 100%; }
   .header-intro .catalog__pic {
@@ -4581,3 +4595,30 @@ em strong {
     margin-top: 2rem; }
   .header-intro .item__cifr-title {
     padding-bottom: .5rem; } }
+
+@media (max-width: 991px) {
+  .header-intro .intro {
+    padding-left: 0; }
+    .header-intro .intro:before {
+      left: -70px;
+      top: -40px; }
+  .header-intro .item__cifr-title {
+    font-size: 2.2rem; }
+  .header-intro .item__cifr-desc {
+    font-size: 1.4rem; }
+  .header-intro .about__title span {
+    font-size: 1.6rem;
+    height: 3.2rem;
+    padding: 0 1.3rem; }
+  .header-intro .about__text {
+    font-size: 3.4rem;
+    padding-right: 4rem; }
+  .header-intro .catalog__link {
+    height: 7rem; }
+  .header-intro .cifres {
+    margin-top: 5.5rem; }
+  .lastnews .title,
+  .new-products .title {
+    font-size: 3.2rem; }
+  .dots {
+    display: none; } }

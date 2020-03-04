@@ -114,7 +114,7 @@
 		}
 
 		.catalog{
-			a{
+			&__link{
 				height: 8rem;
 				width: 100%;
 			}
@@ -244,6 +244,64 @@
 		.item__cifr-title{
 			padding-bottom: .5rem;
 		}
-
 	}
 }
+
+@media (max-width: 991px){
+	.header-intro{
+		.intro{
+			padding-left: 0;
+			&:before{
+				left: -70px;
+				top: -40px;
+			}
+		}
+		.item__cifr{
+			&-title{
+				font-size: 2.2rem;
+			}
+			&-desc{
+				font-size: 1.4rem;
+			}
+		}
+		.about{
+			&__title{
+				span{				
+					font-size: 1.6rem;
+					height: 3.2rem;
+					padding: 0 1.3rem;
+				}
+			}
+
+			&__text{
+				font-size: 3.4rem;
+				padding-right: 4rem;
+			}
+		}
+
+		.catalog{
+			&__link{
+				height: 7rem;
+			}
+		}
+
+		.cifres{
+			margin-top: 5.5rem;
+		}
+	}
+
+	.lastnews,
+	.new-products
+	{
+		.title{
+			font-size: 3.2rem;
+		}
+	}
+
+	.dots{
+		display: none;
+	}
+
+
+}
+
