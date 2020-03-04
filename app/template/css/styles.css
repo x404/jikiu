@@ -3328,23 +3328,38 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media (min-width: 768px) {
   .container {
-    width: 730px; } }
+    max-width: 730px; } }
 
 @media (min-width: 992px) {
   .container {
-    width: 940px; } }
+    max-width: 940px; } }
 
 @media (min-width: 1199px) {
   .container {
-    width: 1100px; } }
+    max-width: 1100px; } }
 
 @media (min-width: 1400px) {
   .container {
-    width: 1260px; } }
+    max-width: 1260px; } }
+
+@media (min-width: 1500px) {
+  .container {
+    max-width: 98%; } }
+
+@media (min-width: 1700px) {
+  .container {
+    max-width: 98%; } }
+
+@media (min-width: 1700px) {
+  .container {
+    max-width: 98%; } }
 
 @media (min-width: 1800px) {
   .container {
-    width: 1840px;
+    max-width: 1780px; } }
+
+@media (min-width: 1900px) {
+  .container {
     max-width: 1840px; } }
 
 .d-grid {
@@ -3760,14 +3775,14 @@ em strong {
 .webp .header-intro .intro:before {
   background-image: url(../images/radial-circle.webp); }
 
-.webp .header-intro .intro-bg {
-  background-image: url(../images/rubber-parts.webp); }
-
 .header-intro .intro:before {
   background-image: url(../images/radial-circle.png); }
 
 .header-intro .intro-bg {
   background-image: url(../images/rubber-parts.png); }
+  @media (max-width: 1750px) {
+    .header-intro .intro-bg {
+      background-image: url(../images/rubber-parts-1600.png); } }
 
 .homepage .footer {
   background: #083989; }
@@ -3778,7 +3793,6 @@ em strong {
 .header-intro {
   background-color: #f7f7f7;
   background: linear-gradient(#f4f4f4, #f3f3f3);
-  /*PIE*/
   min-height: 950px;
   position: relative;
   padding-top: 1rem;
@@ -3982,6 +3996,49 @@ em strong {
     .header-intro .dot-14 {
       left: 725px;
       top: 270px; }
+    @media (max-width: 1750px) {
+      .header-intro .dot-1 {
+        left: 45px;
+        top: 455px; }
+      .header-intro .dot-2 {
+        left: 45px;
+        top: 340px; }
+      .header-intro .dot-3 {
+        left: 50px;
+        top: 250px; }
+      .header-intro .dot-4 {
+        left: 140px;
+        top: 200px; }
+      .header-intro .dot-5 {
+        left: 240px;
+        top: 255px; }
+      .header-intro .dot-6 {
+        left: 285px;
+        top: 300px; }
+      .header-intro .dot-7 {
+        left: 290px;
+        top: 370px; }
+      .header-intro .dot-8 {
+        left: 250px;
+        top: 410px; }
+      .header-intro .dot-9 {
+        left: 280px;
+        top: 470px; }
+      .header-intro .dot-10 {
+        left: 340px;
+        top: 485px; }
+      .header-intro .dot-11 {
+        left: 430px;
+        top: 485px; }
+      .header-intro .dot-12 {
+        left: 370px;
+        top: 233px; }
+      .header-intro .dot-13 {
+        left: 460px;
+        top: 310px; }
+      .header-intro .dot-14 {
+        left: 560px;
+        top: 205px; } }
   .header-intro .plate {
     align-items: center;
     background-color: #fff;
@@ -4145,6 +4202,17 @@ em strong {
     background: url(../images/parallax/blue-2.png) no-repeat 98% 95px; }
   .layer-5 {
     background: url(../images/parallax/blue-3.png) no-repeat 73% 425px; }
+  @media (max-width: 1750px) {
+    .layer-1 {
+      background: url(../images/parallax/gray-1-1600.png) no-repeat 150px 55px; }
+    .layer-2 {
+      background: url(../images/parallax/gray-2-1600.png) no-repeat 75% 475px; }
+    .layer-3 {
+      background: url(../images/parallax/blue-1-1600.png) no-repeat 120px 115px; }
+    .layer-4 {
+      background: url(../images/parallax/blue-2-1600.png) no-repeat 85% 95px; }
+    .layer-5 {
+      background: url(../images/parallax/blue-3-1600.png) no-repeat 55% 425px; } }
 
 /* =mobile-menu
 ---------------------------*/
@@ -4556,3 +4624,39 @@ em strong {
 
 ::-ms-clear {
   display: none; }
+
+@media (max-width: 1800px) {
+  .header-intro .about__text {
+    font-size: 4rem;
+    white-space: nowrap; } }
+
+@media (max-width: 1750px) {
+  .header-intro {
+    min-height: 850px; }
+    .header-intro .intro {
+      padding-top: 3.5rem; }
+    .header-intro .catalog__item {
+      font-size: 2rem; }
+    .header-intro .catalog a {
+      padding-right: 1rem; }
+    .header-intro .cifres {
+      margin-top: -4rem; }
+  .new-products {
+    padding-top: 7rem; }
+  .lastnews {
+    padding-top: 5.3rem;
+    padding-bottom: 0; }
+    .lastnews .item-news__link {
+      padding-right: 1rem; }
+  .new-products .title,
+  .lastnews .title {
+    font-size: 3.8rem; }
+  .lastnews .item-news__pic {
+    width: 190px;
+    height: 140px; } }
+
+@media (max-width: 1600px) {
+  .header-intro .item__cifr-title {
+    font-size: 2.8rem; }
+  .header-intro .intro .about {
+    padding-bottom: 1.5rem; } }

@@ -10,7 +10,7 @@
 
 .header-intro{
 	background-color: $color3;
-    background: linear-gradient(#f4f4f4, #f3f3f3); /*PIE*/
+    background: linear-gradient(#f4f4f4, #f3f3f3);
 	min-height: 950px;
 	position: relative;
 	padding-top: 1rem;
@@ -251,6 +251,23 @@
 		&-12{left: 480px; top: 316px}
 		&-13{left: 602px; top: 383px}
 		&-14{left: 725px; top: 270px}
+
+		@media (max-width: 1750px) {
+			&-1{left: 45px; top: 455px;}
+			&-2{left: 45px; top: 340px}
+			&-3{left: 50px; top: 250px}
+			&-4{left: 140px; top: 200px}
+			&-5{left: 240px; top: 255px}
+			&-6{left: 285px; top: 300px}
+			&-7{left: 290px; top: 370px}
+			&-8{left: 250px; top: 410px}
+			&-9{left: 280px; top: 470px}
+			&-10{left: 340px; top: 485px}
+			&-11{left: 430px; top: 485px}
+			&-12{left: 370px; top: 233px}
+			&-13{left: 460px; top: 310px}
+			&-14{left: 560px; top: 205px}
+		}
 	}
 
 	.plate{
@@ -486,5 +503,23 @@
 	}
 	&-5{
 		background: url(../images/parallax/blue-3.png) no-repeat 73% 425px;
+	}
+
+	@media (max-width: 1750px) {
+		&-1{
+			background: url(../images/parallax/gray-1-1600.png) no-repeat 150px 55px;
+		}
+		&-2{
+			background: url(../images/parallax/gray-2-1600.png) no-repeat 75% 475px;
+		}
+		&-3{
+			background: url(../images/parallax/blue-1-1600.png) no-repeat 120px 115px;
+		}
+		&-4{
+			background: url(../images/parallax/blue-2-1600.png) no-repeat 85% 95px;
+		}
+		&-5{
+			background: url(../images/parallax/blue-3-1600.png) no-repeat 55% 425px;
+		}		
 	}
 }
