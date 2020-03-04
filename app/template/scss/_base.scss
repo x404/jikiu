@@ -201,8 +201,10 @@ em strong
 				transition: .3s;			
 			}
 			&:before{
-				border-bottom: 3px solid $color7;
+				border-top: 3px solid $color7;
 				top: 0;
+				opacity: 0;
+				transition: .3s;
 			}
 			&:after{
 				border-bottom: 3px solid $color7;
@@ -213,6 +215,7 @@ em strong
 				color: $color7;
 				&:before{
 					top: -6px;
+					opacity: 1;
 				}
 				&:after{
 					bottom: -6px;
