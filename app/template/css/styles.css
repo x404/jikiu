@@ -4168,6 +4168,22 @@ em strong {
     font-size: 1.7rem;
     font-weight: 700;
     margin-top: 1.5rem; }
+  .new-products-arrows {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem; }
+    .new-products-arrows .slick-arrow {
+      background: #d82027 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAKCAYAAAB4zEQNAAAAVElEQVQoU2NkQAP///9PBgo5AXEKI7IcUCITyJ8GxP+BWBkuCZWYClWcwcjIOAssiU0CJM4IlNAE0tegRoF1wKzCL4nXWJgROB2EpgDTK0gK4IEAAMPNMlMZzEiBAAAAAElFTkSuQmCC) no-repeat 48% center;
+      border-radius: 50%;
+      border: none;
+      height: 30px;
+      margin: 0;
+      padding: 0;
+      width: 30px; }
+    .new-products-arrows .slick-next {
+      transform: rotate(180deg);
+      margin-left: 5px; }
 
 /* =lastnews
 ---------------------------*/
