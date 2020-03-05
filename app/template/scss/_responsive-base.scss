@@ -38,3 +38,24 @@
 		}
 	}
 }
+
+
+@media (max-width: 450px){
+	.header{
+		.langs{
+			display: none;
+		}
+		&__left{
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+		}		
+	}
+}
+
+
+@media (max-width: 380px){
+	.footer .logos img{
+		margin-right: 1rem;
+	}
+}

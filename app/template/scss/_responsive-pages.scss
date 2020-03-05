@@ -17,7 +17,7 @@
 			&__item{
 				font-size: 2rem;
 			}
-			a{
+			&__link{
 				padding-right: 1rem;
 			}
 		}
@@ -393,5 +393,140 @@
 		.title{
 			font-size: 3rem;
 		}
+	}
+
+	.lastnews{
+		.item-news{
+			&:after{
+				left: 12px;
+				top: 12px;
+			}
+			&:before
+			{
+				left: 8px;
+				top: 8px;
+			}
+			&__title{
+				font-size: 1.6rem;
+			}
+			&__text{
+				font-size: 1.4rem;
+				line-height: 1.4;
+				margin-top: 1.6rem;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 470px){
+	.lastnews,
+	.new-products{
+		.title{
+			font-size: 2.6rem;
+		}
+	}
+
+	.lastnews{
+		.item-news{
+			&__pic{
+				height: 95px;
+				width: 125px;
+			}
+			&__title{
+				font-size: 1.5rem;
+			}			
+		}
+	}
+
+	.scene-wrapper{
+		display: none;
+	}
+
+	.header-intro{
+		overflow: hidden;
+		.car{
+			margin-top: -8rem;
+			img, 
+			picture{
+				margin-right: -2rem;
+			}
+		}
+		.cifres{
+			margin-top: -3rem;
+		}
+	}
+
+	.new-products{
+		.show-all-top{
+			display: none;
+		}
+		.show-all-bottom{
+			display: flex;
+			justify-content: center;
+			width: 100px;
+		}		
+	}
+}
+
+
+@media (max-width: 380px){
+	.header-intro{
+		.catalog{
+			&__item{
+				margin-bottom: 3rem;
+			}
+			&__link{
+				display: block;
+			}
+			&__title{
+				padding-top: 1rem;
+			}
+		}
+		.car{
+			margin-top: -20rem;
+			img, 
+			picture{
+				margin-right: -7rem;
+			}
+		}
+		.cifres{
+			margin-top: -10rem;
+		}
+	}
+
+	.new-products-arrows{
+		padding-right: 0;
+	}
+
+	.lastnews{
+		.item-news{
+			&__bg{
+				&:after{
+					left: 8px;
+					top: 8px;
+				}
+				&:before
+				{
+					left: 4px;
+					top: 4px;
+				}
+			}
+			&__link{
+				align-items: center;
+			}
+			&__text{
+				display: none;
+			}
+			&__desc{
+				min-height: 0;
+				padding-left: 2.7rem;
+				padding-top: 1.5rem;
+			}
+		}
+	}
+
+	.new-products #newproducts-carousel{
+		padding-bottom: 2.8rem;
 	}
 }

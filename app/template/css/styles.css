@@ -4183,6 +4183,10 @@ em strong {
     .new-products-arrows .slick-next {
       transform: rotate(180deg);
       margin-left: 5px; }
+  .new-products .show-all-bottom {
+    display: none;
+    margin-left: auto;
+    margin-right: auto; }
 
 /* =lastnews
 ---------------------------*/
@@ -4497,6 +4501,18 @@ em strong {
   .langs a, .langs span {
     padding: 0 1.1rem; } }
 
+@media (max-width: 450px) {
+  .header .langs {
+    display: none; }
+  .header__left {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; } }
+
+@media (max-width: 380px) {
+  .footer .logos img {
+    margin-right: 1rem; } }
+
 @media (max-width: 1800px) {
   .header-intro .about__text {
     font-size: 4rem;
@@ -4509,7 +4525,7 @@ em strong {
       padding-top: 3.5rem; }
     .header-intro .catalog__item {
       font-size: 2rem; }
-    .header-intro .catalog a {
+    .header-intro .catalog__link {
       padding-right: 1rem; }
     .header-intro .cifres {
       margin-top: -4rem; }
@@ -4699,4 +4715,76 @@ em strong {
     padding-top: 5rem; }
     .lastnews .title,
     .new-products .title {
-      font-size: 3rem; } }
+      font-size: 3rem; }
+  .lastnews .item-news:after {
+    left: 12px;
+    top: 12px; }
+  .lastnews .item-news:before {
+    left: 8px;
+    top: 8px; }
+  .lastnews .item-news__title {
+    font-size: 1.6rem; }
+  .lastnews .item-news__text {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin-top: 1.6rem; } }
+
+@media (max-width: 470px) {
+  .lastnews .title,
+  .new-products .title {
+    font-size: 2.6rem; }
+  .lastnews .item-news__pic {
+    height: 95px;
+    width: 125px; }
+  .lastnews .item-news__title {
+    font-size: 1.5rem; }
+  .scene-wrapper {
+    display: none; }
+  .header-intro {
+    overflow: hidden; }
+    .header-intro .car {
+      margin-top: -8rem; }
+      .header-intro .car img,
+      .header-intro .car picture {
+        margin-right: -2rem; }
+    .header-intro .cifres {
+      margin-top: -3rem; }
+  .new-products .show-all-top {
+    display: none; }
+  .new-products .show-all-bottom {
+    display: flex;
+    justify-content: center;
+    width: 100px; } }
+
+@media (max-width: 380px) {
+  .header-intro .catalog__item {
+    margin-bottom: 3rem; }
+  .header-intro .catalog__link {
+    display: block; }
+  .header-intro .catalog__title {
+    padding-top: 1rem; }
+  .header-intro .car {
+    margin-top: -20rem; }
+    .header-intro .car img,
+    .header-intro .car picture {
+      margin-right: -7rem; }
+  .header-intro .cifres {
+    margin-top: -10rem; }
+  .new-products-arrows {
+    padding-right: 0; }
+  .lastnews .item-news__bg:after {
+    left: 8px;
+    top: 8px; }
+  .lastnews .item-news__bg:before {
+    left: 4px;
+    top: 4px; }
+  .lastnews .item-news__link {
+    align-items: center; }
+  .lastnews .item-news__text {
+    display: none; }
+  .lastnews .item-news__desc {
+    min-height: 0;
+    padding-left: 2.7rem;
+    padding-top: 1.5rem; }
+  .new-products #newproducts-carousel {
+    padding-bottom: 2.8rem; } }

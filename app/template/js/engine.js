@@ -109,28 +109,8 @@ $(document).ready(function(){
 			{
 				breakpoint: 450,
 				settings: {
-					slidesToShow: 1,
+					slidesToShow: 2,
 					slidesToScroll: 1,
-					centerMode: true,
-					centerPadding: '80px'
-				}
-			},
-			{
-				breakpoint: 400,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					centerMode: true,
-					centerPadding: '55px'
-				}
-			},
-			{
-				breakpoint: 350,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					centerMode: true,
-					centerPadding: '35px'
 				}
 			}
 		]
