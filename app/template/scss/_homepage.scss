@@ -454,6 +454,11 @@
 			margin-top: 1rem;
 		}
 
+		&__pic{
+			height: 19.5rem;
+			width: 26rem;
+		}
+
 		&__bg{
 			&:after,
 			&:before{
@@ -487,7 +492,6 @@
 					color: $color9;
 				}
 				&__pic{
-
 					img{
 						transform: scale(1.2);
 					}
@@ -522,7 +526,6 @@
 		overflow: hidden;
 		position: relative;
 		z-index: 2;
-
 		img{
 			transition: transform .3s;
 		}

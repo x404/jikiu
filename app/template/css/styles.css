@@ -4209,6 +4209,9 @@ em strong {
       padding-left: 3.6rem; }
     .lastnews .item-news__more {
       margin-top: 1rem; }
+    .lastnews .item-news__pic {
+      height: 19.5rem;
+      width: 26rem; }
     .lastnews .item-news__bg:after, .lastnews .item-news__bg:before {
       background-color: #fff; }
     .lastnews .item-news__bg:before {
@@ -4422,6 +4425,33 @@ em strong {
   .visual-newproducts div {
     position: relative;
     z-index: 2; }
+
+.pagination {
+  border-top: 1px solid #dbdbdd;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0 2rem; }
+  .pagination a, .pagination span {
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    display: flex;
+    font-family: "Futura Demi C";
+    margin: 0 .8rem;
+    height: 50px;
+    justify-content: center;
+    width: 50px; }
+  .pagination span,
+  .pagination .current {
+    background-color: #d82027;
+    color: #fff;
+    cursor: default; }
+  .pagination a {
+    border-color: #cad7ed; }
+    .pagination a:hover {
+      border-color: #d82027;
+      color: #d82027;
+      text-decoration: none; }
 
 /* =mobile-menu
 ---------------------------*/

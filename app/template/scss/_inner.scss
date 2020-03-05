@@ -51,3 +51,40 @@
 		z-index: 2;
 	}
 }
+
+
+
+.pagination{
+	border-top: 1px solid #dbdbdd;
+	display: flex;
+	justify-content: center;
+	padding: 3rem 0 2rem;
+	a, span{
+		align-items: center;
+		border-radius: 50%;
+		border: 2px solid transparent;
+		display: flex;
+		font-family: "Futura Demi C";
+
+		margin: 0 .8rem;
+		height: 50px;
+		justify-content: center;
+		width: 50px;
+	}
+
+	span,
+	.current{
+		background-color: $color7;
+		color: #fff;
+		cursor: default;
+	}
+
+	a{
+		border-color: #cad7ed;		
+		&:hover{
+			border-color: $color7;		
+			color: $color7;
+			text-decoration: none;
+		}
+	}
+}
