@@ -4200,7 +4200,8 @@ em strong {
   .lastnews .item-news {
     margin-bottom: 0; }
     .lastnews .item-news__link {
-      padding-right: 2rem; }
+      padding-right: 2rem;
+      align-items: center; }
       .lastnews .item-news__link:hover__title {
         color: #d82027; }
       .lastnews .item-news__link:hover__more {
@@ -4232,7 +4233,7 @@ em strong {
   margin-bottom: 9.5rem; }
   .item-news__link {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     text-decoration: none; }
     .item-news__link:hover {
       text-decoration: none; }
@@ -4303,6 +4304,9 @@ em strong {
       top: -16px;
       height: .9rem;
       width: 2rem; }
+  .news__list-main .item-news__pic {
+    height: 272px;
+    width: 363px; }
   .news__list-main .item-news__desc {
     padding-top: 2rem; }
 
@@ -4649,6 +4653,7 @@ em strong {
     left: 16px;
     top: 16px; }
   .news__list-main .item-news__pic {
+    height: 187px;
     width: 250px; }
   .news__list-main .item-news__title {
     font-size: 2.1rem; }
@@ -4907,6 +4912,7 @@ em strong {
   .news__list-main .item-news {
     margin-bottom: 5rem; }
     .news__list-main .item-news__pic {
+      height: 150px;
       width: 200px; }
     .news__list-main .item-news__inner:before {
       border-top-width: 3px;
@@ -4937,8 +4943,33 @@ em strong {
   .lastnews .item-news__title,
   .news__list-main .item-news__title {
     font-size: 1.5rem; }
+  .lastnews .item-news__bg:before,
+  .news__list-main .item-news__bg:before {
+    left: 4px;
+    top: 4px; }
+  .lastnews .item-news__bg:after,
+  .news__list-main .item-news__bg:after {
+    left: 8px;
+    top: 8px; }
+  .lastnews .item-news__more,
+  .news__list-main .item-news__more {
+    font-size: 1.6rem; }
   .news__list-main .item-news {
     margin-bottom: 3rem; }
+    .news__list-main .item-news__desc {
+      padding-top: 0; }
+    .news__list-main .item-news__text {
+      margin-top: .5rem; }
+    .news__list-main .item-news__inner:before {
+      border-top-width: 2px;
+      right: -5px;
+      top: -10px;
+      width: .8rem; }
+    .news__list-main .item-news__inner:after {
+      border-right-width: 3px;
+      height: 1.2rem;
+      right: -8px;
+      top: -10px; }
   .scene-wrapper {
     display: none; }
   .header-intro {
@@ -5010,4 +5041,7 @@ em strong {
   .main {
     padding-top: 4rem; }
     .main h1 {
-      font-size: 3.5rem; } }
+      font-size: 3.5rem; }
+  .pagination span,
+  .pagination a {
+    margin: 0 .4rem; } }

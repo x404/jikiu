@@ -426,6 +426,7 @@
 		margin-bottom: 0;
 		&__link{
 			padding-right: 2rem;
+			align-items: center;
 			&:hover{
 				&__title{
 					color: $color7;
@@ -481,8 +482,7 @@
 	margin-bottom: 9.5rem;
 	&__link{
 		display: flex;
-		align-items: center;
-		
+		align-items: flex-start;
 		text-decoration: none;
 		&:hover{
 			text-decoration: none;
@@ -594,6 +594,10 @@
 			}
 		}
 
+		&__pic{
+			height: 272px;
+			width: 363px;
+		}
 
 		&__desc{
 			padding-top: 2rem;
