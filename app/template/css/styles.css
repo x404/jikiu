@@ -3324,12 +3324,19 @@ a.text-dark:hover, a.text-dark:focus {
 .homepage .container {
   max-width: 98%; }
 
+.inner .container {
+  max-width: 98%; }
+
+@media (min-width: 1500px) {
+  .inner .container {
+    max-width: 1525px; } }
+
 @media (min-width: 1800px) {
-  .container {
+  .inner .container {
     max-width: 1780px; } }
 
 @media (min-width: 1900px) {
-  .container {
+  .inner .container {
     max-width: 1840px; } }
 
 .d-grid {
@@ -4252,7 +4259,9 @@ em strong {
     position: relative;
     z-index: 2; }
     .item-news__pic img {
-      transition: transform .3s; }
+      transition: transform .3s;
+      max-width: 100%;
+      height: auto; }
   .item-news__desc {
     padding-left: 5rem; }
   .item-news__title, .item-news__more {
@@ -4437,9 +4446,9 @@ em strong {
     border: 2px solid transparent;
     display: flex;
     font-family: "Futura Demi C";
-    margin: 0 .8rem;
     height: 50px;
     justify-content: center;
+    margin: 0 .8rem;
     width: 50px; }
   .pagination span,
   .pagination .current {
@@ -4603,7 +4612,9 @@ em strong {
     border-right-width: 800px;
     border-top-width: 500px; }
   .navmenu {
-    margin-top: 1.5rem; } }
+    margin-top: 1.5rem; }
+  .main h1 {
+    font-size: 4rem; } }
 
 @media (max-width: 1199px) {
   .navmenu {
@@ -4630,7 +4641,34 @@ em strong {
 @media (max-width: 1800px) {
   .header-intro .about__text {
     font-size: 4rem;
-    white-space: nowrap; } }
+    white-space: nowrap; }
+  .news__list-main .item-news__bg:before {
+    left: 8px;
+    top: 8px; }
+  .news__list-main .item-news__bg:after {
+    left: 16px;
+    top: 16px; }
+  .news__list-main .item-news__pic {
+    width: 250px; }
+  .news__list-main .item-news__title {
+    font-size: 2.1rem; }
+  .news__list-main .item-news__text {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    margin-top: 1.8rem; }
+  .news__list-main .item-news__more {
+    font-size: 2rem; }
+  .news__list-main .item-news__desc {
+    padding-left: 3rem; }
+  .news__list-main .item-news__inner:before {
+    border-top-width: 5px;
+    right: -12px; }
+  .news__list-main .item-news__inner:after {
+    border-right-width: 6px;
+    right: -17px; }
+  .visual-newproducts {
+    font-size: 4rem;
+    min-height: 18rem; } }
 
 @media (max-width: 1750px) {
   .header-intro {
@@ -4801,7 +4839,28 @@ em strong {
     margin-left: auto;
     margin-right: auto; }
   .new-products-arrows {
-    display: flex; } }
+    display: flex; }
+  .main {
+    padding-top: 6rem; }
+  .news__list-main .item-news {
+    margin-bottom: 7rem; }
+    .news__list-main .item-news__title {
+      font-size: 1.9rem; }
+    .news__list-main .item-news__text {
+      font-size: 1.7rem;
+      margin-top: 1.6rem; }
+    .news__list-main .item-news__more {
+      font-size: 1.7rem; }
+  .visual-newproducts {
+    font-size: 3rem;
+    min-height: 15rem;
+    margin-bottom: 6rem; }
+  .pagination {
+    padding: 2rem 0 1rem; }
+    .pagination a, .pagination span {
+      font-size: 1.6rem;
+      height: 40px;
+      width: 40px; } }
 
 @media (max-width: 650px) {
   .header-intro:before {
@@ -4830,28 +4889,56 @@ em strong {
     .lastnews .title,
     .new-products .title {
       font-size: 3rem; }
+  .lastnews .item-news__title,
+  .news__list-main .item-news__title {
+    font-size: 1.6rem; }
+  .lastnews .item-news__text,
+  .news__list-main .item-news__text {
+    font-size: 1.4rem; }
   .lastnews .item-news:after {
     left: 12px;
     top: 12px; }
   .lastnews .item-news:before {
     left: 8px;
     top: 8px; }
-  .lastnews .item-news__title {
-    font-size: 1.6rem; }
   .lastnews .item-news__text {
-    font-size: 1.4rem;
     line-height: 1.4;
-    margin-top: 1.6rem; } }
+    margin-top: 1.6rem; }
+  .news__list-main .item-news {
+    margin-bottom: 5rem; }
+    .news__list-main .item-news__pic {
+      width: 200px; }
+    .news__list-main .item-news__inner:before {
+      border-top-width: 3px;
+      right: -13px;
+      width: 1.3rem; }
+    .news__list-main .item-news__inner:after {
+      border-right-width: 4px;
+      height: 1.8rem; }
+  .visual-newproducts {
+    margin-bottom: 5rem;
+    min-height: 13rem;
+    font-size: 2.8rem; }
+  .pagination {
+    padding: 2rem 0 0; }
+    .pagination a, .pagination span {
+      font-size: 1.4rem;
+      height: 38px;
+      width: 38px; } }
 
 @media (max-width: 470px) {
   .lastnews .title,
   .new-products .title {
     font-size: 2.6rem; }
-  .lastnews .item-news__pic {
+  .lastnews .item-news__pic,
+  .news__list-main .item-news__pic {
     height: 95px;
     width: 125px; }
-  .lastnews .item-news__title {
+  .lastnews .item-news__title,
+  .news__list-main .item-news__title {
     font-size: 1.5rem; }
+  .news__list-main .item-news {
+    margin-bottom: 3rem; }
   .scene-wrapper {
     display: none; }
   .header-intro {
@@ -4886,19 +4973,41 @@ em strong {
     margin-top: -10rem; }
   .new-products-arrows {
     padding-right: 0; }
-  .lastnews .item-news__bg:after {
+  .lastnews .item-news__bg:after,
+  .news__list-main .item-news__bg:after {
     left: 8px;
     top: 8px; }
-  .lastnews .item-news__bg:before {
+  .lastnews .item-news__bg:before,
+  .news__list-main .item-news__bg:before {
     left: 4px;
     top: 4px; }
-  .lastnews .item-news__link {
+  .lastnews .item-news__link,
+  .news__list-main .item-news__link {
     align-items: center; }
-  .lastnews .item-news__text {
+  .lastnews .item-news__text,
+  .news__list-main .item-news__text {
     display: none; }
-  .lastnews .item-news__desc {
+  .lastnews .item-news__desc,
+  .news__list-main .item-news__desc {
     min-height: 0;
     padding-left: 2.7rem;
     padding-top: 1.5rem; }
+  .news__list-main .item-news__inner:before {
+    border-top-width: 3px;
+    right: -4px;
+    top: -10px;
+    width: .8rem; }
+  .news__list-main .item-news__inner:after {
+    border-right-width: 4px;
+    height: 1.2rem;
+    right: -8px;
+    top: -10px; }
+  .visual-newproducts {
+    font-size: 2.5rem;
+    min-height: 11rem; }
   .new-products #newproducts-carousel {
-    padding-bottom: 2.8rem; } }
+    padding-bottom: 2.8rem; }
+  .main {
+    padding-top: 4rem; }
+    .main h1 {
+      font-size: 3.5rem; } }

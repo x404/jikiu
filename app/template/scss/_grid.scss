@@ -11,22 +11,39 @@
 
 .homepage{
 	.container{
+		max-width: 98%;
+	}
+}
+
+
+.inner{
+	.container{
 		max-width: 98%;		
 	}
-}
+	@media (min-width: 1250px) {
+		.container {
+			// max-width: 1200px;
+		}
+	}
+	@media (min-width: 1500px) {
+		.container {
+			max-width: 1525px;
+		}
+	}
+	@media (min-width: 1800px) {
+		.container {
+			max-width: 1780px;
+		}
+	}
 
-@media (min-width: 1800px) {
-	.container {
-		max-width: 1780px;
+
+	@media (min-width: 1900px) {
+		.container {
+			max-width: 1840px;
+		}
 	}
 }
 
-
-@media (min-width: 1900px) {
-	.container {
-		max-width: 1840px;
-	}
-}
 
 
 

@@ -528,6 +528,8 @@
 		z-index: 2;
 		img{
 			transition: transform .3s;
+			max-width: 100%;
+			height: auto;
 		}
 	}
 	&__desc{
