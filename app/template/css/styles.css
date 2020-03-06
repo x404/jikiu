@@ -3664,7 +3664,7 @@ em strong {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .navmenu .nav a:after, .navmenu .nav a:before, .header-intro:before, .header-intro:after, .header-intro .intro:before, .header-intro .cifres__item:not(:last-child):after, .btn-back:before, .item-news__bg:after, .item-news__bg:before, .news__list-main .item-news__inner:after, .news__list-main .item-news__inner:before, .inner .content-single ul li:before, .inner-contacts .title:after, .tr-corner:before, .tr-corner:after {
+.before, .navmenu .nav a:after, .navmenu .nav a:before, .header-intro:before, .header-intro:after, .header-intro .intro:before, .header-intro .cifres__item:not(:last-child):after, .btn-back:before, .item-news__bg:after, .item-news__bg:before, .news__list-main .item-news__inner:after, .news__list-main .item-news__inner:before, .inner .content-single ul li:before, .inner-contacts .title:after, .tr-corner:before, .tr-corner:after, .item-product__pic:before, .item-product__pic:after {
   content: "";
   display: block;
   position: absolute; }
@@ -3795,6 +3795,9 @@ em strong {
 .webp .inner-contacts {
   background-image: url(../images/bg-1.webp); }
 
+.webp .inner-products {
+  background-image: url(../images/bg-2.webp); }
+
 .header-intro .intro:before {
   background-image: url(../images/radial-circle.png); }
   @media (max-width: 1399px) {
@@ -3821,6 +3824,9 @@ em strong {
 
 .inner-contacts {
   background-image: url(../images/bg-1.png); }
+
+.inner-products {
+  background-image: url(../images/bg-2.png); }
 
 .homepage .footer {
   background: #083989; }
@@ -4249,7 +4255,8 @@ em strong {
       background: url(../images/parallax/blue-3-420.png) no-repeat 50% 140px; } }
 
 .inner {
-  background: #f4f4f6; }
+  background: #f4f4f6;
+  padding-top: 1rem; }
   .inner .main {
     overflow: hidden; }
 
@@ -4800,10 +4807,9 @@ img.justifycenter, table.justifycenter {
   padding-bottom: 8rem; }
   .newproducts h1 {
     font-size: 4rem; }
-
-.newproducts__item {
-  margin: 5rem 0 2rem;
-  width: 20%; }
+  .newproducts__item {
+    margin: 5rem 0 2rem;
+    width: 20%; }
 
 .item-newproduct__link:hover {
   text-decoration: none; }
@@ -4814,8 +4820,8 @@ img.justifycenter, table.justifycenter {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 220px;
-  height: 220px; }
+  height: 220px;
+  width: 220px; }
   .item-newproduct__pic img {
     transition: box-shadow .3s;
     margin: auto; }
@@ -4884,6 +4890,70 @@ img.justifycenter, table.justifycenter {
       .newproducts__item__pic img {
         height: auto;
         max-width: 100%; } }
+
+.inner-products {
+  background-color: #083989;
+  background-position: right bottom; }
+  .inner-products h1 {
+    color: #fff; }
+  .inner-products .navmenu .nav a {
+    color: #fff; }
+  .inner-products .navmenu .nav li.active {
+    color: #d82027; }
+  .inner-products .langs a {
+    color: #fff; }
+  .inner-products .main {
+    padding-top: 7.5rem; }
+  .inner-products footer {
+    background: #14183d; }
+
+.products__list {
+  padding-bottom: 3rem; }
+
+.products__item {
+  margin: 2rem 0 6rem;
+  width: 33.3%; }
+
+.item-product {
+  position: relative; }
+  .item-product__link {
+    color: #fff;
+    font-family: "Futura Demi C";
+    font-size: 3rem; }
+    .item-product__link picture,
+    .item-product__link img {
+      margin-left: auto;
+      margin-right: auto;
+      transition: transform .3s; }
+    .item-product__link:hover {
+      color: #ff2830;
+      text-decoration: none; }
+      .item-product__link:hover picture,
+      .item-product__link:hover img {
+        transform: scale(1.05); }
+      .item-product__link:hover .item-product__pic:after {
+        opacity: 1; }
+  .item-product__title {
+    margin-top: 1rem; }
+  .item-product__pic {
+    display: flex;
+    align-items: center;
+    height: 323px; }
+    .item-product__pic:before, .item-product__pic:after {
+      background: url(../images/radial-circle-blue.png) left top;
+      width: 323px;
+      height: 323px;
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, 0); }
+    .item-product__pic:after {
+      background-position: left bottom;
+      opacity: 0;
+      transition: opacity .3s; }
+  .item-product picture,
+  .item-product img {
+    position: relative;
+    z-index: 10; }
 
 /* =mobile-menu
 ---------------------------*/

@@ -1,0 +1,107 @@
+.inner-products{
+	background-color: #083989;
+	background-position: right bottom;
+	h1{
+		color: #fff;
+	}
+
+	.navmenu .nav{
+		a{
+			color: #fff;
+		}
+		li.active{
+			color: $color7;
+		}
+	}
+
+	.langs a{
+		color: #fff
+	}
+
+	.main{
+		padding-top: 7.5rem;
+	}
+
+	footer{
+		background: #14183d;
+	}
+}
+
+.products__list{
+	padding-bottom: 3rem;
+}
+
+.products__item{
+	margin: 2rem 0 6rem;
+	width: 33.3%;
+}
+
+
+.item-product{
+	position: relative;
+
+	&__link{
+		color: #fff;
+		font-family: "Futura Demi C";
+		font-size: 3rem;
+
+		picture,
+		img{
+			margin-left: auto;
+			margin-right: auto;
+			transition: transform .3s;
+		}
+
+		&:hover{
+			color: #ff2830;
+			text-decoration: none;
+			picture,
+			img{
+				transform: scale(1.05);
+			}
+			.item-product{
+				&__pic{			
+					&:after{
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+
+	&__title{
+		margin-top: 1rem;
+	}
+
+	&__pic{
+		display: flex;
+		align-items: center;
+		$h: 323px;
+		height: $h;
+		&:before,
+		&:after
+		{
+			@extend .before;
+			background: url(../images/radial-circle-blue.png) left top;
+			width: 323px;
+			height: $h;
+			left: 50%;
+			top: 0;
+			transform: translate(-50%, 0 );
+		}
+		&:before{
+		}
+		&:after{
+			background-position: left bottom;
+			opacity: 0;
+			transition: opacity .3s;
+		}
+
+	}
+
+	picture,
+	img{
+		position: relative;
+		z-index: 10;
+	}
+}
