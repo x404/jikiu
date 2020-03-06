@@ -1,9 +1,50 @@
+.inner{
+	background: #f4f4f6;
+	.main{
+		overflow: hidden;
+	}
+}
 .main{
-	padding-top: 8rem;
-	h1{
-		font-size: 5rem;
+	// padding-top: 8rem;
+	padding-top: 3rem;
+}
+
+.content{
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6
+	{
 		font-family: "Futura BT";
 		line-height: 1.2;
+		margin: 3.5rem 0;
+	}
+
+
+	h1{
+		font-size: 5rem;
+	}
+
+	h2{
+		font-size: 4rem;
+	}
+
+	h3{
+		font-size: 3.5rem;
+	}
+
+	h4{
+		font-size: 3.2rem;
+	}
+
+	h5{
+		font-size: 3rem;
+	}
+
+	h6{
+		font-size: 2.8rem;
 	}
 
 	ol{
@@ -25,6 +66,114 @@
 			}
 		}
 	}
+
+	img{
+		margin: 2rem 0;
+	}
+
+	strong{
+		font-family: "Futura Demi C";
+		font-weight: 700;
+		color: #000;
+	}
+
+	a{
+		color: $color9;
+		text-decoration: underline;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+
+	.red{
+		color: #ff0000;
+	}
+
+	iframe{
+		height: 615px;
+		width: 100%;
+	}
+
+
+$color_1 : #2065d8;
+	// ul
+	ul{
+		margin: 1.5rem 0;
+		li{
+			color: #5c5c5c;
+			padding-left: 35px;
+			position: relative;
+			margin: 10px 0;
+			font-family: "Futura Book C";
+			&:before{
+				@extend .before;
+				background-color: $color_1;
+				border-radius: 5px;
+				width: 20px;
+				height: 5px;			
+				left: 0;
+				top: 12px;		
+			}				
+		}
+	}
+
+	// ol
+	ol{
+		color: #5c5c5c;
+		counter-reset:li;
+		margin-left: 0;
+		list-style: none;
+		& > li{
+			position: relative;
+			padding-left: 30px;
+			margin: 15px 0;
+			&:before{
+				font-family: "Futura Demi C";
+				color: $color_1;
+				$s: 3.1rem;
+				border-radius: $s;
+				content: counter(li) ")";; /* В качестве данных используем счетчик */
+				counter-increment:li; /* Увеличиваем значение счетчика на 1 */
+				/* Позиционируем и стилизируем цифры */
+				position:absolute;
+				text-align: center;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				top:0px;
+				left:0;
+				font-size: 20px;
+				font-weight: 900;
+			}
+
+			ol{
+				list-style-type: lower-alpha;
+				// counter-reset:li;
+				margin-left: 18px;
+				li{
+					padding-left: 10px;
+					// color: $color_1;
+					&:before{
+						display: none;
+					}
+				}
+			}
+
+		}
+	}
+
+
+	blockquote{
+		font-family: "Futura Demi C";
+		font-size: 2.5rem;
+		text-transform: uppercase;
+		line-height: 1.4;
+		color: #ffffff;
+		background-color: #d82027;
+		padding: 3.5rem 3.8rem;
+	}
+
+
 }
 
 .visual-newproducts{
@@ -84,6 +233,38 @@
 			border-color: $color7;		
 			color: $color7;
 			text-decoration: none;
+		}
+	}
+}
+
+.justifyleft {text-align:left !important; }
+.justifyright {text-align:right !important; }
+.justifycenter {text-align: center !important; }
+.justifyfull {text-align:justify !important; }
+
+img.justifyleft, table.justifyleft {float:left; margin-right:20px;margin-bottom:5px;margin-top: 15px;}
+img.justifyright, table.justifyright {float:right; margin-left:20px;margin-bottom:5px;}
+img.justifycenter, table.justifycenter { display: block; margin-left: auto; margin-right: auto;}
+
+
+
+.btn-back{
+	position: relative;
+	padding-left: 27px;
+	margin-left: 0;
+	text-decoration: none !important;
+	color: $color7 !important;
+	&:before{
+		@extend .before;
+		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAArklEQVQoU2NkQANXtLTYGH8yyGnfvXYHXQ6Zz4jMuS6nYczI9H87UEyUkeF/vfqDW024NMM1QjXtAioUAin+z8i4VfP+DR+8GtE1ARW/Y2L456z24PYFnBpvKaga/GNg2guzCaTp/z9GN81HN87i9eN1RY0tjP//e+NThCHHyNDKeF1B4yAwIOxI0vif4QsjOTb+Z2DsYCTbjyAnkhWqML+RFY9omklLOTDNxKZVAArNV2nHfKV4AAAAAElFTkSuQmCC) no-repeat left top;
+		height: 13px;
+		width: 14px;
+		left: 9px;
+		top: 10px;
+	}
+	&:hover{
+		&:before{
+			filter: grayscale(1) brightness(5);
 		}
 	}
 }

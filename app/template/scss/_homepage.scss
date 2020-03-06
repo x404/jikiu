@@ -319,6 +319,7 @@
 }
 
 
+.btn-red,
 .show-all{
 	display: inline-flex;
 	$color: $color7;
@@ -474,6 +475,45 @@
 				left: 16px;
 				top: 16px;
 			}
+		}
+	}
+
+
+	&-aside{
+		background: none;
+		margin-top: 0;
+		padding: 1rem 0;
+		.item-news{
+			margin: 2rem 0 3.7rem;
+			&__link{
+				display: block;
+				padding-right: 0;
+			}
+			&__title{
+				font-family: "Futura BT";
+				font-weight: 700;
+				font-size: 2rem;
+				color: #000;
+			}
+
+			&__desc{
+				color: $color13;
+				padding-left: 0;
+				font-family: "Futura Book C";
+				font-size: 1.6rem;
+				line-height: 1.67;
+				min-height: 0;
+				padding-top: .5rem;
+			}
+
+			&__more{
+				font-size: 1.7rem;
+				margin-top: 0;
+			}
+		}
+
+		.show-all{
+			margin-left: 0;
 		}
 	}
 }

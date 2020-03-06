@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -3642,7 +3643,7 @@ em strong {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .navmenu .nav a:after, .navmenu .nav a:before, .header-intro:before, .header-intro:after, .header-intro .intro:before, .header-intro .cifres__item:not(:last-child):after, .item-news__bg:after, .item-news__bg:before, .news__list-main .item-news__inner:after, .news__list-main .item-news__inner:before {
+.before, .navmenu .nav a:after, .navmenu .nav a:before, .header-intro:before, .header-intro:after, .header-intro .intro:before, .header-intro .cifres__item:not(:last-child):after, .item-news__bg:after, .item-news__bg:before, .news__list-main .item-news__inner:after, .news__list-main .item-news__inner:before, .content ul li:before, .btn-back:before {
   content: "";
   display: block;
   position: absolute; }
@@ -3713,9 +3714,6 @@ em strong {
     color: #fff;
     height: 3rem;
     border-radius: 3rem; }
-
-.main {
-  padding-bottom: 5rem; }
 
 .footer {
   background: #121212;
@@ -4121,6 +4119,7 @@ em strong {
       line-height: 1.2;
       margin-left: 1.2rem; }
 
+.btn-red,
 .show-all {
   display: inline-flex;
   align-items: center;
@@ -4133,6 +4132,7 @@ em strong {
   font-size: 1.5rem;
   padding: 0 1.2rem;
   height: 3.5rem; }
+  .btn-red:hover,
   .show-all:hover {
     background-color: #d82027;
     color: #fff;
@@ -4228,6 +4228,33 @@ em strong {
     .lastnews .item-news__bg:after {
       left: 16px;
       top: 16px; }
+  .lastnews-aside {
+    background: none;
+    margin-top: 0;
+    padding: 1rem 0; }
+    .lastnews-aside .item-news {
+      margin: 2rem 0 3.7rem; }
+      .lastnews-aside .item-news__link {
+        display: block;
+        padding-right: 0; }
+      .lastnews-aside .item-news__title {
+        font-family: "Futura BT";
+        font-weight: 700;
+        font-size: 2rem;
+        color: #000; }
+      .lastnews-aside .item-news__desc {
+        color: #747474;
+        padding-left: 0;
+        font-family: "Futura Book C";
+        font-size: 1.6rem;
+        line-height: 1.67;
+        min-height: 0;
+        padding-top: .5rem; }
+      .lastnews-aside .item-news__more {
+        font-size: 1.7rem;
+        margin-top: 0; }
+    .lastnews-aside .show-all {
+      margin-left: 0; }
 
 .item-news {
   margin-bottom: 9.5rem; }
@@ -4395,28 +4422,139 @@ em strong {
     .layer-5 {
       background: url(../images/parallax/blue-3-420.png) no-repeat 50% 140px; } }
 
+.inner {
+  background: #f4f4f6; }
+  .inner .main {
+    overflow: hidden; }
+
 .main {
-  padding-top: 8rem; }
-  .main h1 {
-    font-size: 5rem;
-    font-family: "Futura BT";
-    line-height: 1.2; }
-  .main ol {
-    counter-reset: li;
-    list-style: none; }
-    .main ol li {
-      margin: 1rem 0;
-      padding-left: 20px;
-      position: relative; }
-      .main ol li:before {
-        color: #f8f8f8;
-        content: counter(li, decimal) ".";
-        counter-increment: li;
-        font-size: 14px;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 20px; }
+  padding-top: 3rem; }
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  font-family: "Futura BT";
+  line-height: 1.2;
+  margin: 3.5rem 0; }
+
+.content h1 {
+  font-size: 5rem; }
+
+.content h2 {
+  font-size: 4rem; }
+
+.content h3 {
+  font-size: 3.5rem; }
+
+.content h4 {
+  font-size: 3.2rem; }
+
+.content h5 {
+  font-size: 3rem; }
+
+.content h6 {
+  font-size: 2.8rem; }
+
+.content ol {
+  counter-reset: li;
+  list-style: none; }
+  .content ol li {
+    margin: 1rem 0;
+    padding-left: 20px;
+    position: relative; }
+    .content ol li:before {
+      color: #f8f8f8;
+      content: counter(li, decimal) ".";
+      counter-increment: li;
+      font-size: 14px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 20px; }
+
+.content img {
+  margin: 2rem 0; }
+
+.content strong {
+  font-family: "Futura Demi C";
+  font-weight: 700;
+  color: #000; }
+
+.content a {
+  color: #2065d8;
+  text-decoration: underline; }
+  .content a:hover {
+    text-decoration: none; }
+
+.content .red {
+  color: #ff0000; }
+
+.content iframe {
+  height: 615px;
+  width: 100%; }
+
+.content ul {
+  margin: 1.5rem 0; }
+  .content ul li {
+    color: #5c5c5c;
+    padding-left: 35px;
+    position: relative;
+    margin: 10px 0;
+    font-family: "Futura Book C"; }
+    .content ul li:before {
+      background-color: #2065d8;
+      border-radius: 5px;
+      width: 20px;
+      height: 5px;
+      left: 0;
+      top: 12px; }
+
+.content ol {
+  color: #5c5c5c;
+  counter-reset: li;
+  margin-left: 0;
+  list-style: none; }
+  .content ol > li {
+    position: relative;
+    padding-left: 30px;
+    margin: 15px 0; }
+    .content ol > li:before {
+      font-family: "Futura Demi C";
+      color: #2065d8;
+      border-radius: 3.1rem;
+      content: counter(li) ")";
+      /* В качестве данных используем счетчик */
+      counter-increment: li;
+      /* Увеличиваем значение счетчика на 1 */
+      /* Позиционируем и стилизируем цифры */
+      position: absolute;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 0px;
+      left: 0;
+      font-size: 20px;
+      font-weight: 900; }
+    .content ol > li ol {
+      list-style-type: lower-alpha;
+      margin-left: 18px; }
+      .content ol > li ol li {
+        padding-left: 10px; }
+        .content ol > li ol li:before {
+          display: none; }
+
+.content blockquote {
+  font-family: "Futura Demi C";
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  line-height: 1.4;
+  color: #ffffff;
+  background-color: #d82027;
+  padding: 3.5rem 3.8rem; }
 
 .visual-newproducts {
   background-repeat: no-repeat;
@@ -4465,6 +4603,90 @@ em strong {
       border-color: #d82027;
       color: #d82027;
       text-decoration: none; }
+
+.justifyleft {
+  text-align: left !important; }
+
+.justifyright {
+  text-align: right !important; }
+
+.justifycenter {
+  text-align: center !important; }
+
+.justifyfull {
+  text-align: justify !important; }
+
+img.justifyleft, table.justifyleft {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  margin-top: 15px; }
+
+img.justifyright, table.justifyright {
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 5px; }
+
+img.justifycenter, table.justifycenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.btn-back {
+  position: relative;
+  padding-left: 27px;
+  margin-left: 0;
+  text-decoration: none !important;
+  color: #d82027 !important; }
+  .btn-back:before {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAArklEQVQoU2NkQANXtLTYGH8yyGnfvXYHXQ6Zz4jMuS6nYczI9H87UEyUkeF/vfqDW024NMM1QjXtAioUAin+z8i4VfP+DR+8GtE1ARW/Y2L456z24PYFnBpvKaga/GNg2guzCaTp/z9GN81HN87i9eN1RY0tjP//e+NThCHHyNDKeF1B4yAwIOxI0vif4QsjOTb+Z2DsYCTbjyAnkhWqML+RFY9omklLOTDNxKZVAArNV2nHfKV4AAAAAElFTkSuQmCC) no-repeat left top;
+    height: 13px;
+    width: 14px;
+    left: 9px;
+    top: 10px; }
+  .btn-back:hover:before {
+    filter: grayscale(1) brightness(5); }
+
+.aside {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10rem; }
+  .aside .title {
+    font-family: "Futura BT";
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-transform: uppercase; }
+  .aside .visual {
+    background: #1755bb url(../images/visual-products-2.jpg) no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Futura BT";
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin-top: 4.5rem;
+    margin-bottom: 3rem;
+    width: 320px; }
+    .aside .visual a {
+      color: #fff;
+      display: block;
+      height: 374px;
+      line-height: 1.29;
+      padding: 5rem 0 0 5rem;
+      text-decoration: underline;
+      width: 100%; }
+      .aside .visual a:hover {
+        text-decoration: none; }
+
+.inner .content-single {
+  padding: 3rem 0 5rem; }
+  .inner .content-single h1 {
+    margin: 4rem 0 3rem; }
+  .inner .content-single p {
+    color: #5c5c5c;
+    margin: 1.5rem 0; }
 
 /* =mobile-menu
 ---------------------------*/
