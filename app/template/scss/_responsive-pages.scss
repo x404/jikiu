@@ -129,11 +129,11 @@
 	}
 
 	.content{
-		h2{font-size: 3.8rem;}
-		h3{font-size: 3.2rem;}
-		h4{font-size: 3rem;}
-		h5{font-size: 2.8rem;}
-		h6{font-size: 2.6rem;}
+		h2{font-size: 3.8rem}
+		h3{font-size: 3.2rem}
+		h4{font-size: 3rem}
+		h5{font-size: 2.8rem}
+		h6{font-size: 2.6rem}
 	}
 
 	.aside{
@@ -224,6 +224,7 @@
 	}
 
 
+	// single page
 	.aside{
 		.title{
 			font-size: 3.2rem;
@@ -239,8 +240,6 @@
 	.lastnews .item-news{
 		margin-bottom: 5.5rem;
 	}
-
-
 }
 
 
@@ -315,17 +314,18 @@
 	}
 
 
+	// single page
 	.main{
 		h1{
 			font-size: 3.8rem;
 		}
 	}
 	.content{
-		h2{font-size: 3.6rem;}
-		h3{font-size: 3rem;}
-		h4{font-size: 2.8rem;}
-		h5{font-size: 2.6rem;}
-		h6{font-size: 2.5rem;}
+		h2{font-size: 3.6rem}
+		h3{font-size: 3rem}
+		h4{font-size: 2.8rem}
+		h5{font-size: 2.6rem}
+		h6{font-size: 2.5rem}
 	}
 }
 
@@ -417,20 +417,12 @@
 		display: none;
 	}
 
-
 	.content{
-		h2{font-size: 3.4rem;}
-		h3{font-size: 2.8rem;}
-		h4{font-size: 2.6rem;}
-		h5{font-size: 2.5rem;}
-		h6{font-size: 2.4rem;}
-	}
-
-	.inner .content-single{
-		padding-right: 15px;
-	}
-
-	.content{
+		h2{font-size: 3.4rem}
+		h3{font-size: 2.8rem}
+		h4{font-size: 2.6rem}
+		h5{font-size: 2.5rem}
+		h6{font-size: 2.4rem}
 		h1,
 		h2,
 		h3,
@@ -441,6 +433,9 @@
 		}
 	}
 
+	.inner .content-single{
+		padding-right: 15px;
+	}
 }
 
 
@@ -528,6 +523,7 @@
 	}
 
 
+	// single page
 	.inner{
 		.content{
 			&-single{ 
@@ -538,18 +534,17 @@
 					padding: 3rem 3.8rem;
 				}
 
-				h2{font-size: 3.2rem;}
-				h3{font-size: 2.6rem;}
-				h4{font-size: 2.5rem;}
-				h5{font-size: 2.4rem;}
-				h6{font-size: 2.3rem;}
+				h2{font-size: 3.2rem}
+				h3{font-size: 2.6rem}
+				h4{font-size: 2.5rem}
+				h5{font-size: 2.4rem}
+				h6{font-size: 2.3rem}
 				p{
-					font-size: 1.8rem;
+					font-size: 1.8rem
 				}
 			}
 		}
 	}
-
 }
 
 
@@ -737,7 +732,6 @@
 					top: -10px;
 				}
 			}
-
 		}
 	}
 
@@ -778,9 +772,9 @@
 					&.justifyright,
 					{
 						display: block;
+						float: none !important;
 						margin-left: auto;
 						margin-right: auto;
-						float: none !important;
 					}					
 				}
 			}
@@ -897,6 +891,8 @@
 			font-size: 3.2rem;
 		}
 	}
+
+	// single page
 	.inner{
 		.content{
 			&-single{ 
@@ -905,12 +901,11 @@
 					padding: 1.2rem 1.5rem;
 				}
 
-				h2{font-size: 3rem;}
-				h3{font-size: 2.5rem;}
-				h4{font-size: 2.4rem;}
-				h5{font-size: 2.3rem;}
-				h6{font-size: 2.2rem;}
-
+				h2{font-size: 3rem}
+				h3{font-size: 2.5rem}
+				h4{font-size: 2.4rem}
+				h5{font-size: 2.3rem}
+				h6{font-size: 2.2rem}
 			}
 		}
 	}

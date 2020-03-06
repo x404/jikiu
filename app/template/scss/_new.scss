@@ -3,9 +3,6 @@
 	display: flex;
 	flex-direction: column;
 	padding-top: 10rem;
-	&__inner{
-		// padding-left: 8.3%;
-	}
 	.title{
 		font-family: "Futura BT";
 		font-size: 4rem;
@@ -40,6 +37,7 @@
 		}
 	}
 }
+
 
 .inner{
 	.content{
@@ -200,7 +198,6 @@
 				max-width: 100%;
 				height: auto;
 			}
-
 		}
 	}
 }
