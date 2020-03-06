@@ -3664,7 +3664,7 @@ em strong {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .navmenu .nav a:after, .navmenu .nav a:before, .header-intro:before, .header-intro:after, .header-intro .intro:before, .header-intro .cifres__item:not(:last-child):after, .btn-back:before, .item-news__bg:after, .item-news__bg:before, .news__list-main .item-news__inner:after, .news__list-main .item-news__inner:before, .inner .content-single ul li:before, .inner-contacts .title:after {
+.before, .navmenu .nav a:after, .navmenu .nav a:before, .header-intro:before, .header-intro:after, .header-intro .intro:before, .header-intro .cifres__item:not(:last-child):after, .btn-back:before, .item-news__bg:after, .item-news__bg:before, .news__list-main .item-news__inner:after, .news__list-main .item-news__inner:before, .inner .content-single ul li:before, .inner-contacts .title:after, .tr-corner:before, .tr-corner:after {
   content: "";
   display: block;
   position: absolute; }
@@ -4794,6 +4794,58 @@ img.justifycenter, table.justifycenter {
       .inner-contacts .tel .icon,
       .inner-contacts .email .icon {
         display: none; } }
+
+.products {
+  margin-top: 8rem;
+  padding-bottom: 8rem; }
+  .products h1 {
+    font-size: 4rem; }
+
+.item-product {
+  margin: 5rem 0 2rem;
+  width: 20%; }
+  .item-product__link:hover {
+    text-decoration: none; }
+    .item-product__link:hover .item-product__pic img {
+      box-shadow: 0 0 15px rgba(0, 96, 255, 0.5); }
+  .item-product__pic {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 220px;
+    height: 220px; }
+    .item-product__pic img {
+      transition: box-shadow .3s;
+      margin: auto; }
+  .item-product__title {
+    font-family: "Futura Demi C";
+    font-size: 2.4rem;
+    margin-top: 2.2rem;
+    text-transform: uppercase; }
+  .item-product__cat {
+    color: #2065d8;
+    font-family: "Futura Demi C";
+    font-size: 1.5rem;
+    text-transform: uppercase; }
+
+.tr-corner {
+  position: relative; }
+  .tr-corner:before, .tr-corner:after {
+    border-color: #2065d8; }
+  .tr-corner:before {
+    border-top-style: solid;
+    border-top-width: 9px;
+    right: 0;
+    top: -10px;
+    height: .9rem;
+    width: 2rem; }
+  .tr-corner:after {
+    border-right-style: solid;
+    border-right-width: 11px;
+    right: -11px;
+    top: -10px;
+    height: 2.8rem;
+    width: 1rem; }
 
 /* =mobile-menu
 ---------------------------*/

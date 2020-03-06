@@ -1,0 +1,76 @@
+.products{
+	margin-top: 8rem;
+	padding-bottom: 8rem;
+	h1{
+		font-size: 4rem;
+	}
+}
+
+.item-product{
+	margin: 5rem 0 2rem;
+	width: 20%;
+	&__link{
+		&:hover{
+			text-decoration: none;
+			.item-product{
+				&__pic{
+					img{
+						box-shadow: 0 0 15px rgba(0, 96, 255, 0.5);						
+					}
+				}
+			}
+		}
+	}
+ 
+	&__pic{
+		img{
+			transition: box-shadow .3s;
+			margin: auto;
+		}
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+		width: 220px;
+		height: 220px;
+	}
+	&__title{
+		font-family: "Futura Demi C";
+		font-size: 2.4rem;
+		margin-top: 2.2rem;
+		text-transform: uppercase;
+	}
+
+	&__cat{
+		color: $color9;
+		font-family: "Futura Demi C";
+		font-size: 1.5rem;
+		text-transform: uppercase;
+	}
+
+}
+
+.tr-corner{
+	position: relative;
+	&:before,
+	&:after{
+		border-color: $color9;
+		@extend .before;
+	}
+	&:before{
+	    border-top-style: solid;
+	    border-top-width: 9px;
+	    right: 0;
+	    top: -10px;
+	    height: .9rem;
+	    width: 2rem;
+	}
+	
+	&:after{
+		border-right-style: solid;
+		border-right-width: 11px;
+		right: -11px;
+		top: -10px;
+		height: 2.8rem;
+		width: 1rem;
+	}
+}
