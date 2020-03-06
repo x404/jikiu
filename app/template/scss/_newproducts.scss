@@ -73,4 +73,64 @@
 		height: 2.8rem;
 		width: 1rem;
 	}
+
+	@media (max-width: 576px) {
+		&:before{
+			border-top-width: 5px;
+			right: -5px;
+		}
+		&:after{
+			border-right-width: 6px;
+		}
+	}
+
 }
+
+
+@media (max-width: 1600px) {
+	.item-product{
+		width: 25%;
+	}
+}
+
+
+@media (max-width: 1050px) {
+	.item-product{
+		width: 33.3%;
+	}
+}
+
+
+@media (max-width: 768px) {
+	.products{
+		margin-top: 0;
+	}
+	.item-product{
+		width: 50%;
+	}
+}
+
+
+@media (max-width: 576px) {
+	.products{
+		.show-all{
+			margin-left: 0;
+		}
+	}
+
+	.item-product{
+		width: 100%;
+		&__title{
+			font-size: 2rem;
+		}
+		&__pic{
+			height: 180px;
+			width: 180px;
+			img{
+				height: auto;
+				max-width: 100%;
+			}
+		}
+	}
+}
+
