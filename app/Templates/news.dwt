@@ -45,7 +45,7 @@
 								<source srcset="/template/images/logo480.webp" type="image/webp"  media="(max-width: 576px)">
 								<source srcset="/template/images/logo1200.webp" type="image/webp"  media="(max-width: 1400px)">
 								<source srcset="/template/images/logo.webp" type="image/webp">
-	
+
 								<source srcset="/template/images/logo480.png" type="image/png"  media="(max-width: 576px)">
 								<source srcset="/template/images/logo1200.png" type="image/png"  media="(max-width: 1400px)">
 								<img src="/template/images/logo.png" alt="" />
@@ -61,12 +61,14 @@
 						<nav id="navbar" class="mainnav">
 							<div class="mainnav__list">
 								<ul class="nav nav-tabs">
-									<li><a href="#" title="">Company</a></li>
-									<li class="active"><a href="#" title="">Products</a></li>
-									<li><a href="#" title="">Catalogue</a></li>
+								<!-- TemplateBeginEditable name="EditRegion5" -->
+									<li><a href="/company.html" title="">Company</a></li>
+									<li><a href="/products.html" title="">Products</a></li>
+									<li><a href="/catalog-1.html" title="">Catalogue</a></li>
 									<li class="active">News</li>
-									<li><a href="#" title="">New products</a></li>
-									<li><a href="#" title="">Contact Us</a></li>
+									<li><a href="/new-products.html" title="">New products</a></li>
+									<li><a href="/contacts.html" title="">Contact Us</a></li>
+								<!-- TemplateEndEditable -->
 								</ul>
 							</div>
 						</nav>	

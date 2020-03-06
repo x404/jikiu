@@ -4908,17 +4908,17 @@ img.justifycenter, table.justifycenter {
   margin-right: auto; }
 
 .btn-back {
-  position: relative;
-  padding-left: 27px;
+  color: #d82027 !important;
   margin-left: 0;
-  text-decoration: none !important;
-  color: #d82027 !important; }
+  padding-left: 27px;
+  position: relative;
+  text-decoration: none !important; }
   .btn-back:before {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAArklEQVQoU2NkQANXtLTYGH8yyGnfvXYHXQ6Zz4jMuS6nYczI9H87UEyUkeF/vfqDW024NMM1QjXtAioUAin+z8i4VfP+DR+8GtE1ARW/Y2L456z24PYFnBpvKaga/GNg2guzCaTp/z9GN81HN87i9eN1RY0tjP//e+NThCHHyNDKeF1B4yAwIOxI0vif4QsjOTb+Z2DsYCTbjyAnkhWqML+RFY9omklLOTDNxKZVAArNV2nHfKV4AAAAAElFTkSuQmCC) no-repeat left top;
     height: 13px;
-    width: 14px;
     left: 9px;
-    top: 10px; }
+    top: 10px;
+    width: 14px; }
   .btn-back:hover {
     color: #fff !important; }
     .btn-back:hover:before {
