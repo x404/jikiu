@@ -1,0 +1,17 @@
+.icon{
+	display: inline-block;
+}
+
+.icon-email{
+  @include sprite($icon-email);
+  margin-right: 2.2rem;
+  position: relative;
+  top: .3rem;
+}
+
+.icon-tel{
+  @include sprite($icon-tel);
+  margin-right: 2.2rem;
+  position: relative;
+  top: .3rem;
+}

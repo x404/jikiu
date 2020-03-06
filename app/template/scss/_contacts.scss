@@ -1,0 +1,51 @@
+.inner-contacts{
+	background-color: #083989;
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	height: 100%;	
+	color: #fff;
+	padding: 5rem 0;
+
+	.title{
+		color: #fff;
+		font-family: "Futura BT";
+		font-size: 8rem;
+		font-weight: 700;
+		line-height: 0.75;
+		margin-bottom: 6rem;
+		padding-bottom: 3.5rem;
+		position: relative;
+		&:after{
+			@extend .before;
+			background-color: #2065d8;
+			bottom: 0;
+			height: 5px;
+			left: 50%;
+			margin-left: -45px;
+			width: 89px;
+		}
+	}
+
+	.rmp{
+		color: $color7;
+		font-family: "Futura BT";
+		font-size: 6rem;
+		font-weight: 700;
+		line-height: 0.58;
+		margin-bottom: 3rem;
+	}
+
+	.tel,
+	.email{
+		font-family: "Futura Book C";
+		font-size: 4rem;
+		margin-top: 1.5rem;
+		a{
+			color: $color7;
+			text-decoration: underline;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+}

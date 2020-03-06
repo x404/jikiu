@@ -3527,6 +3527,27 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 */
+.icon {
+  display: inline-block; }
+
+.icon-email {
+  background-image: url(../images/sprite.png);
+  background-position: 0px 0px;
+  width: 37px;
+  height: 35px;
+  margin-right: 2.2rem;
+  position: relative;
+  top: .3rem; }
+
+.icon-tel {
+  background-image: url(../images/sprite.png);
+  background-position: -37px 0px;
+  width: 34px;
+  height: 34px;
+  margin-right: 2.2rem;
+  position: relative;
+  top: .3rem; }
+
 /*** reset ***********/
 html, body, ul, ol, li, dl, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, a, img, label {
   margin: 0;
@@ -3643,7 +3664,7 @@ em strong {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .navmenu .nav a:after, .navmenu .nav a:before, .header-intro:before, .header-intro:after, .header-intro .intro:before, .header-intro .cifres__item:not(:last-child):after, .btn-back:before, .item-news__bg:after, .item-news__bg:before, .news__list-main .item-news__inner:after, .news__list-main .item-news__inner:before, .inner .content-single ul li:before {
+.before, .navmenu .nav a:after, .navmenu .nav a:before, .header-intro:before, .header-intro:after, .header-intro .intro:before, .header-intro .cifres__item:not(:last-child):after, .btn-back:before, .item-news__bg:after, .item-news__bg:before, .news__list-main .item-news__inner:after, .news__list-main .item-news__inner:before, .inner .content-single ul li:before, .inner-contacts .title:after {
   content: "";
   display: block;
   position: absolute; }
@@ -3771,6 +3792,9 @@ em strong {
 .webp .visual-newproducts {
   background-image: url(../images/visual-products.webp); }
 
+.webp .inner-contacts {
+  background-image: url(../images/bg-1.webp); }
+
 .header-intro .intro:before {
   background-image: url(../images/radial-circle.png); }
   @media (max-width: 1399px) {
@@ -3794,6 +3818,9 @@ em strong {
 
 .header-intro .visual-newproducts {
   background-image: url(../images/visual-products.jpg); }
+
+.inner-contacts {
+  background-image: url(../images/bg-1.png); }
 
 .homepage .footer {
   background: #083989; }
@@ -4680,6 +4707,49 @@ img.justifycenter, table.justifycenter {
   .inner .content-single img {
     max-width: 100%;
     height: auto; }
+
+.inner-contacts {
+  background-color: #083989;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  height: 100%;
+  color: #fff;
+  padding: 5rem 0; }
+  .inner-contacts .title {
+    color: #fff;
+    font-family: "Futura BT";
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 0.75;
+    margin-bottom: 6rem;
+    padding-bottom: 3.5rem;
+    position: relative; }
+    .inner-contacts .title:after {
+      background-color: #2065d8;
+      bottom: 0;
+      height: 5px;
+      left: 50%;
+      margin-left: -45px;
+      width: 89px; }
+  .inner-contacts .rmp {
+    color: #d82027;
+    font-family: "Futura BT";
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 0.58;
+    margin-bottom: 3rem; }
+  .inner-contacts .tel,
+  .inner-contacts .email {
+    font-family: "Futura Book C";
+    font-size: 4rem;
+    margin-top: 1.5rem; }
+    .inner-contacts .tel a,
+    .inner-contacts .email a {
+      color: #d82027;
+      text-decoration: underline; }
+      .inner-contacts .tel a:hover,
+      .inner-contacts .email a:hover {
+        text-decoration: none; }
 
 /* =mobile-menu
 ---------------------------*/
