@@ -3643,7 +3643,7 @@ em strong {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .navmenu .nav a:after, .navmenu .nav a:before, .header-intro:before, .header-intro:after, .header-intro .intro:before, .header-intro .cifres__item:not(:last-child):after, .content ul li:before, .btn-back:before, .item-news__bg:after, .item-news__bg:before, .news__list-main .item-news__inner:after, .news__list-main .item-news__inner:before {
+.before, .navmenu .nav a:after, .navmenu .nav a:before, .header-intro:before, .header-intro:after, .header-intro .intro:before, .header-intro .cifres__item:not(:last-child):after, .btn-back:before, .item-news__bg:after, .item-news__bg:before, .news__list-main .item-news__inner:after, .news__list-main .item-news__inner:before, .inner .content-single ul li:before {
   content: "";
   display: block;
   position: absolute; }
@@ -4242,119 +4242,6 @@ em strong {
   line-height: 1.2;
   margin: 3.5rem 0; }
 
-.content h2 {
-  font-size: 4rem; }
-
-.content h3 {
-  font-size: 3.5rem; }
-
-.content h4 {
-  font-size: 3.2rem; }
-
-.content h5 {
-  font-size: 3rem; }
-
-.content h6 {
-  font-size: 2.8rem; }
-
-.content ol {
-  counter-reset: li;
-  list-style: none; }
-  .content ol li {
-    margin: 1rem 0;
-    padding-left: 20px;
-    position: relative; }
-    .content ol li:before {
-      color: #f8f8f8;
-      content: counter(li, decimal) ".";
-      counter-increment: li;
-      font-size: 14px;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 20px; }
-
-.content img {
-  margin: 2rem 0; }
-
-.content strong {
-  font-family: "Futura Demi C";
-  font-weight: 700;
-  color: #000; }
-
-.content a {
-  color: #2065d8;
-  text-decoration: underline; }
-  .content a:hover {
-    text-decoration: none; }
-
-.content .red {
-  color: #ff0000; }
-
-.content iframe {
-  height: 615px;
-  width: 100%; }
-
-.content ul {
-  margin: 1.5rem 0; }
-  .content ul li {
-    color: #5c5c5c;
-    padding-left: 35px;
-    position: relative;
-    margin: 10px 0;
-    font-family: "Futura Book C"; }
-    .content ul li:before {
-      background-color: #2065d8;
-      border-radius: 5px;
-      width: 20px;
-      height: 5px;
-      left: 0;
-      top: 12px; }
-
-.content ol {
-  color: #5c5c5c;
-  counter-reset: li;
-  margin-left: 0;
-  list-style: none; }
-  .content ol > li {
-    position: relative;
-    padding-left: 30px;
-    margin: 15px 0; }
-    .content ol > li:before {
-      font-family: "Futura Demi C";
-      color: #2065d8;
-      border-radius: 3.1rem;
-      content: counter(li) ")";
-      /* В качестве данных используем счетчик */
-      counter-increment: li;
-      /* Увеличиваем значение счетчика на 1 */
-      /* Позиционируем и стилизируем цифры */
-      position: absolute;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      top: 0px;
-      left: 0;
-      font-size: 20px;
-      font-weight: 900; }
-    .content ol > li ol {
-      list-style-type: lower-alpha;
-      margin-left: 18px; }
-      .content ol > li ol li {
-        padding-left: 10px; }
-        .content ol > li ol li:before {
-          display: none; }
-
-.content blockquote {
-  font-family: "Futura Demi C";
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  line-height: 1.4;
-  color: #ffffff;
-  background-color: #d82027;
-  padding: 3.5rem 3.8rem; }
-
 .visual-newproducts {
   background-repeat: no-repeat;
   background-size: cover;
@@ -4673,7 +4560,8 @@ img.justifycenter, table.justifycenter {
     font-size: 3.5rem;
     margin-top: 4.5rem;
     margin-bottom: 3rem;
-    width: 320px; }
+    width: 320px;
+    max-width: 100%; }
     .aside .visual a {
       color: #fff;
       display: block;
@@ -4692,6 +4580,106 @@ img.justifycenter, table.justifycenter {
   .inner .content-single p {
     color: #5c5c5c;
     margin: 1.5rem 0; }
+  .inner .content-single h2 {
+    font-size: 4rem; }
+  .inner .content-single h3 {
+    font-size: 3.5rem; }
+  .inner .content-single h4 {
+    font-size: 3.2rem; }
+  .inner .content-single h5 {
+    font-size: 3rem; }
+  .inner .content-single h6 {
+    font-size: 2.8rem; }
+  .inner .content-single ol {
+    counter-reset: li;
+    list-style: none; }
+    .inner .content-single ol li {
+      margin: 1rem 0;
+      padding-left: 20px;
+      position: relative; }
+      .inner .content-single ol li:before {
+        color: #f8f8f8;
+        content: counter(li, decimal) ".";
+        counter-increment: li;
+        font-size: 14px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 20px; }
+  .inner .content-single strong {
+    font-family: "Futura Demi C";
+    font-weight: 700;
+    color: #000; }
+  .inner .content-single a {
+    color: #2065d8;
+    text-decoration: underline; }
+    .inner .content-single a:hover {
+      text-decoration: none; }
+  .inner .content-single .red {
+    color: #ff0000; }
+  .inner .content-single iframe {
+    height: 615px;
+    width: 100%; }
+  .inner .content-single ul {
+    margin: 1.5rem 0; }
+    .inner .content-single ul li {
+      color: #5c5c5c;
+      padding-left: 35px;
+      position: relative;
+      margin: 10px 0;
+      font-family: "Futura Book C"; }
+      .inner .content-single ul li:before {
+        background-color: #2065d8;
+        border-radius: 5px;
+        width: 20px;
+        height: 5px;
+        left: 0;
+        top: 12px; }
+  .inner .content-single ol {
+    color: #5c5c5c;
+    counter-reset: li;
+    margin-left: 0;
+    list-style: none; }
+    .inner .content-single ol > li {
+      position: relative;
+      padding-left: 30px;
+      margin: 15px 0; }
+      .inner .content-single ol > li:before {
+        font-family: "Futura Demi C";
+        color: #2065d8;
+        border-radius: 3.1rem;
+        content: counter(li) ")";
+        /* В качестве данных используем счетчик */
+        counter-increment: li;
+        /* Увеличиваем значение счетчика на 1 */
+        /* Позиционируем и стилизируем цифры */
+        position: absolute;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0px;
+        left: 0;
+        font-size: 20px;
+        font-weight: 900; }
+      .inner .content-single ol > li ol {
+        list-style-type: lower-alpha;
+        margin-left: 18px; }
+        .inner .content-single ol > li ol li {
+          padding-left: 10px; }
+          .inner .content-single ol > li ol li:before {
+            display: none; }
+  .inner .content-single blockquote {
+    font-family: "Futura Demi C";
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    line-height: 1.4;
+    color: #ffffff;
+    background-color: #d82027;
+    padding: 3.5rem 3.8rem; }
+  .inner .content-single img {
+    max-width: 100%;
+    height: auto; }
 
 /* =mobile-menu
 ---------------------------*/
@@ -4931,7 +4919,25 @@ img.justifycenter, table.justifycenter {
   .header-intro .item__cifr-title {
     font-size: 2.8rem; }
   .header-intro .intro .about {
-    padding-bottom: 1.5rem; } }
+    padding-bottom: 1.5rem; }
+  .main h1 {
+    font-size: 4rem; }
+  .content h2 {
+    font-size: 3.8rem; }
+  .content h3 {
+    font-size: 3.2rem; }
+  .content h4 {
+    font-size: 3rem; }
+  .content h5 {
+    font-size: 2.8rem; }
+  .content h6 {
+    font-size: 2.6rem; }
+  .aside .title {
+    font-size: 3.6rem; }
+  .aside .visual {
+    font-size: 3.2rem; }
+    .aside .visual a {
+      padding-left: 2.5rem; } }
 
 @media (max-width: 1500px) {
   .header-intro .catalog__item {
@@ -4971,7 +4977,11 @@ img.justifycenter, table.justifycenter {
   .lastnews .title {
     font-size: 3.6rem; }
   .new-products .item-product__title {
-    font-size: 1.6rem; } }
+    font-size: 1.6rem; }
+  .aside .title {
+    font-size: 3.2rem; }
+  .aside .visual {
+    font-size: 2.8rem; } }
 
 @media (max-width: 1250px) {
   .lastnews .item-news {
@@ -5014,7 +5024,19 @@ img.justifycenter, table.justifycenter {
   .lastnews .item-news {
     margin-bottom: 3.5rem; }
     .lastnews .item-news__link {
-      align-items: start; } }
+      align-items: start; }
+  .main h1 {
+    font-size: 3.8rem; }
+  .content h2 {
+    font-size: 3.6rem; }
+  .content h3 {
+    font-size: 3rem; }
+  .content h4 {
+    font-size: 2.8rem; }
+  .content h5 {
+    font-size: 2.6rem; }
+  .content h6 {
+    font-size: 2.5rem; } }
 
 @media (max-width: 1050px) {
   .header-intro .intro {
@@ -5058,7 +5080,34 @@ img.justifycenter, table.justifycenter {
   .new-products .title {
     font-size: 3.2rem; }
   .dots {
-    display: none; } }
+    display: none; }
+  .content h2 {
+    font-size: 3.4rem; }
+  .content h3 {
+    font-size: 2.8rem; }
+  .content h4 {
+    font-size: 2.6rem; }
+  .content h5 {
+    font-size: 2.5rem; }
+  .content h6 {
+    font-size: 2.4rem; }
+  .inner .content-single {
+    padding-right: 15px; }
+  .content h1,
+  .content h2,
+  .content h3,
+  .content h4,
+  .content h5,
+  .content h6 {
+    margin: 2rem 0; } }
+
+@media (max-width: 768px) {
+  .aside .visual {
+    font-size: 2.5rem; }
+    .aside .visual a {
+      padding-left: 2rem; }
+  .inner .content-single iframe {
+    height: 300px; } }
 
 @media (max-width: 767px) {
   .header-intro .catalog__item {
@@ -5092,7 +5141,25 @@ img.justifycenter, table.justifycenter {
     .pagination a, .pagination span {
       font-size: 1.6rem;
       height: 40px;
-      width: 40px; } }
+      width: 40px; }
+  .inner .content-single {
+    padding-left: 15px;
+    padding-top: 0; }
+    .inner .content-single blockquote {
+      font-size: 2.2rem;
+      padding: 3rem 3.8rem; }
+    .inner .content-single h2 {
+      font-size: 3.2rem; }
+    .inner .content-single h3 {
+      font-size: 2.6rem; }
+    .inner .content-single h4 {
+      font-size: 2.5rem; }
+    .inner .content-single h5 {
+      font-size: 2.4rem; }
+    .inner .content-single h6 {
+      font-size: 2.3rem; }
+    .inner .content-single p {
+      font-size: 1.8rem; } }
 
 @media (max-width: 650px) {
   .header-intro:before {
@@ -5213,7 +5280,12 @@ img.justifycenter, table.justifycenter {
   .new-products .show-all-bottom {
     display: flex;
     justify-content: center;
-    width: 100px; } }
+    width: 100px; }
+  .inner .content-single img.justifyleft, .inner .content-single img.justifyright {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: none !important; } }
 
 @media (max-width: 380px) {
   .header-intro .catalog__item {
@@ -5271,4 +5343,19 @@ img.justifycenter, table.justifycenter {
       font-size: 3.5rem; }
   .pagination span,
   .pagination a {
-    margin: 0 .4rem; } }
+    margin: 0 .4rem; }
+  .main h1 {
+    font-size: 3.2rem; }
+  .inner .content-single blockquote {
+    font-size: 2rem;
+    padding: 1.2rem 1.5rem; }
+  .inner .content-single h2 {
+    font-size: 3rem; }
+  .inner .content-single h3 {
+    font-size: 2.5rem; }
+  .inner .content-single h4 {
+    font-size: 2.4rem; }
+  .inner .content-single h5 {
+    font-size: 2.3rem; }
+  .inner .content-single h6 {
+    font-size: 2.2rem; } }

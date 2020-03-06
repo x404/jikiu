@@ -121,6 +121,32 @@
 			padding-bottom: 1.5rem;
 		}
 	}
+
+	.main{
+		h1{
+			font-size: 4rem;
+		}
+	}
+
+	.content{
+		h2{font-size: 3.8rem;}
+		h3{font-size: 3.2rem;}
+		h4{font-size: 3rem;}
+		h5{font-size: 2.8rem;}
+		h6{font-size: 2.6rem;}
+	}
+
+	.aside{
+		.title{
+			font-size: 3.6rem;
+		}
+		.visual{
+			font-size: 3.2rem;
+			a{
+				padding-left: 2.5rem;
+			}
+		}
+	}
 }
 
 
@@ -196,6 +222,16 @@
 			font-size: 1.6rem;
 		}
 	}
+
+
+	.aside{
+		.title{
+			font-size: 3.2rem;
+		}
+		.visual{
+			font-size: 2.8rem;
+		}
+	}
 }
 
 
@@ -203,6 +239,8 @@
 	.lastnews .item-news{
 		margin-bottom: 5.5rem;
 	}
+
+
 }
 
 
@@ -274,6 +312,20 @@
 		&__link{
 			align-items: start
 		}
+	}
+
+
+	.main{
+		h1{
+			font-size: 3.8rem;
+		}
+	}
+	.content{
+		h2{font-size: 3.6rem;}
+		h3{font-size: 3rem;}
+		h4{font-size: 2.8rem;}
+		h5{font-size: 2.6rem;}
+		h6{font-size: 2.5rem;}
 	}
 }
 
@@ -364,6 +416,48 @@
 	.dots{
 		display: none;
 	}
+
+
+	.content{
+		h2{font-size: 3.4rem;}
+		h3{font-size: 2.8rem;}
+		h4{font-size: 2.6rem;}
+		h5{font-size: 2.5rem;}
+		h6{font-size: 2.4rem;}
+	}
+
+	.inner .content-single{
+		padding-right: 15px;
+	}
+
+	.content{
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6{
+			margin: 2rem 0;
+		}
+	}
+
+}
+
+
+@media (max-width: 768px){
+	.aside .visual{
+		font-size: 2.5rem;
+		a{
+			padding-left: 2rem;
+		}
+	}
+
+	.inner .content-single{
+		iframe{
+			height: 300px;
+		}
+	}
+
 }
 
 
@@ -432,6 +526,30 @@
 			width: 40px;
 		}
 	}
+
+
+	.inner{
+		.content{
+			&-single{ 
+				padding-left: 15px;
+				padding-top: 0;
+				blockquote{
+					font-size: 2.2rem;
+					padding: 3rem 3.8rem;
+				}
+
+				h2{font-size: 3.2rem;}
+				h3{font-size: 2.6rem;}
+				h4{font-size: 2.5rem;}
+				h5{font-size: 2.4rem;}
+				h6{font-size: 2.3rem;}
+				p{
+					font-size: 1.8rem;
+				}
+			}
+		}
+	}
+
 }
 
 
@@ -651,6 +769,23 @@
 			width: 100px;
 		}		
 	}
+
+	.inner{
+		.content{
+			&-single{ 
+				img{
+					&.justifyleft,
+					&.justifyright,
+					{
+						display: block;
+						margin-left: auto;
+						margin-right: auto;
+						float: none !important;
+					}					
+				}
+			}
+		}
+	}
 }
 
 
@@ -753,6 +888,30 @@
 		span,
 		a{
 			margin: 0 .4rem;
+		}
+	}
+
+
+	.main{
+		h1{
+			font-size: 3.2rem;
+		}
+	}
+	.inner{
+		.content{
+			&-single{ 
+				blockquote{
+					font-size: 2rem;
+					padding: 1.2rem 1.5rem;
+				}
+
+				h2{font-size: 3rem;}
+				h3{font-size: 2.5rem;}
+				h4{font-size: 2.4rem;}
+				h5{font-size: 2.3rem;}
+				h6{font-size: 2.2rem;}
+
+			}
 		}
 	}
 }
