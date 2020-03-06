@@ -4795,38 +4795,42 @@ img.justifycenter, table.justifycenter {
       .inner-contacts .email .icon {
         display: none; } }
 
-.products {
+.newproducts {
   margin-top: 8rem;
   padding-bottom: 8rem; }
-  .products h1 {
+  .newproducts h1 {
     font-size: 4rem; }
 
-.item-product {
+.newproducts__item {
   margin: 5rem 0 2rem;
   width: 20%; }
-  .item-product__link:hover {
-    text-decoration: none; }
-    .item-product__link:hover .item-product__pic img {
-      box-shadow: 0 0 15px rgba(0, 96, 255, 0.5); }
-  .item-product__pic {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 220px;
-    height: 220px; }
-    .item-product__pic img {
-      transition: box-shadow .3s;
-      margin: auto; }
-  .item-product__title {
-    font-family: "Futura Demi C";
-    font-size: 2.4rem;
-    margin-top: 2.2rem;
-    text-transform: uppercase; }
-  .item-product__cat {
-    color: #2065d8;
-    font-family: "Futura Demi C";
-    font-size: 1.5rem;
-    text-transform: uppercase; }
+
+.item-newproduct__link:hover {
+  text-decoration: none; }
+  .item-newproduct__link:hover .item-product__pic img {
+    box-shadow: 0 0 15px rgba(0, 96, 255, 0.5); }
+
+.item-newproduct__pic {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 220px;
+  height: 220px; }
+  .item-newproduct__pic img {
+    transition: box-shadow .3s;
+    margin: auto; }
+
+.item-newproduct__title {
+  font-family: "Futura Demi C";
+  font-size: 2.4rem;
+  margin-top: 2.2rem;
+  text-transform: uppercase; }
+
+.item-newproduct__cat {
+  color: #2065d8;
+  font-family: "Futura Demi C";
+  font-size: 1.5rem;
+  text-transform: uppercase; }
 
 .tr-corner {
   position: relative; }
@@ -4854,30 +4858,30 @@ img.justifycenter, table.justifycenter {
       border-right-width: 6px; } }
 
 @media (max-width: 1600px) {
-  .item-product {
+  .newproducts__item {
     width: 25%; } }
 
 @media (max-width: 1050px) {
-  .item-product {
+  .newproducts__item {
     width: 33.3%; } }
 
 @media (max-width: 768px) {
-  .products {
+  .newproducts {
     margin-top: 0; }
-  .item-product {
+  .newproducts__item {
     width: 50%; } }
 
 @media (max-width: 576px) {
-  .products .show-all {
+  .newproducts .show-all {
     margin-left: 0; }
-  .item-product {
+  .newproducts__item {
     width: 100%; }
-    .item-product__title {
+    .newproducts__item__title {
       font-size: 2rem; }
-    .item-product__pic {
+    .newproducts__item__pic {
       height: 180px;
       width: 180px; }
-      .item-product__pic img {
+      .newproducts__item__pic img {
         height: auto;
         max-width: 100%; } }
 
