@@ -11,9 +11,9 @@
 		font-family: "Futura BT";
 		font-size: 8rem;
 		font-weight: 700;
-		line-height: 0.75;
-		margin-bottom: 6rem;
-		padding-bottom: 3.5rem;
+		line-height: 1.5;
+		margin-bottom: 4rem;
+		padding-bottom: 2.5rem;
 		position: relative;
 		&:after{
 			@extend .before;
@@ -31,7 +31,7 @@
 		font-family: "Futura BT";
 		font-size: 6rem;
 		font-weight: 700;
-		line-height: 0.58;
+		line-height: 1.5;
 		margin-bottom: 3rem;
 	}
 
@@ -48,4 +48,81 @@
 			}
 		}
 	}
+
+	@media (max-width:1399px){
+		.title{
+			font-size: 6rem;
+		}
+		.rmp{
+			font-size: 4rem;
+		}
+
+		.tel,
+		.email{
+			font-size: 3.4rem;
+		}
+	}
+
+	@media (max-width: 991px){
+		.title{
+			font-size: 5.4rem;
+		}
+		.rmp{
+			font-size: 3.4rem;
+		}
+
+		.tel,
+		.email{
+			font-size: 3rem;
+		}
+	}
+
+	@media (max-width: 768px){
+		.title{
+			font-size: 5rem;
+		}
+		.rmp{
+			font-size: 3.2rem;
+		}
+
+		.tel,
+		.email{
+			font-size: 2.6rem;
+		}
+	}
+
+
+	@media (max-width: 550px){
+		.title{
+			font-size: 4.2rem;
+		}
+		.rmp{
+			font-size: 2.8rem;
+		}
+
+		.tel,
+		.email{
+			font-size: 2.2rem;
+		}
+	}
+
+
+	@media (max-width: 480px){
+		.title{
+			font-size: 3.8rem;
+		}
+		.rmp{
+			font-size: 2.4rem;
+			line-height: 1.2;
+		}
+
+		.tel,
+		.email{
+			font-size: 2rem;
+			.icon{
+				display: none;
+			}
+		}
+	}
+
 }

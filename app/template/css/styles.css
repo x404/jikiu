@@ -4720,9 +4720,9 @@ img.justifycenter, table.justifycenter {
     font-family: "Futura BT";
     font-size: 8rem;
     font-weight: 700;
-    line-height: 0.75;
-    margin-bottom: 6rem;
-    padding-bottom: 3.5rem;
+    line-height: 1.5;
+    margin-bottom: 4rem;
+    padding-bottom: 2.5rem;
     position: relative; }
     .inner-contacts .title:after {
       background-color: #2065d8;
@@ -4736,7 +4736,7 @@ img.justifycenter, table.justifycenter {
     font-family: "Futura BT";
     font-size: 6rem;
     font-weight: 700;
-    line-height: 0.58;
+    line-height: 1.5;
     margin-bottom: 3rem; }
   .inner-contacts .tel,
   .inner-contacts .email {
@@ -4750,6 +4750,50 @@ img.justifycenter, table.justifycenter {
       .inner-contacts .tel a:hover,
       .inner-contacts .email a:hover {
         text-decoration: none; }
+  @media (max-width: 1399px) {
+    .inner-contacts .title {
+      font-size: 6rem; }
+    .inner-contacts .rmp {
+      font-size: 4rem; }
+    .inner-contacts .tel,
+    .inner-contacts .email {
+      font-size: 3.4rem; } }
+  @media (max-width: 991px) {
+    .inner-contacts .title {
+      font-size: 5.4rem; }
+    .inner-contacts .rmp {
+      font-size: 3.4rem; }
+    .inner-contacts .tel,
+    .inner-contacts .email {
+      font-size: 3rem; } }
+  @media (max-width: 768px) {
+    .inner-contacts .title {
+      font-size: 5rem; }
+    .inner-contacts .rmp {
+      font-size: 3.2rem; }
+    .inner-contacts .tel,
+    .inner-contacts .email {
+      font-size: 2.6rem; } }
+  @media (max-width: 550px) {
+    .inner-contacts .title {
+      font-size: 4.2rem; }
+    .inner-contacts .rmp {
+      font-size: 2.8rem; }
+    .inner-contacts .tel,
+    .inner-contacts .email {
+      font-size: 2.2rem; } }
+  @media (max-width: 480px) {
+    .inner-contacts .title {
+      font-size: 3.8rem; }
+    .inner-contacts .rmp {
+      font-size: 2.4rem;
+      line-height: 1.2; }
+    .inner-contacts .tel,
+    .inner-contacts .email {
+      font-size: 2rem; }
+      .inner-contacts .tel .icon,
+      .inner-contacts .email .icon {
+        display: none; } }
 
 /* =mobile-menu
 ---------------------------*/
