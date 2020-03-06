@@ -93,13 +93,13 @@
 
 	<!-- =main -->
 	<div class="main">
+		<!-- TemplateBeginEditable name="EditRegion3" -->
 		<div class="container">
 			<div class="offset-xl-1 col-xl-10">
-				<!-- TemplateBeginEditable name="EditRegion3" -->
-
-				<!-- TemplateEndEditable -->
+			
 			</div>
-	  </div>
+		</div>
+		<!-- TemplateEndEditable -->
 	</div>
 	<!-- =/main -->
 
