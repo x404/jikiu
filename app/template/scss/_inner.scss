@@ -5,8 +5,12 @@
 	}
 }
 .main{
-	// padding-top: 8rem;
 	padding-top: 3rem;
+
+	h1{
+		font-family: "Futura BT";
+		font-size: 5rem;
+	}
 }
 
 .content{
@@ -23,9 +27,6 @@
 	}
 
 
-	h1{
-		font-size: 5rem;
-	}
 
 	h2{
 		font-size: 4rem;
@@ -263,6 +264,7 @@ img.justifycenter, table.justifycenter { display: block; margin-left: auto; marg
 		top: 10px;
 	}
 	&:hover{
+		color: #fff !important;
 		&:before{
 			filter: grayscale(1) brightness(5);
 		}

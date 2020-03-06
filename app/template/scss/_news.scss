@@ -1,0 +1,310 @@
+.news-wrapper{
+	padding: 5rem 0;
+}
+
+
+.new-products{
+	padding-top: 4.5rem;
+	.title{
+		font-size: 4rem;
+		font-family: "Futura BT";
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	#newproducts-carousel{
+		padding: 2rem 0 5rem ;
+	}
+	.item-product{
+		&__link{
+			text-align: center;
+			&:hover{
+				color: $color9;
+				text-decoration: none;
+			}
+		}
+		&__pic{
+			img{
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			text-align: center;
+		}
+		&__title{
+			font-family: "Futura BT";
+			font-size: 1.7rem;
+			font-weight: 700;
+			margin-top: 1.5rem;
+		}
+	}
+
+	&-arrows{
+		flex-grow: 1;
+		display: none;
+		justify-content: flex-end;
+		padding-right: 2rem;
+		.slick{
+			&-arrow{
+				background: #d82027 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAKCAYAAAB4zEQNAAAAVElEQVQoU2NkQAP///9PBgo5AXEKI7IcUCITyJ8GxP+BWBkuCZWYClWcwcjIOAssiU0CJM4IlNAE0tegRoF1wKzCL4nXWJgROB2EpgDTK0gK4IEAAMPNMlMZzEiBAAAAAElFTkSuQmCC) no-repeat 48% center;
+				border-radius: 50%;
+				border: none;
+				height: 30px;
+				margin: 0;
+				padding: 0;
+				width: 30px;
+			}
+			&-next{
+				transform: rotate(180deg);
+				margin-left: 5px;
+			}
+		}
+	}
+
+	.show-all-bottom{
+		display: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+/* =lastnews
+---------------------------*/
+.lastnews{
+	background: #083989;
+	margin-top: 27px;
+	padding: 4.3rem 0 6.5rem;
+	.title{
+		font-family: "Futura BT";
+		font-size: 5rem;
+		color: #fff;
+		text-transform: uppercase;
+	}
+
+	.news__list{
+		margin-top: 2.1rem;
+	}
+	.item-news{
+		margin-bottom: 0;
+		&__link{
+			padding-right: 2rem;
+			align-items: center;
+			&:hover{
+				&__title{
+					color: $color7;
+				}	
+				&__more{
+					color: #fff;
+				}
+			}
+		}
+		&__title{
+			color: #fff;
+			font-size: 1.7rem;
+			line-height: 1.47;
+		}
+		&__more,
+		&__text{
+			font-size: 1.6rem;
+		}
+
+		&__desc{
+			min-height: 150px;
+			padding-left: 3.6rem;
+		}
+
+		&__more{
+			margin-top: 1rem;
+		}
+
+		&__pic{
+			height: 19.5rem;
+			width: 26rem;
+		}
+
+		&__bg{
+			&:after,
+			&:before{
+				background-color: #fff;
+			}
+
+			&:before{
+				left: 8px;
+				top: 8px;
+			}
+			&:after{
+				left: 16px;
+				top: 16px;
+			}
+		}
+	}
+
+
+	&-aside{
+		background: none;
+		margin-top: 0;
+		padding: 1rem 0;
+		.item-news{
+			margin: 2rem 0 3.7rem;
+			&__link{
+				display: block;
+				padding-right: 0;
+			}
+			&__title{
+				font-family: "Futura BT";
+				font-weight: 700;
+				font-size: 2rem;
+				color: #000;
+			}
+
+			&__desc{
+				color: $color13;
+				padding-left: 0;
+				font-family: "Futura Book C";
+				font-size: 1.6rem;
+				line-height: 1.67;
+				min-height: 0;
+				padding-top: .5rem;
+			}
+
+			&__more{
+				font-size: 1.7rem;
+				margin-top: 0;
+			}
+		}
+
+		.show-all{
+			margin-left: 0;
+		}
+	}
+}
+
+.item-news{
+	margin-bottom: 9.5rem;
+	&__link{
+		display: flex;
+		align-items: flex-start;
+		text-decoration: none;
+		&:hover{
+			text-decoration: none;
+			.item-news{
+				&__more,
+				&__title{
+					color: $color9;
+				}
+				&__pic{
+					img{
+						transform: scale(1.2);
+					}
+				}
+			}
+		}
+	}
+
+	&__bg{
+		position: relative;
+		&:after,
+		&:before{
+			@extend .before;
+			background-color: #fff;
+			width: 100%;
+			height: 100%;
+			opacity: 0.1;
+		}
+
+		&:before{
+			left: 11px;
+			top: 11px;
+		}
+		&:after{
+			left: 22px;
+			top: 22px;
+		}			
+	}
+
+	&__pic{
+		flex-shrink: 0;
+		overflow: hidden;
+		position: relative;
+		z-index: 2;
+		img{
+			transition: transform .3s;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	&__desc{
+		padding-left: 5rem;
+	}
+	&__title,
+	&__more{
+		transition: color .3s;
+	}
+
+	&__title{
+		font-size: 2.4rem;		
+		font-family: "Futura BT";
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	&__text{
+		color: $color12;
+		font-size: 2rem;
+		line-height: 1.5;
+		margin-top: 2.2rem;
+	}
+	&__more{
+		color: red;
+		font-size: 2.2rem;
+		margin-top: .5rem;
+	}
+}
+
+.news__list-main{
+	margin-top: 3.6rem;
+	.item-news{
+		&__bg{
+			&:after,
+			&:before{
+				background-color: #2065d8;
+			}
+		}
+		&__inner{
+			position: relative;
+			&:after,
+			&:before{
+				@extend .before;
+				border-color: $color9;
+			}
+
+			&:after{
+				border-right-style: solid;
+				border-right-width: 11px;
+				right: -21px;
+				top: -16px;
+				height: 2.8rem;
+				width: 1rem;
+			}
+			&:before{
+				border-top-style: solid;
+				border-top-width: 9px;
+				right: -10px;
+				top: -16px;
+				height: .9rem;
+				width: 2rem;
+			}
+		}
+
+		&__pic{
+			height: 272px;
+			width: 363px;
+		}
+
+		&__desc{
+			padding-top: 2rem;
+		}
+	}
+}
+
+/* =/lastnews
+---------------------------*/
