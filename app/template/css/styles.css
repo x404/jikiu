@@ -5098,7 +5098,7 @@ img.justifycenter, table.justifycenter {
     @media (max-width: 991px) {
       .transmission-page .item-catparts {
         margin-bottom: 2.5rem;
-        width: calc(33.3% - 3rem); } }
+        width: calc(100% / 3 - 3rem); } }
 
 /* =/transmission-page
 ---------------------------*/
