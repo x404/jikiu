@@ -59,7 +59,7 @@ input::-moz-focus-inner{
 	flex-direction: column;
 	.main{
 		flex-grow: 1;
-	}		
+	}
 }
 
 @supports (display:grid) {
@@ -74,6 +74,17 @@ input::-moz-focus-inner{
 							 "main"
 							 "footer";
 		grid-template-rows: auto 1fr auto;
+	}
+
+	.main-parts-grid{
+		height: auto;
+		min-height: 100vh;
+		display: grid;
+		grid-template-areas: "header"
+							 "navmenu"
+							 "main"
+							 "footer";
+		grid-template-rows: auto auto 1fr auto;
 	}
 
 

@@ -3606,6 +3606,12 @@ input::-moz-focus-inner {
     display: grid;
     grid-template-areas: "header" "main" "footer";
     grid-template-rows: auto 1fr auto; }
+  .main-parts-grid {
+    height: auto;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: "header" "navmenu" "main" "footer";
+    grid-template-rows: auto auto 1fr auto; }
   @media (min-width: 992px) {
     .grid-lg-2 {
       grid-template-columns: repeat(2, 1fr);
@@ -3664,7 +3670,7 @@ em strong {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .navmenu .nav a:after, .navmenu .nav a:before, .header-intro:before, .header-intro:after, .header-intro .intro:before, .header-intro .cifres__item:not(:last-child):after, .btn-back:before, .item-news__bg:after, .item-news__bg:before, .news__list-main .item-news__inner:after, .news__list-main .item-news__inner:before, .inner .content-single ul li:before, .inner-contacts .title:after, .tr-corner:before, .tr-corner:after, .inner-products .item-product__pic:before, .inner-products .item-product__pic:after {
+.before, .navmenu .nav a:after, .navmenu .nav a:before, .header-intro:before, .header-intro:after, .header-intro .intro:before, .header-intro .cifres__item:not(:last-child):after, .btn-back:before, .item-news__bg:after, .item-news__bg:before, .news__list-main .item-news__inner:after, .news__list-main .item-news__inner:before, .inner .content-single ul li:before, .inner-contacts .title:after, .tr-corner:before, .tr-corner:after, .inner-products .item-product__pic:before, .inner-products .item-product__pic:after, .submenu .active:before {
   content: "";
   display: block;
   position: absolute; }
@@ -4990,6 +4996,39 @@ img.justifycenter, table.justifycenter {
   .inner-products .products__item {
     margin-bottom: 10rem;
     width: 100%; } }
+
+.submenu {
+  background: #083989;
+  border-bottom: 1rem solid #d82027;
+  color: #fff;
+  display: flex;
+  font-family: "Futura Demi C";
+  font-size: 2rem;
+  margin-top: 2.2rem; }
+  .submenu li:not(:last-child) {
+    margin-right: 10.5rem; }
+  .submenu .active {
+    position: relative; }
+    .submenu .active:before {
+      background-color: #d82027;
+      bottom: 0;
+      left: -5rem;
+      right: 0;
+      top: 0;
+      width: calc(100% + 10rem); }
+  .submenu a,
+  .submenu span {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 3rem 0; }
+  .submenu span {
+    cursor: default; }
+  .submenu a {
+    color: currentColor; }
+    .submenu a:hover {
+      color: #d82027;
+      text-decoration: none; }
 
 /* =mobile-menu
 ---------------------------*/

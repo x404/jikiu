@@ -1,0 +1,45 @@
+.submenu{
+	background: #083989;
+	border-bottom: 1rem solid $color7;
+	color: #fff;
+	display: flex;
+	font-family: "Futura Demi C";
+	font-size: 2rem;
+	margin-top: 2.2rem;
+
+	li:not(:last-child){
+		margin-right: 10.5rem;
+	}
+	.active{
+		position: relative;
+		&:before{
+			@extend .before;
+			background-color: $color7;
+			bottom: 0;
+			left: -5rem;
+			right: 0;
+			top: 0;
+			width: calc(100% + 10rem)
+		}
+	}
+
+	a,
+	span{
+		position: relative;
+		display: flex;
+		align-items: center;
+		padding: 3rem 0;
+	}
+
+	span{
+		cursor: default;
+	}
+
+	a{
+		color: currentColor;
+		&:hover{
+			color: $color7;
+			text-decoration: none;
+		}
+	}
+}
