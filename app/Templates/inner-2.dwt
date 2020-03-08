@@ -90,7 +90,6 @@
 		</div>
 	</header>
 	<!-- =/header -->
-	<!-- =/header-intro -->
 	
 	<!-- =submenu -->
 	<div class="submenu">
@@ -114,15 +113,15 @@
 	<!-- =/submenu -->
 
 	<!-- =main -->
+	<!-- TemplateBeginEditable name="EditRegion3" -->
 	<div class="main">
-		<!-- TemplateBeginEditable name="EditRegion3" -->
 		<div class="container">
 			<div class="offset-xl-1 col-xl-10">
 				<h1></h1>
 			</div>
 		</div>
-		<!-- TemplateEndEditable -->
 	</div>
+	<!-- TemplateEndEditable -->
 	<!-- =/main -->
 
 
