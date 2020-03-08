@@ -4121,6 +4121,27 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 */
+.icon {
+  display: inline-block; }
+
+.icon-email {
+  background-image: url(../images/sprite.png);
+  background-position: 0px 0px;
+  width: 37px;
+  height: 35px;
+  margin-right: 2.2rem;
+  position: relative;
+  top: .3rem; }
+
+.icon-tel {
+  background-image: url(../images/sprite.png);
+  background-position: -37px 0px;
+  width: 34px;
+  height: 34px;
+  margin-right: 2.2rem;
+  position: relative;
+  top: .3rem; }
+
 /*** reset ***********/
 html, body, ul, ol, li, dl, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, a, img, label {
   margin: 0;
@@ -4181,6 +4202,13 @@ input::-moz-focus-inner {
     grid-template-areas: "header" "main" "footer";
     grid-template-rows: auto 1fr auto; }
 
+  .main-parts-grid {
+    height: auto;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: "header" "navmenu" "main" "footer";
+    grid-template-rows: auto auto 1fr auto; }
+
   @media (min-width: 992px) {
     .grid-lg-2 {
       grid-template-columns: repeat(2, 1fr);
@@ -4240,7 +4268,7 @@ em strong {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .navmenu .nav a:after, .navmenu .nav a:before, .header-intro:before, .header-intro:after, .header-intro .intro:before, .header-intro .cifres__item:not(:last-child):after, .btn-back:before, .item-news__bg:after, .item-news__bg:before, .news__list-main .item-news__inner:after, .news__list-main .item-news__inner:before, .inner .content-single ul li:before {
+.before, .navmenu .nav a:after, .navmenu .nav a:before, .header-intro:before, .header-intro:after, .header-intro .intro:before, .header-intro .cifres__item:not(:last-child):after, .btn-back:before, .item-news__bg:after, .item-news__bg:before, .news__list-main .item-news__inner:after, .news__list-main .item-news__inner:before, .inner .content-single ul li:before, .inner-contacts .title:after, .tr-corner:before, .tr-corner:after, .inner-products .item-product__pic:before, .inner-products .item-product__pic:after, .submenu .active:before {
   content: "";
   display: block;
   position: absolute; }
@@ -4361,6 +4389,12 @@ em strong {
       background-image: url(../images/radial-circle-1200.webp); } }
 .webp .visual-newproducts {
   background-image: url(../images/visual-products.webp); }
+.webp .inner-contacts {
+  background-image: url(../images/bg-1.webp); }
+.webp .inner-products {
+  background-image: url(../images/bg-2.webp); }
+.webp .transmission-page {
+  background-image: url(../images/bg-3.webp); }
 
 .header-intro .intro:before {
   background-image: url(../images/radial-circle.png); }
@@ -4383,6 +4417,15 @@ em strong {
       background-image: url(../images/rubber-parts-768.png); } }
 .header-intro .visual-newproducts {
   background-image: url(../images/visual-products.jpg); }
+
+.inner-contacts {
+  background-image: url(../images/bg-1.png); }
+
+.inner-products {
+  background-image: url(../images/bg-2.png); }
+
+.transmission-page {
+  background-image: url(../images/bg-3.png); }
 
 .homepage .footer {
   background: #083989; }
@@ -4811,7 +4854,8 @@ em strong {
       background: url(../images/parallax/blue-3-420.png) no-repeat 50% 140px; } }
 
 .inner {
-  background: #f4f4f6; }
+  background: #f4f4f6;
+  padding-top: 1rem; }
   .inner .main {
     overflow: hidden; }
 
@@ -5269,6 +5313,362 @@ img.justifycenter, table.justifycenter {
   .inner .content-single img {
     max-width: 100%;
     height: auto; }
+
+.inner-contacts {
+  background-color: #083989;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  height: 100%;
+  color: #fff;
+  padding: 5rem 0; }
+  .inner-contacts .title {
+    color: #fff;
+    font-family: "Futura BT";
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 4rem;
+    padding-bottom: 2.5rem;
+    position: relative; }
+    .inner-contacts .title:after {
+      background-color: #2065d8;
+      bottom: 0;
+      height: 5px;
+      left: 50%;
+      margin-left: -45px;
+      width: 89px; }
+  .inner-contacts .rmp {
+    color: #d82027;
+    font-family: "Futura BT";
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 3rem; }
+  .inner-contacts .tel,
+  .inner-contacts .email {
+    font-family: "Futura Book C";
+    font-size: 4rem;
+    margin-top: 1.5rem; }
+    .inner-contacts .tel a,
+    .inner-contacts .email a {
+      color: #d82027;
+      text-decoration: underline; }
+      .inner-contacts .tel a:hover,
+      .inner-contacts .email a:hover {
+        text-decoration: none; }
+  @media (max-width: 1399px) {
+    .inner-contacts .title {
+      font-size: 6rem; }
+    .inner-contacts .rmp {
+      font-size: 4rem; }
+    .inner-contacts .tel,
+    .inner-contacts .email {
+      font-size: 3.4rem; } }
+  @media (max-width: 991px) {
+    .inner-contacts .title {
+      font-size: 5.4rem; }
+    .inner-contacts .rmp {
+      font-size: 3.4rem; }
+    .inner-contacts .tel,
+    .inner-contacts .email {
+      font-size: 3rem; } }
+  @media (max-width: 768px) {
+    .inner-contacts .title {
+      font-size: 5rem; }
+    .inner-contacts .rmp {
+      font-size: 3.2rem; }
+    .inner-contacts .tel,
+    .inner-contacts .email {
+      font-size: 2.6rem; } }
+  @media (max-width: 550px) {
+    .inner-contacts .title {
+      font-size: 4.2rem; }
+    .inner-contacts .rmp {
+      font-size: 2.8rem; }
+    .inner-contacts .tel,
+    .inner-contacts .email {
+      font-size: 2.2rem; } }
+  @media (max-width: 480px) {
+    .inner-contacts .title {
+      font-size: 3.8rem; }
+    .inner-contacts .rmp {
+      font-size: 2.4rem;
+      line-height: 1.2; }
+    .inner-contacts .tel,
+    .inner-contacts .email {
+      font-size: 2rem; }
+      .inner-contacts .tel .icon,
+      .inner-contacts .email .icon {
+        display: none; } }
+
+.newproducts {
+  margin-top: 8rem;
+  padding-bottom: 8rem; }
+  .newproducts h1 {
+    font-size: 4rem; }
+  .newproducts__item {
+    margin: 5rem 0 2rem;
+    width: 20%; }
+
+.item-newproduct__link:hover {
+  text-decoration: none; }
+  .item-newproduct__link:hover .item-product__pic img {
+    box-shadow: 0 0 15px rgba(0, 96, 255, 0.5); }
+.item-newproduct__pic {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  height: 220px;
+  width: 220px; }
+  .item-newproduct__pic img {
+    transition: box-shadow .3s;
+    margin: auto; }
+.item-newproduct__title {
+  font-family: "Futura Demi C";
+  font-size: 2.4rem;
+  margin-top: 2.2rem;
+  text-transform: uppercase; }
+.item-newproduct__cat {
+  color: #2065d8;
+  font-family: "Futura Demi C";
+  font-size: 1.5rem;
+  text-transform: uppercase; }
+
+.tr-corner {
+  position: relative; }
+  .tr-corner:before, .tr-corner:after {
+    border-color: #2065d8; }
+  .tr-corner:before {
+    border-top-style: solid;
+    border-top-width: 9px;
+    right: 0;
+    top: -10px;
+    height: .9rem;
+    width: 2rem; }
+  .tr-corner:after {
+    border-right-style: solid;
+    border-right-width: 11px;
+    right: -11px;
+    top: -10px;
+    height: 2.8rem;
+    width: 1rem; }
+  @media (max-width: 576px) {
+    .tr-corner:before {
+      border-top-width: 5px;
+      right: -5px; }
+    .tr-corner:after {
+      border-right-width: 6px; } }
+
+@media (max-width: 1600px) {
+  .newproducts__item {
+    width: 25%; } }
+@media (max-width: 1050px) {
+  .newproducts__item {
+    width: 33.3%; } }
+@media (max-width: 768px) {
+  .newproducts {
+    margin-top: 0; }
+
+  .newproducts__item {
+    width: 50%; } }
+@media (max-width: 576px) {
+  .newproducts .show-all {
+    margin-left: 0; }
+
+  .newproducts__item {
+    width: 100%; }
+    .newproducts__item__title {
+      font-size: 2rem; }
+    .newproducts__item__pic {
+      height: 180px;
+      width: 180px; }
+      .newproducts__item__pic img {
+        height: auto;
+        max-width: 100%; } }
+.inner-products {
+  background-color: #083989;
+  background-position: right bottom;
+  background-size: cover; }
+  .inner-products h1 {
+    color: #fff; }
+  .inner-products .navmenu .nav a {
+    color: #fff; }
+  .inner-products .navmenu .nav li.active {
+    color: #d82027; }
+  .inner-products .langs a {
+    color: #fff; }
+  .inner-products .main {
+    padding-top: 7.5rem; }
+  .inner-products footer {
+    background: #14183d; }
+  .inner-products .navbar-toggle {
+    color: #fff; }
+  .inner-products .products__list {
+    padding-bottom: 3rem; }
+  .inner-products .products__item {
+    margin: 2rem 0 6rem;
+    width: 33.3%; }
+  .inner-products .item-product {
+    position: relative; }
+    .inner-products .item-product__link {
+      color: #fff;
+      font-family: "Futura Demi C";
+      font-size: 3rem; }
+      .inner-products .item-product__link picture,
+      .inner-products .item-product__link img {
+        margin-left: auto;
+        margin-right: auto;
+        transition: transform .3s;
+        max-width: 100%;
+        height: auto; }
+      .inner-products .item-product__link:hover {
+        color: #ff2830;
+        text-decoration: none; }
+        .inner-products .item-product__link:hover picture,
+        .inner-products .item-product__link:hover img {
+          transform: scale(1.05); }
+        .inner-products .item-product__link:hover .item-product__pic:after {
+          opacity: 1; }
+    .inner-products .item-product__title {
+      margin-top: 1rem; }
+    .inner-products .item-product__pic {
+      display: flex;
+      align-items: center;
+      height: 323px; }
+      .inner-products .item-product__pic:before, .inner-products .item-product__pic:after {
+        background: url(../images/radial-circle-blue.png) left top;
+        width: 323px;
+        height: 323px;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, 0); }
+      .inner-products .item-product__pic:after {
+        background-position: left bottom;
+        opacity: 0;
+        transition: opacity .3s; }
+    .inner-products .item-product picture,
+    .inner-products .item-product img {
+      position: relative;
+      z-index: 10; }
+
+@media (max-width: 1250px) {
+  .inner-products .item-product__link {
+    font-size: 2.6rem; } }
+@media (max-width: 1050px) {
+  .inner-products .products__item {
+    width: 50%; } }
+@media (max-width: 768px) {
+  .inner-products .products__item {
+    width: 50%; }
+  .inner-products .item-product__pic {
+    height: 250px; }
+    .inner-products .item-product__pic:before, .inner-products .item-product__pic:after {
+      background-size: cover;
+      height: 250px;
+      width: 250px; }
+  .inner-products .item-product__link {
+    font-size: 2.2rem; } }
+@media (max-width: 600px) {
+  .inner-products .item-product__pic {
+    height: 200px; }
+    .inner-products .item-product__pic:before, .inner-products .item-product__pic:after {
+      height: 200px;
+      width: 200px; } }
+@media (max-width: 576px) {
+  .inner-products .inner-products .main {
+    padding-top: 4rem; }
+  .inner-products .products__item {
+    margin-bottom: 10rem;
+    width: 100%; } }
+/* =submenu
+---------------------------*/
+.submenu {
+  background: #083989;
+  border-bottom: 1rem solid #d82027;
+  color: #fff;
+  display: flex;
+  font-family: "Futura Demi C";
+  font-size: 2rem;
+  margin-top: 2.2rem; }
+  .submenu li:not(:last-child) {
+    margin-right: 10.5rem; }
+  .submenu .active {
+    position: relative; }
+    .submenu .active:before {
+      background-color: #d82027;
+      bottom: 0;
+      left: -5rem;
+      right: 0;
+      top: 0;
+      width: calc(100% + 10rem); }
+  .submenu a,
+  .submenu span {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 2.6rem 0; }
+  .submenu span {
+    cursor: default; }
+  .submenu a {
+    color: currentColor; }
+    .submenu a:hover {
+      color: #d82027;
+      text-decoration: none; }
+
+/* =/submenu
+---------------------------*/
+.inner-parts h1 {
+  color: #d82027;
+  font-family: "Futura BT";
+  font-weight: 700;
+  text-transform: uppercase; }
+
+/* =transmission-page
+---------------------------*/
+.transmission-page {
+  background-color: #f0f0f0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  padding-top: 5rem; }
+  .transmission-page .mainpic {
+    display: block;
+    padding-top: 3.5rem; }
+  .transmission-page .catparts {
+    margin-top: 3rem; }
+
+/* =/transmission-page
+---------------------------*/
+.item-catparts__link {
+  display: block;
+  text-align: center;
+  width: 16rem; }
+  .item-catparts__link:hover {
+    text-decoration: none; }
+    .item-catparts__link:hover .item-catparts__title {
+      color: #2065d8; }
+      .item-catparts__link:hover .item-catparts__title span {
+        color: #2065d8; }
+    .item-catparts__link:hover img {
+      transform: scale(1.1); }
+.item-catparts picture,
+.item-catparts img {
+  transition: transform .3s; }
+.item-catparts__pic {
+  background: url(../images/radial-circle-middle.png) no-repeat;
+  background-position: center 15px;
+  display: flex;
+  align-items: center;
+  min-height: 185px;
+  padding-top: 1rem; }
+.item-catparts__title {
+  font-family: "Futura Demi C";
+  font-size: 2rem;
+  color: #383838;
+  line-height: 1;
+  padding-top: 1rem; }
+  .item-catparts__title span {
+    color: #d82027; }
 
 /* =mobile-menu
 ---------------------------*/

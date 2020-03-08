@@ -1,3 +1,5 @@
+/* =submenu
+---------------------------*/
 .submenu{
 	background: #083989;
 	border-bottom: 1rem solid $color7;
@@ -28,7 +30,7 @@
 		position: relative;
 		display: flex;
 		align-items: center;
-		padding: 3rem 0;
+		padding: 2.6rem 0;
 	}
 
 	span{
@@ -40,6 +42,86 @@
 		&:hover{
 			color: $color7;
 			text-decoration: none;
+		}
+	}
+}
+/* =/submenu
+---------------------------*/
+
+.inner-parts{
+	h1{
+		color: $color7;
+		font-family: "Futura BT";
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+}
+
+/* =transmission-page
+---------------------------*/
+.transmission-page{
+	background-color: #f0f0f0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	padding-top: 5rem;
+	.mainpic{
+		display: block;
+		padding-top: 3.5rem;
+	}
+
+	.catparts{
+		margin-top: 3rem;
+	}
+}
+/* =/transmission-page
+---------------------------*/
+
+.item-catparts{
+	&__link{
+		display: block;
+		text-align: center;
+		width: 16rem;
+		&:hover{
+			text-decoration: none;
+			.item-catparts{				
+				&__title
+				{
+					color: $color9;
+					span{
+						color: $color9;
+					}
+				}
+			}
+
+			img{
+				transform: scale(1.1);
+			}
+		}
+	}
+
+	picture,
+	img{
+		transition: transform .3s;
+	}
+
+	&__pic{
+		background: url(../images/radial-circle-middle.png) no-repeat ;
+		background-position: center 15px;
+		display: flex;
+		align-items: center;
+		min-height: 185px;
+		padding-top: 1rem;
+	}
+
+	&__title{
+		font-family: "Futura Demi C";
+		font-size: 2rem;
+		color: #383838;
+		line-height: 1;
+		padding-top: 1rem;
+		span{
+			color: $color7;
 		}
 	}
 }

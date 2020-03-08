@@ -3804,6 +3804,9 @@ em strong {
 .webp .inner-products {
   background-image: url(../images/bg-2.webp); }
 
+.webp .transmission-page {
+  background-image: url(../images/bg-3.webp); }
+
 .header-intro .intro:before {
   background-image: url(../images/radial-circle.png); }
   @media (max-width: 1399px) {
@@ -3833,6 +3836,9 @@ em strong {
 
 .inner-products {
   background-image: url(../images/bg-2.png); }
+
+.transmission-page {
+  background-image: url(../images/bg-3.png); }
 
 .homepage .footer {
   background: #083989; }
@@ -4997,6 +5003,8 @@ img.justifycenter, table.justifycenter {
     margin-bottom: 10rem;
     width: 100%; } }
 
+/* =submenu
+---------------------------*/
 .submenu {
   background: #083989;
   border-bottom: 1rem solid #d82027;
@@ -5021,7 +5029,7 @@ img.justifycenter, table.justifycenter {
     position: relative;
     display: flex;
     align-items: center;
-    padding: 3rem 0; }
+    padding: 2.6rem 0; }
   .submenu span {
     cursor: default; }
   .submenu a {
@@ -5029,6 +5037,64 @@ img.justifycenter, table.justifycenter {
     .submenu a:hover {
       color: #d82027;
       text-decoration: none; }
+
+/* =/submenu
+---------------------------*/
+.inner-parts h1 {
+  color: #d82027;
+  font-family: "Futura BT";
+  font-weight: 700;
+  text-transform: uppercase; }
+
+/* =transmission-page
+---------------------------*/
+.transmission-page {
+  background-color: #f0f0f0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  padding-top: 5rem; }
+  .transmission-page .mainpic {
+    display: block;
+    padding-top: 3.5rem; }
+  .transmission-page .catparts {
+    margin-top: 3rem; }
+
+/* =/transmission-page
+---------------------------*/
+.item-catparts__link {
+  display: block;
+  text-align: center;
+  width: 16rem; }
+  .item-catparts__link:hover {
+    text-decoration: none; }
+    .item-catparts__link:hover .item-catparts__title {
+      color: #2065d8; }
+      .item-catparts__link:hover .item-catparts__title span {
+        color: #2065d8; }
+    .item-catparts__link:hover img {
+      transform: scale(1.1); }
+
+.item-catparts picture,
+.item-catparts img {
+  transition: transform .3s; }
+
+.item-catparts__pic {
+  background: url(../images/radial-circle-middle.png) no-repeat;
+  background-position: center 15px;
+  display: flex;
+  align-items: center;
+  min-height: 185px;
+  padding-top: 1rem; }
+
+.item-catparts__title {
+  font-family: "Futura Demi C";
+  font-size: 2rem;
+  color: #383838;
+  line-height: 1;
+  padding-top: 1rem; }
+  .item-catparts__title span {
+    color: #d82027; }
 
 /* =mobile-menu
 ---------------------------*/
