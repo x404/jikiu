@@ -109,6 +109,24 @@
 		font-weight: 700;
 		text-transform: uppercase;
 	}
+
+	.ecp-page{
+		background: #fff;
+		padding-bottom: 4rem;
+		h2{
+			font-family: "Futura Demi C";
+			font-size: 4rem;
+			line-height: 1.2;
+			margin-bottom: 1rem;
+		}
+		p{
+			color: #747474;
+		}
+
+		.text{
+			margin: 8rem 0;
+		}
+	}
 }
 
 /* =transmission-page
@@ -212,4 +230,26 @@
 			color: $color7;
 		}
 	}
+}
+
+
+
+// ecp-page
+
+.ecp{
+	&-page{
+		margin-top: 0;
+		padding-top: 0;
+	}
+	&-groups{
+		padding-top: 7rem;
+	}
+}
+
+.ecp-top{
+	min-height: 1178px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right bottom;	
+	padding-bottom: 10rem;
 }

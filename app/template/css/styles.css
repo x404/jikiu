@@ -3807,6 +3807,9 @@ em strong {
 .webp .transmission-page {
   background-image: url(../images/bg-3.webp); }
 
+.webp .ecp-top {
+  background-image: url(/images/ecp.webp); }
+
 .header-intro .intro:before {
   background-image: url(../images/radial-circle.png); }
   @media (max-width: 1399px) {
@@ -3839,6 +3842,9 @@ em strong {
 
 .transmission-page {
   background-image: url(../images/bg-3.png); }
+
+.ecp-top {
+  background-image: url(/images/ecp.png); }
 
 .homepage .footer {
   background: #083989; }
@@ -5077,6 +5083,19 @@ img.justifycenter, table.justifycenter {
   font-weight: 700;
   text-transform: uppercase; }
 
+.inner-parts .ecp-page {
+  background: #fff;
+  padding-bottom: 4rem; }
+  .inner-parts .ecp-page h2 {
+    font-family: "Futura Demi C";
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 1rem; }
+  .inner-parts .ecp-page p {
+    color: #747474; }
+  .inner-parts .ecp-page .text {
+    margin: 8rem 0; }
+
 /* =transmission-page
 ---------------------------*/
 .transmission-page {
@@ -5149,6 +5168,20 @@ img.justifycenter, table.justifycenter {
     padding-top: 1rem; }
     .item-catparts__title span {
       color: #d82027; }
+
+.ecp-page {
+  margin-top: 0;
+  padding-top: 0; }
+
+.ecp-groups {
+  padding-top: 7rem; }
+
+.ecp-top {
+  min-height: 1178px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding-bottom: 10rem; }
 
 /* =mobile-menu
 ---------------------------*/
