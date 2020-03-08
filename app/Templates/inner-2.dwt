@@ -96,7 +96,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="offset-xl-1 col-xl-10">
-					<ul class="d-flex">
+					<ul class="d-flex justify-content-between">
 					<!-- TemplateBeginEditable name="EditRegion6" -->
 						<li><a href="/part-engine-compartment.html" title="">Engine Compartment Part</a></li>
 						<li><a href="/part-steering-system.html" title="">Steering System Parts</a></li>
