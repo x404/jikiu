@@ -243,7 +243,6 @@
 		padding-top: 0;
 	}
 	&-groups{
-		// grid-row-gap: 15px;
 		padding-top: 7rem;
 		.cell{
 			&-header{
@@ -278,8 +277,23 @@
 
 .ecp-top{
 	min-height: 1178px;
-	background-size: cover;
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: right bottom;	
 	padding-bottom: 10rem;
+
+	.item-catparts{
+		margin: 0;
+		picture,
+		img{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		@media (max-width: 1399px){
+			&__title{
+				font-size: 1.8rem;
+			}
+		}
+	}
 }

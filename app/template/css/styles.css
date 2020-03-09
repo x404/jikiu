@@ -5188,10 +5188,20 @@ img.justifycenter, table.justifycenter {
 
 .ecp-top {
   min-height: 1178px;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: right bottom;
   padding-bottom: 10rem; }
+  .ecp-top .item-catparts {
+    margin: 0; }
+    .ecp-top .item-catparts picture,
+    .ecp-top .item-catparts img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
+    @media (max-width: 1399px) {
+      .ecp-top .item-catparts__title {
+        font-size: 1.8rem; } }
 
 /* =mobile-menu
 ---------------------------*/
