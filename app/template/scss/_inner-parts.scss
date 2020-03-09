@@ -111,13 +111,11 @@
 		text-transform: uppercase;
 	}
 
+	.suspension-page,
 	.ecp-page{
 		background: #fff;
 		padding-bottom: 4rem;
 		h2{
-			font-family: "Futura Demi C";
-			font-size: 4rem;
-			line-height: 1.2;
 			margin-bottom: 1rem;
 		}
 		p{
@@ -297,3 +295,23 @@
 		}
 	}
 }
+// =ecp-page
+
+
+
+
+// =suspension-page
+.suspension{
+	&-page{
+		background: #fff;
+		padding-bottom: 15rem;
+		padding-top: 0;
+	}
+
+	&-top{
+		background: #f3f3f3;
+		padding-top: 7rem;
+		min-height: 1204px;
+	}
+}
+// =/suspension-page

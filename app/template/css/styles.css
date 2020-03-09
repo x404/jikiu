@@ -3810,6 +3810,9 @@ em strong {
 .webp .ecp-top {
   background-image: url(/images/ecp.webp); }
 
+.webp .suspension-top {
+  background-image: url(/images/suspension-bg.webp); }
+
 .header-intro .intro:before {
   background-image: url(../images/radial-circle.png); }
   @media (max-width: 1399px) {
@@ -3845,6 +3848,9 @@ em strong {
 
 .ecp-top {
   background-image: url(/images/ecp.png); }
+
+.suspension-top {
+  background-image: url(/images/suspension-bg.jpg); }
 
 .homepage .footer {
   background: #083989; }
@@ -4633,7 +4639,8 @@ img.justifycenter, table.justifycenter {
     color: #5c5c5c;
     margin: 1.5rem 0; }
   .inner .content-single h2 {
-    font-size: 4rem; }
+    font-size: 4rem;
+    line-height: 1.2; }
   .inner .content-single h3 {
     font-size: 3.5rem; }
   .inner .content-single h4 {
@@ -5084,16 +5091,17 @@ img.justifycenter, table.justifycenter {
   line-height: 1.2;
   text-transform: uppercase; }
 
+.inner-parts .suspension-page,
 .inner-parts .ecp-page {
   background: #fff;
   padding-bottom: 4rem; }
+  .inner-parts .suspension-page h2,
   .inner-parts .ecp-page h2 {
-    font-family: "Futura Demi C";
-    font-size: 4rem;
-    line-height: 1.2;
     margin-bottom: 1rem; }
+  .inner-parts .suspension-page p,
   .inner-parts .ecp-page p {
     color: #747474; }
+  .inner-parts .suspension-page .text,
   .inner-parts .ecp-page .text {
     margin: 12rem 0; }
 
@@ -5202,6 +5210,16 @@ img.justifycenter, table.justifycenter {
     @media (max-width: 1399px) {
       .ecp-top .item-catparts__title {
         font-size: 1.8rem; } }
+
+.suspension-page {
+  background: #fff;
+  padding-bottom: 15rem;
+  padding-top: 0; }
+
+.suspension-top {
+  background: #f3f3f3;
+  padding-top: 7rem;
+  min-height: 1204px; }
 
 /* =mobile-menu
 ---------------------------*/
