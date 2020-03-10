@@ -3810,6 +3810,9 @@ em strong {
 .webp .transmission-page {
   background-image: url(../images/bg-3.webp); }
 
+.webp .ecp-top {
+  background-image: url(../images/ecp-bg.webp); }
+
 .header-intro .intro:before {
   background-image: url(../images/radial-circle.png); }
   @media (max-width: 1399px) {
@@ -3845,6 +3848,9 @@ em strong {
 
 .transmission-page {
   background-image: url(../images/bg-3.png); }
+
+.ecp-top {
+  background-image: url(../images/ecp-bg.jpg); }
 
 .homepage .footer {
   background: #083989; }
@@ -5155,25 +5161,26 @@ img.justifycenter, table.justifycenter {
       .inner-parts .suspension-page .text,
       .inner-parts .ecp-page .text {
         margin: 3rem 0; } }
+  .inner-parts .suspension-page .mainpic,
+  .inner-parts .ecp-page .mainpic {
+    display: block;
+    height: auto;
+    left: 50%;
+    max-width: 100%;
+    position: absolute;
+    transform: translateX(-50%); }
+    @media (max-width: 767px) {
+      .inner-parts .suspension-page .mainpic,
+      .inner-parts .ecp-page .mainpic {
+        position: static;
+        transform: none; }
+        .inner-parts .suspension-page .mainpic img,
+        .inner-parts .ecp-page .mainpic img {
+          max-width: 100%; } }
   @media (max-width: 576px) {
     .inner-parts .suspension-page,
     .inner-parts .ecp-page {
       padding-bottom: 0; } }
-
-.inner-parts .mainpic {
-  display: block;
-  height: auto;
-  left: 50%;
-  max-width: 100%;
-  position: absolute;
-  top: 0;
-  transform: translateX(-50%); }
-  @media (max-width: 767px) {
-    .inner-parts .mainpic {
-      position: static;
-      transform: none; }
-      .inner-parts .mainpic img {
-        max-width: 100%; } }
 
 @media (max-width: 767px) {
   .inner-parts .main {
@@ -5326,9 +5333,9 @@ img.justifycenter, table.justifycenter {
   padding-top: 0; }
   .ecp-page .mainpic {
     transform: none;
-    right: 0;
+    right: -140px;
     left: auto;
-    top: 50px; }
+    top: 260px; }
     @media (max-width: 991px) {
       .ecp-page .mainpic {
         top: 300px;
@@ -5413,6 +5420,7 @@ img.justifycenter, table.justifycenter {
   background-color: #f2f2f2;
   background-repeat: no-repeat;
   background-position: right center;
+  background-size: cover;
   padding-bottom: 10rem; }
   .ecp-top .item-catparts {
     margin: 0; }
