@@ -19,7 +19,10 @@
 	}
 
 	.inner-products{
-		background-image: url(../images/bg-2.webp);		
+		background-image: url(../images/bg-2.webp);
+		@media (max-width: 1000px){
+			background-image: url(../images/bg-2-1000.webp);
+		}
 	}
 
 	.transmission-page{
@@ -74,6 +77,9 @@
 
 .inner-products{
 	background-image: url(../images/bg-2.png);
+	@media (max-width: 1000px){
+		background-image: url(../images/bg-2-1000.png);			
+	}
 }
 
 .transmission-page{

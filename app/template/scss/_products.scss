@@ -1,7 +1,8 @@
 .inner-products{
 	background-color: #083989;
-	background-position: right bottom;
+	background-position: right center;
 	background-size: cover;
+	background-repeat: no-repeat;
 	h1{
 		color: #fff;
 	}
@@ -91,7 +92,7 @@
 			{
 				@extend .before;
 				background: url(../images/radial-circle-blue.png) left top;
-				width: 323px;
+				width: $h;
 				height: $h;
 				left: 50%;
 				top: 0;
@@ -104,7 +105,6 @@
 				opacity: 0;
 				transition: opacity .3s;
 			}
-
 		}
 
 		picture,
@@ -117,43 +117,74 @@
 
 
 
-@media (max-width: 1250px) {
+@media (max-width: 1200px) {
 	.inner-products .item-product{
 		&__link{
-			font-size: 2.6rem;
+			font-size: 2.4rem;
+		}
+		&__pic{
+			$h: 258px;
+			height: $h;
+			&:before,
+			&:after
+			{
+				background-size: cover;
+				width: $h;
+				height: $h;
+			}
 		}
 	}
 }
 
 
-@media (max-width: 1050px){
+@media (max-width: 1000px){
 	.inner-products .products__item{
-		width: 50%;
+		// width: 50%;
+	}
+
+
+	.inner-products .item-product{
+		&__link{
+			font-size: 2rem;
+		}
+		&__pic{
+			$h: 216px;
+			height: $h;
+			&:before,
+			&:after
+			{
+				width: $h;
+				height: $h;
+			}
+		}
 	}
 }
 
 
 @media (max-width: 768px){
 	.inner-products {
+		background: #09439e !important;
 		.products__item{
+			margin: 2rem 0 2.5rem;
+			padding-left: 1rem;
+			padding-right: 1rem;
 			width: 50%;
 		}
 
 		.item-product{
 			&__pic{
-				$h: 250px;
+				$h: 215px;
 				height: $h;
 				&:before,
 				&:after
 				{
-					background-size: cover;
 					height: $h;
 					width: $h;
 				}
 			}
 
 			&__link{
-				font-size: 2.2rem;
+				font-size: 2rem;
 			}
 		}
 	}
@@ -183,9 +214,46 @@
 			padding-top: 4rem;
 		}
 		
-		.products__item{
-			margin-bottom: 10rem;
-			width: 100%;
+		.item-product{
+			&__pic{
+				$h: 160px;
+				height: $h;
+				&:before,
+				&:after
+				{
+					height: $h;
+					width: $h;
+				}
+			}
+
+			&__link{
+				font-size: 1.6rem;
+			}
+		}
+	}
+}
+
+
+
+
+
+@media (max-width: 380px){
+	.inner-products{
+		.item-product{
+			&__pic{
+				$h: 105px;
+				height: $h;
+				&:before,
+				&:after
+				{
+					height: $h;
+					width: $h;
+				}
+			}
+
+			&__link{
+				font-size: 1.5rem;
+			}
 		}
 	}
 }

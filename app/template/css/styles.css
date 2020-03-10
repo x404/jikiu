@@ -3803,6 +3803,9 @@ em strong {
 
 .webp .inner-products {
   background-image: url(../images/bg-2.webp); }
+  @media (max-width: 1000px) {
+    .webp .inner-products {
+      background-image: url(../images/bg-2-1000.webp); } }
 
 .webp .transmission-page {
   background-image: url(../images/bg-3.webp); }
@@ -3842,6 +3845,9 @@ em strong {
 
 .inner-products {
   background-image: url(../images/bg-2.png); }
+  @media (max-width: 1000px) {
+    .inner-products {
+      background-image: url(../images/bg-2-1000.png); } }
 
 .transmission-page {
   background-image: url(../images/bg-3.png); }
@@ -4918,8 +4924,9 @@ img.justifycenter, table.justifycenter {
 
 .inner-products {
   background-color: #083989;
-  background-position: right bottom;
-  background-size: cover; }
+  background-position: right center;
+  background-size: cover;
+  background-repeat: no-repeat; }
   .inner-products h1 {
     color: #fff; }
   .inner-products .navmenu .nav a {
@@ -4982,25 +4989,40 @@ img.justifycenter, table.justifycenter {
       position: relative;
       z-index: 10; }
 
-@media (max-width: 1250px) {
+@media (max-width: 1200px) {
   .inner-products .item-product__link {
-    font-size: 2.6rem; } }
-
-@media (max-width: 1050px) {
-  .inner-products .products__item {
-    width: 50%; } }
-
-@media (max-width: 768px) {
-  .inner-products .products__item {
-    width: 50%; }
+    font-size: 2.4rem; }
   .inner-products .item-product__pic {
-    height: 250px; }
+    height: 258px; }
     .inner-products .item-product__pic:before, .inner-products .item-product__pic:after {
       background-size: cover;
-      height: 250px;
-      width: 250px; }
+      width: 258px;
+      height: 258px; } }
+
+@media (max-width: 1000px) {
   .inner-products .item-product__link {
-    font-size: 2.2rem; } }
+    font-size: 2rem; }
+  .inner-products .item-product__pic {
+    height: 216px; }
+    .inner-products .item-product__pic:before, .inner-products .item-product__pic:after {
+      width: 216px;
+      height: 216px; } }
+
+@media (max-width: 768px) {
+  .inner-products {
+    background: #09439e !important; }
+    .inner-products .products__item {
+      margin: 2rem 0 2.5rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      width: 50%; }
+    .inner-products .item-product__pic {
+      height: 215px; }
+      .inner-products .item-product__pic:before, .inner-products .item-product__pic:after {
+        height: 215px;
+        width: 215px; }
+    .inner-products .item-product__link {
+      font-size: 2rem; } }
 
 @media (max-width: 600px) {
   .inner-products .item-product__pic {
@@ -5012,9 +5034,22 @@ img.justifycenter, table.justifycenter {
 @media (max-width: 576px) {
   .inner-products .inner-products .main {
     padding-top: 4rem; }
-  .inner-products .products__item {
-    margin-bottom: 10rem;
-    width: 100%; } }
+  .inner-products .item-product__pic {
+    height: 160px; }
+    .inner-products .item-product__pic:before, .inner-products .item-product__pic:after {
+      height: 160px;
+      width: 160px; }
+  .inner-products .item-product__link {
+    font-size: 1.6rem; } }
+
+@media (max-width: 380px) {
+  .inner-products .item-product__pic {
+    height: 105px; }
+    .inner-products .item-product__pic:before, .inner-products .item-product__pic:after {
+      height: 105px;
+      width: 105px; }
+  .inner-products .item-product__link {
+    font-size: 1.5rem; } }
 
 /* =submenu
 ---------------------------*/
@@ -5622,6 +5657,8 @@ img.justifycenter, table.justifycenter {
     font-size: 3.2rem; }
   .dots {
     display: none; }
+  .main h1 {
+    font-size: 3.6rem; }
   .content h2 {
     font-size: 3.4rem; }
   .content h3 {
@@ -5648,7 +5685,9 @@ img.justifycenter, table.justifycenter {
     .aside .visual a {
       padding-left: 2rem; }
   .inner .content-single iframe {
-    height: 300px; } }
+    height: 300px; }
+  .main h1 {
+    font-size: 3.4rem; } }
 
 @media (max-width: 767px) {
   .header-intro .catalog__item {
@@ -5765,7 +5804,9 @@ img.justifycenter, table.justifycenter {
     .pagination a, .pagination span {
       font-size: 1.4rem;
       height: 38px;
-      width: 38px; } }
+      width: 38px; }
+  .main h1 {
+    font-size: 3rem; } }
 
 @media (max-width: 470px) {
   .lastnews .title,
