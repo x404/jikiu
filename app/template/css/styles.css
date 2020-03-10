@@ -3813,6 +3813,9 @@ em strong {
 .webp .ecp-top {
   background-image: url(../images/ecp-bg.webp); }
 
+.webp .suspension-top {
+  background-image: url(../images/suspension-bg.webp); }
+
 .header-intro .intro:before {
   background-image: url(../images/radial-circle.png); }
   @media (max-width: 1399px) {
@@ -3851,6 +3854,9 @@ em strong {
 
 .ecp-top {
   background-image: url(../images/ecp-bg.jpg); }
+
+.suspension-top {
+  background-image: url(../images/suspension-bg.jpg); }
 
 .homepage .footer {
   background: #083989; }
@@ -5157,6 +5163,10 @@ img.justifycenter, table.justifycenter {
   .inner-parts .suspension-page .text,
   .inner-parts .ecp-page .text {
     margin: 12rem 0; }
+    @media (max-width: 1399px) {
+      .inner-parts .suspension-page .text,
+      .inner-parts .ecp-page .text {
+        margin: 6rem 0; } }
     @media (max-width: 767px) {
       .inner-parts .suspension-page .text,
       .inner-parts .ecp-page .text {
@@ -5453,27 +5463,50 @@ img.justifycenter, table.justifycenter {
   .suspension-page h1 {
     position: relative;
     z-index: 2; }
+  .suspension-page .mainpic {
+    top: 0; }
+  @media (max-width: 1399px) {
+    .suspension-page .text {
+      margin: 7rem 0; } }
   @media (max-width: 767px) {
     .suspension-page {
-      padding-top: 0 !important; } }
-  @media (max-width: 767px) {
-    .suspension-page .item-catparts {
-      margin-left: .5rem;
-      margin-right: .5rem;
-      width: auto !important; } }
+      padding-top: 0 !important; }
+      .suspension-page .item-catparts {
+        margin-left: .5rem;
+        margin-right: .5rem;
+        width: auto !important; } }
 
 .suspension-top {
+  background-size: cover;
   background-color: #f2f2f2;
   background-position: center top;
   min-height: 1204px;
-  padding-top: 7rem;
+  padding-top: 5rem;
   position: relative; }
+  @media (max-width: 1399px) {
+    .suspension-top {
+      min-height: 0; } }
   @media (max-width: 767px) {
     .suspension-top {
       padding-top: 3.5rem; } }
-  @media (max-width: 768px) {
-    .suspension-top .mainpic {
-      top: 120px; } }
+  @media (max-width: 576px) {
+    .suspension-top {
+      padding-top: 2.5rem; } }
+  .suspension-top .mainpic {
+    top: 330px;
+    left: 50%;
+    transform: translateX(-51%); }
+    @media (max-width: 1800px) {
+      .suspension-top .mainpic {
+        top: 420px; } }
+    @media (max-width: 1000px) {
+      .suspension-top .mainpic {
+        top: 350px; } }
+    @media (max-width: 767px) {
+      .suspension-top .mainpic {
+        position: static !important;
+        margin-top: 3rem;
+        text-align: center; } }
 
 .suspension-groups {
   position: relative;
