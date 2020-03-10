@@ -19,6 +19,10 @@ var gulp 		= require('gulp'),
 	var fs = require('fs');	
 
 
+const webp = require("imagemin-webp");
+const extReplace = require("gulp-ext-replace");
+
+
 var config = {
 	templateDir : 'app/template',
 	destDir : 'dist',
@@ -258,6 +262,31 @@ gulp.task('clear', function () {
 })
 
 gulp.task('default', ['watcher']);
+
+
+
+// webp
+gulp.task("webp", function() {
+  let src = "app/images/_srcpng/**/*.png"; // Where your PNGs are coming from.
+  let dest = "app/images/_webpimg"; // Where your WebPs are going.
+
+  return gulp.src(src)
+    .pipe(imagemin([
+      webp({
+        quality: 85
+      })
+    ]))
+    .pipe(extReplace(".webp"))
+    .pipe(gulp.dest(dest));
+});
+
+
+
+// gulp.task('webp', () =>
+//     gulp.src('app/images/srcpng/**/*')
+//         .pipe(webp({quality: 85}))
+//         .pipe(gulp.dest('app/images/webpimg'))
+// );
 
 
 // var config = {
