@@ -104,8 +104,6 @@
 	@media (max-width: 991px){
 		font-size: 1.5rem;
 		line-height: 1.35;
-		// height: 7rem;
-
 		a,
 		span{
 			padding: 1.5rem 0;
@@ -115,8 +113,6 @@
 
 	@media (max-width: 720px){
 		font-size: 1.3rem;
-		// line-height: 1.35;
-
 		a,
 		span{
 			min-height: 7.2rem;
@@ -185,14 +181,27 @@
 
 	.catparts{
 		margin: 3rem -1.5rem 0;
+		@media (max-width: 576px){
+			margin-top: 0;
+		}
 	}
 
 	.item-catparts{
 		width: calc(20% - 3rem);
 		@media (max-width: 991px){
 			margin-bottom: 2.5rem;
-			width: calc(100% / 3 - 3rem);
+			width: calc(100% / 5 - 3rem);
 		}
+	}
+
+	@media (max-width: 576px){
+		padding-top: 2.5rem !important;
+		.mainpic{
+			background: #fff;
+		    background: linear-gradient(to bottom, #fff, #f6f6f6);
+			padding-top: 1rem;
+			padding-bottom: 3rem;
+		}	
 	}
 }
 /* =/transmission-page
@@ -208,7 +217,7 @@
 		max-width: 16rem;
 		&:hover{
 			text-decoration: none;
-			.item-catparts{				
+			.item-catparts{
 				&__title
 				{
 					color: $color9;
@@ -222,11 +231,6 @@
 					&:before{
 						@extend .before;
 						border-radius: 50%;
-						left: 0;
-						top: 17px;
-						$w: 161px;
-						width: $w;
-						height: $w;
 						border: 12px solid #d82027;
 					}
 				}
@@ -244,31 +248,126 @@
 	}
 
 	&__pic{
-		background: url(../images/radial-circle-middle.png) no-repeat ;
 		background-position: center 15px;
 		align-items: center;
 		display: flex;
 		min-height: 185px;
+		margin-left: auto;
+		margin-right: auto;
 		padding-top: 1rem;
+		position: relative;
 		picture,
 		img
 		{
 			height: auto;
 			max-width: 100%;
 		}
+
+		&:before{
+			@extend .before;
+			background: url(../images/radial-circle-middle.png) no-repeat;
+			background-size: cover;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			top: 50%;
+			$h: 158px;
+			height: $h;
+			width: $h;
+		}
 	}
 
 	&__title{
+		color: #383838;
 		font-family: "Futura Demi C";
 		font-size: 2rem;
-		color: #383838;
-		line-height: 1;
-		padding-top: 1rem;
 		font-weight: 400;
+		line-height: 1;
+		padding-top: 2.5rem;
 		span{
 			color: $color7;
 		}
 	}
+
+
+
+	@media (max-width: 1399px){
+		&__title{
+			font-size: 1.5rem;
+			padding-top: .5rem;
+		}
+
+		&__pic{
+			max-width: 80%;
+			&:before{
+				$h: 120px;
+				height: $h;
+				width: $h;
+			}
+		}
+	}
+
+	@media (max-width: 1000px){
+		&__title{
+			font-size: 1.3rem;
+			padding-top: .5rem;
+		}
+
+		&__pic{
+			min-height: 150px;
+			max-width: 70%;
+			&:before{
+				$h: 100px;
+				height: $h;
+				width: $h;
+			}
+		}
+	}
+
+	@media (max-width: 768px){
+		&__pic{
+			max-width: 90%;
+			&:before{
+				$h: 85px;
+				height: $h;
+				width: $h;
+			}
+		}
+	}
+
+	@media (max-width: 576px){
+		width: calc(100% / 4 - 3rem) !important;
+		&__pic{
+			min-height: 140px;
+			max-width: 100%;
+		}
+
+		&__link{
+			&:hover{
+				.item-catparts{
+					&__pic{
+						&:before{
+							border-width: 6px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: 450px){
+		width: calc(100% / 3 - 3rem) !important;
+		&__pic{
+			min-height: 140px;
+		}
+	}
+
+	@media (max-width: 350px){
+		margin-bottom: 1rem !important;
+		&__pic{
+			min-height: 120px;
+		}		
+	}
+
 }
 
 
