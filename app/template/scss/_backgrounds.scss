@@ -30,7 +30,19 @@
 	}
 
 	.ecp-top{
-		background-image: url(/images/ecp.webp);
+		background-image: url(/images/schemes/ecp.webp);
+		@media (max-width: 1800px){
+			background-image: url(/images/schemes/ecp-1600.webp);
+		}
+		@media (max-width: 1550px){
+			background-image: url(/images/schemes/ecp-1000.webp);
+		}
+		@media (max-width: 991px){
+			background-image: url(/images/schemes/ecp-768.webp);
+		}
+		@media (max-width: 767px){
+			background-image: url(/images/schemes/ecp-420.webp);
+		}
 	}
 
 	.suspension-top{
@@ -87,7 +99,19 @@
 }
 
 .ecp-top{
-	background-image: url(/images/ecp.png);
+	background-image: url(/images/schemes/ecp.jpg);
+		@media (max-width: 1800px){
+			background-image: url(/images/schemes/ecp-1600.jpg);
+		}
+		@media (max-width: 1550px){
+			background-image: url(/images/schemes/ecp-1000.jpg);
+		}
+		@media (max-width: 991px){
+			background-image: url(/images/schemes/ecp-768.jpg);
+		}
+		@media (max-width: 767px){
+			background-image: url(/images/schemes/ecp-420.jpg);
+		}
 }
 
 
