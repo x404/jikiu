@@ -275,6 +275,7 @@
 
 .ecp-top{
 	min-height: 1178px;
+	background-color: #f2f2f2;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: right bottom;	
@@ -309,7 +310,8 @@
 	}
 
 	&-top{
-		background: #f3f3f3;
+		// background-c: #f3f3f3;
+		background-color: #f2f2f2;
 		padding-top: 7rem;
 		min-height: 1204px;
 	}
