@@ -64,7 +64,7 @@
 
 		a,
 		span{
-			padding: 1.7rem 0;
+			padding: 2.7rem 0;
 		}
 
 		li:not(:last-child){
@@ -81,7 +81,6 @@
 
 
 	@media (max-width: 1350px){
-		font-size: 1.6rem;
 		li:not(:last-child){
 			margin-right: 4rem;
 		}
@@ -97,6 +96,46 @@
 		li:not(:last-child){
 			margin-right: 3rem;
 		}
+	}
+	@media (max-width: 1050px){
+		text-align: center;
+	}
+
+	@media (max-width: 991px){
+		font-size: 1.5rem;
+		line-height: 1.35;
+		// height: 7rem;
+
+		a,
+		span{
+			padding: 1.5rem 0;
+		}
+	}
+
+
+	@media (max-width: 720px){
+		font-size: 1.3rem;
+		// line-height: 1.35;
+
+		a,
+		span{
+			min-height: 7.2rem;
+			padding: 1rem 0;
+		}
+
+		.d-flex{
+			align-items: center;
+		}
+	}
+
+	@media (max-width: 576px){
+		overflow: hidden;
+		.container{
+			overflow-x: auto;
+			max-width: none;			
+			width: 650px;
+		}
+
 	}
 }
 /* =/submenu
