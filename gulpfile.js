@@ -67,6 +67,7 @@ gulp.task('compress', function(){
 				config.templateDir + '/js/modernizr.js',
 				config.libsDir + '/jquery/dist/jquery.js',
 				config.templateDir + '/js/util.js',
+				config.templateDir + '/js/tab.js',
 				config.templateDir + '/js/collapse.js',
 				config.templateDir + '/js/popper.min.js'
 				// config.templateDir + '/js/jquery.fancybox.min.js'

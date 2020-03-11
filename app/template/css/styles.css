@@ -3670,7 +3670,7 @@ em strong {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .navmenu .nav a:after, .navmenu .nav a:before, .header-intro:before, .header-intro:after, .header-intro .intro:before, .header-intro .cifres__item:not(:last-child):after, .btn-back:before, .item-news__bg:after, .item-news__bg:before, .news__list-main .item-news__inner:after, .news__list-main .item-news__inner:before, .inner .content-single ul li:before, .inner-contacts .title:after, .tr-corner:before, .tr-corner:after, .inner-products .item-product__pic:before, .inner-products .item-product__pic:after, .submenu .active:before, .item-catparts__link:hover .item-catparts__pic:before, .item-catparts__pic:before, .item-type__text ul li:before {
+.before, .navmenu .nav a:after, .navmenu .nav a:before, .header-intro:before, .header-intro:after, .header-intro .intro:before, .header-intro .cifres__item:not(:last-child):after, .btn-back:before, .item-news__bg:after, .item-news__bg:before, .news__list-main .item-news__inner:after, .news__list-main .item-news__inner:before, .inner .content-single ul li:before, .inner-contacts .title:after, .tr-corner:before, .tr-corner:after, .inner-products .item-product__pic:before, .inner-products .item-product__pic:after, .submenu .active:before, .item-catparts__link:hover .item-catparts__pic:before, .item-catparts__pic:before, .item-type__text ul li:before, .item-adaptor:after, .item-adaptor:before {
   content: "";
   display: block;
   position: absolute; }
@@ -3827,6 +3827,9 @@ em strong {
   .webp .wiper-intro .label {
     background-image: url(../images/bg/label.webp); }
 
+.webp .find-adaptor {
+  background-image: url(../images/bg/bg-5.webp); }
+
 .header-intro .intro:before {
   background-image: url(../images/radial-circle.png); }
   @media (max-width: 1399px) {
@@ -3878,7 +3881,10 @@ em strong {
     .wiper-intro {
       background-image: url(../images/bg/wiper-slide-1200.jpg); } }
   .wiper-intro .label {
-    background-image: url(../images/bg/label.webp); }
+    background-image: url(../images/bg/label.png); }
+
+.find-adaptor {
+  background-image: url(../images/bg/bg-5.jpg); }
 
 .homepage .footer {
   background: #083989; }
@@ -5628,7 +5634,8 @@ img.justifycenter, table.justifycenter {
   margin-top: 6rem; }
 
 .advantages h1,
-.types h1 {
+.types h1,
+.find-adaptor h1 {
   font-family: "Futura Demi C";
   color: #000000;
   font-size: 4rem;
@@ -5754,6 +5761,83 @@ img.justifycenter, table.justifycenter {
     justify-content: center;
     padding-bottom: 5rem; }
 
+.find-adaptor {
+  background-color: #083989;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 65rem;
+  padding: 10rem 0 14rem; }
+  .find-adaptor h1 {
+    color: #fff; }
+  .find-adaptor .nav {
+    padding: 3rem 0 4.5rem; }
+    .find-adaptor .nav-item:not(:last-child) {
+      margin-right: 3.6rem; }
+    .find-adaptor .nav-link {
+      color: #12f7ff;
+      font-family: "Futura Demi C";
+      font-size: 2.5rem;
+      font-weight: 400;
+      line-height: 1.2;
+      text-decoration: underline; }
+      .find-adaptor .nav-link:hover {
+        text-decoration: none; }
+      .find-adaptor .nav-link.active {
+        text-decoration: none;
+        color: #ff010b; }
+
+.item-adaptor {
+  height: 29rem;
+  position: relative;
+  width: 13rem; }
+  .item-adaptor:after, .item-adaptor:before {
+    background: #fff;
+    border-radius: 1.2rem;
+    opacity: .1;
+    width: 100%;
+    height: calc(100% - 1rem); }
+  .item-adaptor:after {
+    left: 5px;
+    top: 5px; }
+  .item-adaptor:before {
+    left: 10px;
+    top: 10px; }
+  .item-adaptor__body {
+    align-items: center;
+    background: #fff;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 28rem;
+    justify-content: space-between;
+    padding: 1.6rem .8rem;
+    position: relative;
+    text-align: center;
+    z-index: 2; }
+  .item-adaptor__top {
+    height: 9.2rem;
+    flex-shrink: 0; }
+    .item-adaptor__top .pic {
+      height: 4.5rem; }
+    .item-adaptor__top .title {
+      padding-top: 1rem; }
+  .item-adaptor__bottom {
+    margin-top: 2.5rem;
+    height: 11rem; }
+    .item-adaptor__bottom .pic {
+      height: 5rem; }
+    .item-adaptor__bottom .title {
+      padding-top: 1rem; }
+  .item-adaptor__arrow {
+    margin-top: 1rem; }
+  .item-adaptor .title {
+    color: #222222;
+    font-family: "Futura Book C";
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 1.2; }
+
 /* =mobile-menu
 ---------------------------*/
 .show-sm,
@@ -5864,6 +5948,23 @@ img.justifycenter, table.justifycenter {
   .slick-init.slick-initialized {
     display: block; }
 
+/* Based on https://github.com/kenwheeler/slick/issues/187#issuecomment-59123524 */
+/* bootstrap hack: fix content width inside hidden tabs */
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+  display: block;
+  /* undo display:none          */
+  height: 0;
+  /* height:0 is also invisible */
+  overflow: hidden;
+  /* no-overflow                */ }
+
+.tab-content > .active,
+.pill-content > .active {
+  height: auto;
+  /* let the content decide it  */ }
+
+/* bootstrap hack end */
 /* =mobile-menu
 ---------------------------*/
 .show-sm,
