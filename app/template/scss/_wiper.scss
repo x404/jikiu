@@ -1,0 +1,109 @@
+.inner{
+	.about{
+		background: #fff;
+		padding-top: 11rem;
+	}
+
+	.bottom-text{
+		border-top: 1px solid #d5d5d5;
+		padding: 7rem 0 0;
+		margin-top: 6rem;
+	}
+}
+
+.advantages,
+.types{
+	h1{
+		font-family: "Futura Demi C";
+		color: #000000;
+		font-size: 4rem;
+		text-transform: none;
+	}
+}
+
+.advantages{
+	background: #f2f2f2;
+	padding: 10rem 0 10rem;
+
+	&__list{
+		margin-left: -3rem;
+		margin-right: -3rem;
+		padding-top: 4rem;
+	}
+	&__item{
+		width: calc(100% / 5 - 6rem);
+		margin: 0 3rem;
+	}
+}
+
+.item-advantage{
+	&__title{
+		color: #222222;
+		font-family: "Futura Demi C";
+		font-size: 25px;
+		line-height: 1.2;
+		margin-top: 1.5rem;
+	}
+
+	&__text{
+		color: #303030;
+		font-family: "Futura Book C";
+		font-size: 17px;
+		font-weight: 400;
+		line-height: 1.47;
+		margin-top: 1.5rem;
+	}
+}
+
+
+.types{
+	background: #fff;
+	padding-top: 8.5rem;
+	padding-bottom: 8rem;
+	&__item{
+		padding-right: 4rem;
+		padding-top: 6rem;
+	}
+}
+
+.item-type{
+	&__title{
+		color: #000000;
+		font-family: "Futura Demi C";
+		font-size: 2.5rem;
+		font-weight: 400;
+		line-height: 1.2;
+		margin-top: 3.5rem;
+		text-transform: uppercase;
+	}
+
+	&__text{
+		color: #3d3d3d;
+		font-family: "Futura Book C";
+		font-size: 17px;
+		font-weight: 400;
+		line-height: 1.47;
+		padding-top: 2.5rem;
+			$color_1 : #2065d8;
+			// ul
+			ul{
+				margin: 1.5rem 0;
+				li{
+					color: #5c5c5c;
+					padding-left: 35px;
+					position: relative;
+					margin: 10px 0;
+					font-family: "Futura Book C";
+					&:before{
+						@extend .before;
+						background-color: $color_1;
+						border-radius: 5px;
+						width: 20px;
+						height: 5px;			
+						left: 0;
+						top: 12px;		
+					}				
+				}
+			}
+	}
+}
