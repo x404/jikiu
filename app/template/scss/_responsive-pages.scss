@@ -129,13 +129,20 @@
 	}
 
 	.content{
-		h2{font-size: 3.8rem}
-		h3{font-size: 3.2rem}
-		h4{font-size: 3rem}
-		h5{font-size: 2.8rem}
-		h6{font-size: 2.6rem}
 	}
 
+	.inner{
+		.content{
+			&-single{ 
+				h2{font-size: 3.6rem}
+				h3{font-size: 3.2rem}
+				h4{font-size: 3rem}
+				h5{font-size: 2.8rem}
+				h6{font-size: 2.6rem}
+			}
+		}
+	}
+	
 	.aside{
 		.title{
 			font-size: 3.6rem;
@@ -320,12 +327,20 @@
 			font-size: 3.8rem;
 		}
 	}
+
+
+	.inner{
+		.content{
+			&-single{ 
+				h2{font-size: 3.6rem}
+				h3{font-size: 3rem}
+				h4{font-size: 2.8rem}
+				h5{font-size: 2.6rem}
+				h6{font-size: 2.5rem}
+			}
+		}
+	}
 	.content{
-		h2{font-size: 3.6rem}
-		h3{font-size: 3rem}
-		h4{font-size: 2.8rem}
-		h5{font-size: 2.6rem}
-		h6{font-size: 2.5rem}
 	}
 }
 
@@ -425,20 +440,28 @@
 	}
 
 
-	.content{
-		h2{font-size: 3.4rem}
-		h3{font-size: 2.8rem}
-		h4{font-size: 2.6rem}
-		h5{font-size: 2.5rem}
-		h6{font-size: 2.4rem}
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6{
-			margin: 2rem 0;
+	.inner{
+		.content{
+			&-single{ 
+				h2{font-size: 3.4rem}
+				h3{font-size: 2.8rem}
+				h4{font-size: 2.6rem}
+				h5{font-size: 2.5rem}
+				h6{font-size: 2.4rem}
+				h1,
+				h2,
+				h3,
+				h4,
+				h5,
+				h6{
+					margin: 2rem 0;
+				}
+			}
 		}
+	}
+
+
+	.content{
 	}
 
 	.inner .content-single{
@@ -544,6 +567,17 @@
 			&-single{ 
 				padding-left: 15px;
 				padding-top: 0;
+
+			}
+		}
+	}
+
+	.content{
+	}
+
+	.inner{
+		.content{
+			&-single{ 
 				blockquote{
 					font-size: 2.2rem;
 					padding: 3rem 3.8rem;
@@ -556,7 +590,7 @@
 				h6{font-size: 2.3rem}
 				p{
 					font-size: 1.8rem
-				}
+				}		
 			}
 		}
 	}
@@ -689,6 +723,28 @@
 	.main{
 		h1{
 			font-size: 3rem;
+		}
+	}
+
+
+	// single page
+	.inner{
+		.content{
+			&-single{ 
+				blockquote{
+					font-size: 2rem;
+					padding: 2.4rem 2.6rem;
+				}
+
+				h2{font-size: 2.8rem}
+				h3{font-size: 2.5rem}
+				h4{font-size: 2.4rem}
+				h5{font-size: 2.3rem}
+				h6{font-size: 2.2rem}
+				p{
+					font-size: 1.5rem
+				}
+			}
 		}
 	}
 }
@@ -910,7 +966,7 @@
 
 	.main{
 		h1{
-			font-size: 3.2rem;
+			font-size: 3rem;
 		}
 	}
 
@@ -923,11 +979,14 @@
 					padding: 1.2rem 1.5rem;
 				}
 
-				h2{font-size: 3rem}
+				h2{font-size: 2.8rem}
 				h3{font-size: 2.5rem}
 				h4{font-size: 2.4rem}
 				h5{font-size: 2.3rem}
 				h6{font-size: 2.2rem}
+				p{
+					font-size: 1.5rem;
+				}
 			}
 		}
 	}

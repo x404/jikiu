@@ -750,8 +750,30 @@
 		}
 		.mainpic{
 			position: absolute;
-			right: -50px;
-			top: 100px;
+			right: 0;
+			top: 320px;
+			display: block;
+			img{
+				display: block;
+			}
+			@media (max-width: 1750px){
+				top: 30%;
+				margin-top: 100px;
+			}
+			@media (max-width: 800px){
+				right: -20px;
+			}
+			@media (max-width: 767px){
+				position: static;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				img{
+					margin-left: auto;
+					margin-right: auto;
+					max-width: 100%;
+				}
+			}
 		}
 	}
 	&-top{
@@ -759,7 +781,14 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		min-height: 920px;
-		padding-top: 7rem;
+		padding-top: 5rem;
+		@media (max-width: 1750px){
+			min-height: 0;
+			padding-bottom: 2rem;
+		}
+		@media (max-width: 767px){
+			padding-top: 3.5rem;
+		}
 	}
 	&-groups{
 		margin-top: 6rem;
@@ -769,9 +798,30 @@
 		.item-catparts{
 			margin-bottom: 3.5rem;
 		}
+
+		@media (max-width: 767px){
+			.cell{
+				width: calc(100% / 3)
+			}
+		}
+		@media (max-width: 576px){
+			margin-top: 2rem;
+			.item-catparts{
+				width: 70% !important;
+			}
+		}
+
+		@media (max-width: 480px){
+			.cell{
+				width: calc(100% / 3) !important; 				
+			}
+			.item-catparts{
+				margin-left: .5rem;
+				margin-right: .5rem;
+				width: auto !important;
+			}
+		}
 	}
-
-
 }
 // =/pss-page
 

@@ -5560,15 +5560,42 @@ img.justifycenter, table.justifycenter {
     position: relative; }
   .pss-page .mainpic {
     position: absolute;
-    right: -50px;
-    top: 100px; }
+    right: 0;
+    top: 320px;
+    display: block; }
+    .pss-page .mainpic img {
+      display: block; }
+    @media (max-width: 1750px) {
+      .pss-page .mainpic {
+        top: 30%;
+        margin-top: 100px; } }
+    @media (max-width: 800px) {
+      .pss-page .mainpic {
+        right: -20px; } }
+    @media (max-width: 767px) {
+      .pss-page .mainpic {
+        position: static;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; }
+        .pss-page .mainpic img {
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 100%; } }
 
 .pss-top {
   background-color: #efefef;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 920px;
-  padding-top: 7rem; }
+  padding-top: 5rem; }
+  @media (max-width: 1750px) {
+    .pss-top {
+      min-height: 0;
+      padding-bottom: 2rem; } }
+  @media (max-width: 767px) {
+    .pss-top {
+      padding-top: 3.5rem; } }
 
 .pss-groups {
   margin-top: 6rem; }
@@ -5576,6 +5603,21 @@ img.justifycenter, table.justifycenter {
     width: calc(100% / 3); }
   .pss-groups .item-catparts {
     margin-bottom: 3.5rem; }
+  @media (max-width: 767px) {
+    .pss-groups .cell {
+      width: calc(100% / 3); } }
+  @media (max-width: 576px) {
+    .pss-groups {
+      margin-top: 2rem; }
+      .pss-groups .item-catparts {
+        width: 70% !important; } }
+  @media (max-width: 480px) {
+    .pss-groups .cell {
+      width: calc(100% / 3) !important; }
+    .pss-groups .item-catparts {
+      margin-left: .5rem;
+      margin-right: .5rem;
+      width: auto !important; } }
 
 /* =mobile-menu
 ---------------------------*/
@@ -5818,15 +5860,15 @@ img.justifycenter, table.justifycenter {
     padding-bottom: 1.5rem; }
   .main h1 {
     font-size: 4rem; }
-  .content h2 {
-    font-size: 3.8rem; }
-  .content h3 {
+  .inner .content-single h2 {
+    font-size: 3.6rem; }
+  .inner .content-single h3 {
     font-size: 3.2rem; }
-  .content h4 {
+  .inner .content-single h4 {
     font-size: 3rem; }
-  .content h5 {
+  .inner .content-single h5 {
     font-size: 2.8rem; }
-  .content h6 {
+  .inner .content-single h6 {
     font-size: 2.6rem; }
   .aside .title {
     font-size: 3.6rem; }
@@ -5923,15 +5965,15 @@ img.justifycenter, table.justifycenter {
       align-items: start; }
   .main h1 {
     font-size: 3.8rem; }
-  .content h2 {
+  .inner .content-single h2 {
     font-size: 3.6rem; }
-  .content h3 {
+  .inner .content-single h3 {
     font-size: 3rem; }
-  .content h4 {
+  .inner .content-single h4 {
     font-size: 2.8rem; }
-  .content h5 {
+  .inner .content-single h5 {
     font-size: 2.6rem; }
-  .content h6 {
+  .inner .content-single h6 {
     font-size: 2.5rem; } }
 
 @media (max-width: 1050px) {
@@ -5979,22 +6021,22 @@ img.justifycenter, table.justifycenter {
     display: none; }
   .main h1 {
     font-size: 3.6rem; }
-  .content h2 {
+  .inner .content-single h2 {
     font-size: 3.4rem; }
-  .content h3 {
+  .inner .content-single h3 {
     font-size: 2.8rem; }
-  .content h4 {
+  .inner .content-single h4 {
     font-size: 2.6rem; }
-  .content h5 {
+  .inner .content-single h5 {
     font-size: 2.5rem; }
-  .content h6 {
+  .inner .content-single h6 {
     font-size: 2.4rem; }
-  .content h1,
-  .content h2,
-  .content h3,
-  .content h4,
-  .content h5,
-  .content h6 {
+  .inner .content-single h1,
+  .inner .content-single h2,
+  .inner .content-single h3,
+  .inner .content-single h4,
+  .inner .content-single h5,
+  .inner .content-single h6 {
     margin: 2rem 0; }
   .inner .content-single {
     padding-right: 15px; } }
@@ -6045,21 +6087,21 @@ img.justifycenter, table.justifycenter {
   .inner .content-single {
     padding-left: 15px;
     padding-top: 0; }
-    .inner .content-single blockquote {
-      font-size: 2.2rem;
-      padding: 3rem 3.8rem; }
-    .inner .content-single h2 {
-      font-size: 3.2rem; }
-    .inner .content-single h3 {
-      font-size: 2.6rem; }
-    .inner .content-single h4 {
-      font-size: 2.5rem; }
-    .inner .content-single h5 {
-      font-size: 2.4rem; }
-    .inner .content-single h6 {
-      font-size: 2.3rem; }
-    .inner .content-single p {
-      font-size: 1.8rem; } }
+  .inner .content-single blockquote {
+    font-size: 2.2rem;
+    padding: 3rem 3.8rem; }
+  .inner .content-single h2 {
+    font-size: 3.2rem; }
+  .inner .content-single h3 {
+    font-size: 2.6rem; }
+  .inner .content-single h4 {
+    font-size: 2.5rem; }
+  .inner .content-single h5 {
+    font-size: 2.4rem; }
+  .inner .content-single h6 {
+    font-size: 2.3rem; }
+  .inner .content-single p {
+    font-size: 1.8rem; } }
 
 @media (max-width: 650px) {
   .header-intro:before {
@@ -6126,7 +6168,22 @@ img.justifycenter, table.justifycenter {
       height: 38px;
       width: 38px; }
   .main h1 {
-    font-size: 3rem; } }
+    font-size: 3rem; }
+  .inner .content-single blockquote {
+    font-size: 2rem;
+    padding: 2.4rem 2.6rem; }
+  .inner .content-single h2 {
+    font-size: 2.8rem; }
+  .inner .content-single h3 {
+    font-size: 2.5rem; }
+  .inner .content-single h4 {
+    font-size: 2.4rem; }
+  .inner .content-single h5 {
+    font-size: 2.3rem; }
+  .inner .content-single h6 {
+    font-size: 2.2rem; }
+  .inner .content-single p {
+    font-size: 1.5rem; } }
 
 @media (max-width: 470px) {
   .lastnews .title,
@@ -6247,12 +6304,12 @@ img.justifycenter, table.justifycenter {
   .pagination a {
     margin: 0 .4rem; }
   .main h1 {
-    font-size: 3.2rem; }
+    font-size: 3rem; }
   .inner .content-single blockquote {
     font-size: 2rem;
     padding: 1.2rem 1.5rem; }
   .inner .content-single h2 {
-    font-size: 3rem; }
+    font-size: 2.8rem; }
   .inner .content-single h3 {
     font-size: 2.5rem; }
   .inner .content-single h4 {
@@ -6260,4 +6317,6 @@ img.justifycenter, table.justifycenter {
   .inner .content-single h5 {
     font-size: 2.3rem; }
   .inner .content-single h6 {
-    font-size: 2.2rem; } }
+    font-size: 2.2rem; }
+  .inner .content-single p {
+    font-size: 1.5rem; } }
