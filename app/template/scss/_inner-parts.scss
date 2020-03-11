@@ -738,3 +738,40 @@
 	}
 }
 // =/suspension-page
+
+
+// =pss-page
+.pss{
+	&-page{
+		background: #fff;
+		padding-top: 0;
+		.container{
+			position: relative;
+		}
+		.mainpic{
+			position: absolute;
+			right: -50px;
+			top: 100px;
+		}
+	}
+	&-top{
+		background-color: #efefef;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 920px;
+		padding-top: 7rem;
+	}
+	&-groups{
+		margin-top: 6rem;
+		.cell{
+			width: calc(100% / 3)
+		}
+		.item-catparts{
+			margin-bottom: 3.5rem;
+		}
+	}
+
+
+}
+// =/pss-page
+

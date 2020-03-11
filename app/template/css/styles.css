@@ -3816,6 +3816,9 @@ em strong {
 .webp .suspension-top {
   background-image: url(../images/suspension-bg.webp); }
 
+.webp .pss-top {
+  background-image: url(../images/bg-4.webp); }
+
 .header-intro .intro:before {
   background-image: url(../images/radial-circle.png); }
   @media (max-width: 1399px) {
@@ -3857,6 +3860,9 @@ em strong {
 
 .suspension-top {
   background-image: url(../images/suspension-bg.jpg); }
+
+.pss-top {
+  background-image: url(../images/bg-4.jpg); }
 
 .homepage .footer {
   background: #083989; }
@@ -5546,6 +5552,30 @@ img.justifycenter, table.justifycenter {
   @media (max-width: 450px) {
     .suspension-groups .cell {
       width: calc(100% / 3); } }
+
+.pss-page {
+  background: #fff;
+  padding-top: 0; }
+  .pss-page .container {
+    position: relative; }
+  .pss-page .mainpic {
+    position: absolute;
+    right: -50px;
+    top: 100px; }
+
+.pss-top {
+  background-color: #efefef;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 920px;
+  padding-top: 7rem; }
+
+.pss-groups {
+  margin-top: 6rem; }
+  .pss-groups .cell {
+    width: calc(100% / 3); }
+  .pss-groups .item-catparts {
+    margin-bottom: 3.5rem; }
 
 /* =mobile-menu
 ---------------------------*/
