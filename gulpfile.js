@@ -268,7 +268,7 @@ gulp.task('default', ['watcher']);
 // webp
 gulp.task("webp", function() {
   let src = "app/images/_srcpng/**/*.png"; // Where your PNGs are coming from.
-  let dest = "app/images/_webpimg"; // Where your WebPs are going.
+  let dest = "app/images/_srcpng"; // Where your WebPs are going.
 
   return gulp.src(src)
     .pipe(imagemin([
