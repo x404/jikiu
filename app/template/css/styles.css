@@ -3819,6 +3819,14 @@ em strong {
 .webp .pss-top {
   background-image: url(../images/bg-4.webp); }
 
+.webp .wiper-intro {
+  background-image: url(../images/bg/wiper-slide.webp); }
+  @media (max-width: 1280px) {
+    .webp .wiper-intro {
+      background-image: url(../images/bg/wiper-slide-1200.webp); } }
+  .webp .wiper-intro .label {
+    background-image: url(../images/bg/label.webp); }
+
 .header-intro .intro:before {
   background-image: url(../images/radial-circle.png); }
   @media (max-width: 1399px) {
@@ -3863,6 +3871,14 @@ em strong {
 
 .pss-top {
   background-image: url(../images/bg-4.jpg); }
+
+.wiper-intro {
+  background-image: url(../images/bg/wiper-slide.jpg); }
+  @media (max-width: 1280px) {
+    .wiper-intro {
+      background-image: url(../images/bg/wiper-slide-1200.jpg); } }
+  .wiper-intro .label {
+    background-image: url(../images/bg/label.webp); }
 
 .homepage .footer {
   background: #083989; }
@@ -5683,6 +5699,60 @@ img.justifycenter, table.justifycenter {
         height: 5px;
         left: 0;
         top: 12px; }
+
+.wiper-intro {
+  background-color: #061129;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 2rem;
+  color: #e4e7e9;
+  font-family: "Futura Book C";
+  padding: 13.5rem 0; }
+  .wiper-intro strong {
+    font-family: "Futura Demi C";
+    font-weight: 600; }
+  .wiper-intro h1,
+  .wiper-intro .title {
+    color: #ffffff;
+    font-family: "Futura BT";
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase; }
+  .wiper-intro .subtitle {
+    color: #ff010b;
+    font-family: "Futura Demi C";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 4rem;
+    margin-bottom: 2rem; }
+  .wiper-intro .intro-icons {
+    color: #ffffff;
+    font-family: "Futura Demi C";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 4rem 0; }
+    .wiper-intro .intro-icons img {
+      margin-right: 1.3rem; }
+    .wiper-intro .intro-icons .cell {
+      display: flex;
+      align-items: center; }
+    .wiper-intro .intro-icons .cell:not(:last-child) {
+      margin-right: 2.5rem; }
+  .wiper-intro .label {
+    background-repeat: no-repeat;
+    width: 320px;
+    height: 438px;
+    color: #fff;
+    font-family: "Futura Demi C";
+    font-size: 3rem;
+    line-height: 1.33;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 5rem; }
 
 /* =mobile-menu
 ---------------------------*/

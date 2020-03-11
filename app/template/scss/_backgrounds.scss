@@ -42,6 +42,17 @@
 		background-image: url(../images/bg-4.webp);
 	}
 
+	.wiper-intro{
+		background-image: url(../images/bg/wiper-slide.webp);
+		@media (max-width: 1280px){
+			background-image: url(../images/bg/wiper-slide-1200.webp);
+		}
+
+		.label{
+			background-image: url(../images/bg/label.webp);
+		}
+	}
+
 }
 
 
@@ -104,4 +115,16 @@
 
 .pss-top{
 	background-image: url(../images/bg-4.jpg);
+}
+
+
+.wiper-intro{
+	background-image: url(../images/bg/wiper-slide.jpg);
+	@media (max-width: 1280px){
+		background-image: url(../images/bg/wiper-slide-1200.jpg);
+	}
+
+	.label{
+		background-image: url(../images/bg/label.webp);
+	}
 }
