@@ -5158,7 +5158,12 @@ img.justifycenter, table.justifycenter {
       line-height: 1.35; }
       .submenu a,
       .submenu span {
-        padding: 1.5rem 0; } }
+        padding: 1.5rem 0; }
+      .submenu .active:last-child:before {
+        left: -1rem;
+        width: calc(100% + 2rem); }
+      .submenu li:not(:last-child) {
+        margin-right: .8rem; } }
   @media (max-width: 720px) {
     .submenu {
       font-size: 1.3rem; }
@@ -5868,6 +5873,25 @@ img.justifycenter, table.justifycenter {
       .find-adaptor .nav-link.active {
         text-decoration: none;
         color: #ff010b; }
+  @media (max-width: 991px) {
+    .find-adaptor {
+      padding: 5rem 0 6rem;
+      min-height: 0; }
+      .find-adaptor .nav-link {
+        font-size: 2.2rem; } }
+  @media (max-width: 768px) {
+    .find-adaptor .nav {
+      padding: 2.5rem 0; }
+    .find-adaptor .nav-link {
+      font-size: 2rem; } }
+  @media (max-width: 576px) {
+    .find-adaptor header,
+    .find-adaptor .nav {
+      padding-left: 1.5rem; }
+    .find-adaptor .container {
+      max-width: 100%;
+      padding-left: 0;
+      padding-right: 0; } }
 
 .item-adaptor {
   height: 29rem;
@@ -5919,6 +5943,10 @@ img.justifycenter, table.justifycenter {
     font-size: 1.7rem;
     font-weight: 400;
     line-height: 1.2; }
+  @media (max-width: 1050px) {
+    .item-adaptor {
+      margin-left: auto;
+      margin-right: auto; } }
 
 /* =mobile-menu
 ---------------------------*/

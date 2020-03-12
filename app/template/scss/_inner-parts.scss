@@ -108,6 +108,15 @@
 		span{
 			padding: 1.5rem 0;
 		}
+
+		.active:last-child:before{
+			left: -1rem;
+			width: calc(100% + 2rem)
+		}
+
+		li:not(:last-child){
+			margin-right: .8rem;
+		}
 	}
 
 
