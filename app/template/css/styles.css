@@ -3693,7 +3693,7 @@ em strong {
   font-family: "Futura Demi C"; }
   .navmenu .nav li {
     letter-spacing: 1.6px;
-    margin: 0 2.5rem; }
+    margin: 0 2.3rem; }
     .navmenu .nav li.active {
       color: #2065d8;
       cursor: default; }
@@ -6648,8 +6648,6 @@ img.justifycenter, table.justifycenter {
   .header-intro:before {
     border-right-width: 800px;
     border-top-width: 500px; }
-  .navmenu {
-    margin-top: 1.5rem; }
   .main h1 {
     font-size: 4rem; } }
 
