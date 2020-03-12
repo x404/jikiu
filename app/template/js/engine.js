@@ -291,7 +291,30 @@ $(document).ready(function(){
 		]
 	});
 
-
-	// $('.collapse').collapse()
-
 });
+
+
+
+class mobmenu{
+	constructor(name){
+		this.name = name;
+		document.querySelector('.navbar-toggle').addEventListener('click', () =>
+			this.open()
+		);		
+	}
+	open(){
+		document.querySelector(this.name + ' .close').addEventListener('click', () =>
+			this.close()
+		);
+
+		// show popup
+		document.querySelector(this.name).classList.add('show');
+	}
+	close(){
+		// hide popup
+		document.querySelector(this.name).classList.remove('show');
+	}
+}
+
+let modalinfo = new mobmenu('.mobmenu');
+
