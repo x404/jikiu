@@ -44,12 +44,17 @@
 
 	.wiper-intro{
 		background-image: url(../images/bg/wiper-slide.webp);
-		@media (max-width: 1280px){
+		@media (max-width: 1800px){
+			background-image: url(../images/bg/wiper-slide-1600.webp);
+		}
+		@media (max-width: 1399px){
 			background-image: url(../images/bg/wiper-slide-1200.webp);
 		}
-
+		@media (max-width: 991px){
+			background-image: url(../images/bg/wiper-slide-1000.webp);
+		}
 		.label{
-			background-image: url(../images/bg/label.webp);
+			// background-image: url(../images/bg/label.webp);
 		}
 	}
 
@@ -124,12 +129,19 @@
 
 .wiper-intro{
 	background-image: url(../images/bg/wiper-slide.jpg);
+
+	@media (max-width: 1800px){
+		background-image: url(../images/bg/wiper-slide-1600.jpg);
+	}
 	@media (max-width: 1280px){
 		background-image: url(../images/bg/wiper-slide-1200.jpg);
 	}
+	@media (max-width: 991px){
+		background-image: url(../images/bg/wiper-slide-1000.jpg);
+	}
 
 	.label{
-		background-image: url(../images/bg/label.png);
+		// background-image: url(../images/bg/label.png);
 	}
 
 }

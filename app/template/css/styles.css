@@ -3821,11 +3821,15 @@ em strong {
 
 .webp .wiper-intro {
   background-image: url(../images/bg/wiper-slide.webp); }
-  @media (max-width: 1280px) {
+  @media (max-width: 1800px) {
+    .webp .wiper-intro {
+      background-image: url(../images/bg/wiper-slide-1600.webp); } }
+  @media (max-width: 1399px) {
     .webp .wiper-intro {
       background-image: url(../images/bg/wiper-slide-1200.webp); } }
-  .webp .wiper-intro .label {
-    background-image: url(../images/bg/label.webp); }
+  @media (max-width: 991px) {
+    .webp .wiper-intro {
+      background-image: url(../images/bg/wiper-slide-1000.webp); } }
 
 .webp .find-adaptor {
   background-image: url(../images/bg/bg-5.webp); }
@@ -3877,11 +3881,15 @@ em strong {
 
 .wiper-intro {
   background-image: url(../images/bg/wiper-slide.jpg); }
+  @media (max-width: 1800px) {
+    .wiper-intro {
+      background-image: url(../images/bg/wiper-slide-1600.jpg); } }
   @media (max-width: 1280px) {
     .wiper-intro {
       background-image: url(../images/bg/wiper-slide-1200.jpg); } }
-  .wiper-intro .label {
-    background-image: url(../images/bg/label.png); }
+  @media (max-width: 991px) {
+    .wiper-intro {
+      background-image: url(../images/bg/wiper-slide-1000.jpg); } }
 
 .find-adaptor {
   background-image: url(../images/bg/bg-5.jpg); }
@@ -5136,7 +5144,7 @@ img.justifycenter, table.justifycenter {
     .submenu li:not(:last-child) {
       margin-right: 4rem; }
     .submenu .active:before {
-      left: -2rem;
+      left: -2.2rem;
       width: calc(100% + 4rem); } }
   @media (max-width: 1250px) {
     .submenu li:not(:last-child) {
@@ -5737,7 +5745,7 @@ img.justifycenter, table.justifycenter {
   .wiper-intro .intro-icons {
     color: #ffffff;
     font-family: "Futura Demi C";
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 400;
     line-height: 1.2;
     margin: 4rem 0; }
@@ -5749,17 +5757,91 @@ img.justifycenter, table.justifycenter {
     .wiper-intro .intro-icons .cell:not(:last-child) {
       margin-right: 2.5rem; }
   .wiper-intro .label {
+    background: rgba(32, 101, 216, 0.8);
+    border-radius: 3rem;
     background-repeat: no-repeat;
     width: 320px;
-    height: 438px;
+    height: 370px;
     color: #fff;
     font-family: "Futura Demi C";
     font-size: 3rem;
-    line-height: 1.33;
+    line-height: 1.3;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    padding-bottom: 5rem; }
+    padding-bottom: 5rem;
+    position: relative; }
+    .wiper-intro .label-pic {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 0; }
+  @media (max-width: 1800px) {
+    .wiper-intro {
+      height: 62rem;
+      padding: 8rem 0; }
+      .wiper-intro .subtitle {
+        margin-top: 3rem; }
+      .wiper-intro .intro-icons {
+        font-size: 2.4rem; }
+        .wiper-intro .intro-icons .cell {
+          margin-right: 0 !important; }
+          .wiper-intro .intro-icons .cell img {
+            height: 50px; }
+      .wiper-intro .label {
+        margin-top: 100px; } }
+  @media (max-width: 1600px) {
+    .wiper-intro .label {
+      right: 35px; } }
+  @media (max-width: 1399px) {
+    .wiper-intro {
+      height: 46rem;
+      padding: 6rem 0;
+      font-size: 1.7rem; }
+      .wiper-intro .subtitle {
+        margin-top: 2rem;
+        font-size: 3rem; }
+      .wiper-intro .intro-icons {
+        font-size: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 0; }
+      .wiper-intro .label {
+        font-size: 2.5rem;
+        height: 32rem;
+        margin-top: 3rem;
+        width: 28rem; }
+        .wiper-intro .label img {
+          max-width: 100%; } }
+  @media (max-width: 991px) {
+    .wiper-intro {
+      height: 39rem;
+      padding: 3.5rem 0; }
+      .wiper-intro .subtitle {
+        margin-top: 1.5rem; }
+      .wiper-intro .intro-icons {
+        font-size: 1.6rem; }
+      .wiper-intro .label {
+        font-size: 2.3rem;
+        margin-top: 3.5rem;
+        height: 29rem;
+        width: 26rem; } }
+  @media (max-width: 900px) {
+    .wiper-intro {
+      padding: 2.5rem 0 0; }
+      .wiper-intro .subtitle {
+        margin-top: 1rem;
+        margin-bottom: 1.2rem; }
+      .wiper-intro .intro-icons {
+        margin-top: 2rem; } }
+  @media (max-width: 576px) {
+    .wiper-intro {
+      height: auto;
+      padding-bottom: 2rem; }
+      .wiper-intro .subtitle {
+        font-size: 2.6rem; }
+      .wiper-intro .intro-icons .cell {
+        margin-bottom: 1rem;
+        margin-right: 1rem; } }
 
 .find-adaptor {
   background-color: #083989;
