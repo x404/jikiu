@@ -11,6 +11,28 @@
 	}
 
 
+	@media (max-width: 1399px){
+		// about
+		.about{
+			padding-top: 5rem;
+		}
+
+		.bottom-text{
+			margin-top: 4rem;
+			padding-top: 3rem;
+		}
+	}
+
+	@media (max-width: 576px){
+		.content-single{
+			padding-bottom: 2rem;
+		}
+
+		.bottom-text{
+			margin-top: 2rem;
+			padding-top: 1rem;
+		}
+	}
 }
 
 .advantages,
@@ -246,8 +268,9 @@
 				max-width: 100%
 			}
 		}
-	}
 
+
+	}
 
 
 	@media (max-width: 991px){

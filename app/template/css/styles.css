@@ -5646,6 +5646,20 @@ img.justifycenter, table.justifycenter {
   padding: 7rem 0 0;
   margin-top: 6rem; }
 
+@media (max-width: 1399px) {
+  .inner .about {
+    padding-top: 5rem; }
+  .inner .bottom-text {
+    margin-top: 4rem;
+    padding-top: 3rem; } }
+
+@media (max-width: 576px) {
+  .inner .content-single {
+    padding-bottom: 2rem; }
+  .inner .bottom-text {
+    margin-top: 2rem;
+    padding-top: 1rem; } }
+
 .advantages h1,
 .types h1,
 .find-adaptor h1 {
@@ -6516,7 +6530,7 @@ img.justifycenter, table.justifycenter {
   .main h1 {
     font-size: 3rem; }
   .inner .content-single blockquote {
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 2.4rem 2.6rem; }
   .inner .content-single h2 {
     font-size: 2.8rem; }
@@ -6652,7 +6666,7 @@ img.justifycenter, table.justifycenter {
   .main h1 {
     font-size: 3rem; }
   .inner .content-single blockquote {
-    font-size: 2rem;
+    font-size: 1.6rem;
     padding: 1.2rem 1.5rem; }
   .inner .content-single h2 {
     font-size: 2.8rem; }
