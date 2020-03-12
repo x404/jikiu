@@ -56,8 +56,42 @@
 		padding-top: 4rem;
 	}
 	&__item{
-		width: calc(100% / 5 - 6rem);
 		margin: 0 3rem;
+		width: calc(100% / 5 - 6rem);
+	}
+
+	@media (max-width: 1399px){
+		padding: 8rem 0;
+	}
+
+	@media (max-width: 991px){
+		padding: 8rem 0 5rem;
+		&__item{
+			width: calc(100% / 3 - 6rem);
+			margin-bottom: 3rem;
+		}
+	}
+
+	@media (max-width: 767px){
+		padding: 8rem 0 5rem;
+		&__item{
+			width: calc(100% / 2 - 6rem);
+			margin-bottom: 3rem;
+		}
+	}
+
+	@media (max-width: 480px){
+		padding: 8rem 0 5rem;
+		header{
+			text-align: center;
+		}
+		&__item{
+			margin-bottom: 3rem;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			width: 80%;
+		}
 	}
 }
 
@@ -65,18 +99,23 @@
 	&__title{
 		color: #222222;
 		font-family: "Futura Demi C";
-		font-size: 25px;
+		font-size: 2.5rem;
 		line-height: 1.2;
 		margin-top: 1.5rem;
 	}
 
 	&__text{
 		color: #303030;
-		font-family: "Futura Book C";
-		font-size: 17px;
+		font-size: 1.7rem;
 		font-weight: 400;
 		line-height: 1.47;
 		margin-top: 1.5rem;
+	}
+
+	@media (max-width: 1399px){
+		&__title{
+			font-size: 2.2rem;
+		}
 	}
 }
 
