@@ -73,14 +73,10 @@
 
 	.inner-about .features{
 		background-image: url(../images/bg/bg-9.webp);
-		position: relative;
 		&:before{
-			@extend .before;
 			background: url(../images/bg/bg-8.webp) no-repeat left top;
 			height: 928px;
 			width: 900px;
-			left: 0;
-			top: 0;
 			@media (max-width: 1600px){
 				background-image: url(../images/bg/bg-8-500.webp);
 				height: 516px;
@@ -95,7 +91,6 @@
 				display: none;
 			}
 		}
-
 	}
 }
 
@@ -191,4 +186,31 @@
 
 .market-coverage{
 	background-image: url(../images/bg/bg-7.jpg);
+}
+
+
+.inner-about .features{
+	background-image: url(../images/bg/bg-9.webp);
+	position: relative;
+	&:before{
+		@extend .before;
+		background: url(../images/bg/bg-8.webp) no-repeat left top;
+		height: 928px;
+		width: 900px;
+		left: 0;
+		top: 0;
+		@media (max-width: 1600px){
+			background-image: url(../images/bg/bg-8-500.webp);
+			height: 516px;
+			width: 500px;
+		}
+		@media (max-width: 991px){
+			background-image: url(../images/bg/bg-8-300.webp);
+			height: 310px;
+			width: 300px;
+		}
+		@media (max-width: 767px){
+			display: none;
+		}
+	}
 }
