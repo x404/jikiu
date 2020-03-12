@@ -1,0 +1,113 @@
+.inner-about{
+	background-repeat: no-repeat;
+	.about{
+		&__top{
+			color: #fff;
+			font-size: 2rem;
+			padding-top: 4.2rem;
+			.subtitle{
+				color: #ff000a;
+				font-size: 4rem;
+				font-family: "Futura Demi C";
+				font-weight: 400;
+				line-height: 1.5;
+				margin-bottom: 2.5rem;
+			}
+			.str2{
+				font-family: "Futura Demi C";
+			}
+
+			.cifres{
+				margin-top: 8rem;
+				margin-bottom: 5rem;
+			}
+		}
+	}
+
+	.cifres{
+		background: #fff;
+		border-radius: .5rem;
+		color: $color10;
+		margin-top: 8rem;
+		padding: 4rem 4.5rem;
+	}
+}
+
+
+.market-coverage{
+	background-color: #14183d;
+	background-size: contain;
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	color: #898989;
+	font-size: 2rem;
+	margin-top: 4.5rem;
+	min-height: 1149px;
+	padding: 12rem 0 23rem;
+	h1,
+	.title{
+		color: #fff;
+		margin-bottom: 1.1rem;
+		font-size: 4rem;
+		font-family: "Futura Demi C";
+	}
+
+	.accordion{
+		margin-top: 5.5rem;
+		.btn{
+			background: none;
+			border: none;
+			font-size: 6rem;
+			font-family: "Futura BT";
+			font-weight: 700;
+			line-height: 1.4;
+			padding: 0;
+			cursor: pointer;
+			color: $color7;
+			&.collapsed{
+				color: $color9;				
+			}
+			span{
+				color: #4b5763;
+			}
+		}
+
+		.card-body{
+			font-size: 1.4rem;
+			color: #fff;
+			padding: 0.8rem 0 7rem 8rem; 
+		}
+
+		.line{
+			width: 56rem;
+			background-color: #4b5763;
+			$radius: .5rem;
+			border-radius: $radius;
+			margin-bottom: .7rem;
+			div{
+				height: 1.2rem;
+				border-radius: $radius 0 0 $radius
+			}
+			&-1{
+				div{
+					background-color: #54c4ec					
+				}
+			}
+			&-2{
+				div{
+					background-color: #5491ec					
+				}
+			}
+			&-3{
+				div{
+					background-color: #5b54ec					
+				}
+			}
+			&-4{
+				div{
+					background-color: #d954ec					
+				}
+			}
+		}
+	}
+}

@@ -3670,7 +3670,7 @@ em strong {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .navmenu .nav a:after, .navmenu .nav a:before, .header-intro:before, .header-intro:after, .header-intro .intro:before, .header-intro .cifres__item:not(:last-child):after, .btn-back:before, .item-news__bg:after, .item-news__bg:before, .news__list-main .item-news__inner:after, .news__list-main .item-news__inner:before, .inner .content-single ul li:before, .inner-contacts .title:after, .tr-corner:before, .tr-corner:after, .inner-products .item-product__pic:before, .inner-products .item-product__pic:after, .submenu .active:before, .item-catparts__link:hover .item-catparts__pic:before, .item-catparts__pic:before, .item-type__text ul li:before, .item-adaptor:after, .item-adaptor:before {
+.before, .navmenu .nav a:after, .navmenu .nav a:before, .cifres__item:not(:last-child):after, .header-intro:before, .header-intro:after, .header-intro .intro:before, .btn-back:before, .item-news__bg:after, .item-news__bg:before, .news__list-main .item-news__inner:after, .news__list-main .item-news__inner:before, .inner .content-single ul li:before, .inner-contacts .title:after, .tr-corner:before, .tr-corner:after, .inner-products .item-product__pic:before, .inner-products .item-product__pic:after, .submenu .active:before, .item-catparts__link:hover .item-catparts__pic:before, .item-catparts__pic:before, .item-type__text ul li:before, .item-adaptor:after, .item-adaptor:before {
   content: "";
   display: block;
   position: absolute; }
@@ -3834,6 +3834,12 @@ em strong {
 .webp .find-adaptor {
   background-image: url(../images/bg/bg-5.webp); }
 
+.webp .inner-about {
+  background-image: url(../images/bg/bg-6.webp); }
+
+.webp .market-coverage {
+  background-image: url(../images/bg/bg-7.jpg); }
+
 .header-intro .intro:before {
   background-image: url(../images/radial-circle.png); }
   @media (max-width: 1399px) {
@@ -3894,12 +3900,51 @@ em strong {
 .find-adaptor {
   background-image: url(../images/bg/bg-5.jpg); }
 
+.inner-about {
+  background-image: url(../images/bg/bg-6.jpg); }
+
+.market-coverage {
+  background-image: url(../images/bg/bg-7.jpg); }
+
 .homepage .footer {
   background: #083989; }
   .homepage .footer .container {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 2rem; }
 
+/* =cifres
+	---------------------------*/
+.cifres {
+  position: relative;
+  padding-bottom: 75px;
+  margin-top: -9rem; }
+  .cifres__item {
+    position: relative; }
+    .cifres__item:not(:last-child) {
+      padding-right: 2.5rem;
+      margin-right: 3rem; }
+      .cifres__item:not(:last-child):after {
+        background: #000;
+        height: 55px;
+        opacity: 0.1;
+        right: 0;
+        top: 10px;
+        width: 1px;
+        z-index: 10; }
+
+.item__cifr-title {
+  color: #000;
+  font-family: "Futura Demi C";
+  font-size: 3rem;
+  font-weight: 400; }
+
+.item__cifr-desc {
+  color: #909090;
+  font-family: "Futura Book C";
+  font-size: 1.7rem; }
+
+/* =/cifres
+	---------------------------*/
 .header-intro {
   background-color: #f7f7f7;
   background: linear-gradient(#f4f4f4, #f3f3f3);
@@ -3913,10 +3958,6 @@ em strong {
   /* =catalog
 	---------------------------*/
   /* =/catalog
-	---------------------------*/
-  /* =cifres
-	---------------------------*/
-  /* =/cifres
 	---------------------------*/ }
   .header-intro:before {
     width: 0;
@@ -4003,32 +4044,6 @@ em strong {
         text-decoration: none; }
         .header-intro .catalog__link:hover img {
           filter: grayscale(1) invert(1) brightness(5); }
-  .header-intro .cifres {
-    position: relative;
-    padding-bottom: 75px;
-    margin-top: -9rem; }
-    .header-intro .cifres__item {
-      position: relative; }
-      .header-intro .cifres__item:not(:last-child) {
-        padding-right: 2.5rem;
-        margin-right: 3rem; }
-        .header-intro .cifres__item:not(:last-child):after {
-          background: #000;
-          height: 55px;
-          opacity: 0.1;
-          right: 0;
-          top: 10px;
-          width: 1px;
-          z-index: 10; }
-  .header-intro .item__cifr-title {
-    color: #000;
-    font-family: "Futura Demi C";
-    font-size: 3rem;
-    font-weight: 400; }
-  .header-intro .item__cifr-desc {
-    color: #909090;
-    font-family: "Futura Book C";
-    font-size: 1.7rem; }
   .header-intro .car {
     margin: -23px -40px 0 -140px;
     overflow: hidden; }
@@ -4957,18 +4972,24 @@ img.justifycenter, table.justifycenter {
         height: auto;
         max-width: 100%; } }
 
+.inner-products .navmenu .nav a,
+.inner-about .navmenu .nav a {
+  color: #fff; }
+
+.inner-products .navmenu .nav li.active,
+.inner-about .navmenu .nav li.active {
+  color: #d82027; }
+
+.inner-products .langs a,
+.inner-about .langs a {
+  color: #fff; }
+
 .inner-products {
   background-color: #083989;
   background-position: right center;
   background-size: cover;
   background-repeat: no-repeat; }
   .inner-products h1 {
-    color: #fff; }
-  .inner-products .navmenu .nav a {
-    color: #fff; }
-  .inner-products .navmenu .nav li.active {
-    color: #d82027; }
-  .inner-products .langs a {
     color: #fff; }
   .inner-products .main {
     padding-top: 7.5rem; }
@@ -6142,6 +6163,84 @@ img.justifycenter, table.justifycenter {
   /* let the content decide it  */ }
 
 /* bootstrap hack end */
+.inner-about {
+  background-repeat: no-repeat; }
+  .inner-about .about__top {
+    color: #fff;
+    font-size: 2rem;
+    padding-top: 4.2rem; }
+    .inner-about .about__top .subtitle {
+      color: #ff000a;
+      font-size: 4rem;
+      font-family: "Futura Demi C";
+      font-weight: 400;
+      line-height: 1.5;
+      margin-bottom: 2.5rem; }
+    .inner-about .about__top .str2 {
+      font-family: "Futura Demi C"; }
+    .inner-about .about__top .cifres {
+      margin-top: 8rem;
+      margin-bottom: 5rem; }
+  .inner-about .cifres {
+    background: #fff;
+    border-radius: .5rem;
+    color: #909090;
+    margin-top: 8rem;
+    padding: 4rem 4.5rem; }
+
+.market-coverage {
+  background-color: #14183d;
+  background-size: contain;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  color: #898989;
+  font-size: 2rem;
+  margin-top: 4.5rem;
+  min-height: 1149px;
+  padding: 12rem 0 23rem; }
+  .market-coverage h1,
+  .market-coverage .title {
+    color: #fff;
+    margin-bottom: 1.1rem;
+    font-size: 4rem;
+    font-family: "Futura Demi C"; }
+  .market-coverage .accordion {
+    margin-top: 5.5rem; }
+    .market-coverage .accordion .btn {
+      background: none;
+      border: none;
+      font-size: 6rem;
+      font-family: "Futura BT";
+      font-weight: 700;
+      line-height: 1.4;
+      padding: 0;
+      cursor: pointer;
+      color: #d82027; }
+      .market-coverage .accordion .btn.collapsed {
+        color: #2065d8; }
+      .market-coverage .accordion .btn span {
+        color: #4b5763; }
+    .market-coverage .accordion .card-body {
+      font-size: 1.4rem;
+      color: #fff;
+      padding: 0.8rem 0 7rem 8rem; }
+    .market-coverage .accordion .line {
+      width: 56rem;
+      background-color: #4b5763;
+      border-radius: 0.5rem;
+      margin-bottom: .7rem; }
+      .market-coverage .accordion .line div {
+        height: 1.2rem;
+        border-radius: 0.5rem 0 0 0.5rem; }
+      .market-coverage .accordion .line-1 div {
+        background-color: #54c4ec; }
+      .market-coverage .accordion .line-2 div {
+        background-color: #5491ec; }
+      .market-coverage .accordion .line-3 div {
+        background-color: #5b54ec; }
+      .market-coverage .accordion .line-4 div {
+        background-color: #d954ec; }
+
 /* =mobile-menu
 ---------------------------*/
 .show-sm,

@@ -8,6 +8,49 @@
 	}
 }
 
+	/* =cifres
+	---------------------------*/
+	.cifres{
+		position: relative;
+		// padding-top: 15rem;
+		padding-bottom: 75px;
+		margin-top: -9rem;
+		&__item{
+			position: relative;
+			&:not(:last-child){
+				padding-right: 2.5rem;
+				margin-right: 3rem;				
+				&:after{
+					@extend .before;
+					background: #000;
+					height: 55px;
+					opacity: 0.1;
+					right: 0;
+					top: 10px;
+					width: 1px;
+					z-index: 10;
+				}
+			}
+		}
+	}
+
+	.item__cifr{
+		&-title{
+			color: #000;
+			font-family: "Futura Demi C";
+			font-size: 3rem;
+			font-weight: 400;
+		}
+		&-desc{
+			color: $color10;
+			font-family: "Futura Book C";
+			font-size: 1.7rem;
+		}
+	}
+	/* =/cifres
+	---------------------------*/
+
+	
 .header-intro{
 	background-color: $color3;
     background: linear-gradient(#f4f4f4, #f3f3f3);
@@ -144,47 +187,7 @@
 
 
 
-	/* =cifres
-	---------------------------*/
-	.cifres{
-		position: relative;
-		// padding-top: 15rem;
-		padding-bottom: 75px;
-		margin-top: -9rem;
-		&__item{
-			position: relative;
-			&:not(:last-child){
-				padding-right: 2.5rem;
-				margin-right: 3rem;				
-				&:after{
-					@extend .before;
-					background: #000;
-					height: 55px;
-					opacity: 0.1;
-					right: 0;
-					top: 10px;
-					width: 1px;
-					z-index: 10;
-				}
-			}
-		}
-	}
 
-	.item__cifr{
-		&-title{
-			color: #000;
-			font-family: "Futura Demi C";
-			font-size: 3rem;
-			font-weight: 400;
-		}
-		&-desc{
-			color: $color10;
-			font-family: "Futura Book C";
-			font-size: 1.7rem;
-		}
-	}
-	/* =/cifres
-	---------------------------*/
 
 
 	.car{

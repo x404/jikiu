@@ -1,12 +1,6 @@
-.inner-products{
-	background-color: #083989;
-	background-position: right center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	h1{
-		color: #fff;
-	}
-
+.inner-products,
+.inner-about
+{
 	.navmenu .nav{
 		a{
 			color: #fff;
@@ -18,7 +12,20 @@
 
 	.langs a{
 		color: #fff
+	}	
+}
+
+
+.inner-products{
+	background-color: #083989;
+	background-position: right center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	h1{
+		color: #fff;
 	}
+
+
 
 	.main{
 		padding-top: 7.5rem;
