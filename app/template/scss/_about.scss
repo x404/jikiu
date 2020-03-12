@@ -1,5 +1,9 @@
 .inner-about{
 	background-repeat: no-repeat;
+
+	.navbar-toggle{
+		color: #fff;
+	}
 	.about{
 		&__top{
 			color: #fff;
@@ -215,18 +219,22 @@
 		.btn{
 			background: none;
 			border: none;
-			font-size: 6rem;
+			color: $color7;
+			cursor: pointer;
 			font-family: "Futura BT";
+			font-size: 6rem;
 			font-weight: 700;
 			line-height: 1.4;
 			padding: 0;
-			cursor: pointer;
-			color: $color7;
+			transition: .3s color;
 			&.collapsed{
 				color: $color9;				
 			}
 			span{
 				color: #4b5763;
+			}
+			&:hover{
+				color: #63ebff;
 			}
 		}
 

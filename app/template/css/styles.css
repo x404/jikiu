@@ -6230,6 +6230,8 @@ img.justifycenter, table.justifycenter {
 /* bootstrap hack end */
 .inner-about {
   background-repeat: no-repeat; }
+  .inner-about .navbar-toggle {
+    color: #fff; }
   .inner-about .about__top {
     color: #fff;
     font-size: 2rem;
@@ -6367,17 +6369,20 @@ img.justifycenter, table.justifycenter {
     .market-coverage .accordion .btn {
       background: none;
       border: none;
-      font-size: 6rem;
+      color: #d82027;
+      cursor: pointer;
       font-family: "Futura BT";
+      font-size: 6rem;
       font-weight: 700;
       line-height: 1.4;
       padding: 0;
-      cursor: pointer;
-      color: #d82027; }
+      transition: .3s color; }
       .market-coverage .accordion .btn.collapsed {
         color: #2065d8; }
       .market-coverage .accordion .btn span {
         color: #4b5763; }
+      .market-coverage .accordion .btn:hover {
+        color: #63ebff; }
     .market-coverage .accordion .card-body {
       font-size: 1.4rem;
       color: #fff;
