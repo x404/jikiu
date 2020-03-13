@@ -70,7 +70,6 @@
 		background-image: url(../images/bg/bg-7.webp);
 	}
 
-
 	.inner-about .features{
 		background-image: url(../images/bg/bg-9.webp);
 		&:before{
@@ -92,6 +91,11 @@
 			}
 		}
 	}
+
+	.inner-catalogsearch .neck__body{
+		background-image: url(../images/bg/bg-10.webp);
+	}
+	
 }
 
 
@@ -213,4 +217,9 @@
 			display: none;
 		}
 	}
+}
+
+
+.inner-catalogsearch .neck__body{
+	background-image: url(../images/bg/bg-10.jpg);
 }

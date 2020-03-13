@@ -73,11 +73,12 @@
 
 		// body
 		&__body{
-			background: $color14;
-			color: #fff;
-			padding-top: 3.5rem;
-			padding-bottom: 5rem;
+			background-color: $color14;
+			background-repeat: no-repeat;
+			background-size: cover;
 			border-bottom: 10px solid $color7;
+			color: #fff;
+			padding: 3.5rem 0 5rem;
 		}
 
 		.tab-pane{

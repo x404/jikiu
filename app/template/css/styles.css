@@ -3879,6 +3879,9 @@ em strong {
       .webp .inner-about .features:before {
         display: none; } }
 
+.webp .inner-catalogsearch .neck__body {
+  background-image: url(../images/bg/bg-10.webp); }
+
 .header-intro .intro:before {
   background-image: url(../images/radial-circle.png); }
   @media (max-width: 1399px) {
@@ -3967,6 +3970,9 @@ em strong {
     @media (max-width: 767px) {
       .inner-about .features:before {
         display: none; } }
+
+.inner-catalogsearch .neck__body {
+  background-image: url(../images/bg/bg-10.jpg); }
 
 .homepage .footer {
   background: #083989; }
@@ -6614,11 +6620,12 @@ img.justifycenter, table.justifycenter {
         .inner-catalogsearch .neck .nav-tabs .active:hover {
           color: #fff; }
     .inner-catalogsearch .neck__body {
-      background: #083989;
+      background-color: #083989;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-bottom: 10px solid #d82027;
       color: #fff;
-      padding-top: 3.5rem;
-      padding-bottom: 5rem;
-      border-bottom: 10px solid #d82027; }
+      padding: 3.5rem 0 5rem; }
     .inner-catalogsearch .neck .tab-pane {
       overflow: initial; }
     .inner-catalogsearch .neck .tab-content label {
