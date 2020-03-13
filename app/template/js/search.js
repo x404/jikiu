@@ -13,63 +13,107 @@ $(document).ready(function(){
 		}
 	});
 
-typelist = new PerfectScrollbar('#productsizemenu .listwrapper', {
-				wheelPropagation: true,
-				minScrollbarLength: 100,
-				maxScrollbarLength: 100,
-			});
-
 
 
 	$('#selBrand').multipleSelect({
 		single: true,  
 		filter: true ,
-		onOpen: function() {  
-			// $('#brand_tab .ms-parent .ms-drop .ms-search input').focus();
-			// $("#brand_tab ul").getNiceScroll()[0].show().onResize();
+		onFilter: function(){
+			brandlist.update();
+		},
+		onOpen: function() {
+			brandlist.update();
 		}
 	});
 
 	$('#selClass').multipleSelect({
-		filter: true ,
-		onOpen: function() {  
-			// $('#class_tab .ms-parent .ms-drop .ms-search input').focus();
-			// $("#class_tab ul").getNiceScroll()[0].show().onResize();
+		filter: true,
+		onFilter: function(){
+			classlist.update();
+		},
+		onOpen: function() {
+			classlist.update();
 		}
 	});
 
-	$('#selModel').multipleSelect({
+	$('#selBody').multipleSelect({
 		filter: true,
 		selectAll: false,
-		onOpen: function() {  
-			// $('#model_tab .ms-parent .ms-drop .ms-search input').focus();
-			// $("#model_tab ul").getNiceScroll()[0].show().onResize();
+		onFilter: function(){
+			bodylist.update();
+		},
+		onOpen: function() {
+			bodylist.update();
+		}
+	});
+
+	$('#selYear').multipleSelect({
+		filter: true,
+		onFilter: function(){
+			yearlist.update();
+		},
+		onOpen: function() {
+			yearlist.update();
 		}
 	});
 
 	$('#selEngine').multipleSelect({
 		filter: true,
+		onFilter: function(){
+			enginelist.update();
+		},
 		onOpen: function() {
-			// $("#engine_tab ul").getNiceScroll()[0].show().onResize();
-		}  
+			enginelist.update();
+		}
 	});  
 
 
-	$('#selYear').multipleSelect({
+	$('#selEnginevolume').multipleSelect({
 		filter: true,
+		onFilter: function(){
+			enginevolumelist.update();
+		},
 		onOpen: function() {
-			// $("#year_tab ul").getNiceScroll()[0].show().onResize();
-		}
-	});
-
-	$('#selBody').multipleSelect({
-		filter: true ,
-		onOpen: function() {
-			// $("#body_tab ul").getNiceScroll()[0].show().onResize();
+			enginevolumelist.update();
 		}
 	}); 
 
 
 
+typelist = new PerfectScrollbar('#productsizemenu .listwrapper', {
+				wheelPropagation: true,
+				minScrollbarLength: 100,
+				maxScrollbarLength: 100,
+			});
+brandlist = new PerfectScrollbar('#brand_tab .listwrapper', {
+				wheelPropagation: true,
+				minScrollbarLength: 100,
+				maxScrollbarLength: 100,
+			});
+classlist = new PerfectScrollbar('#class_tab .listwrapper', {
+				wheelPropagation: true,
+				minScrollbarLength: 100,
+				maxScrollbarLength: 100,
+			});
+bodylist = new PerfectScrollbar('#body_tab .listwrapper', {
+				wheelPropagation: true,
+				minScrollbarLength: 100,
+				maxScrollbarLength: 100,
+			});
+yearlist = new PerfectScrollbar('#year_tab .listwrapper', {
+				wheelPropagation: true,
+				minScrollbarLength: 100,
+				maxScrollbarLength: 100,
+			});
+enginelist = new PerfectScrollbar('#engine_tab .listwrapper', {
+				wheelPropagation: true,
+				minScrollbarLength: 100,
+				maxScrollbarLength: 100,
+			});
+enginevolumelist = new PerfectScrollbar('#enginevolume_tab .listwrapper', {
+				wheelPropagation: true,
+				minScrollbarLength: 100,
+				maxScrollbarLength: 100,
+			});
 })
 

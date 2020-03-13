@@ -124,7 +124,8 @@
   list-style: none;
   display: list-item;
   background-image: none;
-  position: static; }
+  position: static;
+  margin: .6rem 0; }
 
 .ms-drop ul > li .disabled {
   opacity: 0.35;
@@ -223,7 +224,7 @@
 
 /*# sourceMappingURL=multiple-select.css.map */
 .listwrapper {
-  height: 250px;
+  max-height: 250px;
   position: relative;
   padding: 0 20px;
   z-index: 10;
@@ -231,6 +232,9 @@
   .listwrapper ul {
     height: auto !important;
     max-height: none !important; }
+
+.checkbox-tab .ms-drop ul > li {
+  margin: .4rem 0; }
 
 .checkbox-tab .ms-drop li label input {
   position: absolute;

@@ -6658,10 +6658,10 @@ img.justifycenter, table.justifycenter {
   .inner-catalogsearch #brand_tab,
   .inner-catalogsearch #class_tab {
     width: 29rem; }
-  .inner-catalogsearch #model_tab,
+  .inner-catalogsearch #body_tab,
   .inner-catalogsearch #year_tab,
   .inner-catalogsearch #engine_tab,
-  .inner-catalogsearch #body_tab {
+  .inner-catalogsearch #enginevolume_tab {
     width: 16rem; }
   .inner-catalogsearch .optional {
     color: #bcc5d4;
