@@ -6619,11 +6619,13 @@ img.justifycenter, table.justifycenter {
       padding-top: 3.5rem;
       padding-bottom: 5rem;
       border-bottom: 10px solid #d82027; }
+    .inner-catalogsearch .neck .tab-pane {
+      overflow: initial; }
     .inner-catalogsearch .neck .tab-content label {
       display: block;
       font-size: 1.7rem;
       letter-spacing: 1.7px;
-      margin-bottom: .8rem; }
+      margin-bottom: .6rem; }
     .inner-catalogsearch .neck .tab-content .form-control {
       background: none;
       border: 1px solid #d6d6d6;
@@ -6634,6 +6636,12 @@ img.justifycenter, table.justifycenter {
       width: 40rem; }
       .inner-catalogsearch .neck .tab-content .form-control::placeholder {
         color: #fff; }
+  .inner-catalogsearch .ss_type_id {
+    width: 400px !important; }
+  .inner-catalogsearch .ms-drop ul > li.hide-radio label,
+  .inner-catalogsearch .ms-drop ul > li.multiple label {
+    font-size: 1.5rem;
+    letter-spacing: normal; }
 
 /* =mobile-menu
 ---------------------------*/

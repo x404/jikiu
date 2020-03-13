@@ -80,12 +80,16 @@
 			border-bottom: 10px solid $color7;
 		}
 
+		.tab-pane{
+			overflow: initial;
+		}
+
 		.tab-content{
 			label{
 				display: block;
 				font-size: 1.7rem;
 				letter-spacing: 1.7px;
-				margin-bottom: .8rem;
+				margin-bottom: .6rem;
 			}
 			.form-control{
 				background: none;
@@ -100,7 +104,18 @@
 				}
 			}	
 		}
+	}
 
-		
+
+	.ss_type_id{
+		width: 400px !important;
+	}
+
+	.ms-drop ul > li.hide-radio,
+	.ms-drop ul > li.multiple{
+		label{
+			font-size: 1.5rem;
+			letter-spacing: normal;
+		}
 	}
 }

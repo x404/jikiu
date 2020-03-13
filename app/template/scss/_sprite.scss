@@ -9,6 +9,17 @@
 //
 // At the bottom of this section, we provide information about the spritesheet itself
 // $spritesheet: width height image $spritesheet-sprites;
+$icon-caret-name: 'icon-caret';
+$icon-caret-x: 48px;
+$icon-caret-y: 35px;
+$icon-caret-offset-x: -48px;
+$icon-caret-offset-y: -35px;
+$icon-caret-width: 17px;
+$icon-caret-height: 9px;
+$icon-caret-total-width: 71px;
+$icon-caret-total-height: 61px;
+$icon-caret-image: '../images/sprite.png';
+$icon-caret: (48px, 35px, -48px, -35px, 17px, 9px, 71px, 61px, '../images/sprite.png', 'icon-caret', );
 $icon-email-name: 'icon-email';
 $icon-email-x: 0px;
 $icon-email-y: 0px;
@@ -56,7 +67,7 @@ $icon-tel: (37px, 0px, -37px, 0px, 34px, 34px, 71px, 61px, '../images/sprite.png
 $spritesheet-width: 71px;
 $spritesheet-height: 61px;
 $spritesheet-image: '../images/sprite.png';
-$spritesheet-sprites: ($icon-email, $icon-login, $icon-search, $icon-tel, );
+$spritesheet-sprites: ($icon-caret, $icon-email, $icon-login, $icon-search, $icon-tel, );
 $spritesheet: (71px, 61px, '../images/sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables
