@@ -6625,10 +6625,14 @@ img.justifycenter, table.justifycenter {
       background-size: cover;
       border-bottom: 10px solid #d82027;
       color: #fff;
-      padding: 3.5rem 0 5rem; }
+      height: 16rem;
+      padding: 3.5rem 0 0; }
     .inner-catalogsearch .neck .tab-pane {
       overflow: initial; }
-    .inner-catalogsearch .neck .tab-content label {
+      .inner-catalogsearch .neck .tab-pane.active {
+        position: relative;
+        z-index: 999; }
+    .inner-catalogsearch .neck .tab-content .form-title {
       display: block;
       font-size: 1.7rem;
       letter-spacing: 1.7px;
@@ -6649,6 +6653,28 @@ img.justifycenter, table.justifycenter {
   .inner-catalogsearch .ms-drop ul > li.multiple label {
     font-size: 1.5rem;
     letter-spacing: normal; }
+  .inner-catalogsearch .panel {
+    width: 100%; }
+  .inner-catalogsearch #brand_tab,
+  .inner-catalogsearch #class_tab {
+    width: 29rem; }
+  .inner-catalogsearch #model_tab,
+  .inner-catalogsearch #year_tab,
+  .inner-catalogsearch #engine_tab,
+  .inner-catalogsearch #body_tab {
+    width: 16rem; }
+  .inner-catalogsearch .optional {
+    color: #bcc5d4;
+    font-size: 1.3rem;
+    margin-top: .5rem;
+    position: absolute;
+    bottom: -20px;
+    left: 0; }
+  .inner-catalogsearch #applicationmenu .form-group {
+    margin-right: 0;
+    position: relative; }
+  .inner-catalogsearch #applicationmenu .btn-search {
+    margin-left: 0; }
 
 #loginModal .modal-title {
   font-size: 4rem;

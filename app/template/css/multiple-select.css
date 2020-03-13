@@ -5,8 +5,8 @@
   display: inline-block;
   position: relative;
   vertical-align: middle;
-  width: 100%;
-  padding: 0 !important; }
+  padding: 0 !important;
+  width: 100% !important; }
   .ms-parent.form-control {
     padding-left: 0;
     padding-right: 0; }
@@ -24,6 +24,7 @@
   line-height: 26px;
   overflow: hidden;
   padding: 0;
+  font-size: 1.8rem;
   text-align: left;
   text-decoration: none;
   white-space: nowrap;
@@ -124,8 +125,6 @@
   display: list-item;
   background-image: none;
   position: static; }
-  .ms-drop ul > li span {
-    padding: 0 8px 0 49px; }
 
 .ms-drop ul > li .disabled {
   opacity: 0.35;
@@ -159,23 +158,11 @@
 .ms-drop ul > li label.optgroup {
   font-weight: bold; }
 
+.ms-drop ul > li.selected span {
+  font-family: "Futura Demi C"; }
+
 .ms-drop ul > li.hide-radio, .ms-drop ul > li.multiple {
   position: relative; }
-  .ms-drop ul > li.hide-radio:before, .ms-drop ul > li.hide-radio:after, .ms-drop ul > li.multiple:before, .ms-drop ul > li.multiple:after {
-    content: "";
-    display: block;
-    position: absolute; }
-  .ms-drop ul > li.hide-radio:before, .ms-drop ul > li.multiple:before {
-    background-color: #e5e6e7;
-    height: 20px;
-    left: 20px;
-    top: 5px;
-    width: 20px;
-    border: none; }
-  .ms-drop ul > li.hide-radio.selected:before, .ms-drop ul > li.multiple.selected:before {
-    background-color: #083989; }
-  .ms-drop ul > li.hide-radio.selected:hover:after, .ms-drop ul > li.multiple.selected:hover:after {
-    background-color: #fff; }
   .ms-drop ul > li.hide-radio label, .ms-drop ul > li.multiple label {
     font-size: 1.5rem; }
 
@@ -238,8 +225,81 @@
 .listwrapper {
   height: 250px;
   position: relative;
+  padding: 0 20px;
   z-index: 10;
   overflow: hidden; }
   .listwrapper ul {
     height: auto !important;
     max-height: none !important; }
+
+.checkbox-tab .ms-drop li label input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 20px; }
+
+.checkbox-tab .ms-drop span {
+  font-size: 1.5rem;
+  position: relative;
+  padding: 0 0 0 32px;
+  cursor: pointer; }
+
+.checkbox-tab .ms-drop span:before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #7f8184; }
+
+.checkbox-tab .ms-drop li label input:checked + span:before {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAANCAYAAACgu+4kAAAAjUlEQVQokWP8//8/AxlAjoGB4SkDA8NfJjI0T2ZgYHgIxfwMIBeQgOf8RwW6lGieA/Y+mZrn////nxnZAJv///8H4tA8H5dmmAE2aJJEa4YZ4IdFEVGakb2Arvg2MZrRAxHdEIKascXCBlI0YzOA/////2+hmmcS0gzC2PICGwMDgwQDA8MjgomagYEBAD19HxkTqPmyAAAAAElFTkSuQmCC");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #2065d8;
+  border-color: #2065d8; }
+
+.radio-tab .ms-drop li label input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 20px; }
+
+.radio-tab .ms-drop span {
+  display: block;
+  position: relative;
+  padding: 0 0 0 32px;
+  cursor: pointer;
+  font-size: 1.5rem; }
+
+.radio-tab .ms-drop span:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #7f8184;
+  border-radius: 50%;
+  transition: .3s; }
+
+.radio-tab .ms-drop span:after {
+  background: #fff;
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  left: 9px;
+  top: 7px; }
+
+.radio-tab .ms-drop label {
+  letter-spacing: normal !important; }
+
+.radio-tab .ms-drop li label input:checked + span:before {
+  background-color: #2065d8;
+  border-color: #2065d8; }
+
+.radio-tab .ms-drop li:hover span:before {
+  border-color: #2065d8 !important; }

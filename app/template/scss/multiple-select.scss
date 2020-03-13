@@ -8,8 +8,8 @@
 	display: inline-block;
 	position: relative;
 	vertical-align: middle;
-	width: 100%;
 	padding: 0 !important;
+	width: 100% !important;
 
 	&.form-control{
 		padding-left: 0;
@@ -36,6 +36,7 @@
 	line-height: 26px; 
 	overflow: hidden;
 	padding: 0;
+	font-size: 1.8rem;
 	text-align: left;
 	text-decoration: none;
 	white-space: nowrap;
@@ -158,7 +159,7 @@
 	background-image: none;
 	position: static;
 	span{
-		padding: 0 8px 0 49px;  	
+		// padding: 0 8px 0 49px;  	
 	}
 }
 .ms-drop ul > li .disabled {
@@ -199,6 +200,14 @@
 }
 
 .ms-drop ul > li{
+
+	&.selected{
+		span{
+			font-family: "Futura Demi C";
+			// font-family: 'Futura BT';
+		}
+	}
+
 	&.hide-radio,
 	&.multiple
 	{
@@ -206,29 +215,33 @@
 		position: relative;
 		&:before,
 		&:after{
-			content:"";
-			display: block;
-			position: absolute;
+			// content:"";
+			// display: block;
+			// position: absolute;
 		}
 
 		&:before{
-			background-color: #e5e6e7;
-			height: 20px;
-			left: 20px;
-			top: 5px;
-			width: 20px;
-			border: none;
+			// background-color: #e5e6e7;
+			// height: 20px;
+			// left: 20px;
+			// top: 5px;
+			// width: 20px;
+			// border: none;
 		}
 
 		&.selected{
-			&:before{
-				background-color: $color14;
-			}
-			&:hover{
-				&:after{
-					background-color: #fff
-				}
-			}
+			// span{
+			// 	font-weight: 700;
+			// 	font-family: 'Futura BT';
+			// }
+		// 	&:before{
+		// 		background-color: $color14;
+		// 	}
+		// 	&:hover{
+		// 		&:after{
+		// 			background-color: #fff
+		// 		}
+		// 	}
 		}
 		label{
 			font-size: 1.5rem;			
@@ -345,6 +358,7 @@
 .listwrapper{
 	height: 250px;
 	position: relative;
+	padding: 0 20px;
 	z-index: 10;
 	overflow: hidden;
 	ul{
@@ -352,3 +366,102 @@
 		max-height: none !important
 	}
 }
+
+.checkbox-tab .ms-drop{
+	li label input {
+	  position: absolute;
+	  z-index: -1;
+	  opacity: 0;
+	  margin: 10px 0 0 20px;
+	}
+	span {
+		font-size: 1.5rem;
+		position: relative;
+		padding: 0 0 0 32px;
+		cursor: pointer;
+	}
+	span:before {
+	  content: '';
+	  position: absolute;
+	  top: -3px;
+	  left: 0;
+	  width: 22px;
+	  height: 22px;
+	  // background: #fff;
+	  border: 2px solid #7f8184;
+	}
+	li label input:checked + span:before {
+		$color: #2065d8;
+		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAANCAYAAACgu+4kAAAAjUlEQVQokWP8//8/AxlAjoGB4SkDA8NfJjI0T2ZgYHgIxfwMIBeQgOf8RwW6lGieA/Y+mZrn////nxnZAJv///8H4tA8H5dmmAE2aJJEa4YZ4IdFEVGakb2Arvg2MZrRAxHdEIKascXCBlI0YzOA/////2+hmmcS0gzC2PICGwMDgwQDA8MjgomagYEBAD19HxkTqPmyAAAAAElFTkSuQmCC');		
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: $color;
+		border-color: $color;
+	}
+
+	li:hover{
+		span:before {
+			// border-color: #fff !important
+		}
+	}
+}
+
+
+
+
+
+.radio-tab .ms-drop{
+	li label input {
+	  position: absolute;
+	  z-index: -1;
+	  opacity: 0;
+	  margin: 10px 0 0 20px;
+	}
+	span {
+		display: block;
+	  position: relative;
+	  padding: 0 0 0 32px;
+	  cursor: pointer;
+	  font-size: 1.5rem;
+	}
+	span:before {
+	  content: '';
+	  position: absolute;
+	  top: -2px;
+	  left: 0;
+	  width: 22px;
+	  height: 22px;
+	  // background: #fff;
+	  border: 2px solid #7f8184;
+	  border-radius: 50%;
+	  transition: .3s
+	}
+	span:after {
+		background: #fff;
+		content: "";
+		position: absolute;
+		width: 4px;
+		height: 4px;
+		border-radius: 50%;
+		left: 9px;
+		top: 7px;
+	}
+
+	label{
+
+		letter-spacing: normal !important;
+	}
+
+	li label input:checked + span:before {
+		$color: #2065d8;
+		background-color: $color;
+		border-color: $color;
+	}
+
+	li:hover{
+		span:before {
+			border-color: #2065d8 !important
+		}
+	}
+}
+

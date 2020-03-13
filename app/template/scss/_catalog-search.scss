@@ -78,15 +78,20 @@
 			background-size: cover;
 			border-bottom: 10px solid $color7;
 			color: #fff;
-			padding: 3.5rem 0 5rem;
+			height: 16rem;
+			padding: 3.5rem 0 0;
 		}
 
 		.tab-pane{
 			overflow: initial;
+			&.active{
+				position: relative;
+				z-index: 999;
+			}
 		}
 
 		.tab-content{
-			label{
+			.form-title{
 				display: block;
 				font-size: 1.7rem;
 				letter-spacing: 1.7px;
@@ -117,6 +122,46 @@
 		label{
 			font-size: 1.5rem;
 			letter-spacing: normal;
+		}
+	}
+
+	.panel{
+		width: 100%;
+	}
+
+
+	#brand_tab,
+	#class_tab
+	{
+		width: 29rem;
+	}
+
+	#model_tab,
+	#year_tab,
+	#engine_tab,
+	#body_tab
+	{
+		width: 16rem;
+	}
+
+	.optional{
+		color: #bcc5d4;
+		font-size: 1.3rem;
+		margin-top: .5rem;
+		position: absolute;
+		bottom: -20px;
+		left: 0;
+	}
+
+
+	#applicationmenu{
+		.form-group{
+			margin-right: 0;
+			position: relative;
+		}
+
+		.btn-search{
+			margin-left: 0;
 		}
 	}
 }
