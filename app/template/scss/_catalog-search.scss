@@ -119,3 +119,87 @@
 		}
 	}
 }
+
+
+
+#loginModal{
+	.modal{
+		&-title{
+			font-size: 4rem;
+			font-weight: 500;
+			font-family: "Futura BT";
+		}
+		&-content{
+			padding: 2.5rem 4rem 4rem;
+		}
+
+		&-header{
+			padding: 0;
+			position: relative;
+		}
+
+		&-body{
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
+
+	label{
+		font-size: 1.7rem;
+	}
+
+	.form-group{
+		margin-bottom: 1.8rem;
+	}
+
+	.form-control{
+		border: 1px solid #d6d6d6;
+		display: block;
+		height: 5rem;
+		margin-top: 0.2rem;
+		padding: 0 1.2rem;
+		width: 100%;
+	}
+
+	.btn-submit{
+		background: none;
+		border-radius: 5rem;
+		border: 3px solid $color7;
+		cursor: pointer;
+		font-family: "Futura Book C";
+		font-size: 1.6rem;
+		height: 5rem;
+		margin-top: 1.2rem;
+		padding: 0 3.5rem;
+		transition: .3s;
+		&:hover{
+			background-color: $color7;
+			color: #fff;
+		}
+	}
+
+	.close{
+		background: none;
+		border: none;
+		cursor: pointer;
+		height: 17px;
+		right: -5px;
+		position: absolute;
+		top: -5px;
+		width: 17px;
+		line{
+			stroke: #b0b0b0;
+			stroke-width: 3px;
+		}
+		svg{
+			display: block;
+		}
+	}
+}
+
+@media (min-width: 576px){
+	.modal-dialog{
+		max-width: 480px;
+	}
+}

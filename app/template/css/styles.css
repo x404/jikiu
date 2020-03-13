@@ -6643,6 +6643,70 @@ img.justifycenter, table.justifycenter {
     font-size: 1.5rem;
     letter-spacing: normal; }
 
+#loginModal .modal-title {
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: "Futura BT"; }
+
+#loginModal .modal-content {
+  padding: 2.5rem 4rem 4rem; }
+
+#loginModal .modal-header {
+  padding: 0;
+  position: relative; }
+
+#loginModal .modal-body {
+  padding-left: 0;
+  padding-right: 0; }
+
+#loginModal label {
+  font-size: 1.7rem; }
+
+#loginModal .form-group {
+  margin-bottom: 1.8rem; }
+
+#loginModal .form-control {
+  border: 1px solid #d6d6d6;
+  display: block;
+  height: 5rem;
+  margin-top: 0.2rem;
+  padding: 0 1.2rem;
+  width: 100%; }
+
+#loginModal .btn-submit {
+  background: none;
+  border-radius: 5rem;
+  border: 3px solid #d82027;
+  cursor: pointer;
+  font-family: "Futura Book C";
+  font-size: 1.6rem;
+  height: 5rem;
+  margin-top: 1.2rem;
+  padding: 0 3.5rem;
+  transition: .3s; }
+  #loginModal .btn-submit:hover {
+    background-color: #d82027;
+    color: #fff; }
+
+#loginModal .close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 17px;
+  right: -5px;
+  position: absolute;
+  top: -5px;
+  width: 17px; }
+  #loginModal .close line {
+    stroke: #b0b0b0;
+    stroke-width: 3px; }
+  #loginModal .close svg {
+    display: block; }
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 480px; } }
+
 /* =mobile-menu
 ---------------------------*/
 .show-sm,

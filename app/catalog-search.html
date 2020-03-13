@@ -102,7 +102,7 @@
 				<div class="offset-xl-1 col-xl-10">
 					<div class="d-sm-flex align-items-center">
 						<h1>CATALOGUE SEARCH</h1>
-						<button type="button" class="btn-login"><i class="icon icon-login"></i>Login</button>
+						<button type="button" class="btn-login" data-toggle="modal" data-target="#loginModal"><i class="icon icon-login"></i>Login</button>
 					</div>
 				</div>
 			</div>
@@ -148,7 +148,7 @@
 									<div class="row">
 										<div class="panel panel-default">
 											 <div class="panel-body">
-											 	12
+												12
 											 </div>
 										</div>
 									</div>
@@ -156,15 +156,15 @@
 
 								<div class="tab-pane fade" id="vinsearch">
 									<div class="panel panel-default">
-									 	<div class="panel-body">
-									 	 	<form role="form" name="frmProductSearch" class="d-flex align-items-end">
-									 			<div class="form-group">
-									 				<label for="txtVinNo">Part </label>
-									 				<input type="text" id="txtVinNo" class="form-control" placeholder="Enter Vin No.." value="" />
-									 			</div>
-									 			<button type="submit" class="btn-search"><i class="icon icon-search"></i>Search</button>
-									 		</form>
-									 	</div> <!--panel-body-->
+										<div class="panel-body">
+											<form role="form" name="frmProductSearch" class="d-flex align-items-end">
+												<div class="form-group">
+													<label for="txtVinNo">Part </label>
+													<input type="text" id="txtVinNo" class="form-control" placeholder="Enter Vin No.." value="" />
+												</div>
+												<button type="submit" class="btn-search"><i class="icon icon-search"></i>Search</button>
+											</form>
+										</div> <!--panel-body-->
 									 </div>  <!--panel--> <!-- row -->
 								 </div> <!--vinSearchController -->
 
@@ -208,6 +208,7 @@
 										</div>
 									</div>
 								</div>
+
 							</div>
 						</div>
 					</div>
@@ -233,7 +234,7 @@
 					</picture>
 					<picture>
 						<source srcset="/template/images/jikiu480.png" type="image/png"  media="(max-width: 576px)">
-					    <img src="/template/images/jikiu.png" alt="" />
+						<img src="/template/images/jikiu.png" alt="" />
 					</picture>
 				</div>
 				<div class="copyright">
@@ -279,6 +280,42 @@
 <script src="/template/js/slick.min.js"></script>
 <script src="/template/js/engine.js"></script>
 <!-- InstanceBeginEditable name="EditRegion4" -->
+
+
+<!-- =login modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="loginModalLabel">Login</h5>
+				<button type="button" class="close a-rotate90" data-dismiss="modal" aria-label="Close">
+					<svg width="17" height="17">
+						<line x1="0" y1="0" x2="17" y2="17"/>
+						<line x1="17" y1="0" x2="0" y2="17"/>
+					</svg>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form action="#" method="post">
+					<fieldset>
+						<div class="form-group">
+							<label for="name">User Name</label>
+							<input type="text" name="name" id="name" value="" class="form-control" />
+						</div>
+
+						<div class="form-group">
+							<label for="password">Password</label>
+							<input type="password" name="password" id="password" value="" class="form-control" />
+						</div>
+
+						<button type="submit" name="submit" class="btn-submit" value="">Submit</button>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- =/loginmodal -->
 
 <script src="/template/js/multiple-select.min.js"></script>
 <script src="/template/js/perfect-scrollbar.min.js"></script>
