@@ -32,13 +32,9 @@
   transition: .3s; }
 
 .ms-choice.disabled {
-  background-color: #eaecf0;
   background-image: none;
-  cursor: default; }
-  .ms-choice.disabled > div {
-    background-color: #dcdde0; }
-    .ms-choice.disabled > div:before {
-      filter: grayscale(1) brightness(5); }
+  cursor: default;
+  opacity: .5; }
 
 .ms-choice > span {
   display: block;
@@ -49,7 +45,12 @@
   white-space: nowrap; }
 
 .ms-choice > span.placeholder {
-  color: #999; }
+  color: #fff;
+  letter-spacing: 1.7px;
+  font-size: 17px;
+  position: absolute;
+  left: -16px;
+  top: -28px; }
 
 .ms-choice > div {
   position: absolute;

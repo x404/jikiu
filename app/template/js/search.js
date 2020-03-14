@@ -16,38 +16,53 @@ $(document).ready(function(){
 
 
 	$('#selBrand').multipleSelect({
+		placeholder : 'Brand',
 		single: true,  
-		filter: true ,
+		filter: true,
 		onFilter: function(){
 			brandlist.update();
 		},
 		onOpen: function() {
 			brandlist.update();
+		},
+		onClick: function(view) {
+		   $('#selClass, #selBody, #selYear,#selEngine, #selEnginevolume').multipleSelect('uncheckAll');
+		   SwitchEnabledAppsearchFields();
 		}
 	});
 
 	$('#selClass').multipleSelect({
+		placeholder: 'Class & model',
 		filter: true,
 		onFilter: function(){
 			classlist.update();
 		},
 		onOpen: function() {
 			classlist.update();
+		},
+		onClick: function(view) {
+		   $('#selBody, #selYear,#selEngine, #selEnginevolume').multipleSelect('uncheckAll');
+		   SwitchEnabledAppsearchFields();
 		}
 	});
 
 	$('#selBody').multipleSelect({
+		placeholder: 'IMG & body',
 		filter: true,
-		selectAll: false,
 		onFilter: function(){
 			bodylist.update();
 		},
 		onOpen: function() {
 			bodylist.update();
+		},
+		onClick: function(view) {
+		   $('#selYear,#selEngine, #selEnginevolume').multipleSelect('uncheckAll');
+		   SwitchEnabledAppsearchFields();
 		}
 	});
 
 	$('#selYear').multipleSelect({
+		placeholder: 'Year',
 		filter: true,
 		onFilter: function(){
 			yearlist.update();
@@ -58,6 +73,7 @@ $(document).ready(function(){
 	});
 
 	$('#selEngine').multipleSelect({
+		placeholder: 'Engine No',
 		filter: true,
 		onFilter: function(){
 			enginelist.update();
@@ -69,6 +85,7 @@ $(document).ready(function(){
 
 
 	$('#selEnginevolume').multipleSelect({
+		placeholder: 'Engine volume',
 		filter: true,
 		onFilter: function(){
 			enginevolumelist.update();
@@ -117,3 +134,14 @@ enginevolumelist = new PerfectScrollbar('#enginevolume_tab .listwrapper', {
 			});
 })
 
+
+function SwitchEnabledAppsearchFields(){
+	$("#selClass, #selBody, #selYear, #selEngine, #selEnginevolume").not(':focus').multipleSelect("disable");
+	if($('select#selBrand :selected').val()>0) {
+		$("#selBody").not(':focus').multipleSelect("enable");
+		$("#selClass").not(':focus').multipleSelect("enable");
+	}
+	if($('select#selClass :selected').val()>0) {
+		$("#selBody, #selYear, #selEngine, #selEnginevolume").not(':focus').multipleSelect("enable");
+	}
+}

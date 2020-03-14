@@ -6637,6 +6637,8 @@ img.justifycenter, table.justifycenter {
       font-size: 1.7rem;
       letter-spacing: 1.7px;
       margin-bottom: .6rem; }
+      .inner-catalogsearch .neck .tab-content .form-title.disabled {
+        opacity: .5; }
     .inner-catalogsearch .neck .tab-content .form-control {
       background: none;
       border: 1px solid #d6d6d6;
@@ -6671,8 +6673,9 @@ img.justifycenter, table.justifycenter {
     bottom: -20px;
     left: 0; }
   .inner-catalogsearch #applicationmenu .form-group {
+    position: relative;
     margin-right: 0;
-    position: relative; }
+    margin-top: 3rem; }
   .inner-catalogsearch #applicationmenu .btn-search {
     margin-left: 0; }
 

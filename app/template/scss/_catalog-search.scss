@@ -96,6 +96,9 @@
 				font-size: 1.7rem;
 				letter-spacing: 1.7px;
 				margin-bottom: .6rem;
+				&.disabled{
+					opacity: .5;
+				}
 			}
 			.form-control{
 				background: none;
@@ -156,8 +159,9 @@
 
 	#applicationmenu{
 		.form-group{
-			margin-right: 0;
 			position: relative;
+			margin-right: 0;
+			margin-top: 3rem;
 		}
 
 		.btn-search{
