@@ -98,7 +98,13 @@ $(document).ready(function(){
 
 	$('#filterCat').multipleSelect({
 		single: true,
-		filter: true
+		filter: true,
+		onFilter: function(){
+			filtercatlist.update();
+		},
+		onOpen: function() {
+			filtercatlist.update();
+		}
 	}); 
 
 
@@ -133,6 +139,11 @@ enginelist = new PerfectScrollbar('#engine_tab .listwrapper', {
 				maxScrollbarLength: 100,
 			});
 enginevolumelist = new PerfectScrollbar('#enginevolume_tab .listwrapper', {
+				wheelPropagation: true,
+				minScrollbarLength: 100,
+				maxScrollbarLength: 100,
+			});
+filtercatlist = new PerfectScrollbar('.filterCat .listwrapper', {
 				wheelPropagation: true,
 				minScrollbarLength: 100,
 				maxScrollbarLength: 100,
