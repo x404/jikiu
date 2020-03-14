@@ -251,11 +251,61 @@
 
 
 .searchresult{
-	padding-top: 4rem;
+	padding: 4rem 0 8rem;
 	h2{
 		font-size: 4rem;
 		font-family: "Futura BT";
 		font-weight: 700;
+	}
+
+
+	@for $i from 1 through 14{
+	  	.col#{$i}{
+			width: calc(100% / 14);
+			
+	  	}
+	}
+
+
+
+
+	.model-title{
+		background: #d82027;
+		border: none;
+		color: #fff;
+		cursor: pointer;
+		font-family: "Futura Demi C";
+		font-weight: normal;
+		font-size: 1.5rem;
+		min-height: 6rem;
+		padding-left: 4.2rem;
+		position: relative;
+		text-align: left;
+		transition: background-color .3s;
+		width: 100%;
+		&:before{
+			@extend .before;
+			background-color: #ffffff;
+			border-radius: 50%;
+			background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAb0lEQVQoU22OOwqAMBAFk9Ib2Fp6JGtF/JzHD2IrHsnS1lvoPMmCBB/MbnYZlnjnXAIpnPCXjOXlKRsU0MASmTXzDLvEEla4I9kkOZWK0sIQ3rqs6JLSw2RiLNsPXknDVzR5DFZn0p+oXR7Ew86qP2QQEhnWLsloAAAAAElFTkSuQmCC);
+			background-repeat: no-repeat;
+			background-position: center;
+			height: 22px;
+			left: 10px;
+			top: 50%;	
+			transform: translateY(-50%);
+			width: 22px;
+		}
+
+		&.collapsed{
+			&:before{
+				transform: translateY(-50%) rotate(180deg);
+			}
+		}
+
+		&:hover{
+			background-color: #2065d8;
+		}
 	}
 }
 
@@ -283,6 +333,63 @@
 }
 
 
+.vehicle-info{
+	background: #f4f4f6;
+	color: #262626;
+	font-size: 1.5rem;
+	padding: 2rem 1rem;
+	strong{
+		font-family: "Futura Demi C";
+	}
+	p{
+		margin: .4rem 0;
+		&:not(:last-child){
+			margin-right: 4rem;
+		}
+	}
+}
+.search-result-table{
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+	margin-top: 3rem;
+	width: 100%;
+	th{
+		color: #fff;
+		font-family: "Futura Demi C";
+		font-size: 1.5rem;
+		background: #14183d;
+		border: 1px solid #4d4d4d;
+		padding: .8rem;
+	}	
+}
+
+
+.table-details{
+	font-size: 1.5rem;
+	td{
+		border: 1px solid #e9e9ea;
+		padding: 0;
+	}
+	.partDesc{
+		border-bottom: 1px solid #e9e9ea;
+		padding: .5rem .8rem;
+		transition: background-color .3s;
+		span{
+			color: #5b5b5b;
+			font-size: 1.3rem;
+		}
+		&:hover{
+			background: #c7d6f0;
+		}
+	}
+	a{
+		color: $color9;
+		&:hover{
+			color: $color7;
+			text-decoration: none;
+		}
+
+	}
+}
 
 @media (min-width: 576px){
 	.modal-dialog{

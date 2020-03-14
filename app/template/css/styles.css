@@ -3689,7 +3689,7 @@ em strong {
 
 .before, .navmenu .nav a:after, .navmenu .nav a:before, .inner-about .features:before, .cifres__item:not(:last-child):after, .header-intro:before, .header-intro:after, .header-intro .intro:before, .btn-back:before, .item-news__bg:after, .item-news__bg:before, .news__list-main .item-news__inner:after, .news__list-main .item-news__inner:before, .inner .content-single ul li:before, .inner-contacts .title:after, .tr-corner:before, .tr-corner:after, .inner-products .item-product__pic:before, .inner-products .item-product__pic:after,
 .inner-about .item-product__pic:before,
-.inner-about .item-product__pic:after, .submenu .active:before, .item-catparts__link:hover .item-catparts__pic:before, .item-catparts__pic:before, .item-type__text ul li:before, .item-adaptor:after, .item-adaptor:before {
+.inner-about .item-product__pic:after, .submenu .active:before, .item-catparts__link:hover .item-catparts__pic:before, .item-catparts__pic:before, .item-type__text ul li:before, .item-adaptor:after, .item-adaptor:before, .searchresult .model-title:before {
   content: "";
   display: block;
   position: absolute; }
@@ -6740,11 +6740,68 @@ img.justifycenter, table.justifycenter {
     display: block; }
 
 .searchresult {
-  padding-top: 4rem; }
+  padding: 4rem 0 8rem; }
   .searchresult h2 {
     font-size: 4rem;
     font-family: "Futura BT";
     font-weight: 700; }
+  .searchresult .col1 {
+    width: calc(100% / 14); }
+  .searchresult .col2 {
+    width: calc(100% / 14); }
+  .searchresult .col3 {
+    width: calc(100% / 14); }
+  .searchresult .col4 {
+    width: calc(100% / 14); }
+  .searchresult .col5 {
+    width: calc(100% / 14); }
+  .searchresult .col6 {
+    width: calc(100% / 14); }
+  .searchresult .col7 {
+    width: calc(100% / 14); }
+  .searchresult .col8 {
+    width: calc(100% / 14); }
+  .searchresult .col9 {
+    width: calc(100% / 14); }
+  .searchresult .col10 {
+    width: calc(100% / 14); }
+  .searchresult .col11 {
+    width: calc(100% / 14); }
+  .searchresult .col12 {
+    width: calc(100% / 14); }
+  .searchresult .col13 {
+    width: calc(100% / 14); }
+  .searchresult .col14 {
+    width: calc(100% / 14); }
+  .searchresult .model-title {
+    background: #d82027;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Futura Demi C";
+    font-weight: normal;
+    font-size: 1.5rem;
+    min-height: 6rem;
+    padding-left: 4.2rem;
+    position: relative;
+    text-align: left;
+    transition: background-color .3s;
+    width: 100%; }
+    .searchresult .model-title:before {
+      background-color: #ffffff;
+      border-radius: 50%;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAb0lEQVQoU22OOwqAMBAFk9Ib2Fp6JGtF/JzHD2IrHsnS1lvoPMmCBB/MbnYZlnjnXAIpnPCXjOXlKRsU0MASmTXzDLvEEla4I9kkOZWK0sIQ3rqs6JLSw2RiLNsPXknDVzR5DFZn0p+oXR7Ew86qP2QQEhnWLsloAAAAAElFTkSuQmCC);
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 22px;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 22px; }
+    .searchresult .model-title.collapsed:before {
+      transform: translateY(-50%) rotate(180deg); }
+    .searchresult .model-title:hover {
+      background-color: #2065d8; }
 
 .filter-category-wrapper {
   margin-top: 1.2rem; }
@@ -6759,6 +6816,50 @@ img.justifycenter, table.justifycenter {
     color: #444; }
   .filter-category-wrapper .ms-choice > div:before {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAABL0lEQVQoU42RzU7CQBSF7x36IoKakMJ7uGqsS+nK1q2JiQbiwrgksnFNKYkbiPok/q2AmmiBxAXqO5i5nqkWUKIym/m795tzznDeHxwzy7Zo8Ubt8h0tOdaC3haLnCmiGq/6/UCYQ/ROtIg7jko3/3E+AdQlEivHvMGmYcUfHDBzg0neAHL+Aq3v9Fxi6qDNwuw9tsoXKcSM/G6/SqLqAE2IlDNsFe9/KjIAqO6gJqdJVZLIvjI1U4jZFKAIJw0sX5Qi96lpX2cgY0GIYQEVyC9ply+zu2+QFBTEh0J0iuUrsXZGYem24MebxNKFAliQShLOAAtKZtbiKpKvY/+Mh5sI8AgqLBHxxl8W5q0uKMku58ImIfWuWEOBPbWwFCQNO3g4gfx91rw3jIrnv339B0Tmd2b1wK9AAAAAAElFTkSuQmCC) no-repeat; }
+
+.vehicle-info {
+  background: #f4f4f6;
+  color: #262626;
+  font-size: 1.5rem;
+  padding: 2rem 1rem; }
+  .vehicle-info strong {
+    font-family: "Futura Demi C"; }
+  .vehicle-info p {
+    margin: .4rem 0; }
+    .vehicle-info p:not(:last-child) {
+      margin-right: 4rem; }
+
+.search-result-table {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  margin-top: 3rem;
+  width: 100%; }
+  .search-result-table th {
+    color: #fff;
+    font-family: "Futura Demi C";
+    font-size: 1.5rem;
+    background: #14183d;
+    border: 1px solid #4d4d4d;
+    padding: .8rem; }
+
+.table-details {
+  font-size: 1.5rem; }
+  .table-details td {
+    border: 1px solid #e9e9ea;
+    padding: 0; }
+  .table-details .partDesc {
+    border-bottom: 1px solid #e9e9ea;
+    padding: .5rem .8rem;
+    transition: background-color .3s; }
+    .table-details .partDesc span {
+      color: #5b5b5b;
+      font-size: 1.3rem; }
+    .table-details .partDesc:hover {
+      background: #c7d6f0; }
+  .table-details a {
+    color: #2065d8; }
+    .table-details a:hover {
+      color: #d82027;
+      text-decoration: none; }
 
 @media (min-width: 576px) {
   .modal-dialog {
