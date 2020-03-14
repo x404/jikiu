@@ -38,3 +38,22 @@
 		@include sprite($icon-photo-hover);		
 	}
 }
+
+.icon-thumbs{
+	background-color: #2065d8;
+	margin-right: 1rem; 
+	transition: .3s;
+	position: relative;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	&:before{
+		@extend .before;
+		@include sprite($icon-thumbs);
+		left: 4px;
+		top: 4px;
+	}
+	&:hover{
+		background-color: #d82027;
+	}
+}

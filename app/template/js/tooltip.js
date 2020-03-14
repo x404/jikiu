@@ -235,7 +235,7 @@
     container: false,
     fallbackPlacement: 'flip',
     boundary: 'scrollParent',
-    sanitize: true,
+    sanitize: false,
     sanitizeFn: null,
     whiteList: DefaultWhitelist
   };
