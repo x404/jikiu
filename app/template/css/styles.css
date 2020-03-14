@@ -6739,6 +6739,27 @@ img.justifycenter, table.justifycenter {
   #loginModal .close svg {
     display: block; }
 
+.searchresult {
+  padding-top: 4rem; }
+  .searchresult h2 {
+    font-size: 4rem;
+    font-family: "Futura BT";
+    font-weight: 700; }
+
+.filter-category-wrapper {
+  margin-top: 1.2rem; }
+  .filter-category-wrapper .filter-label {
+    color: #444444;
+    font-size: 1.7rem;
+    letter-spacing: 1.7px;
+    margin-right: 1.3rem; }
+  .filter-category-wrapper .filterCat {
+    width: 33rem !important; }
+  .filter-category-wrapper .ms-choice {
+    color: #444; }
+  .filter-category-wrapper .ms-choice > div:before {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAABL0lEQVQoU42RzU7CQBSF7x36IoKakMJ7uGqsS+nK1q2JiQbiwrgksnFNKYkbiPok/q2AmmiBxAXqO5i5nqkWUKIym/m795tzznDeHxwzy7Zo8Ubt8h0tOdaC3haLnCmiGq/6/UCYQ/ROtIg7jko3/3E+AdQlEivHvMGmYcUfHDBzg0neAHL+Aq3v9Fxi6qDNwuw9tsoXKcSM/G6/SqLqAE2IlDNsFe9/KjIAqO6gJqdJVZLIvjI1U4jZFKAIJw0sX5Qi96lpX2cgY0GIYQEVyC9ply+zu2+QFBTEh0J0iuUrsXZGYem24MebxNKFAliQShLOAAtKZtbiKpKvY/+Mh5sI8AgqLBHxxl8W5q0uKMku58ImIfWuWEOBPbWwFCQNO3g4gfx91rw3jIrnv339B0Tmd2b1wK9AAAAAAElFTkSuQmCC) no-repeat; }
+
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: 480px; } }

@@ -96,6 +96,11 @@ $(document).ready(function(){
 	}); 
 
 
+	$('#filterCat').multipleSelect({
+		single: true,
+		filter: true
+	}); 
+
 
 typelist = new PerfectScrollbar('#productsizemenu .listwrapper', {
 				wheelPropagation: true,
