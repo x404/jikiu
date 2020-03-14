@@ -268,10 +268,22 @@ $(document).ready(function(){
 
 
 	// popover
-	$('[data-toggle="popover"]').popover()
 
-	$('[data-toggle="popover"]').on('inserted.bs.popover', function () {
-		const clsImages = new PerfectScrollbar('.clsImages', {
+	$('[data-toggle="popover"]').popover();
+
+	$('body').on('click', function (e) {
+		$('[data-toggle="popover"]').each(function () {
+			//the 'is' for buttons that trigger popups
+			//the 'has' for icons within a button that triggers a popup
+			if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+				$(this).popover('hide');
+			}
+		});
+	});
+
+
+	$('[data-toggle="popover"]').on('inserted.bs.popover', function (e) {
+		const clsImages = new PerfectScrollbar( '#' + $('.popover:last-child').attr('id') + ' .clsImages', {
 						wheelPropagation: true,
 						minScrollbarLength: 100,
 						maxScrollbarLength: 100,
@@ -283,6 +295,18 @@ $(document).ready(function(){
 	$('body').on('click', '.popover .close' , function(){
 		$(this).closest('div.popover').popover('hide');
     });
+
+
+	// $('[data-toggle="popover"]').popover().click(function(){
+	// 	$('[data-toggle="popover_sub"]').popover().on('show.bs.popover', function() {
+	// 		$('li.liSubAssumbly').find('div.popover').popover('hide');
+	// 	});
+	// 	$('[data-toggle="popover_sub"]').popover().on('shown.bs.popover', function() {
+	// 		$('a.clsLastAssembly').tooltip();
+	// 		$('[data-toggle="popover_sub"]').popover();
+	// 	});
+	// });
+
 
 });
 
