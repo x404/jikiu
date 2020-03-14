@@ -266,6 +266,24 @@ $(document).ready(function(){
 		]
 	});
 
+
+	// popover
+	$('[data-toggle="popover"]').popover()
+
+	$('[data-toggle="popover"]').on('inserted.bs.popover', function () {
+		const clsImages = new PerfectScrollbar('.clsImages', {
+						wheelPropagation: true,
+						minScrollbarLength: 100,
+						maxScrollbarLength: 100,
+					});
+
+		clsImages.update();		
+	})
+
+	$('body').on('click', '.popover .close' , function(){
+		$(this).closest('div.popover').popover('hide');
+    });
+
 });
 
 

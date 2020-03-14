@@ -30,3 +30,11 @@
   margin-right: 1rem; 
   transition: .3s;
 }
+
+.icon-photo{
+	display: block;
+	@include sprite($icon-photo);
+	&:hover{
+		@include sprite($icon-photo-hover);		
+	}
+}

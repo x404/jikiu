@@ -61,7 +61,7 @@
   /*background: url("multiple-select.png") left top no-repeat;*/ }
   .ms-choice > div:before {
     background-image: url(../images/sprite.png);
-    background-position: -48px -35px;
+    background-position: -71px -20px;
     width: 17px;
     height: 9px;
     content: "";
