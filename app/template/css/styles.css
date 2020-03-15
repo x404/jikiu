@@ -6862,6 +6862,8 @@ img.justifycenter, table.justifycenter {
     letter-spacing: normal; }
   .inner-catalogsearch .panel {
     width: 100%; }
+  .inner-catalogsearch .group-controls {
+    justify-content: space-between; }
   .inner-catalogsearch #brand_tab,
   .inner-catalogsearch #class_tab {
     width: 29rem; }
@@ -7137,6 +7139,141 @@ img.justifycenter, table.justifycenter {
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: 480px; } }
+
+@media (max-width: 1800px) {
+  .inner-catalogsearch #brand_tab,
+  .inner-catalogsearch #class_tab {
+    width: 22rem; }
+  .inner-catalogsearch .btn-search {
+    width: 14rem; } }
+
+@media (max-width: 1500px) {
+  .inner-catalogsearch #applicationmenu #frmAppSearch {
+    margin-top: -2.5rem; }
+  .inner-catalogsearch #applicationmenu .group-controls {
+    justify-content: flex-start;
+    align-items: flex-end !important; }
+    .inner-catalogsearch #applicationmenu .group-controls .form-group {
+      margin-right: 2rem;
+      margin-top: 5rem; }
+  .inner-catalogsearch #brand_tab,
+  .inner-catalogsearch #class_tab {
+    width: 30rem; }
+  .inner-catalogsearch #body_tab,
+  .inner-catalogsearch #year_tab,
+  .inner-catalogsearch #engine_tab,
+  .inner-catalogsearch #enginevolume_tab {
+    width: 19rem; }
+  .inner-catalogsearch .btn-search {
+    width: 14rem; }
+  .inner-catalogsearch .neck__body {
+    height: auto;
+    padding-bottom: 3rem; } }
+
+@media (max-width: 1250px) {
+  .inner-catalogsearch #brand_tab,
+  .inner-catalogsearch #class_tab {
+    width: 23rem; }
+  .inner-catalogsearch #body_tab,
+  .inner-catalogsearch #year_tab,
+  .inner-catalogsearch #engine_tab,
+  .inner-catalogsearch #enginevolume_tab {
+    width: 13rem; }
+  .inner-catalogsearch #applicationmenu .group-controls .form-group {
+    margin-right: .8rem; } }
+
+@media (max-width: 1199px) {
+  .inner-catalogsearch .neck__top {
+    height: 6rem; }
+  .inner-catalogsearch .neck .nav-tabs {
+    font-size: 2.4rem; }
+    .inner-catalogsearch .neck .nav-tabs a {
+      height: 6rem; }
+  .inner-catalogsearch #brand_tab,
+  .inner-catalogsearch #class_tab {
+    width: 30rem; }
+  .inner-catalogsearch #body_tab,
+  .inner-catalogsearch #year_tab,
+  .inner-catalogsearch #engine_tab,
+  .inner-catalogsearch #enginevolume_tab {
+    width: 19rem; } }
+
+@media (max-width: 850px) {
+  .inner-catalogsearch #brand_tab,
+  .inner-catalogsearch #class_tab {
+    width: 100%; }
+  .inner-catalogsearch #body_tab,
+  .inner-catalogsearch #year_tab,
+  .inner-catalogsearch #engine_tab,
+  .inner-catalogsearch #enginevolume_tab {
+    width: 100%; }
+  .inner-catalogsearch #applicationmenu .form-group {
+    width: 32%; }
+  .inner-catalogsearch #applicationmenu .btn-search {
+    margin-top: 5rem; }
+  .inner-catalogsearch .group-controls {
+    justify-content: center !important; } }
+
+@media (max-width: 767px) {
+  .inner-catalogsearch .neck__top {
+    height: 5rem; }
+  .inner-catalogsearch .neck .nav-tabs {
+    font-size: 2.1rem; }
+    .inner-catalogsearch .neck .nav-tabs a {
+      height: 5rem; }
+  .inner-catalogsearch #applicationmenu .group-controls .form-group {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%; }
+  .inner-catalogsearch #applicationmenu .btn-search {
+    margin-left: auto;
+    margin-right: auto; }
+  .inner-catalogsearch #productmenu .form-group,
+  .inner-catalogsearch #productmenu .type_id_wrapper,
+  .inner-catalogsearch #vinsearch .form-group,
+  .inner-catalogsearch #vinsearch .type_id_wrapper,
+  .inner-catalogsearch #productsizemenu .form-group,
+  .inner-catalogsearch #productsizemenu .type_id_wrapper {
+    max-width: 400px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto; }
+    .inner-catalogsearch #productmenu .form-group .form-control,
+    .inner-catalogsearch #productmenu .type_id_wrapper .form-control,
+    .inner-catalogsearch #vinsearch .form-group .form-control,
+    .inner-catalogsearch #vinsearch .type_id_wrapper .form-control,
+    .inner-catalogsearch #productsizemenu .form-group .form-control,
+    .inner-catalogsearch #productsizemenu .type_id_wrapper .form-control {
+      width: 100%;
+      font-size: 1.6rem; }
+  .inner-catalogsearch #productmenu .btn-search,
+  .inner-catalogsearch #vinsearch .btn-search,
+  .inner-catalogsearch #productsizemenu .btn-search {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem; } }
+
+@media (max-width: 650px) {
+  .inner-catalogsearch .neck__top {
+    height: 4.5rem; }
+  .inner-catalogsearch .neck .nav-tabs {
+    font-size: 1.8rem; }
+    .inner-catalogsearch .neck .nav-tabs a {
+      height: 4.5rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem; } }
+
+@media (max-width: 500px) {
+  .inner-catalogsearch .neck__top {
+    height: auto;
+    margin-bottom: 1rem; }
+  .inner-catalogsearch .neck .nav-tabs {
+    display: block; }
+  .inner-catalogsearch .ss_type_id {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100% !important; } }
 
 /* =mobile-menu
 ---------------------------*/

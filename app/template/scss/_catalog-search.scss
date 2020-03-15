@@ -133,6 +133,10 @@
 	}
 
 
+	.group-controls{
+		justify-content: space-between;
+	}
+
 	#brand_tab,
 	#class_tab
 	{
@@ -450,8 +454,6 @@
 	}
 }
 
-
-
 .popover{
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
 	max-width: 310px;
@@ -498,5 +500,275 @@
 @media (min-width: 576px){
 	.modal-dialog{
 		max-width: 480px;
+	}
+}
+
+
+
+@media (max-width: 1800px){
+	.inner-catalogsearch{
+		#brand_tab,
+		#class_tab
+		{
+			width: 22rem;
+		}
+
+		.btn-search{
+			width: 14rem;
+		}
+	}
+}
+
+
+@media (max-width: 1500px){
+	.inner-catalogsearch{
+
+
+		#applicationmenu {
+			#frmAppSearch{
+				margin-top: -2.5rem;
+			}
+			.group-controls{
+				justify-content: flex-start;
+				align-items: flex-end !important;
+				.form-group{
+					margin-right: 2rem;
+					margin-top: 5rem;
+				}
+			}
+		}
+
+
+		#brand_tab,
+		#class_tab
+		{
+			width: 30rem;
+		}
+
+
+		#body_tab,
+		#year_tab,
+		#engine_tab,
+		#enginevolume_tab
+		{
+			width: 19rem;
+		}
+
+
+		.btn-search{
+			width: 14rem;
+		}
+
+
+		.neck__body{
+			height: auto;
+			padding-bottom: 3rem;
+		}
+	}
+}
+
+
+@media (max-width: 1250px){
+	.inner-catalogsearch{
+
+		#brand_tab,
+		#class_tab
+		{
+			width: 23rem;
+		}
+
+
+		#body_tab,
+		#year_tab,
+		#engine_tab,
+		#enginevolume_tab
+		{
+			width: 13rem;
+		}	
+
+		#applicationmenu{
+			.group-controls{
+				.form-group{
+					margin-right: .8rem;
+				}
+			}
+		}
+	}
+}
+
+
+@media (max-width: 1199px){
+	.inner-catalogsearch{
+		.neck{
+			$h: 6rem;
+			&__top{
+				height: $h;
+			}
+			.nav-tabs{
+				font-size: 2.4rem;
+				a{
+					height: $h;
+				}
+			}
+		}
+
+		#brand_tab,
+		#class_tab
+		{
+			width: 30rem;
+		}
+
+
+		#body_tab,
+		#year_tab,
+		#engine_tab,
+		#enginevolume_tab
+		{
+			width: 19rem;
+		}
+
+	}
+}
+
+
+
+@media (max-width: 850px){
+	.inner-catalogsearch{
+		
+		#brand_tab,
+		#class_tab
+		{
+			width: 100%;
+		}
+
+
+		#body_tab,
+		#year_tab,
+		#engine_tab,
+		#enginevolume_tab
+		{
+			width: 100%;
+		}
+
+
+		#applicationmenu{
+			.form-group{
+				width: 32%;
+			}
+			.btn-search{
+				margin-top: 5rem;
+			}
+		}
+
+		.group-controls{
+			justify-content: center !important
+		}
+
+		
+
+	}
+}
+
+
+
+@media (max-width: 767px){
+	.inner-catalogsearch{
+		.neck{
+			$h: 5rem;
+			&__top{
+				height: $h;
+			}
+			.nav-tabs{
+				font-size: 2.1rem;
+				a{
+					height: $h;
+				}
+			}
+		}
+
+
+		#applicationmenu{
+			.group-controls .form-group{
+				max-width: 420px;
+				margin-left: auto;
+				margin-right: auto;
+				width: 95%;
+			}
+
+			.btn-search{
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+
+
+		#productmenu,
+		#vinsearch,
+		#productsizemenu
+		{
+			.form-group,
+			.type_id_wrapper
+			{
+				max-width: 400px;
+				width: 95%;
+				margin-left: auto;
+				margin-right: auto;
+				.form-control{
+					width: 100%;
+					font-size: 1.6rem;
+				}
+			}
+
+			.btn-search{
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 2rem;
+			}
+		}
+
+
+	}
+}
+
+
+
+
+@media (max-width: 650px){
+	.inner-catalogsearch{
+		.neck{
+			$h: 4.5rem;
+			&__top{
+				height: $h;
+			}
+			.nav-tabs{
+				font-size: 1.8rem;
+				a{
+					height: $h;
+					padding-left: 1.5rem;
+					padding-right: 1.5rem;
+				}
+			}
+		}
+	}
+}
+
+
+@media (max-width: 500px){
+	.inner-catalogsearch{
+		.neck{
+			&__top{
+				height: auto;
+				margin-bottom: 1rem;
+			}
+			.nav-tabs{
+				display: block;
+			}
+		}
+
+		.ss_type_id{
+			margin-left: auto;
+			margin-right: auto;
+			width: 100% !important;
+		}
 	}
 }
