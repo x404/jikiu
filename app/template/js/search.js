@@ -109,48 +109,66 @@ $(document).ready(function(){
 		}
 	}); 
 
-
+if (document.querySelectorAll('#productsizemenu .listwrapper').length >= 1) {
 typelist = new PerfectScrollbar('#productsizemenu .listwrapper', {
 				wheelPropagation: true,
 				minScrollbarLength: 100,
 				maxScrollbarLength: 100,
 			});
-brandlist = new PerfectScrollbar('#brand_tab .listwrapper', {
-				wheelPropagation: true,
-				minScrollbarLength: 100,
-				maxScrollbarLength: 100,
-			});
-classlist = new PerfectScrollbar('#class_tab .listwrapper', {
-				wheelPropagation: true,
-				minScrollbarLength: 100,
-				maxScrollbarLength: 100,
-			});
-bodylist = new PerfectScrollbar('#body_tab .listwrapper', {
-				wheelPropagation: true,
-				minScrollbarLength: 100,
-				maxScrollbarLength: 100,
-			});
-yearlist = new PerfectScrollbar('#year_tab .listwrapper', {
-				wheelPropagation: true,
-				minScrollbarLength: 100,
-				maxScrollbarLength: 100,
-			});
-enginelist = new PerfectScrollbar('#engine_tab .listwrapper', {
-				wheelPropagation: true,
-				minScrollbarLength: 100,
-				maxScrollbarLength: 100,
-			});
-enginevolumelist = new PerfectScrollbar('#enginevolume_tab .listwrapper', {
-				wheelPropagation: true,
-				minScrollbarLength: 100,
-				maxScrollbarLength: 100,
-			});
-filtercatlist = new PerfectScrollbar('.filterCat .listwrapper', {
-				wheelPropagation: true,
-				minScrollbarLength: 100,
-				maxScrollbarLength: 100,
-			});
+}
+
+if (document.querySelectorAll('#brand_tab .listwrapper').length >= 1) {
+	brandlist = new PerfectScrollbar('#brand_tab .listwrapper', {
+					wheelPropagation: true,
+					minScrollbarLength: 100,
+					maxScrollbarLength: 100,
+				});
+}
+if (document.querySelectorAll('#class_tab .listwrapper').length >= 1) {
+	classlist = new PerfectScrollbar('#class_tab .listwrapper', {
+					wheelPropagation: true,
+					minScrollbarLength: 100,
+					maxScrollbarLength: 100,
+				});
+}
+if (document.querySelectorAll('#body_tab .listwrapper').length >= 1) {
+	bodylist = new PerfectScrollbar('#body_tab .listwrapper', {
+					wheelPropagation: true,
+					minScrollbarLength: 100,
+					maxScrollbarLength: 100,
+				});
+}
+if (document.querySelectorAll('#year_tab .listwrapper').length >= 1) {
+	yearlist = new PerfectScrollbar('#year_tab .listwrapper', {
+					wheelPropagation: true,
+					minScrollbarLength: 100,
+					maxScrollbarLength: 100,
+				});
+}
+if (document.querySelectorAll('#engine_tab .listwrapper').length >= 1) {
+	enginelist = new PerfectScrollbar('#engine_tab .listwrapper', {
+					wheelPropagation: true,
+					minScrollbarLength: 100,
+					maxScrollbarLength: 100,
+				});
+}
+if (document.querySelectorAll('#enginevolume_tab .listwrapper').length >= 1) {
+	enginevolumelist = new PerfectScrollbar('#enginevolume_tab .listwrapper', {
+					wheelPropagation: true,
+					minScrollbarLength: 100,
+					maxScrollbarLength: 100,
+				});
+}
+
+if (document.querySelectorAll('.filterCat .listwrapper').length >= 1) {
+	filtercatlist = new PerfectScrollbar('.filterCat .listwrapper', {
+					wheelPropagation: true,
+					minScrollbarLength: 100,
+					maxScrollbarLength: 100,
+				});
+}
 })
+
 
 
 function SwitchEnabledAppsearchFields(){
