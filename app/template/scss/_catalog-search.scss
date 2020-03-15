@@ -280,7 +280,7 @@
 	}
 
 	.model-title{
-		background: #d82027;
+		background-color: #d82027;
 		border: none;
 		color: #fff;
 		cursor: pointer;
@@ -308,13 +308,14 @@
 		}
 
 		&.collapsed{
+			background-color: #2065d8;
 			&:before{
 				transform: translateY(-50%) rotate(180deg);
 			}
 		}
 
 		&:hover{
-			background-color: #2065d8;
+			background-color: #d82027;
 		}
 	}
 }
@@ -382,6 +383,7 @@
 .table-details{
 	table-layout: fixed;
 	font-size: 1.5rem;
+	margin-bottom: 0;
 	td{
 		border: 1px solid #e9e9ea;
 		padding: 0;
@@ -432,8 +434,8 @@
 	padding: 0;
 	div.clsImages{
 		position: relative;
-		width: 25.5rem;
 		height: 33rem;
+		width: 25.5rem;
 		.imagesContainer{
 			margin-right: 2.5rem;
 		}

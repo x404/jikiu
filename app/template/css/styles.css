@@ -6987,7 +6987,7 @@ img.justifycenter, table.justifycenter {
   .searchresult .col14 {
     width: calc(100% / 14); }
   .searchresult .model-title {
-    background: #d82027;
+    background-color: #d82027;
     border: none;
     color: #fff;
     cursor: pointer;
@@ -7011,10 +7011,12 @@ img.justifycenter, table.justifycenter {
       top: 50%;
       transform: translateY(-50%);
       width: 22px; }
-    .searchresult .model-title.collapsed:before {
-      transform: translateY(-50%) rotate(180deg); }
-    .searchresult .model-title:hover {
+    .searchresult .model-title.collapsed {
       background-color: #2065d8; }
+      .searchresult .model-title.collapsed:before {
+        transform: translateY(-50%) rotate(180deg); }
+    .searchresult .model-title:hover {
+      background-color: #d82027; }
 
 .filter-category-wrapper {
   margin-top: 1.2rem; }
@@ -7059,7 +7061,8 @@ img.justifycenter, table.justifycenter {
 
 .table-details {
   table-layout: fixed;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  margin-bottom: 0; }
   .table-details td {
     border: 1px solid #e9e9ea;
     padding: 0; }
@@ -7094,8 +7097,8 @@ img.justifycenter, table.justifycenter {
   padding: 0; }
   .popover-body div.clsImages {
     position: relative;
-    width: 25.5rem;
-    height: 33rem; }
+    height: 33rem;
+    width: 25.5rem; }
     .popover-body div.clsImages .imagesContainer {
       margin-right: 2.5rem; }
     .popover-body div.clsImages img {
