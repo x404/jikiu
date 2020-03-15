@@ -171,6 +171,17 @@
 			margin-left: 0;
 		}
 	}
+
+
+	.mobSubTitle{
+		display: none;
+		background: $color15;
+		color: #fff;
+		padding: .5rem 1.5rem;
+	}
+	.mobSubTitle{
+		font-size: 1.6rem;
+	}
 }
 
 
@@ -359,11 +370,12 @@
 	&-tableheader{
 		margin-top: 3rem;
 		width: 100%;
+		table-layout: fixed;
 		th{
 			color: #fff;
 			font-family: "Futura Demi C";
 			font-size: 1.5rem;
-			background: #14183d;
+			background: $color15;
 			border: 1px solid #4d4d4d;
 			padding: .8rem;
 		}	
@@ -375,6 +387,7 @@
 
 
 .table-details{
+	table-layout: fixed;
 	font-size: 1.5rem;
 	td{
 		border: 1px solid #e9e9ea;
@@ -516,6 +529,16 @@
 			width: 14rem;
 		}
 	}
+
+	.table-details .partDesc,
+	.searchresult-tableheader th
+	{
+		padding-left: .4rem;
+	}
+
+	.table-details{
+		font-size: 1.4rem;
+	}
 }
 
 
@@ -628,6 +651,53 @@
 }
 
 
+@media (max-width: 991px){
+	.searchresult-tableheader th{
+		font-size: 1.4rem;
+	}
+}
+
+
+@media (max-width: 900px){
+	.searchresult__content{
+		margin-top: 2rem;
+	}
+	.searchresult-tableheader{
+		display: none;
+	}
+	.table-details{
+		tr{
+			display: block;
+			position: relative;
+			border-top: 2px solid #9a9d9e;
+			margin-bottom: 0;
+		}
+		td{
+			display: flex !important;
+			flex-wrap: wrap;
+			font-size: 1.6rem;
+			width: 100% !important;
+		}
+
+		.mobSubTitle{
+			display: block;
+			width: 100%;
+		}
+
+		.thumbs-photos{
+			margin-right: -.5rem;
+			.icon-thumbs{
+				margin-right: 0;
+			}
+		}
+
+		.partDesc{
+			border-right: 1px solid #e9e9ea;
+			padding: 1.2rem 1.5rem 1.2rem 1.5rem !important;
+		}
+	}
+}
+
 
 @media (max-width: 850px){
 	.inner-catalogsearch{
@@ -660,8 +730,7 @@
 		.group-controls{
 			justify-content: center !important
 		}
-
-		
+	
 
 	}
 }
@@ -757,7 +826,12 @@
 
 
 @media (max-width: 576px){
-
+	.table-details{
+		td{
+			display: block !important;
+			border-right: none;
+		}
+	}
 }
 
 
