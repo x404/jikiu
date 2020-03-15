@@ -7034,11 +7034,13 @@ img.justifycenter, table.justifycenter {
     .vehicle-info p:not(:last-child) {
       margin-right: 4rem; }
 
-.search-result-table {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+.searchresult__content {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); }
+
+.searchresult-tableheader {
   margin-top: 3rem;
   width: 100%; }
-  .search-result-table th {
+  .searchresult-tableheader th {
     color: #fff;
     font-family: "Futura Demi C";
     font-size: 1.5rem;

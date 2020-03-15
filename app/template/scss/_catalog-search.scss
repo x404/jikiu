@@ -348,20 +348,25 @@
 		}
 	}
 }
-.search-result-table{
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-	margin-top: 3rem;
-	width: 100%;
-	th{
-		color: #fff;
-		font-family: "Futura Demi C";
-		font-size: 1.5rem;
-		background: #14183d;
-		border: 1px solid #4d4d4d;
-		padding: .8rem;
-	}	
 
-	.icon-photo{
+.searchresult{
+	&__content{
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+	}
+	&-tableheader{
+		margin-top: 3rem;
+		width: 100%;
+		th{
+			color: #fff;
+			font-family: "Futura Demi C";
+			font-size: 1.5rem;
+			background: #14183d;
+			border: 1px solid #4d4d4d;
+			padding: .8rem;
+		}	
+
+		.icon-photo{
+		}
 	}
 }
 
