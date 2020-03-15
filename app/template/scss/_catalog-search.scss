@@ -809,6 +809,15 @@
 			border-right: none;
 		}
 	}
+
+	#loginModal{
+		.modal-title{
+			font-size: 3.4rem;
+		}
+		.form-control{
+			height: 4rem;
+		}
+	}
 }
 
 
@@ -832,6 +841,28 @@
 			margin-left: auto;
 			margin-right: auto;
 			width: 100% !important;
+		}
+	}
+}
+
+
+@media (max-width: 380px){
+	#loginModal{
+		.modal-title{
+			font-size: 2.8rem;
+		}
+
+		.modal-content{
+			padding: 2rem ;
+		}
+
+		.close{
+			right: 15px;
+		}
+
+		.btn-submit{
+			display: block;
+			margin: 3rem auto 0;
 		}
 	}
 }
