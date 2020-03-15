@@ -6874,15 +6874,14 @@ img.justifycenter, table.justifycenter {
     width: 16rem; }
   .inner-catalogsearch .optional {
     color: #bcc5d4;
-    font-size: 1.3rem;
-    margin-top: .5rem;
-    position: absolute;
     bottom: -20px;
-    left: 0; }
+    font-size: 1.3rem;
+    left: 0;
+    margin-top: .5rem;
+    position: absolute; }
   .inner-catalogsearch #applicationmenu .form-group {
-    position: relative;
     margin-right: 0;
-    margin-top: 3rem; }
+    position: relative; }
   .inner-catalogsearch #applicationmenu .btn-search {
     margin-left: 0; }
 
@@ -7155,7 +7154,7 @@ img.justifycenter, table.justifycenter {
     align-items: flex-end !important; }
     .inner-catalogsearch #applicationmenu .group-controls .form-group {
       margin-right: 2rem;
-      margin-top: 5rem; }
+      margin-top: 1.5rem; }
   .inner-catalogsearch #brand_tab,
   .inner-catalogsearch #class_tab {
     width: 30rem; }
@@ -7221,6 +7220,11 @@ img.justifycenter, table.justifycenter {
     font-size: 2.1rem; }
     .inner-catalogsearch .neck .nav-tabs a {
       height: 5rem; }
+  .inner-catalogsearch .neck .tab-content .form-title {
+    margin-bottom: .2rem; }
+  .inner-catalogsearch .optional {
+    margin-top: 0;
+    position: static; }
   .inner-catalogsearch #applicationmenu .group-controls .form-group {
     max-width: 420px;
     margin-left: auto;
@@ -7270,6 +7274,8 @@ img.justifycenter, table.justifycenter {
     margin-bottom: 1rem; }
   .inner-catalogsearch .neck .nav-tabs {
     display: block; }
+  .inner-catalogsearch .neck .tab-content .form-title {
+    font-size: 1.5rem; }
   .inner-catalogsearch .ss_type_id {
     margin-left: auto;
     margin-right: auto;

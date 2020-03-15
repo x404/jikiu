@@ -16,7 +16,7 @@ $(document).ready(function(){
 
 
 	$('#selBrand').multipleSelect({
-		placeholder : 'Brand',
+		// placeholder : 'Brand',
 		single: true,  
 		filter: true,
 		onFilter: function(){
@@ -27,12 +27,13 @@ $(document).ready(function(){
 		},
 		onClick: function(view) {
 		   $('#selClass, #selBody, #selYear,#selEngine, #selEnginevolume').multipleSelect('uncheckAll');
+		   switchPlaceholder();
 		   SwitchEnabledAppsearchFields();
 		}
 	});
 
 	$('#selClass').multipleSelect({
-		placeholder: 'Class & model',
+		// placeholder: 'Class & model',
 		filter: true,
 		onFilter: function(){
 			classlist.update();
@@ -42,12 +43,13 @@ $(document).ready(function(){
 		},
 		onClick: function(view) {
 		   $('#selBody, #selYear,#selEngine, #selEnginevolume').multipleSelect('uncheckAll');
+		   switchPlaceholder();
 		   SwitchEnabledAppsearchFields();
 		}
 	});
 
 	$('#selBody').multipleSelect({
-		placeholder: 'IMG & body',
+		// placeholder: 'IMG & body',
 		filter: true,
 		onFilter: function(){
 			bodylist.update();
@@ -62,7 +64,7 @@ $(document).ready(function(){
 	});
 
 	$('#selYear').multipleSelect({
-		placeholder: 'Year',
+		// placeholder: 'Year',
 		filter: true,
 		onFilter: function(){
 			yearlist.update();
@@ -73,7 +75,7 @@ $(document).ready(function(){
 	});
 
 	$('#selEngine').multipleSelect({
-		placeholder: 'Engine No',
+		// placeholder: 'Engine No',
 		filter: true,
 		onFilter: function(){
 			enginelist.update();
@@ -85,7 +87,7 @@ $(document).ready(function(){
 
 
 	$('#selEnginevolume').multipleSelect({
-		placeholder: 'Engine volume',
+		// placeholder: 'Engine volume',
 		filter: true,
 		onFilter: function(){
 			enginevolumelist.update();
@@ -156,8 +158,19 @@ function SwitchEnabledAppsearchFields(){
 	if($('select#selBrand :selected').val()>0) {
 		$("#selBody").not(':focus').multipleSelect("enable");
 		$("#selClass").not(':focus').multipleSelect("enable");
+		$('.placeholder-class, .placeholder-body').removeClass('disabled')
 	}
 	if($('select#selClass :selected').val()>0) {
 		$("#selBody, #selYear, #selEngine, #selEnginevolume").not(':focus').multipleSelect("enable");
+		switchPlaceholder('remove')
+	}
+}
+
+
+function switchPlaceholder(action){
+	if (action === 'remove'){
+		$('.placeholder-year, .placeholder-engine, .placeholder-enginevolume').removeClass('disabled')		
+	} else {
+		$('.placeholder-year, .placeholder-engine, .placeholder-enginevolume').addClass('disabled')		
 	}
 }

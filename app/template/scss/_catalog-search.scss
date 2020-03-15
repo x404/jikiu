@@ -153,19 +153,18 @@
 
 	.optional{
 		color: #bcc5d4;
+		bottom: -20px;
 		font-size: 1.3rem;
+		left: 0;
 		margin-top: .5rem;
 		position: absolute;
-		bottom: -20px;
-		left: 0;
 	}
 
 
 	#applicationmenu{
 		.form-group{
-			position: relative;
 			margin-right: 0;
-			margin-top: 3rem;
+			position: relative;
 		}
 
 		.btn-search{
@@ -522,8 +521,6 @@
 
 @media (max-width: 1500px){
 	.inner-catalogsearch{
-
-
 		#applicationmenu {
 			#frmAppSearch{
 				margin-top: -2.5rem;
@@ -533,7 +530,7 @@
 				align-items: flex-end !important;
 				.form-group{
 					margin-right: 2rem;
-					margin-top: 5rem;
+					margin-top: 1.5rem;
 				}
 			}
 		}
@@ -684,8 +681,16 @@
 					height: $h;
 				}
 			}
+
+			.tab-content .form-title{
+				margin-bottom: .2rem;
+			}
 		}
 
+		.optional{
+			margin-top: 0;
+			position: static;
+		}
 
 		#applicationmenu{
 			.group-controls .form-group{
@@ -725,8 +730,6 @@
 				margin-top: 2rem;
 			}
 		}
-
-
 	}
 }
 
@@ -753,6 +756,11 @@
 }
 
 
+@media (max-width: 576px){
+
+}
+
+
 @media (max-width: 500px){
 	.inner-catalogsearch{
 		.neck{
@@ -762,6 +770,10 @@
 			}
 			.nav-tabs{
 				display: block;
+			}
+
+			.tab-content .form-title{
+				font-size: 1.5rem;
 			}
 		}
 
