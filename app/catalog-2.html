@@ -344,7 +344,7 @@
 
 						<div class="d-flex justify-content-between">
 							<h2>ARM ASSY, SUSPENSION | JIKIU - RA32003L</h2>
-							<button type="button" data-toggle="modal" data-target="#feedback">FeedBack information</button>
+							<button type="button" class="btn-feedback btn-white-red" data-toggle="modal" data-target="#feedbackModal">FeedBack information</button>
 						</div>
 
 
@@ -2497,11 +2497,11 @@
 <!-- =/mobmenu -->
 	
 <!-- =login modal -->
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+<div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="loginModalLabel">Login</h5>
+				<h5 class="modal-title" id="loginModalLabel">Feedback for » 51355-S0A-010</h5>
 				<button type="button" class="close a-rotate90" data-dismiss="modal" aria-label="Close">
 					<svg width="17" height="17">
 						<line x1="0" y1="0" x2="17" y2="17"/>
@@ -2512,17 +2512,37 @@
 			<div class="modal-body">
 				<form action="#" method="post">
 					<fieldset>
+
+						<div class="name-email d-flex justify-content-between">
+							<div class="form-group">
+								<label for="name">Your Name</label>
+								<input type="text" name="name" id="name" value="" class="form-control" />
+							</div>
+							<div class="form-group">
+								<label for="email">Your e-mail</label>
+								<input type="email" name="email" id="email" value="" class="form-control" />
+							</div>							
+						</div>
+						
 						<div class="form-group">
-							<label for="name">User Name</label>
-							<input type="text" name="name" id="name" value="" class="form-control" />
+							<label for="subject">Subject</label>
+
+<div class="btn-group" data-toggle="buttons">
+	<input class="input_subject" type="radio" name="subject" id="subject1" value=""><label for="subject1">Cross</label>
+	<input class="input_subject" type="radio" name="subject" id="subject2" value="" checked="checked"><label for="subject2">Application</label>
+	<input class="input_subject" type="radio" name="subject" id="subject3" value=""><label for="subject3"> Specification</label>
+	<input class="input_subject" type="radio" name="subject" id="subject4" value=""><label for="subject4"> Image</label>
+	<input class="input_subject" type="radio" name="subject" id="subject5" value=""><label for="subject5"> Other</label>
+</div>
+
 						</div>
 
 						<div class="form-group">
-							<label for="password">Password</label>
-							<input type="password" name="password" id="password" value="" class="form-control" />
+							<label for="details">Details</label>
+							<textarea name="details" id="details" cols="30" rows="10" class="form-control"></textarea>
 						</div>
 
-						<button type="submit" name="submit" class="btn-submit" value="">Submit</button>
+						<button type="submit" name="submit" class="btn-submit" value="">Send feedback</button>
 					</fieldset>
 				</form>
 			</div>
@@ -2542,40 +2562,6 @@
 <script src="/template/js/fotorama.js"></script>
 <script>
 	$(document).ready(function(){
-$('.thumbs').each(function () {
-  $('a', this).each(function () {
-    var $a = $(this);
-    // set ids, will use them later
-    $a.attr({id: $a.attr('href').replace(/[\/\.-]/g, '')});
-  });
-
-  var $thumbs = $(this),
-      $fotorama = $thumbs.clone();
-
-  $fotorama
-      .on('fotorama:show', function (e, fotorama) {
-        // pick the active thumb by id
-        $('#' + fotorama.activeFrame.id)
-            .addClass('active')
-            .siblings()
-            .removeClass('active');
-      })
-      .addClass('fotorama')
-      .removeClass('thumbs')
-      .insertAfter(this)
-      .fotorama({nav: false, width: '100%', maxHeight: 400, ratio: 3/2});
-
-  // get access to the API
-  var fotorama = $fotorama.data('fotorama');
-
-  $thumbs.on('click', 'a', function (e) {
-    e.preventDefault();
-    // show frame by id
-    fotorama.show(this.id);
-  });
-});
-
-
 		$('.fotorama').on('fotorama:fullscreenenter', function() {
 			$(this).data('fotorama').setOptions({fit: 'contain'});
 		});
