@@ -7042,10 +7042,14 @@ img.justifycenter, table.justifycenter {
   height: 18rem;
   width: 100%; }
 
+#feedbackModal .subject-group {
+  margin-top: 1.2rem; }
+  #feedbackModal .subject-group label {
+    margin-right: 1rem; }
+
 #feedbackModal .btn-group {
   background: #ebebeb;
   border-radius: 3.5rem;
-  margin-top: 1.2rem;
   height: 3.5rem; }
   #feedbackModal .btn-group label {
     color: #4f565b;
@@ -7053,13 +7057,11 @@ img.justifycenter, table.justifycenter {
     display: flex;
     align-items: center;
     line-height: 1;
-    padding: 0 1rem;
+    padding: 0 1.2rem;
     transition: .1s;
     border-radius: 3.5rem; }
-    @media (max-width: 1024px) {
-      #feedbackModal .btn-group label {
-        padding-left: 8px;
-        padding-right: 8px; } }
+    #feedbackModal .btn-group label:last-child {
+      margin-right: 0; }
   #feedbackModal .btn-group .input_subject:checked + label {
     background-color: #2065d8;
     color: #fff; }
@@ -7330,6 +7332,12 @@ img.justifycenter, table.justifycenter {
   .inner-catalogsearch #enginevolume_tab {
     width: 19rem; } }
 
+@media (max-width: 1024px) {
+  #feedbackModal {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto; } }
+
 @media (max-width: 991px) {
   .searchresult-tableheader th {
     font-size: 1.4rem; } }
@@ -7417,7 +7425,15 @@ img.justifycenter, table.justifycenter {
   .inner-catalogsearch #productmenu .btn-search,
   .inner-catalogsearch #vinsearch .btn-search,
   .inner-catalogsearch #productsizemenu .btn-search {
-    margin: 2rem auto 0; } }
+    margin: 2rem auto 0; }
+  #feedbackModal .modal-title {
+    font-size: 3rem; }
+  #feedbackModal .subject-group {
+    flex-wrap: wrap; }
+    #feedbackModal .subject-group > label {
+      display: block; }
+    #feedbackModal .subject-group .btn-group {
+      margin-top: 1rem; } }
 
 @media (max-width: 650px) {
   .inner-catalogsearch .neck__top {
@@ -7433,10 +7449,29 @@ img.justifycenter, table.justifycenter {
   .table-details td {
     display: block !important;
     border-right: none; }
+  #feedbackModal .modal-title,
   #loginModal .modal-title {
     font-size: 3.4rem; }
+  #feedbackModal .form-control,
   #loginModal .form-control {
-    height: 4rem; } }
+    height: 4rem; }
+  #feedbackModal {
+    max-width: 98%; }
+    #feedbackModal .name-email .form-group {
+      width: 100%; }
+    #feedbackModal .btn-group {
+      height: 2.6rem;
+      border-radius: 2.6rem; }
+      #feedbackModal .btn-group label {
+        font-size: 1.5rem;
+        padding: 0 .5rem; }
+    #feedbackModal .modal-content {
+      padding-left: 1.2rem;
+      padding-right: 1.2rem; }
+    #feedbackModal .modal-title {
+      font-size: 2.8rem; }
+    #feedbackModal .close {
+      right: 12px; } }
 
 @media (max-width: 500px) {
   .inner-catalogsearch .neck__top {
@@ -7453,14 +7488,18 @@ img.justifycenter, table.justifycenter {
 
 @media (max-width: 380px) {
   #loginModal .modal-title {
-    font-size: 2.8rem; }
+    font-size: 2.8rem;
+    line-height: 1.2; }
   #loginModal .modal-content {
     padding: 2rem; }
   #loginModal .close {
     right: 15px; }
   #loginModal .btn-submit {
     display: block;
-    margin: 3rem auto 0; } }
+    margin: 3rem auto 0; }
+  #feedbackModal .modal-title {
+    font-size: 2.8rem;
+    line-height: 1.2; } }
 
 /* =mobile-menu
 ---------------------------*/

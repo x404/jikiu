@@ -400,27 +400,30 @@
 		width: 100%;
 	}
 
+	.subject-group{
+		margin-top: 1.2rem;
+		label{
+			margin-right: 1rem;
+		}
+	}
+
 	.btn-group{
 		background: #ebebeb;
 		border-radius: 3.5rem;
-		margin-top: 1.2rem;
 		height: 3.5rem;
 		label{
 			color: #4f565b;
 			cursor: pointer;
-			// font-size: 1rem;
 			display: flex;
 			align-items: center;
 			line-height: 1;
-			padding: 0 1rem;
+			padding: 0 1.2rem;
 			transition: .1s;
 			border-radius: 3.5rem;
-
-			@media (max-width: 1024px){
-				padding-left: 8px;
-				padding-right: 8px;
+			&:last-child{
+				margin-right: 0;
 			}
-		}	
+		}
 
 		.input_subject{
 			&:checked + label{
@@ -825,6 +828,15 @@
 }
 
 
+@media (max-width: 1024px){
+	#feedbackModal{
+		max-width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
 @media (max-width: 991px){
 	.searchresult-tableheader th{
 		font-size: 1.4rem;
@@ -968,6 +980,23 @@
 			}
 		}
 	}
+
+	#feedbackModal{
+		.modal-title{
+			font-size: 3rem;
+		}
+
+		.subject-group{
+			flex-wrap: wrap;
+			& > label{
+				display: block;
+			}
+
+			.btn-group{
+				margin-top: 1rem;
+			}
+		}
+	}
 }
 
 
@@ -999,12 +1028,42 @@
 		}
 	}
 
+
+	#feedbackModal,
 	#loginModal{
 		.modal-title{
 			font-size: 3.4rem;
 		}
 		.form-control{
 			height: 4rem;
+		}
+	}
+
+	#feedbackModal{
+		max-width: 98%;
+
+		.name-email .form-group{
+			width: 100%;
+		}
+
+		.btn-group{
+			height: 2.6rem;
+			border-radius: 2.6rem;
+			label{
+				font-size: 1.5rem;
+				padding: 0 .5rem; 
+			}
+		}
+		.modal-content{
+			padding-left: 1.2rem;
+			padding-right: 1.2rem;
+		}
+		.modal-title{
+			font-size: 2.8rem;
+		}
+
+		.close{
+			right: 12px;
 		}
 	}
 }
@@ -1039,6 +1098,7 @@
 	#loginModal{
 		.modal-title{
 			font-size: 2.8rem;
+			line-height: 1.2;
 		}
 
 		.modal-content{
@@ -1052,6 +1112,13 @@
 		.btn-submit{
 			display: block;
 			margin: 3rem auto 0;
+		}
+	}
+
+	#feedbackModal{
+		.modal-title{
+			font-size: 2.8rem;
+			line-height: 1.2;
 		}
 	}
 }
