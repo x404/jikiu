@@ -26,7 +26,10 @@
 	background: #fff;
 
 	.btn-feedback{
-		letter-spacing: 1.7px
+		letter-spacing: 1.7px;
+		margin-left: 1rem;
+		width: 22rem;
+		flex-shrink: 0;
 	}
 
 	.btn-search{
@@ -720,6 +723,13 @@
 }
 
 
+@media (max-width: 1600px){
+	.searchresult h2{
+		font-size: 3.6rem;
+	}
+}
+
+
 @media (max-width: 1500px){
 	.inner-catalogsearch{
 		#applicationmenu {
@@ -825,6 +835,10 @@
 			width: 19rem;
 		}
 	}
+
+	.searchresult h2{
+		font-size: 3rem;
+	}
 }
 
 
@@ -840,6 +854,13 @@
 @media (max-width: 991px){
 	.searchresult-tableheader th{
 		font-size: 1.4rem;
+	}
+
+	.inner-catalogsearch{
+		.btn-feedback{
+			margin-left: 0 !important;
+			margin-top: .5rem;
+		}
 	}
 }
 
@@ -919,6 +940,14 @@
 }
 
 
+@media (max-width: 768px){
+	.searchresult h2 {
+		font-size: 2.6rem;
+		line-height: 1.2;
+	}
+}
+
+
 @media (max-width: 767px){
 	.inner-catalogsearch{
 		.neck{
@@ -979,6 +1008,8 @@
 				margin: 2rem auto 0;
 			}
 		}
+
+
 	}
 
 	#feedbackModal{
@@ -1065,6 +1096,10 @@
 		.close{
 			right: 12px;
 		}
+	}
+
+	.searchresult h2 {
+		font-size: 2.4rem;
 	}
 }
 
