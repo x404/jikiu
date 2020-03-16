@@ -7499,7 +7499,24 @@ img.justifycenter, table.justifycenter {
     margin: 3rem auto 0; }
   #feedbackModal .modal-title {
     font-size: 2.8rem;
-    line-height: 1.2; } }
+    line-height: 1.2; }
+  #feedbackModal .subject-group .btn-group {
+    flex-wrap: wrap;
+    height: auto;
+    padding: .7rem .5rem;
+    border-radius: 0; }
+    #feedbackModal .subject-group .btn-group label {
+      border-radius: 0;
+      font-size: 1.6rem;
+      padding: .4rem .5rem; }
+  #feedbackModal .btn-submit {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media (max-width: 320px) {
+  #feedbackModal .modal-title {
+    font-size: 2.2rem; } }
 
 /* =mobile-menu
 ---------------------------*/
