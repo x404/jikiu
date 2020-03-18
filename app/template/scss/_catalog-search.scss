@@ -270,7 +270,11 @@
 		}
 
 		&__col{
-			// flex-grow: 1
+			&-subassembly{
+				.detail__title{
+					margin-top: .5rem;
+				}
+			}
 		}
 		&__title{
 			font-family: "Futura Demi C";
@@ -280,6 +284,9 @@
 		&__value{
 			color: #454545;
 			font-size: 1.8rem;
+			&-type{
+				min-width: 20rem;
+			}
 		}
 
 		&__plate{
@@ -292,7 +299,7 @@
 		}
 
 		.col-type{
-			min-width: 20rem;
+			// min-width: 20rem;
 		}
 	}
 }
