@@ -7502,6 +7502,9 @@ img.justifycenter, table.justifycenter {
     margin-left: auto;
     margin-right: auto;
     width: 280px; }
+  .inner-catalogsearch .accordion-inner .model-title .date,
+  .inner-catalogsearch .accordion-inner .model-title .modify {
+    margin-right: 1.5rem; }
   #feedbackModal .modal-title {
     font-size: 3rem; }
   #feedbackModal .subject-group {

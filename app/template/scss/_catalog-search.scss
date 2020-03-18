@@ -759,8 +759,7 @@
 
 
 
-.collapse.show {
-	 // transition: none !important;
+.collapsing {
 }
 
 
@@ -1119,6 +1118,14 @@
 			margin-left: auto;
 			margin-right: auto;
 			width: 280px;
+		}
+
+
+		.accordion-inner .model-title{
+			.date,
+			.modify{
+				margin-right: 1.5rem;
+			}
 		}
 	}
 
