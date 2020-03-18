@@ -337,4 +337,3 @@ class mobmenu{
 }
 
 let modalinfo = new mobmenu('.mobmenu');
-
