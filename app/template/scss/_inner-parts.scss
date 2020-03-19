@@ -101,6 +101,15 @@
 		text-align: center;
 	}
 
+
+	@media (max-width: 1024px){
+		.active:before{
+			width: calc(100% + 2rem);
+			left: -1rem
+		}
+	}
+
+
 	@media (max-width: 991px){
 		font-size: 1.5rem;
 		line-height: 1.35;
@@ -140,7 +149,13 @@
 			max-width: none;			
 			width: 650px;
 		}
+	}
 
+	@media (max-width: 400px){
+		.active:before{
+			width: calc(100% + 1rem);
+			left: -.5rem
+		}
 	}
 }
 /* =/submenu
@@ -577,6 +592,10 @@
 			margin-left: auto;
 			margin-right: auto;
 		}
+	}
+
+	@media (max-width: 1399px){
+		min-height: 0;
 	}
 
 	@media (max-width: 991px){

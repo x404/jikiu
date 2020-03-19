@@ -307,3 +307,16 @@
 }
 /* =/lastnews
 ---------------------------*/
+
+@media (max-width: 800px) {
+	.news-wrapper{
+		padding-top: 3rem;
+	}	
+}
+
+
+@media (max-width: 576px) {
+	.news-wrapper{
+		padding-top: 0;
+	}	
+}

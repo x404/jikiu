@@ -4927,6 +4927,14 @@ img.justifycenter, table.justifycenter {
 
 /* =/lastnews
 ---------------------------*/
+@media (max-width: 800px) {
+  .news-wrapper {
+    padding-top: 3rem; } }
+
+@media (max-width: 576px) {
+  .news-wrapper {
+    padding-top: 0; } }
+
 .aside {
   background-color: #fff;
   display: flex;
@@ -5225,6 +5233,11 @@ img.justifycenter, table.justifycenter {
   .newproducts__item {
     width: 33.3%; } }
 
+@media (max-width: 1024px) {
+  .newproducts {
+    margin-top: 3.5rem;
+    padding-bottom: 3rem; } }
+
 @media (max-width: 768px) {
   .newproducts {
     margin-top: 0; }
@@ -5381,7 +5394,7 @@ img.justifycenter, table.justifycenter {
       width: 200px; } }
 
 @media (max-width: 576px) {
-  .inner-products .inner-products .main {
+  .inner-products .main {
     padding-top: 4rem; }
   .inner-products .item-product__pic {
     height: 160px; }
@@ -5466,6 +5479,10 @@ img.justifycenter, table.justifycenter {
   @media (max-width: 1050px) {
     .submenu {
       text-align: center; } }
+  @media (max-width: 1024px) {
+    .submenu .active:before {
+      width: calc(100% + 2rem);
+      left: -1rem; } }
   @media (max-width: 991px) {
     .submenu {
       font-size: 1.5rem;
@@ -5494,6 +5511,10 @@ img.justifycenter, table.justifycenter {
         overflow-x: auto;
         max-width: none;
         width: 650px; } }
+  @media (max-width: 400px) {
+    .submenu .active:before {
+      width: calc(100% + 1rem);
+      left: -.5rem; } }
 
 /* =/submenu
 ---------------------------*/
@@ -5798,6 +5819,9 @@ img.justifycenter, table.justifycenter {
       display: block;
       margin-left: auto;
       margin-right: auto; }
+  @media (max-width: 1399px) {
+    .ecp-top {
+      min-height: 0; } }
   @media (max-width: 991px) {
     .ecp-top {
       background-position: right 40%;
@@ -6404,6 +6428,7 @@ img.justifycenter, table.justifycenter {
     background: none;
     border: none;
     cursor: pointer;
+    padding: 0;
     position: absolute;
     right: 0;
     top: 0; }
@@ -7674,6 +7699,7 @@ img.justifycenter, table.justifycenter {
     background: none;
     border: none;
     cursor: pointer;
+    padding: 0;
     position: absolute;
     right: 0;
     top: 0; }
@@ -7980,6 +8006,11 @@ img.justifycenter, table.justifycenter {
     margin: 2rem 0; }
   .inner .content-single {
     padding-right: 15px; } }
+
+@media (max-width: 800px) {
+  .header-intro .cifres {
+    margin-top: 3rem;
+    padding-bottom: 5.5rem; } }
 
 @media (max-width: 768px) {
   .aside .visual {
