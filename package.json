@@ -12,7 +12,12 @@
   },
   "author": "proverstka.com.ua",
   "license": "ISC",
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-es2015-classes": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "gulp-babel": "^7.0.1"
+  },
   "dependencies": {
     "@popperjs/core": "^2.1.0",
     "browser-sync": "^2.26.7",

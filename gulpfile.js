@@ -13,7 +13,9 @@ var gulp 		= require('gulp'),
 	spritesmith = require('gulp.spritesmith'),
 	imagemin 	= require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
 	pngquant 	= require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
-	cache 		= require('gulp-cache'); // Подключаем библиотеку кеширования
+	cache 		= require('gulp-cache'), // Подключаем библиотеку кеширования
+	babel = require("gulp-babel");
+
 
 	var realFavicon = require ('gulp-real-favicon');
 	var fs = require('fs');	
@@ -285,11 +287,13 @@ gulp.task("webp", function() {
 
 
 
-// gulp.task('webp', () =>
-//     gulp.src('app/images/srcpng/**/*')
-//         .pipe(webp({quality: 85}))
-//         .pipe(gulp.dest('app/images/webpimg'))
-// );
+gulp.task("babel", function () {
+  return gulp.src("app/template/js/~engine.js")
+    .pipe(babel())
+    .pipe(rename("engine.js")) 
+    .pipe(gulp.dest("app/template/js/"));
+});
+
 
 
 // var config = {
