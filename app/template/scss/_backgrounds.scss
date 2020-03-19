@@ -186,6 +186,10 @@
 
 .inner-about{
 	background-image: url(../images/bg/bg-6.jpg);
+	background-size: 2050px;
+	@media (max-width: 450px){
+		background-size: auto 1000px
+	}
 }	
 
 .market-coverage{

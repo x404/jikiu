@@ -218,6 +218,13 @@
 		}
 
 
+		@media (max-width: 1024px){
+			padding-bottom: 0;
+			.text{
+				margin: 2rem 0;
+			}
+		}
+
 		@media (max-width: 576px){
 			padding-bottom: 0;
 		}

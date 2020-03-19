@@ -4726,7 +4726,8 @@ em strong {
   background-image: url(../images/bg/bg-5.jpg); }
 
 .inner-about {
-  background-image: url(../images/bg/bg-6.jpg); }
+  background-image: url(../images/bg/bg-6.jpg);
+  background-size: 2050px; }
 
 .market-coverage {
   background-image: url(../images/bg/bg-7.jpg); }
@@ -4787,7 +4788,8 @@ em strong {
   color: #000;
   font-family: "Futura Demi C";
   font-size: 3rem;
-  font-weight: 400; }
+  font-weight: 400;
+  line-height: 1.2; }
 .item__cifr-desc {
   color: #909090;
   font-family: "Futura Book C";
@@ -5186,7 +5188,7 @@ em strong {
       background: url(../images/parallax/blue-3-420.png) no-repeat 50% 140px; } }
 
 .inner {
-  background: #f4f4f6;
+  background-color: #f4f4f6;
   padding-top: 1rem; }
   .inner .main {
     overflow: hidden; }
@@ -6127,6 +6129,13 @@ img.justifycenter, table.justifycenter {
         .inner-parts .suspension-page .mainpic img,
         .inner-parts .ecp-page .mainpic img {
           max-width: 100%; } }
+  @media (max-width: 1024px) {
+    .inner-parts .suspension-page,
+    .inner-parts .ecp-page {
+      padding-bottom: 0; }
+      .inner-parts .suspension-page .text,
+      .inner-parts .ecp-page .text {
+        margin: 2rem 0; } }
   @media (max-width: 576px) {
     .inner-parts .suspension-page,
     .inner-parts .ecp-page {
@@ -7114,12 +7123,21 @@ img.justifycenter, table.justifycenter {
     .inner-about .about__top .cifres {
       margin-top: 8rem;
       margin-bottom: 5rem; }
+    @media (max-width: 1380px) {
+      .inner-about .about__top {
+        padding-top: 2rem; } }
   .inner-about .cifres {
     background: #fff;
     border-radius: .5rem;
     color: #909090;
     margin-top: 8rem;
     padding: 4rem 4.5rem; }
+    @media (max-width: 1380px) {
+      .inner-about .cifres {
+        margin-top: 4rem; } }
+    @media (max-width: 1024px) {
+      .inner-about .cifres {
+        margin-top: 4rem; } }
   .inner-about .products {
     padding-top: 9.5rem; }
     .inner-about .products .title {
@@ -7142,11 +7160,12 @@ img.justifycenter, table.justifycenter {
       @media (max-width: 380px) {
         .inner-about .products__list {
           margin-top: 0; } }
-    @media (max-width: 768px) {
+    @media (max-width: 1100px) {
       .inner-about .products {
-        padding-top: 5rem; }
-        .inner-about .products__item {
-          width: 50%; } }
+        padding-top: 5rem; } }
+    @media (max-width: 768px) {
+      .inner-about .products__item {
+        width: 50%; } }
     @media (max-width: 576px) {
       .inner-about .products {
         padding-top: 3rem; }
@@ -7249,10 +7268,16 @@ img.justifycenter, table.justifycenter {
         color: #4b5763; }
       .market-coverage .accordion .btn:hover {
         color: #63ebff; }
+      @media (max-width: 1380px) {
+        .market-coverage .accordion .btn {
+          font-size: 5rem; } }
     .market-coverage .accordion .card-body {
       font-size: 1.4rem;
       color: #fff;
       padding: 0.8rem 0 7rem 8rem; }
+      @media (max-width: 1380px) {
+        .market-coverage .accordion .card-body {
+          padding-bottom: 4rem; } }
     .market-coverage .accordion .line {
       width: 56rem;
       background-color: #4b5763;
@@ -7269,6 +7294,14 @@ img.justifycenter, table.justifycenter {
         background-color: #5b54ec; }
       .market-coverage .accordion .line-4 div {
         background-color: #d954ec; }
+  @media (max-width: 1380px) {
+    .market-coverage {
+      min-height: 0;
+      padding-bottom: 10rem; } }
+  @media (max-width: 1024px) {
+    .market-coverage {
+      min-height: 0;
+      padding: 5rem 0 8rem; } }
 
 .features {
   padding-top: 8rem;
@@ -7323,9 +7356,17 @@ img.justifycenter, table.justifycenter {
       font-size: 1.6rem;
       margin-top: 1rem;
       text-align: justify; } }
-  @media (max-width: 991px) {
+  @media (max-width: 1380px) {
     .features {
       min-height: 0;
+      padding-top: 5rem;
+      padding-bottom: 2rem; } }
+  @media (max-width: 1024px) {
+    .features {
+      min-height: 0;
+      padding-bottom: 4rem; } }
+  @media (max-width: 991px) {
+    .features {
       padding-bottom: 2rem; } }
   @media (max-width: 767px) {
     .features {
@@ -8568,7 +8609,7 @@ img.justifycenter, table.justifycenter {
     display: flex; }
 
   .main {
-    padding-top: 6rem; }
+    padding-top: 3rem; }
 
   .news__list-main .item-news {
     margin-bottom: 7rem; }
@@ -8824,7 +8865,7 @@ img.justifycenter, table.justifycenter {
     padding-bottom: 2.8rem; }
 
   .main {
-    padding-top: 4rem; }
+    padding-top: 2rem; }
     .main h1 {
       font-size: 3.5rem; }
 
