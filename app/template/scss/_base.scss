@@ -144,7 +144,6 @@ strong em,
 em strong
 {
 	font-weight: normal;
-	// font-family: "SegoeUIBoldItalic";
 }
 
 
@@ -173,6 +172,7 @@ em strong
 /* =header
 ---------------------------*/
 .header{
+	overflow: hidden;
 	&__left{
 		align-items: center;
 		display: flex;

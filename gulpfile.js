@@ -236,7 +236,8 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 		config.templateDir + '/css/styles.min.css',
 		config.templateDir + '/css/fotorama.css',
 		config.templateDir + '/css/multiple-select.css',
-		config.templateDir + '/css/perfect-scrollbar.css'
+		config.templateDir + '/css/perfect-scrollbar.css',
+		config.templateDir + '/css/fm.revealator.jquery.css'
 	])
 	.pipe(gulp.dest(config.templateDestDir + '/css'));
 
@@ -249,6 +250,7 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 		config.templateDir + '/js/search.js',
 		config.templateDir + '/js/parallax.min.js',
 		config.templateDir + '/js/parallax.min.js.map',
+		config.templateDir + '/js/fm.revealator.jquery.js',
 		config.templateDir + '/js/engine.js'
 	])
 	.pipe(gulp.dest(config.templateDestDir + '/js'));

@@ -3901,9 +3901,11 @@ em strong {
 
 /* =header
 ---------------------------*/
-.header__left {
-  align-items: center;
-  display: flex; }
+.header {
+  overflow: hidden; }
+  .header__left {
+    align-items: center;
+    display: flex; }
 
 /* =/header
 ---------------------------*/
