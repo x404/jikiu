@@ -15,7 +15,8 @@
 	&__link{
 		&:hover{
 			text-decoration: none;
-			.item-product{
+			.item-product,
+			.item-newproduct{
 				&__pic{
 					img{
 						box-shadow: 0 0 15px rgba(0, 96, 255, 0.5);						

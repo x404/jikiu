@@ -198,22 +198,22 @@
 
 
 .inner-about .features{
-	background-image: url(../images/bg/bg-9.webp);
+	background-image: url(../images/bg/bg-9.png);
 	position: relative;
 	&:before{
 		@extend .before;
-		background: url(../images/bg/bg-8.webp) no-repeat left top;
+		background: url(../images/bg/bg-8.png) no-repeat left top;
 		height: 928px;
 		width: 900px;
 		left: 0;
 		top: 0;
 		@media (max-width: 1600px){
-			background-image: url(../images/bg/bg-8-500.webp);
+			background-image: url(../images/bg/bg-8-500.png);
 			height: 516px;
 			width: 500px;
 		}
 		@media (max-width: 991px){
-			background-image: url(../images/bg/bg-8-300.webp);
+			background-image: url(../images/bg/bg-8-300.png);
 			height: 310px;
 			width: 300px;
 		}
