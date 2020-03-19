@@ -234,8 +234,9 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 	var buildCss = gulp.src([ // Переносим CSS стили в продакшен
 		config.templateDir + '/css/styles.css',
 		config.templateDir + '/css/styles.min.css',
-		// config.templateDir + '/css/jquery.fancybox.min.css',
-		config.templateDir + '/css/tiny.css'
+		config.templateDir + '/css/fotorama.css',
+		config.templateDir + '/css/multiple-select.css',
+		config.templateDir + '/css/perfect-scrollbar.css'
 	])
 	.pipe(gulp.dest(config.templateDestDir + '/css'));
 
@@ -243,6 +244,11 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 	var buildJs = gulp.src([ // move js to production
 		config.templateDir + '/js/libs.min.js',
 		config.templateDir + '/js/slick.min.js',
+		config.templateDir + '/js/multiple-select.min.js',
+		config.templateDir + '/js/perfect-scrollbar.min.js',
+		config.templateDir + '/js/search.js',
+		config.templateDir + '/js/parallax.min.js',
+		config.templateDir + '/js/parallax.min.js.map',
 		config.templateDir + '/js/engine.js'
 	])
 	.pipe(gulp.dest(config.templateDestDir + '/js'));
@@ -251,14 +257,21 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 
 
 	// var buildFavicon = gulp.src('app/the_favicon/*.*').pipe(gulp.dest(config.destDir + '/the_favicon'));
+	var buildFavicon = gulp.src('app/the_favicon/*.*').pipe(gulp.dest(config.destDir + '/the_favicon'));
+    var buildFaviconIco = gulp.src('app/the_favicon/favicon.ico').pipe(gulp.dest(config.destDir));
 
 	var buildHtml = gulp.src('app/*.html').pipe(gulp.dest(config.destDir + '/'));
 	var buildHtaccess = gulp.src('app/.htaccess').pipe(gulp.dest(config.destDir));
 	var buildrobots = gulp.src('app/robots.txt').pipe(gulp.dest(config.destDir));
-	var buildProjectTmpImages = gulp.src('app/images/**/*').pipe(gulp.dest(config.destDir + '/images'));
-	// var buildTmp = gulp.src('app/tmp/*').pipe(gulp.dest(config.destDir + '/tmp'));
+	var buildImages1 = gulp.src('app/images/**/*').pipe(gulp.dest(config.destDir + '/images'));
+	var buildImages2 = gulp.src([
+			config.templateDir + '/css/fotorama.png',
+			config.templateDir + '/css/fotorama@2x.png'
+		])
+		.pipe(gulp.dest(config.templateDestDir + '/css/'));
+	var buildImages3 = gulp.src('images/**/*').pipe(gulp.dest(config.destDir + '/images'));
+
 	var buildFonts = gulp.src(config.templateDir + '/fonts/**/*').pipe(gulp.dest(config.templateDestDir + '/fonts')); // Переносим шрифты в продакшен
-	var buildOutdate = gulp.src('app/outdatedbrowser/**/*').pipe(gulp.dest(config.destDir + '/outdatedbrowser'));
 });
 
 
