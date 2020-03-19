@@ -13,8 +13,6 @@ $(document).ready(function(){
 		}
 	});
 
-
-
 	$('#selBrand').multipleSelect({
 		// placeholder : 'Brand',
 		single: true,  
@@ -45,6 +43,14 @@ $(document).ready(function(){
 		   $('#selBody, #selYear,#selEngine, #selEnginevolume').multipleSelect('uncheckAll');
 		   switchPlaceholder();
 		   SwitchEnabledAppsearchFields();
+		},
+		onCheckAll: function() {
+		   SwitchEnabledAppsearchFields();
+		},
+		onUncheckAll: function() {
+			$('#selBody, #selYear,#selEngine, #selEnginevolume').multipleSelect('uncheckAll');
+			switchPlaceholder();
+			 SwitchEnabledAppsearchFields();
 		}
 	});
 

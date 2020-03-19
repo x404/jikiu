@@ -144,6 +144,7 @@
 
 	@media (max-width: 576px){
 		overflow: hidden;
+		width: 100vw;
 		.container{
 			overflow-x: auto;
 			max-width: none;			
@@ -246,6 +247,10 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center top;
+	.mainpic{
+		margin-top: 5rem;
+	}
+
 	.mainpic,
 	.mainpic img{
 		display: block;
@@ -750,6 +755,7 @@
 	&-page{
 		background: #fff;
 		padding-top: 0;
+		
 		.container{
 			position: relative;
 		}
@@ -766,7 +772,15 @@
 				margin-top: 100px;
 			}
 			@media (max-width: 800px){
-				right: -20px;
+				picture,
+				img{
+					margin-left: auto;
+					width: 90%;
+					max-width: 100%;
+				}
+				top: 300px;
+				text-align: right;
+				right: 0;
 			}
 			@media (max-width: 767px){
 				position: static;
@@ -778,6 +792,10 @@
 					margin-right: auto;
 					max-width: 100%;
 				}
+			}
+
+			@media (max-width: 576px){
+				margin-top: 80px;
 			}
 		}
 	}

@@ -438,8 +438,9 @@
 		height: 17px;
 		right: -5px;
 		position: absolute;
-		top: -5px;
+		top: 10px;
 		width: 17px;
+		padding: 0;
 		line{
 			stroke: #b0b0b0;
 			stroke-width: 3px;
@@ -1218,6 +1219,10 @@
 	.searchresult h2 {
 		font-size: 2.4rem;
 	}
+
+	.btn-login{
+		margin-left: 0;
+	}
 }
 
 
@@ -1290,6 +1295,14 @@
 		}
 	}
 }
+
+
+@media (max-width: 350px){
+	.filter-category-wrapper .filterCat{
+		width: 100% !important;
+	}
+}
+
 
 @media (max-width: 320px){
 	#feedbackModal{
