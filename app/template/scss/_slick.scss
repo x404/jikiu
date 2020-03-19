@@ -108,14 +108,16 @@
 
 /* Based on https://github.com/kenwheeler/slick/issues/187#issuecomment-59123524 */
 /* bootstrap hack: fix content width inside hidden tabs */
-.tab-content > .tab-pane,
-.pill-content > .pill-pane {
-    display: block;    /* undo display:none          */
-    height: 0;         /* height:0 is also invisible */
-    overflow: hidden;  /* no-overflow                */
+.find-adaptor{
+	.tab-content > .tab-pane,
+	.pill-content > .pill-pane {
+	    display: block;    /* undo display:none          */
+	    height: 0;         /* height:0 is also invisible */
+	    overflow: hidden;  /* no-overflow                */
+	}
+	.tab-content > .active,
+	.pill-content > .active {
+	    height: auto;      /* let the content decide it  */
+	}
+	/* bootstrap hack end */	
 }
-.tab-content > .active,
-.pill-content > .active {
-    height: auto;      /* let the content decide it  */
-}
-/* bootstrap hack end */

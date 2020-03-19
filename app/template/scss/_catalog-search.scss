@@ -120,6 +120,7 @@
 				padding-left: 1.5rem;
 				padding-right: 1.5rem;
 				width: 40rem;
+				&::-ms-input-placeholder{color:#fff}
 				&::placeholder{
 					color: #fff;
 				}
@@ -201,55 +202,52 @@
 	.product{
 		padding-top: 2.1rem;
 
+		@media (min-width: 1250px){
+			.fotorama {
+			  max-width: 100%;
+			  display: block;
+			  padding-left: 100px;
+			}
+			.fotorama__thumb-border{
+				top: -2px;
+			}
+			.fotorama.fotorama--fullscreen .zoomImg {
+			  visibility: hidden;
+			}
+			.fotorama.fotorama--fullscreen .fotorama__html > div {
+			  height: 100%;
+			  text-align: center;
+			}
+			.fotorama.fotorama--fullscreen .fotorama__html > div img {
+			  max-height: 100%;
+			}
+			.fotorama .fotorama__fullscreen-icon {
+			  opacity: 1 !important;
+			  transform: none !important;
+			}	
 
-@media (min-width: 1250px){
-	.fotorama {
-	  max-width: 100%;
-	  display: block;
-	  padding-left: 100px;
-	}
-	.fotorama__thumb-border{
-		top: -2px;
-	}
-	.fotorama.fotorama--fullscreen .zoomImg {
-	  visibility: hidden;
-	}
-	.fotorama.fotorama--fullscreen .fotorama__html > div {
-	  height: 100%;
-	  text-align: center;
-	}
-	.fotorama.fotorama--fullscreen .fotorama__html > div img {
-	  max-height: 100%;
-	}
-	.fotorama .fotorama__fullscreen-icon {
-	  opacity: 1 !important;
-	  transform: none !important;
-	}	
+			/* .fotorama__loaded--img img{max-width:100%;} */
+			.fotorama__nav-wrap {
+			  transform: rotate(90deg);
+			  transform-origin: 0 0;
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			}
+			.fotorama__nav-wrap .fotorama__nav {
+			  text-align: left;
+			}
+			.fotorama__nav-wrap .fotorama__img {
+			  transform: rotate(270deg);
+			}
 
-	/* .fotorama__loaded--img img{max-width:100%;} */
-	.fotorama__nav-wrap {
-	  transform: rotate(90deg);
-	  transform-origin: 0 0;
-	  position: absolute;
-	  top: 0;
-	  left: 0;
-	}
-	.fotorama__nav-wrap .fotorama__nav {
-	  text-align: left;
-	}
-	.fotorama__nav-wrap .fotorama__img {
-	  transform: rotate(270deg);
-	}
-
-	.fotorama__html > div {
-	  width: 100%;
-	}
-	.fotorama__html > div img {
-	  max-width: 100%;
-	}
-}
-
-
+			.fotorama__html > div {
+			  width: 100%;
+			}
+			.fotorama__html > div img {
+			  max-width: 100%;
+			}
+		}
 	}
 	.accordion{
 		.searchresult-tableheader{
@@ -360,6 +358,11 @@
 				box-shadow: 0 5px 15px rgba(0,0,0,.15);
 			}
 		}
+	}
+
+
+	#productsizemenu{
+		padding-top: .5rem;
 	}
 }
 

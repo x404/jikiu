@@ -5590,6 +5590,10 @@ img.justifycenter, table.justifycenter {
     .inner-parts .ecp-page {
       padding-bottom: 0; } }
 
+@media (max-width: 768px) {
+  .inner-parts {
+    display: block !important; } }
+
 @media (max-width: 576px) {
   .inner-parts .content-single {
     padding-left: 0 !important;
@@ -6564,21 +6568,21 @@ img.justifycenter, table.justifycenter {
 
 /* Based on https://github.com/kenwheeler/slick/issues/187#issuecomment-59123524 */
 /* bootstrap hack: fix content width inside hidden tabs */
-.tab-content > .tab-pane,
-.pill-content > .pill-pane {
-  display: block;
-  /* undo display:none          */
-  height: 0;
-  /* height:0 is also invisible */
-  overflow: hidden;
-  /* no-overflow                */ }
+.find-adaptor {
+  /* bootstrap hack end */ }
+  .find-adaptor .tab-content > .tab-pane,
+  .find-adaptor .pill-content > .pill-pane {
+    display: block;
+    /* undo display:none          */
+    height: 0;
+    /* height:0 is also invisible */
+    overflow: hidden;
+    /* no-overflow                */ }
+  .find-adaptor .tab-content > .active,
+  .find-adaptor .pill-content > .active {
+    height: auto;
+    /* let the content decide it  */ }
 
-.tab-content > .active,
-.pill-content > .active {
-  height: auto;
-  /* let the content decide it  */ }
-
-/* bootstrap hack end */
 .inner-about {
   background-repeat: no-repeat; }
   .inner-about .navbar-toggle {
@@ -7001,6 +7005,8 @@ img.justifycenter, table.justifycenter {
       padding-left: 1.5rem;
       padding-right: 1.5rem;
       width: 40rem; }
+      .inner-catalogsearch .neck .tab-content .form-control::-ms-input-placeholder {
+        color: #fff; }
       .inner-catalogsearch .neck .tab-content .form-control::placeholder {
         color: #fff; }
   .inner-catalogsearch .ss_type_id {
@@ -7134,6 +7140,8 @@ img.justifycenter, table.justifycenter {
       margin-top: .2rem; }
     .inner-catalogsearch .searchresult__content-brands .card {
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); }
+  .inner-catalogsearch #productsizemenu {
+    padding-top: .5rem; }
 
 .w100 {
   flex-shrink: 0;

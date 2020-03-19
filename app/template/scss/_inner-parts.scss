@@ -232,11 +232,16 @@
 	}
 
 
+	@media (max-width: 768px){
+		display: block !important;
+	}
+
 	@media (max-width: 576px){
 		.content-single{
 			padding-left: 0 !important;
 			padding-right: 0 !important;
 		}
+
 	}
 }
 
