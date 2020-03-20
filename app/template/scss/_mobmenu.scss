@@ -59,6 +59,9 @@ $color_2: #0563bf;
 	a{
 		color: #fff;
 		text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+		}
 	}
 	.nav{
 		font-size: 2.5rem;

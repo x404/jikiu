@@ -48,6 +48,10 @@
 		justify-content: center;
 		margin-left: 6.8rem;
 		width: 16rem;
+		transition: background-color .3s;
+		&:hover{
+			background-color: #41a3ff
+		}
 	}
 
 	.neck{

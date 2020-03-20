@@ -6366,27 +6366,24 @@ img.justifycenter, table.justifycenter {
     display: flex;
     flex-direction: column;
     height: 28rem;
-    justify-content: space-between;
     padding: 1.6rem .8rem;
     position: relative;
     text-align: center;
     z-index: 2; }
   .item-adaptor__top {
-    height: 9.2rem;
     flex-shrink: 0; }
     .item-adaptor__top .pic {
       height: 4.5rem; }
     .item-adaptor__top .title {
       padding-top: 1rem; }
   .item-adaptor__bottom {
-    margin-top: 2.5rem;
-    height: 11rem; }
+    margin-top: 2.5rem; }
     .item-adaptor__bottom .pic {
       height: 5rem; }
     .item-adaptor__bottom .title {
       padding-top: 1rem; }
   .item-adaptor__arrow {
-    margin-top: 1rem; }
+    margin-top: 1.5rem; }
   .item-adaptor .title {
     color: #222222;
     font-family: "Futura Book C";
@@ -6442,6 +6439,8 @@ img.justifycenter, table.justifycenter {
   .mobmenu a {
     color: #fff;
     text-decoration: none; }
+    .mobmenu a:hover {
+      text-decoration: underline; }
   .mobmenu .nav {
     font-size: 2.5rem;
     font-family: "Futura Demi C";
@@ -6966,7 +6965,10 @@ img.justifycenter, table.justifycenter {
     height: 7rem;
     justify-content: center;
     margin-left: 6.8rem;
-    width: 16rem; }
+    width: 16rem;
+    transition: background-color .3s; }
+    .inner-catalogsearch .btn-search:hover {
+      background-color: #41a3ff; }
   .inner-catalogsearch .neck {
     margin-top: 3rem; }
     .inner-catalogsearch .neck__top {
@@ -7812,6 +7814,8 @@ img.justifycenter, table.justifycenter {
   .mobmenu a {
     color: #fff;
     text-decoration: none; }
+    .mobmenu a:hover {
+      text-decoration: underline; }
   .mobmenu .nav {
     font-size: 2.5rem;
     font-family: "Futura Demi C";

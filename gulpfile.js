@@ -74,7 +74,7 @@ gulp.task('compress', function(){
 				config.templateDir + '/js/popover.js',
 				config.templateDir + '/js/tab.js',
 				config.templateDir + '/js/modal.js',
-				config.templateDir + '/js/collapse.js',
+				config.templateDir + '/js/collapse.js'
 			]),
 			concat('libs.min.js'), // Собираем их в кучу в новом файле libs.min.js
 			uglify(), // Сжимае JS файл
@@ -251,7 +251,8 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 		config.templateDir + '/js/parallax.min.js',
 		config.templateDir + '/js/parallax.min.js.map',
 		config.templateDir + '/js/fm.revealator.jquery.js',
-		config.templateDir + '/js/engine.js'
+		config.templateDir + '/js/engine.js',
+		config.templateDir + '/js/fotorama.js'
 	])
 	.pipe(gulp.dest(config.templateDestDir + '/js'));
 
