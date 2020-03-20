@@ -12,9 +12,8 @@ Jikiu
 __Используемые в проекте js плагины__
 * Slick слайдер [https://github.com/kenwheeler/slick](https://github.com/kenwheeler/slick)
 * Parallax [https://github.com/wagerfield/parallax](https://github.com/wagerfield/parallax)
-
-
-* Скрипт стилизации выпадающих списков с поиском[https://github.com/selectize/selectize.js](https://github.com/selectize/selectize.js)
-* Сообщение для устаревших браузеров Outdated Browser v1.1.5[https://github.com/burocratik/outdated-browser](https://github.com/burocratik/outdated-browser) [Демо](http://outdatedbrowser.com/ru)
-* Стилизация скролов nicescroll[https://github.com/inuyaksa/jquery.nicescroll/blob/master/README.md](https://github.com/inuyaksa/jquery.nicescroll/blob/master/README.md)
+* Скрипт стилизации выпадающих списков с поиском[http://multiple-select.wenzhixin.net.cn/](http://multiple-select.wenzhixin.net.cn/)
+* Стилизация скролов perfectscrollbar [https://github.com/mdbootstrap/perfect-scrollbar](https://github.com/mdbootstrap/perfect-scrollbar)
+* Галерея [Fotorama](http://fotorama.io/)
+* Анимация появления блоков Revealator [https://github.com/QODIO/revealator](https://github.com/QODIO/revealator)
 
