@@ -303,7 +303,7 @@ gulp.task("webp", function() {
 
 
 gulp.task("babel", function () {
-  return gulp.src("app/template/js/~engine.js")
+  return gulp.src("app/template/js/engine-original.js")
     .pipe(babel())
     .pipe(rename("engine.js")) 
     .pipe(gulp.dest("app/template/js/"));
