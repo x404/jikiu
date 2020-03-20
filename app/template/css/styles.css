@@ -4191,8 +4191,14 @@ em strong {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 2rem; }
 
+.homepage .item-news__link:hover .item-news__title {
+  color: #d82027; }
+
+.homepage .item-news__link:hover .item-news__more {
+  color: #fff; }
+
 /* =cifres
-	---------------------------*/
+---------------------------*/
 .cifres {
   position: relative;
   padding-bottom: 75px;
@@ -4224,7 +4230,7 @@ em strong {
   font-size: 1.7rem; }
 
 /* =/cifres
-	---------------------------*/
+---------------------------*/
 .header-intro {
   background-color: #f7f7f7;
   background: linear-gradient(#f4f4f4, #f3f3f3);
