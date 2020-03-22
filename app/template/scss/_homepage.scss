@@ -117,6 +117,10 @@
 			background-position: right 120px;
 			position: relative;
 		}
+
+		&-content{
+			z-index: 999;
+		}
 	}
 
 
@@ -160,6 +164,7 @@
 		position: relative;
 		display: flex;
 		flex-wrap: wrap;
+		z-index: 10;
 		&__item{
 			flex-basis: 50%;
 			font-size: 2.2rem;
@@ -270,8 +275,20 @@
 		@media (max-width: 1750px) {
 			&-1{left: 45px; top: 455px;}
 			&-2{left: 45px; top: 340px}
-			&-3{left: 50px; top: 250px}
-			&-4{left: 140px; top: 200px}
+			&-3{
+				left: 50px;
+				top: 250px;
+				.plate{
+					top: 0;
+				}
+			}
+			&-4{
+				left: 140px;
+				top: 200px;
+				.plate{
+					top: -35px;
+				}				
+			}
 			&-5{left: 240px; top: 255px}
 			&-6{left: 285px; top: 300px}
 			&-7{left: 290px; top: 370px}
@@ -287,18 +304,54 @@
 		@media (max-width: 1399px) {
 			&-1{left: 15px; top: 375px;}
 			&-2{left: 15px; top: 280px}
-			&-3{left: 20px; top: 200px}
-			&-4{left: 100px; top: 160px}
-			&-5{left: 170px; top: 195px}
+			&-3{
+				left: 20px;
+				top: 200px;
+				.plate{
+					left: 100%;
+					top: 10px;
+				}
+			}
+			&-4{
+				left: 100px;
+				top: 160px;
+				.plate{
+					left: 100%;
+					top: -45px;
+				}
+			}
+			&-5{
+				left: 170px;
+				top: 195px;
+				.plate{
+					top: -30px;
+				}
+			}
 			&-6{left: 220px; top: 240px}
 			&-7{left: 220px; top: 290px}
-			&-8{left: 180px; top: 350px}
+			&-8{
+				left: 180px;
+				top: 350px;
+				.plate{
+					left: 100%;
+					top: -40px;
+				}
+			}
 			&-9{left: 220px; top: 385px}
 			&-10{left: 270px; top: 405px}
 			&-11{left: 330px; top: 395px}
 			&-12{left: 280px; top: 195px}
 			&-13{left: 370px; top: 250px}
 			&-14{left: 460px; top: 170px}
+		}
+
+		@media (max-width: 1199px) {
+			&-14{
+				.plate{
+					left: -180px;
+					top: -50px;
+				}
+			}
 		}
 	}
 
@@ -320,6 +373,7 @@
 
 		&__pic{
 			clip-path: circle(35px);
+			-webkit-clip-path: circle(35px);
 			width: 70px;
 			height: 70px;
 		}

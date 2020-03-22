@@ -4279,6 +4279,8 @@ em strong {
       background-repeat: no-repeat;
       background-position: right 120px;
       position: relative; }
+    .header-intro .intro-content {
+      z-index: 999; }
   .header-intro .about__title {
     font-size: 2rem;
     color: #fffefe;
@@ -4303,7 +4305,8 @@ em strong {
   .header-intro .catalog {
     position: relative;
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    z-index: 10; }
     .header-intro .catalog__item {
       flex-basis: 50%;
       font-size: 2.2rem;
@@ -4417,9 +4420,13 @@ em strong {
       .header-intro .dot-3 {
         left: 50px;
         top: 250px; }
+        .header-intro .dot-3 .plate {
+          top: 0; }
       .header-intro .dot-4 {
         left: 140px;
         top: 200px; }
+        .header-intro .dot-4 .plate {
+          top: -35px; }
       .header-intro .dot-5 {
         left: 240px;
         top: 255px; }
@@ -4460,12 +4467,20 @@ em strong {
       .header-intro .dot-3 {
         left: 20px;
         top: 200px; }
+        .header-intro .dot-3 .plate {
+          left: 100%;
+          top: 10px; }
       .header-intro .dot-4 {
         left: 100px;
         top: 160px; }
+        .header-intro .dot-4 .plate {
+          left: 100%;
+          top: -45px; }
       .header-intro .dot-5 {
         left: 170px;
         top: 195px; }
+        .header-intro .dot-5 .plate {
+          top: -30px; }
       .header-intro .dot-6 {
         left: 220px;
         top: 240px; }
@@ -4475,6 +4490,9 @@ em strong {
       .header-intro .dot-8 {
         left: 180px;
         top: 350px; }
+        .header-intro .dot-8 .plate {
+          left: 100%;
+          top: -40px; }
       .header-intro .dot-9 {
         left: 220px;
         top: 385px; }
@@ -4493,6 +4511,10 @@ em strong {
       .header-intro .dot-14 {
         left: 460px;
         top: 170px; } }
+    @media (max-width: 1199px) {
+      .header-intro .dot-14 .plate {
+        left: -180px;
+        top: -50px; } }
   .header-intro .plate {
     align-items: center;
     background-color: #fff;
@@ -4510,6 +4532,7 @@ em strong {
     z-index: -1; }
     .header-intro .plate__pic {
       clip-path: circle(35px);
+      -webkit-clip-path: circle(35px);
       width: 70px;
       height: 70px; }
     .header-intro .plate__title {
