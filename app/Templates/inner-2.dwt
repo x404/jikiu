@@ -165,12 +165,12 @@
 			</button>
 		</div>
 		<ul class="nav">
-			<li><a href="#" title="">Company</a></li>
+			<li><a href="/about.html" title="">Company</a></li>
 			<li class="active"><a href="#" title="">Products</a></li>
-			<li><a href="#" title="">Catalogue</a></li>
+			<li><a href="/catalog-1.html" title="">Catalogue</a></li>
 			<li><a href="/news.html" title="">News</a></li>
-			<li><a href="#" title="">New products</a></li>
-			<li><a href="#" title="">Contact Us</a></li>
+			<li><a href="/new-products.html" title="">New products</a></li>
+			<li><a href="/contacts.html" title="">Contact Us</a></li>
 		</ul>
 	</div>
 </div>
