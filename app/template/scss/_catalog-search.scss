@@ -100,6 +100,7 @@
 
 		.tab-pane{
 			overflow: initial;
+			padding-bottom: 4rem;
 			&.active{
 				position: relative;
 				z-index: 999;
@@ -142,13 +143,50 @@
 	.form-group{
 		display: flex;
 		align-items: center;
-		margin: 2.5rem 1.6rem 0 0;
+		margin: 2.5rem 0 0 0;
+		padding-right: 1rem;
+		width: 25%;
+		@media (max-width: 1800px){
+			width: 30%;
+		}
+
+		@media (max-width: 1500px){
+			width: 33.3%;
+		}
+
+		@media (max-width: 1350px){
+			width: 40%;
+		}
+
+		@media (max-width: 991px){
+			width: 50%;
+		}
+
+		@media (max-width: 460px){
+			flex-wrap: wrap;
+			justify-content: space-between;
+			padding-right: 0 !important;
+			width: 100% !important;
+			label{
+				margin-bottom: .5rem;
+				width: 100%;
+			}
+
+			.form-control{
+				margin-left: 0;
+				margin-right: .5rem;
+				width: 47% !important;
+			}
+		}
 	}
 	input.form-control{
 		height: 4.5rem;
 		width: 13.5rem;
 		margin-left: 1rem;
 		margin-right: 1.7rem;
+		@media (max-width: 767px){
+			width: 135px !important;
+		}
 	}
 
 	.ms-choice{
@@ -166,6 +204,7 @@
 	.selbush{
 		height: 4.5rem !important;
 		width: 13.5rem !important;
+		flex-shrink: 0
 	}
 	.ms-choice{
 		height: 4.5rem;
@@ -173,6 +212,12 @@
 	select.form-control{
 		option{
 			color: #000;
+		}
+	}
+
+	@media (max-width: 767px){
+		.title{
+			text-align: center;
 		}
 	}
 }
@@ -431,6 +476,16 @@
 			height: 46px;
 			& > div{
 				top: 7px;
+			}
+		}
+
+		@media (max-width: 767px){
+			.type_id_wrapper{
+				max-width: 100% !important
+			}
+
+			.ss_type_id{
+				width: 100% !important;
 			}
 		}
 	}
@@ -901,6 +956,47 @@
 			display: block;
 		}
 	}
+
+
+	@media (max-width: 767px){
+		.div_bush_pofile{
+			width: calc(33.3% - 1.5rem);
+			&:nth-child(3n){
+				margin-right: 0;
+			}
+		}
+	}
+
+	@media (max-width: 680px){
+		.div_bush_pofile{
+			width: calc(50% - 1.5rem);
+			&:nth-child(even){
+				margin-right: 0;
+			}
+			&:nth-child(odd){
+				margin-right: 2rem;
+			}
+
+			.drinkcard-cc{
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
+
+	@media (max-width: 460px){
+		.drinkcard-cc{
+			padding-left: 25px;
+			width: 100%;
+			img{
+				max-width: 100%;
+				height: auto;
+			}
+			&:before{
+				left: 2px;
+			}
+		}
+	}
 }
 
 
@@ -988,6 +1084,9 @@
 
 		.neck__body{
 			height: auto;
+		}
+
+		#applicationmenu{
 			padding-bottom: 3rem;
 		}
 	}
