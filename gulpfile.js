@@ -247,6 +247,7 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 		config.templateDir + '/js/slick.min.js',
 		config.templateDir + '/js/multiple-select.min.js',
 		config.templateDir + '/js/perfect-scrollbar.min.js',
+		config.templateDir + '/js/perfect-scrollbar.min.js.map',
 		config.templateDir + '/js/search.js',
 		config.templateDir + '/js/parallax.min.js',
 		config.templateDir + '/js/parallax.min.js.map',
