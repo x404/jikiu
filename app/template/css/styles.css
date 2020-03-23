@@ -4197,6 +4197,21 @@ em strong {
 .homepage .item-news__link:hover .item-news__more {
   color: #fff; }
 
+@media (min-width: 1399px) {
+  .homepage .item-news__desc {
+    padding-right: 2.5rem; } }
+
+.homepage .item-news__text {
+  margin-top: 1.4rem; }
+
+.homepage .item-product__pic {
+  height: auto;
+  padding-top: 1.5rem;
+  width: auto; }
+
+.homepage .new-products #newproducts-carousel {
+  padding-top: 1rem; }
+
 /* =cifres
 ---------------------------*/
 .cifres {

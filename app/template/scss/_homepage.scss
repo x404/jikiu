@@ -17,6 +17,27 @@
 			}
 		}
 	}
+
+	.item-news{
+		&__desc{
+			@media (min-width: 1399px){
+				padding-right: 2.5rem;
+			}
+		}
+		&__text{
+			margin-top: 1.4rem;
+		}
+	}
+
+	.item-product__pic{
+		height: auto;
+		padding-top: 1.5rem;
+		width: auto;
+	}
+
+	.new-products #newproducts-carousel{
+		padding-top: 1rem;
+	}
 }
 
 /* =cifres
