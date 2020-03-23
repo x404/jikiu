@@ -257,10 +257,8 @@ $(document).ready(function(){
 			{
 				breakpoint: 380,
 				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					centerMode: true,
-					centerPadding: '80px'
+					slidesToShow: 2,
+					slidesToScroll: 1
 				}
 			}
 		]

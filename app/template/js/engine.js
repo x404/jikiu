@@ -226,10 +226,8 @@ $(document).ready(function () {
 		}, {
 			breakpoint: 380,
 			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				centerMode: true,
-				centerPadding: '80px'
+				slidesToShow: 2,
+				slidesToScroll: 1
 			}
 		}]
 	});
@@ -263,11 +261,9 @@ $(document).ready(function () {
 
 	$('[data-toggle="popover"]').popover().click(function () {
 		$('[data-toggle="popover_sub"]').popover().on('show.bs.popover', function () {
-			console.log("1");
 			$('div.popover').eq(1).popover('hide');
 		});
 		$('[data-toggle="popover_sub"]').popover().on('shown.bs.popover', function () {
-			console.log("2");
 			$('[data-toggle="popover_sub"]').popover();
 		});
 	});
