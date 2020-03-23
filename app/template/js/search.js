@@ -11,7 +11,29 @@ $(document).ready(function(){
 			typelist.update();
 		},
 		onClick: function(view) {
-			document.querySelector('.area-controls').classList.remove('hide')
+			document.querySelector('.area-controls').classList.remove('hide');
+
+			const getResources = async(url) => {
+				const res = await fetch(url);
+				if (!res.ok){
+					throw new Error('not fetch');
+				}
+				const body = await res.text();
+				return body;
+			};
+
+			getResources('/catalog-parts-type.json')
+				.then(body => {
+					document.querySelector('#app-controls').innerHTML = '';
+					document.querySelector('#app-controls').insertAdjacentHTML('afterbegin', body);
+					$('.selbush').multipleSelect({
+						single: true,
+						filter: false
+					});
+				})
+				.catch(err => {
+					console.log(err)
+				})
 		}
 	});
 
