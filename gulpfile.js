@@ -235,6 +235,7 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 		config.templateDir + '/css/styles.css',
 		config.templateDir + '/css/styles.min.css',
 		config.templateDir + '/css/fotorama.css',
+		config.templateDir + '/css/jquery.fancybox.min.css',
 		config.templateDir + '/css/multiple-select.css',
 		config.templateDir + '/css/perfect-scrollbar.css',
 		config.templateDir + '/css/fm.revealator.jquery.css'
@@ -253,6 +254,7 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 		config.templateDir + '/js/parallax.min.js.map',
 		config.templateDir + '/js/fm.revealator.jquery.js',
 		config.templateDir + '/js/engine.js',
+		config.templateDir + '/js/jquery.fancybox.min.js',
 		config.templateDir + '/js/fotorama.js'
 	])
 	.pipe(gulp.dest(config.templateDestDir + '/js'));
