@@ -436,6 +436,12 @@
 	}
 }
 
+.area-controls{
+	&.hide{
+		display: none;		
+	}
+}
+
 .w100{
 	flex-shrink: 0;
 	width: 10rem;

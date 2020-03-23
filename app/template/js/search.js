@@ -11,8 +11,11 @@ $(document).ready(function(){
 			typelist.update();
 		},
 		onClick: function(view) {
+			document.querySelector('.area-controls').classList.remove('hide')
 		}
 	});
+
+
 
 	$('#selBrand').multipleSelect({
 		// placeholder : 'Brand',

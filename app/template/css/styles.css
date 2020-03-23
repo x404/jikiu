@@ -7236,6 +7236,9 @@ img.justifycenter, table.justifycenter {
       .inner-catalogsearch #productsizemenu .ms-choice > div {
         top: 7px; }
 
+.area-controls.hide {
+  display: none; }
+
 .w100 {
   flex-shrink: 0;
   width: 10rem; }
