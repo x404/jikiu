@@ -7274,7 +7274,9 @@ img.justifycenter, table.justifycenter {
       .inner-catalogsearch #productsizemenu .type_id_wrapper {
         max-width: 100% !important; }
       .inner-catalogsearch #productsizemenu .ss_type_id {
-        width: 100% !important; } }
+        width: 100% !important; }
+      .inner-catalogsearch #productsizemenu .btn-search {
+        margin-top: 4rem !important; } }
 
 .area-controls.hide {
   display: none; }
