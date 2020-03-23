@@ -260,6 +260,11 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 	.pipe(gulp.dest(config.templateDestDir + '/js'));
 
 
+	var buildJSON = gulp.src([ 
+		'app/catalog-parts-type.json'
+	])
+	.pipe(gulp.dest(config.destDir));
+
 
 
 	// var buildFavicon = gulp.src('app/the_favicon/*.*').pipe(gulp.dest(config.destDir + '/the_favicon'));
@@ -314,6 +319,12 @@ gulp.task("babel", function () {
 });
 
 
+gulp.task("babel2", function () {
+  return gulp.src("app/template/js/search-original.js")
+    .pipe(babel())
+    .pipe(rename("search.js")) 
+    .pipe(gulp.dest("app/template/js/"));
+});
 
 // var config = {
 // 	templateDir : 'app/template',

@@ -1,4 +1,4 @@
 {
-  "plugins": ["transform-es2015-classes", "transform-es2015-arrow-functions"] 
+  "plugins": ["transform-es2015-classes", "transform-es2015-arrow-functions", "syntax-async-functions", "check-es2015-constants", "es6-promise"]
 }
 
