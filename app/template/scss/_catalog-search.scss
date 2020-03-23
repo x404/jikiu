@@ -91,10 +91,9 @@
 		&__body{
 			background-color: $color14;
 			background-repeat: no-repeat;
-			// background-size: cover;
 			border-bottom: 10px solid $color7;
 			color: #fff;
-			min-height: 16rem;
+			min-height: 16.2rem;
 			padding: 3.5rem 0 0;
 		}
 
@@ -239,7 +238,7 @@
 			letter-spacing: normal;
 		}
 	}
-
+ 
 	.panel{
 		width: 100%;
 	}
@@ -462,7 +461,7 @@
 
 	#productsizemenu{
 		padding-top: .5rem;
-		padding-bottom: 4rem;
+		padding-bottom: 3.5rem;
 		.btn-search{
 			margin-left: 0;
 			margin-top: 3rem;

@@ -7037,7 +7037,7 @@ img.justifycenter, table.justifycenter {
       background-repeat: no-repeat;
       border-bottom: 10px solid #d82027;
       color: #fff;
-      min-height: 16rem;
+      min-height: 16.2rem;
       padding: 3.5rem 0 0; }
     .inner-catalogsearch .neck .tab-pane {
       overflow: initial;
@@ -7260,7 +7260,7 @@ img.justifycenter, table.justifycenter {
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); }
   .inner-catalogsearch #productsizemenu {
     padding-top: .5rem;
-    padding-bottom: 4rem; }
+    padding-bottom: 3.5rem; }
     .inner-catalogsearch #productsizemenu .btn-search {
       margin-left: 0;
       margin-top: 3rem; }
