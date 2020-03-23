@@ -7035,7 +7035,6 @@ img.justifycenter, table.justifycenter {
     .inner-catalogsearch .neck__body {
       background-color: #083989;
       background-repeat: no-repeat;
-      background-size: cover;
       border-bottom: 10px solid #d82027;
       color: #fff;
       min-height: 16rem;
@@ -7064,6 +7063,35 @@ img.justifycenter, table.justifycenter {
         color: #fff; }
       .inner-catalogsearch .neck .tab-content .form-control::placeholder {
         color: #fff; }
+    .inner-catalogsearch .neck .tab-content .entersizes {
+      margin-top: 3.3rem; }
+      .inner-catalogsearch .neck .tab-content .entersizes label,
+      .inner-catalogsearch .neck .tab-content .entersizes .title {
+        letter-spacing: 1px;
+        font-size: 1.7rem;
+        min-width: 55px; }
+      .inner-catalogsearch .neck .tab-content .entersizes .form-group {
+        display: flex;
+        align-items: center;
+        margin: 2.5rem 1.6rem 0 0; }
+      .inner-catalogsearch .neck .tab-content .entersizes input.form-control {
+        height: 4.5rem;
+        width: 13.5rem;
+        margin-left: 1rem;
+        margin-right: 1.7rem; }
+      .inner-catalogsearch .neck .tab-content .entersizes .ms-choice {
+        border: none; }
+      .inner-catalogsearch .neck .tab-content .entersizes .ms-drop {
+        padding: 0; }
+      .inner-catalogsearch .neck .tab-content .entersizes .listwrapper {
+        padding: 0 13px; }
+      .inner-catalogsearch .neck .tab-content .entersizes .selbush {
+        height: 4.5rem !important;
+        width: 13.5rem !important; }
+      .inner-catalogsearch .neck .tab-content .entersizes .ms-choice {
+        height: 4.5rem; }
+      .inner-catalogsearch .neck .tab-content .entersizes select.form-control option {
+        color: #000; }
   .inner-catalogsearch .ss_type_id {
     width: 400px !important; }
   .inner-catalogsearch .ms-drop ul > li.hide-radio label,
@@ -7196,7 +7224,17 @@ img.justifycenter, table.justifycenter {
     .inner-catalogsearch .searchresult__content-brands .card {
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); }
   .inner-catalogsearch #productsizemenu {
-    padding-top: .5rem; }
+    padding-top: .5rem;
+    padding-bottom: 4rem; }
+    .inner-catalogsearch #productsizemenu .btn-search {
+      margin-left: 0;
+      margin-top: 3rem; }
+    .inner-catalogsearch #productsizemenu .ss_type_id {
+      width: 640px !important; }
+    .inner-catalogsearch #productsizemenu .ms-choice {
+      height: 46px; }
+      .inner-catalogsearch #productsizemenu .ms-choice > div {
+        top: 7px; }
 
 .w100 {
   flex-shrink: 0;

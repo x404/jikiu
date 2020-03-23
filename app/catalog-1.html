@@ -282,7 +282,7 @@
 								<div class="tab-pane fade" id="productsizemenu"  >
 									<div class="panel panel-default">
 										<div class="panel-body">
-											<form role="form" name="frmTypeSearch" class="d-md-flex align-items-end">
+											<form role="form" name="frmTypeSearch" class="--d-md-flex align-items-end">
 												<div class="type_id_wrapper radio-tab">
 													<label for="ss_type_id" class="form-title">Parts type</label>
 													<select name="type_id" id="ss_type_id" class="ss_type_id" multiple="multiple">
@@ -311,6 +311,7 @@
 														<option value="p223">STRUT BAR RUBBER/BUSH</option>
 													</select>
 
+													<!-- =cc-selector -->
 													<div class="cc-selector">
 														<div class="div_bush_pofile">
 															<input id="bush-1" type="radio" value="1" name="bush" class="">
@@ -382,15 +383,84 @@
 																<a href="/images/type-2.png" class="thumbnail icon-zoom" target="_blank" data-fancybox="gallery"><img src="/template/images/zoom.png" alt="" /></a>
 															</label>
 														</div>
-
 													</div>
+													<!-- =/cc-selector -->
+
+
+													<!-- =size -->
+													<div class="entersizes">
+														<p class="title">Enter Size +/- (mm)</p>
+														<div class="d-flex flex-wrap justify-content-between">
+															<div class="form-group">
+																<label for="">Size A:</label>
+																<input type="text" class="form-control" value="" />
+																<select class="form-control selbush" name="selsizea" >
+																	<option value="0">0</option>
+																	<option value="0.5">0.5</option>
+																	<option value="1">1</option>
+																	<option value="2">2</option>
+																	<option value="3">3</option>
+																	<option value="5">5</option>
+																</select>
+															</div>
+															<div class="form-group">
+																<label for="">Size B:</label>
+																<input type="text" class="form-control" value="" name="sizeb" />
+																<select class="form-control selbush" name="selsizeb">
+																	<option value="0">0</option>
+																	<option value="0.5">0.5</option>
+																	<option value="1">1</option>
+																	<option value="2">2</option>
+																	<option value="3">3</option>
+																	<option value="5">5</option>
+																</select>
+															</div>
+															<div class="form-group">
+																<label for="">Size C:</label>
+																<input type="text" class="form-control" value="" name="sizec" />
+																<select class="form-control selbush" name="selsizec">
+																	<option value="0">0</option>
+																	<option value="0.5">0.5</option>
+																	<option value="1">1</option>
+																	<option value="2">2</option>
+																	<option value="3">3</option>
+																	<option value="5">5</option>
+																</select>
+															</div>
+															<div class="form-group">
+																<label for="">Size D:</label>
+																<input type="text" class="form-control" value="" name="sized" />
+																<select class="form-control selbush" name="selsized">
+																	<option value="0">0</option>
+																	<option value="0.5">0.5</option>
+																	<option value="1">1</option>
+																	<option value="2">2</option>
+																	<option value="3">3</option>
+																	<option value="5">5</option>
+																</select>
+															</div>
+															<div class="form-group">
+																<label for="">Type:</label>
+																<input type="text" class="form-control" value="" name="type" />
+																<select class="form-control selbush" name="seltype">
+																	<option value="0">0</option>
+																	<option value="0.5">0.5</option>
+																	<option value="1">1</option>
+																	<option value="2">2</option>
+																	<option value="3">3</option>
+																	<option value="5">5</option>
+																</select>
+															</div>
+
+														</div>
+													</div>
+													<!-- =/size -->
 												</div>
 												<button type="submit" class="btn-search"><i class="icon icon-search"></i>Search</button>
 											</form>
 										</div>
 									</div>
 								</div>
-
 							</div>
 						</div>
 					</div>

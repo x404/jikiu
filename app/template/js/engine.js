@@ -267,6 +267,12 @@ $(document).ready(function () {
 			$('[data-toggle="popover_sub"]').popover();
 		});
 	});
+
+	// catalog select on tab "By Size"
+	$('.selbush').multipleSelect({
+		single: true,
+		filter: false
+	});
 });
 
 $('body').on('click', '.popover .close', function () {

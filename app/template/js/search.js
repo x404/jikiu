@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
 	$("#ss_type_id").multipleSelect({
 		single: true,
 		filter: true,

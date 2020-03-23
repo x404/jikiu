@@ -303,6 +303,13 @@ $(document).ready(function(){
 		});
 	});
 
+
+	// catalog select on tab "By Size"
+	$('.selbush').multipleSelect({
+		single: true,  
+		filter: false
+	})
+
 });
 
 

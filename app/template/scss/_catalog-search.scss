@@ -91,7 +91,7 @@
 		&__body{
 			background-color: $color14;
 			background-repeat: no-repeat;
-			background-size: cover;
+			// background-size: cover;
 			border-bottom: 10px solid $color7;
 			color: #fff;
 			min-height: 16rem;
@@ -129,6 +129,56 @@
 					color: #fff;
 				}
 			}	
+
+
+.entersizes{
+	margin-top: 3.3rem;
+	label,
+	.title{
+		letter-spacing: 1px;
+		font-size: 1.7rem;
+		min-width: 55px;
+	}
+	.form-group{
+		display: flex;
+		align-items: center;
+		margin: 2.5rem 1.6rem 0 0;
+	}
+	input.form-control{
+		height: 4.5rem;
+		width: 13.5rem;
+		margin-left: 1rem;
+		margin-right: 1.7rem;
+	}
+
+	.ms-choice{
+		border: none;
+	}
+
+	.ms-drop{
+		padding: 0;
+	}
+
+	.listwrapper{
+		padding: 0 13px
+	}
+
+	.selbush{
+		height: 4.5rem !important;
+		width: 13.5rem !important;
+	}
+	.ms-choice{
+		height: 4.5rem;
+	}
+	select.form-control{
+		option{
+			color: #000;
+		}
+	}
+}
+
+
+
 		}
 	}
 
@@ -367,6 +417,22 @@
 
 	#productsizemenu{
 		padding-top: .5rem;
+		padding-bottom: 4rem;
+		.btn-search{
+			margin-left: 0;
+			margin-top: 3rem;
+		}
+
+		.ss_type_id{
+			width: 640px !important;
+		}
+
+		.ms-choice{
+			height: 46px;
+			& > div{
+				top: 7px;
+			}
+		}
 	}
 }
 
