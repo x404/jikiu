@@ -3969,7 +3969,7 @@ em strong {
     border-radius: 3rem; }
 
 .footer {
-  background: #121212;
+  background-color: #121212;
   color: #fff;
   font-size: 1.4rem;
   padding-bottom: 2rem; }
@@ -4036,6 +4036,9 @@ em strong {
 
 .webp .homepage .footer {
   background-image: url(../images/bg/bg-footer.webp); }
+
+.webp .inner .footer {
+  background-image: url(../images/bg/bg-inner-footer.webp); }
 
 .webp .visual-newproducts {
   background-image: url(../images/visual-products.webp); }
@@ -4133,6 +4136,17 @@ em strong {
   background-image: url(../images/bg/bg-footer.jpg);
   background-repeat: no-repeat;
   background-position: right top; }
+  @media (max-width: 550px) {
+    .homepage .footer {
+      background-image: none !important; } }
+
+.inner .footer {
+  background-image: url(../images/bg/bg-inner-footer.jpg);
+  background-repeat: no-repeat;
+  background-position: right top; }
+  @media (max-width: 550px) {
+    .inner .footer {
+      background-image: none !important; } }
 
 .inner-contacts {
   background-image: url(../images/bg/bg-1.png); }
@@ -5228,6 +5242,9 @@ img.justifycenter, table.justifycenter {
     font-weight: 700;
     line-height: 1.5;
     margin-bottom: 3rem; }
+  .inner-contacts .address {
+    font-size: 3rem;
+    margin-bottom: 2.5rem; }
   .inner-contacts .tel,
   .inner-contacts .email {
     font-family: "Futura Book C";
@@ -5244,7 +5261,9 @@ img.justifycenter, table.justifycenter {
     .inner-contacts .title {
       font-size: 6rem; }
     .inner-contacts .rmp {
-      font-size: 4rem; }
+      font-size: 3.6rem; }
+    .inner-contacts .address {
+      font-size: 3rem; }
     .inner-contacts .tel,
     .inner-contacts .email {
       font-size: 3.4rem; } }
@@ -5253,6 +5272,8 @@ img.justifycenter, table.justifycenter {
       font-size: 5.4rem; }
     .inner-contacts .rmp {
       font-size: 3.4rem; }
+    .inner-contacts .address {
+      font-size: 3.2rem; }
     .inner-contacts .tel,
     .inner-contacts .email {
       font-size: 3rem; } }
@@ -5261,6 +5282,8 @@ img.justifycenter, table.justifycenter {
       font-size: 5rem; }
     .inner-contacts .rmp {
       font-size: 3.2rem; }
+    .inner-contacts .address {
+      font-size: 3rem; }
     .inner-contacts .tel,
     .inner-contacts .email {
       font-size: 2.6rem; } }
@@ -5269,6 +5292,8 @@ img.justifycenter, table.justifycenter {
       font-size: 4.2rem; }
     .inner-contacts .rmp {
       font-size: 2.8rem; }
+    .inner-contacts .address {
+      font-size: 2.5rem; }
     .inner-contacts .tel,
     .inner-contacts .email {
       font-size: 2.2rem; } }
@@ -5278,12 +5303,17 @@ img.justifycenter, table.justifycenter {
     .inner-contacts .rmp {
       font-size: 2.4rem;
       line-height: 1.2; }
+    .inner-contacts .address {
+      font-size: 2.2rem; }
     .inner-contacts .tel,
     .inner-contacts .email {
       font-size: 2rem; }
       .inner-contacts .tel .icon,
       .inner-contacts .email .icon {
         display: none; } }
+
+.map {
+  max-height: 40rem; }
 
 .newproducts {
   margin-top: 8rem;
@@ -5428,8 +5458,6 @@ img.justifycenter, table.justifycenter {
     color: #fff; }
   .inner-products .main {
     padding-top: 7.5rem; }
-  .inner-products footer {
-    background: #14183d; }
   .inner-products .navbar-toggle {
     color: #fff; }
 
@@ -6884,8 +6912,6 @@ img.justifycenter, table.justifycenter {
       .inner-about .item-product__pic:before, .inner-about .item-product__pic:after {
         width: 105px;
         height: 105px; } }
-  .inner-about footer {
-    background: #14183d; }
 
 .market-coverage {
   background-color: #14183d;

@@ -16,6 +16,13 @@
 		}
 	}
 
+	.inner{
+		.footer{
+			background-image: url(../images/bg/bg-inner-footer.webp);
+		}
+	}
+
+
 	.visual-newproducts{
 		background-image: url(../images/visual-products.webp);
 	}
@@ -142,8 +149,24 @@
 		background-image: url(../images/bg/bg-footer.jpg);
 		background-repeat: no-repeat;
 		background-position: right top;
+		@media (max-width: 550px){
+			background-image: none !important;
+		}
 	}
 }
+
+
+.inner{
+	.footer{
+		background-image: url(../images/bg/bg-inner-footer.jpg);
+		background-repeat: no-repeat;
+		background-position: right top;
+		@media (max-width: 550px){
+			background-image: none !important;
+		}
+	}
+}
+
 
 .inner-contacts{
 	background-image: url(../images/bg/bg-1.png);
