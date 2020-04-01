@@ -4041,25 +4041,25 @@ em strong {
   background-image: url(../images/visual-products.webp); }
 
 .webp .inner-contacts {
-  background-image: url(../images/bg-1.webp); }
+  background-image: url(../images/bg/bg-1.webp); }
 
 .webp .inner-products {
-  background-image: url(../images/bg-2.webp); }
+  background-image: url(../images/bg/bg-2.webp); }
   @media (max-width: 1000px) {
     .webp .inner-products {
-      background-image: url(../images/bg-2-1000.webp); } }
+      background-image: url(../images/bg/bg-2-1000.webp); } }
 
 .webp .transmission-page {
-  background-image: url(../images/bg-3.webp); }
+  background-image: url(../images/bg/bg-3.webp); }
 
 .webp .ecp-top {
-  background-image: url(../images/ecp-bg.webp); }
+  background-image: url(../images/bg/ecp-bg.webp); }
 
 .webp .suspension-top {
-  background-image: url(../images/suspension-bg.webp); }
+  background-image: url(../images/bg/suspension-bg.webp); }
 
 .webp .pss-top {
-  background-image: url(../images/bg-4.webp); }
+  background-image: url(../images/bg/bg-4.webp); }
 
 .webp .wiper-intro {
   background-image: url(../images/bg/wiper-slide.webp); }
@@ -4135,25 +4135,25 @@ em strong {
   background-position: right top; }
 
 .inner-contacts {
-  background-image: url(../images/bg-1.png); }
+  background-image: url(../images/bg/bg-1.png); }
 
 .inner-products {
-  background-image: url(../images/bg-2.png); }
+  background-image: url(../images/bg/bg-2.png); }
   @media (max-width: 1000px) {
     .inner-products {
-      background-image: url(../images/bg-2-1000.png); } }
+      background-image: url(../images/bg/bg-2-1000.png); } }
 
 .transmission-page {
-  background-image: url(../images/bg-3.png); }
+  background-image: url(../images/bg/bg-3.png); }
 
 .ecp-top {
-  background-image: url(../images/ecp-bg.jpg); }
+  background-image: url(../images/bg/ecp-bg.jpg); }
 
 .suspension-top {
-  background-image: url(../images/suspension-bg.jpg); }
+  background-image: url(../images/bg/suspension-bg.jpg); }
 
 .pss-top {
-  background-image: url(../images/bg-4.jpg); }
+  background-image: url(../images/bg/bg-4.jpg); }
 
 .wiper-intro {
   background-image: url(../images/bg/wiper-slide.jpg); }
@@ -4299,7 +4299,7 @@ em strong {
     border-top: 670px solid #f8f8f8;
     border-right: 1280px solid transparent; }
   .header-intro:after {
-    background: url(../images/bg-line.png) repeat-x left bottom;
+    background: url(../images/bg/bg-line.png) repeat-x left bottom;
     bottom: 0;
     height: 43px;
     left: 0;
@@ -8339,7 +8339,7 @@ img.justifycenter, table.justifycenter {
 
 @media (max-width: 1399px) {
   .header-intro:after {
-    background-image: url(../images/bg-line-1200.png);
+    background-image: url(../images/bg/bg-line-1200.png);
     height: 33px; }
   .header-intro .about {
     padding-bottom: .7rem; }
@@ -8383,7 +8383,7 @@ img.justifycenter, table.justifycenter {
   .header-intro {
     min-height: 0; }
     .header-intro:after {
-      background-image: url(../images/bg-line-1000.png);
+      background-image: url(../images/bg/bg-line-1000.png);
       height: 27px; }
     .header-intro .intro {
       padding-left: 8rem; }
