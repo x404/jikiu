@@ -5381,7 +5381,15 @@ img.justifycenter, table.justifycenter {
 
 .inner-products .navmenu .nav li.active,
 .inner-about .navmenu .nav li.active {
-  color: #d82027; }
+  background: #d82027;
+  border-radius: 3rem;
+  color: #fff;
+  height: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  margin: 0 1.3rem; }
 
 .inner-products .langs a,
 .inner-about .langs a {
