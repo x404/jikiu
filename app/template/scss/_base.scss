@@ -269,14 +269,34 @@ em strong
 	background: #121212;
 	color: #fff;
 	font-size: 1.4rem;
-	padding: 2rem 0;
+	padding-bottom: 2rem;
 	.logos{
 		img{
 			margin-right: 3rem;
 		}
 	}
-	.copyright{
+	.footer__text{
+		font-size: 1.7rem;
 		padding-left: .5rem;
+
+		@media (max-width: 550px){
+			font-size: 1.4rem;
+		}
+	}
+
+	.copyright{
+		font-family: 'Futura BT';
+		font-weight: normal;
+	}
+
+	.address{
+		font-family: 'Futura Book C';
+		margin-top: .8rem;
+	}
+
+
+	@media (max-width: 550px){
+		background-size: cover;
 	}
 }
 

@@ -10,6 +10,12 @@
 		}
 	}
 
+	.homepage{
+		.footer{
+			background-image: url(../images/bg/bg-footer.webp);
+		}
+	}
+
 	.visual-newproducts{
 		background-image: url(../images/visual-products.webp);
 	}
@@ -130,6 +136,14 @@
 	}
 }
 
+
+.homepage{
+	.footer{
+		background-image: url(../images/bg/bg-footer.jpg);
+		background-repeat: no-repeat;
+		background-position: right top;
+	}
+}
 
 .inner-contacts{
 	background-image: url(../images/bg-1.png);
