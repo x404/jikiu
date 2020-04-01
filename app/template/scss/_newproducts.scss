@@ -10,6 +10,27 @@
 	}
 }
 
+.new-products,
+.newproducts{
+	.item-product,
+	.item-newproduct
+	{
+		&__link{
+			&:hover{
+				.item-product,
+				.item-newproduct
+				{
+					&__pic{
+						img{
+							box-shadow: 0 0 15px rgba(0, 96, 255, 0.5);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 
 .item-product,
 .item-newproduct{
@@ -18,11 +39,7 @@
 			text-decoration: none;
 			.item-product,
 			.item-newproduct{
-				&__pic{
-					img{
-						box-shadow: 0 0 15px rgba(0, 96, 255, 0.5);						
-					}
-				}
+				
 			}
 		}
 	}

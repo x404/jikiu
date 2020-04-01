@@ -5224,14 +5224,19 @@ img.justifycenter, table.justifycenter {
     margin: 5rem 0 2rem;
     width: 20%; }
 
+.new-products .item-product__link:hover .item-product__pic img,
+.new-products .item-product__link:hover .item-newproduct__pic img,
+.new-products .item-newproduct__link:hover .item-product__pic img,
+.new-products .item-newproduct__link:hover .item-newproduct__pic img,
+.newproducts .item-product__link:hover .item-product__pic img,
+.newproducts .item-product__link:hover .item-newproduct__pic img,
+.newproducts .item-newproduct__link:hover .item-product__pic img,
+.newproducts .item-newproduct__link:hover .item-newproduct__pic img {
+  box-shadow: 0 0 15px rgba(0, 96, 255, 0.5); }
+
 .item-product__link:hover,
 .item-newproduct__link:hover {
   text-decoration: none; }
-  .item-product__link:hover .item-product__pic img,
-  .item-product__link:hover .item-newproduct__pic img,
-  .item-newproduct__link:hover .item-product__pic img,
-  .item-newproduct__link:hover .item-newproduct__pic img {
-    box-shadow: 0 0 15px rgba(0, 96, 255, 0.5); }
 
 .item-product__pic,
 .item-newproduct__pic {
