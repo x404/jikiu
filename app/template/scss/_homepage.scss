@@ -38,6 +38,29 @@
 	.new-products #newproducts-carousel{
 		padding-top: 1rem;
 	}
+
+
+	.lastnews{
+		.show-all{
+			background-color: $color7;
+			color: #fff;
+			&:hover{
+				background-color: $color16;
+				border-color: $color16;
+			}
+		}
+
+		.item-news__link{
+			&:hover{
+				.item-news__more{
+					span{
+						background-color: $color16;
+						border-color: $color16;						
+					}
+				}
+			}
+		}
+	}
 }
 
 /* =cifres

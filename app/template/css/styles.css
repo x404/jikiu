@@ -4212,6 +4212,17 @@ em strong {
 .homepage .new-products #newproducts-carousel {
   padding-top: 1rem; }
 
+.homepage .lastnews .show-all {
+  background-color: #d82027;
+  color: #fff; }
+  .homepage .lastnews .show-all:hover {
+    background-color: #41a3ff;
+    border-color: #41a3ff; }
+
+.homepage .lastnews .item-news__link:hover .item-news__more span {
+  background-color: #41a3ff;
+  border-color: #41a3ff; }
+
 /* =cifres
 ---------------------------*/
 .cifres {
@@ -4856,6 +4867,12 @@ img.justifycenter, table.justifycenter {
       padding-left: 3.6rem; }
     .lastnews .item-news__more {
       margin-top: 1rem; }
+      .lastnews .item-news__more span {
+        background-color: #d82027;
+        transition: .3s;
+        color: #fff;
+        margin-left: 0;
+        font-family: 'Futura Book C'; }
     .lastnews .item-news__pic {
       height: 19.5rem;
       width: 26rem; }

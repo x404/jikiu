@@ -115,6 +115,13 @@
 
 		&__more{
 			margin-top: 1rem;
+			span{
+				background-color: $color7;
+				transition: .3s;
+				color: #fff;
+				margin-left: 0;
+				font-family: 'Futura Book C';
+			}
 		}
 
 		&__pic{
