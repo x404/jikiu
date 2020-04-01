@@ -3,12 +3,18 @@ var _createClass = function () { function defineProperties(target, props) { for 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 $(document).ready(function () {
-	$(".homepage .catalog__link").mouseenter(function () {
+	$('.homepage .catalog__link').mouseenter(function () {
 		const cat = $(this).data('cat');
-		$('[data-cat="' + cat + '"]').addClass('active');
+		$('.dots [data-cat="' + cat + '"]').addClass('active');
 	}).mouseleave(function () {
 		const cat = $(this).data('cat');
-		$('[data-cat="' + cat + '"]').removeClass('active');
+		$('.dots [data-cat="' + cat + '"]').removeClass('active');
+	});
+
+	$('.homepage .catalog__item .show-all').mouseenter(function () {
+		$('.dots .dot').addClass('active');
+	}).mouseleave(function () {
+		$('.dots .dot').removeClass('active');
 	});
 
 	$('#newproducts-carousel').slick({

@@ -3892,7 +3892,7 @@ em strong {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .icon-thumbs:before, .navmenu .nav a:after, .navmenu .nav a:before, .inner-about .features:before, .cifres__item:not(:last-child):after, .header-intro:before, .header-intro:after, .header-intro .intro:before, .btn-back:before, .item-news__bg:after, .item-news__bg:before, .news__list-main .item-news__inner:after, .news__list-main .item-news__inner:before, .inner .content-single ul li:before, .inner-contacts .title:after, .tr-corner:before, .tr-corner:after, .inner-products .item-product__pic:before, .inner-products .item-product__pic:after,
+.before, .icon-thumbs:before, .navmenu .nav a:after, .navmenu .nav a:before, .inner-about .features:before, .cifres__item:not(:last-child):after, .header-intro:before, .header-intro:after, .header-intro .intro:before, .header-intro .catalog .show-all:before, .btn-back:before, .item-news__bg:after, .item-news__bg:before, .news__list-main .item-news__inner:after, .news__list-main .item-news__inner:before, .inner .content-single ul li:before, .inner-contacts .title:after, .tr-corner:before, .tr-corner:after, .inner-products .item-product__pic:before, .inner-products .item-product__pic:after,
 .inner-about .item-product__pic:before,
 .inner-about .item-product__pic:after, .submenu .active:before, .item-catparts__link:hover .item-catparts__pic:before, .item-catparts__pic:before, .item-type__text ul li:before, .item-adaptor:after, .item-adaptor:before, .market-coverage:after, .searchresult .model-title:before, .cc-selector .drinkcard-cc:before {
   content: "";
@@ -4359,6 +4359,35 @@ em strong {
         text-decoration: none; }
         .header-intro .catalog__link:hover img {
           filter: grayscale(1) invert(1) brightness(5); }
+    .header-intro .catalog .show-all {
+      background-color: #d82027;
+      color: #fff;
+      cursor: pointer;
+      display: flex;
+      font-family: 'Futura Book C';
+      font-size: 2rem;
+      height: 4.1rem;
+      justify-content: center;
+      margin-top: 2rem;
+      padding-left: 30px;
+      position: relative;
+      width: 13rem;
+      transition: .3s; }
+      .header-intro .catalog .show-all:before {
+        background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAALCAQAAAA33H6xAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkBAENIy8Rnev6AAAAaUlEQVQY042RsQ2AMAwEPxRULMEGkRiBBZiIihEoWAMxBmIPBKSi56goKBLn3Xxxst96oejUlJ+PQz1w4C1s4QECTRrzXAAEOiQGbE2OW5Us7YVGE5Lm7GxZnxbRQ6ucTrXaJCW2/Vp4ATZJw55ElRKnAAAAAElFTkSuQmCC");
+        background-repeat: no-repeat;
+        left: 13px;
+        top: 13px;
+        width: 19px;
+        height: 10px; }
+      .header-intro .catalog .show-all:hover {
+        background-color: #2065d8;
+        border-color: #2065d8; }
+      @media (max-width: 1500px) {
+        .header-intro .catalog .show-all {
+          font-size: 1.8rem;
+          height: 4rem;
+          width: 12rem; } }
   .header-intro .car {
     margin: -23px -40px 0 -140px;
     overflow: hidden; }

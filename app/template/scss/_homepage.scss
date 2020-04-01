@@ -242,6 +242,41 @@
 				}
 			}
 		}
+
+		.show-all{
+			background-color: $color7;
+			color: #fff;
+			cursor: pointer;
+			display: flex;
+			font-family: 'Futura Book C';
+			font-size: 2rem;
+			height: 4.1rem;
+			justify-content: center;
+			margin-top: 2rem;
+			padding-left: 30px;
+			position: relative;
+			width: 13rem;
+			transition: .3s;
+			&:before{
+				@extend .before;
+				background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAALCAQAAAA33H6xAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkBAENIy8Rnev6AAAAaUlEQVQY042RsQ2AMAwEPxRULMEGkRiBBZiIihEoWAMxBmIPBKSi56goKBLn3Xxxst96oejUlJ+PQz1w4C1s4QECTRrzXAAEOiQGbE2OW5Us7YVGE5Lm7GxZnxbRQ6ucTrXaJCW2/Vp4ATZJw55ElRKnAAAAAElFTkSuQmCC");
+				background-repeat: no-repeat;
+				left: 13px;
+				top: 13px;
+				width: 19px;
+				height: 10px;
+			}
+			&:hover{
+				background-color: $color9;
+				border-color: $color9;
+			}
+
+			@media (max-width: 1500px){
+				font-size: 1.8rem;
+				height: 4rem;
+				width: 12rem;
+			}
+		}
 	}
 	/* =/catalog
 	---------------------------*/
