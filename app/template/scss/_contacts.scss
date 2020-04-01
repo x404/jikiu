@@ -153,4 +153,8 @@
 
 .map{
 	max-height: 40rem;
+	overflow: hidden;
+	iframe{
+		margin-top: -50px;		
+	}
 }

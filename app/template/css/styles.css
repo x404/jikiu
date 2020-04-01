@@ -5313,7 +5313,10 @@ img.justifycenter, table.justifycenter {
         display: none; } }
 
 .map {
-  max-height: 40rem; }
+  max-height: 40rem;
+  overflow: hidden; }
+  .map iframe {
+    margin-top: -50px; }
 
 .newproducts {
   margin-top: 8rem;
