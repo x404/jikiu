@@ -4796,7 +4796,7 @@ img.justifycenter, table.justifycenter {
     text-transform: uppercase;
     font-weight: 700; }
   .new-products #newproducts-carousel {
-    padding: 2rem 0 5rem; }
+    padding: 2rem 0 3rem; }
   .new-products .item-product__link {
     text-align: center; }
     .new-products .item-product__link:hover {
@@ -5279,7 +5279,14 @@ img.justifycenter, table.justifycenter {
   color: #2065d8;
   font-family: "Futura Demi C";
   font-size: 1.5rem;
+  margin-bottom: .5rem;
   text-transform: uppercase; }
+
+.item-product__date,
+.item-newproduct__date {
+  color: #7f7f7f;
+  font-family: 'Futura Book C';
+  font-size: 1.3rem; }
 
 .tr-corner {
   position: relative; }
