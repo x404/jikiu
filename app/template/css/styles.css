@@ -4108,6 +4108,9 @@ em strong {
 .webp .inner-catalogsearch .neck__body {
   background-image: url(../images/bg/bg-10.webp); }
 
+.webp .bearing-page {
+  background-image: url(../images/bg/bg-11.webp); }
+
 .header-intro .intro:before {
   background-image: url(../images/radial-circle.png); }
   @media (max-width: 1399px) {
@@ -4219,6 +4222,12 @@ em strong {
 
 .inner-catalogsearch .neck__body {
   background-image: url(../images/bg/bg-10.jpg); }
+
+.bearing-page {
+  background-image: url(../images/bg/bg-11.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left top; }
 
 .homepage .footer {
   background-color: #083989;
@@ -6131,6 +6140,9 @@ img.justifycenter, table.justifycenter {
       background-position: right 40%;
       min-height: 0;
       padding-bottom: 5rem; } }
+
+.bearing-page .catparts .item-catparts {
+  width: calc(100% / 4 - 3rem); }
 
 .suspension-page {
   background: #fff;

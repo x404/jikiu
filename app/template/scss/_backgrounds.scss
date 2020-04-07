@@ -109,6 +109,9 @@
 		background-image: url(../images/bg/bg-10.webp);
 	}
 	
+	.bearing-page{
+		background-image: url(../images/bg/bg-11.webp);
+	}
 }
 
 
@@ -263,4 +266,14 @@
 
 .inner-catalogsearch .neck__body{
 	background-image: url(../images/bg/bg-10.jpg);
+}
+
+
+.bearing-page{
+	background-image: url(../images/bg/bg-11.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+	// min-height: 1050px
 }

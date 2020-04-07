@@ -289,6 +289,7 @@
 /* =/transmission-page
 ---------------------------*/
 
+
 .item-catparts{
 	margin: 0 1.5rem;
 	&__link{
@@ -621,9 +622,18 @@
 		padding-bottom: 5rem;
 	}
 }
-// =ecp-page
+// =/ecp-page
 
 
+// =bearing page
+.bearing-page{
+	.catparts{
+		.item-catparts{
+			width: calc(100% / 4 - 3rem);
+		}
+	}
+}
+// =/bearing page
 
 
 // =suspension-page
