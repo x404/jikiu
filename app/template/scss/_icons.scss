@@ -39,6 +39,15 @@
 	}
 }
 
+.icon-arrow-right-white{
+	display: block; 
+	@include sprite($icon-arrow-right-white);
+	&:hover{
+		@include sprite($icon-arrow-right-white-hover);		
+	}
+}
+
+
 .icon-thumbs{
 	background-color: #2065d8;
 	margin-right: 1rem; 
