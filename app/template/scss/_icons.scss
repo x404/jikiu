@@ -66,3 +66,17 @@
 		background-color: #d82027;
 	}
 }
+
+.icon-l-scheme{
+	@include sprite($icon-l-scheme);	
+}
+
+.icon-l-drawing{
+	@include sprite($icon-l-drawing);	
+}
+
+.icon-l-assembly{
+	@include sprite($icon-l-assembly);	
+}
+
+
