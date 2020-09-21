@@ -7662,7 +7662,7 @@ img.justifycenter, table.justifycenter {
       color: #fff; }
 
 .searchresult {
-  padding: 3.4rem 0 8rem; }
+  padding: 2.6rem 0 8rem; }
   .searchresult h2 {
     font-size: 4rem;
     font-family: "Futura BT";
@@ -7757,7 +7757,7 @@ img.justifycenter, table.justifycenter {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); }
 
 .searchresult-tableheader {
-  margin-top: 3rem;
+  margin-top: 1.7rem;
   width: 100%;
   table-layout: fixed; }
   .searchresult-tableheader th {
