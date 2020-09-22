@@ -292,7 +292,7 @@ $(document).ready(function(){
 	});
 
 
-	$('.link[data-toggle="popover"]').on('inserted.bs.popover', function (e) {
+	$('.link-photo[data-toggle="popover"]').on('inserted.bs.popover', function (e) {
 		const clsImages = new PerfectScrollbar( '#' + $('.popover:last-child').attr('id') + ' .clsImages', {
 						wheelPropagation: true,
 						minScrollbarLength: 100,
