@@ -7623,15 +7623,17 @@ img.justifycenter, table.justifycenter {
     border-top: 1px solid #ddddde;
     margin-top: 3.5rem;
     padding-top: 3rem; }
-  .inner-catalogsearch .searchresult__content-brands {
-    box-shadow: none;
-    margin-top: 5.5rem; }
-    .inner-catalogsearch .searchresult__content-brands .card {
-      margin-top: 2rem; }
-    .inner-catalogsearch .searchresult__content-brands .inner-card {
-      margin-top: .2rem; }
-    .inner-catalogsearch .searchresult__content-brands .card {
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); }
+  .inner-catalogsearch .searchresult__content {
+    margin-top: 1.5rem; }
+    .inner-catalogsearch .searchresult__content-brands {
+      box-shadow: none;
+      margin-top: 5.5rem; }
+      .inner-catalogsearch .searchresult__content-brands .card {
+        margin-top: 2rem; }
+      .inner-catalogsearch .searchresult__content-brands .inner-card {
+        margin-top: .2rem; }
+      .inner-catalogsearch .searchresult__content-brands .card {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); }
   .inner-catalogsearch #productsizemenu {
     padding-top: .5rem;
     padding-bottom: 3.5rem; }
