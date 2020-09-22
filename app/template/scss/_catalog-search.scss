@@ -297,14 +297,29 @@
 	.learn-more{
 		&-box{
 			position: relative;
+			&:hover{
+				.learn-more-body				
+				{
+					opacity: 1;
+					z-index: 99;
+				}
+			}
 		}
 
 		&-body{
 			position: absolute;
-			z-index: 99;
 			left: 0;
 			top: -28px;
 			padding-left: 40px;
+			transition: opacity .3s;
+
+			opacity: 0;
+			z-index: -1;
+
+			&.open{
+				opacity: 1;
+				z-index: 99;				
+			}
 		}
 
 		&-bodyinner{
@@ -338,6 +353,7 @@
 				margin-top: .5rem;
 				text-align: center;
 				transition: .3s;
+				&.active,
 				&:hover{
 					background-color: $color7;
 					color: #fff;
@@ -1003,13 +1019,15 @@
 	.close{
 		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAABLklEQVQ4T42UwWqDQBRFOwp+Q6HbLEIg0EJ/oSE7deM6IUK+KWBp1m7UXWl/oZCsQhZuA/kGQe2dwZHx6cxEGILMm5N377sje8KT5/mCMfbi+/4vf3/kKYrio23bWxAEFwbAEodOWC5AnwDFNggACQA71NVYb6wj/siDNpACEEdQv2KdnC/8bmwgCkD9EXK2ApKmqet5XmICTQGqqoqjKKoFxAYyAYQk1cSpjrBfYs2UuqPsoJdPJ6EBybIRYNQJkXYlHZToYM49oH88kCM3kZ3BtFQpfBpWyARg5AkFDTqZAHAP9hj/QR2/zMfIWA1A5EBjtghab6wJYMpRn1h6d/gGzYElkCuWZdkrLtEfCl0TQAOqcZvfhbEc5DjOMz4D33R8uncoWDdNcw/D8PwPkebOPDiiuIAAAAAASUVORK5CYII=);
 		background-repeat: no-repeat;
+		border: none;
+		background-color: transparent;
 		cursor: pointer;
 		display: block;
 		width: 17px;
 		height: 17px;
 		position: absolute;
-		right: 17px;
-		top: 18px;
+		right: 10px;
+		top: 10px;
 		transition: transform .3s;
 		&:hover{
 			transform: rotate(90deg);

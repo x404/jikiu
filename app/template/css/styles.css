@@ -3748,12 +3748,12 @@ a.text-dark:hover, a.text-dark:focus {
 .icon-photo {
   display: block;
   background-image: url(../images/sprite.png);
-  background-position: 0px -61px;
+  background-position: -71px -40px;
   width: 20px;
   height: 20px; }
   .icon-photo:hover {
     background-image: url(../images/sprite.png);
-    background-position: -71px -40px;
+    background-position: -71px -20px;
     width: 20px;
     height: 20px; }
 
@@ -3779,7 +3779,7 @@ a.text-dark:hover, a.text-dark:focus {
   border-radius: 50%; }
   .icon-thumbs:before {
     background-image: url(../images/sprite.png);
-    background-position: -91px 0px;
+    background-position: 0px -75px;
     width: 12px;
     height: 12px;
     left: 4px;
@@ -3787,21 +3787,29 @@ a.text-dark:hover, a.text-dark:focus {
   .icon-thumbs:hover {
     background-color: #d82027; }
 
+.icon-l-photo {
+  background-image: url(../images/sprite.png);
+  background-position: -12px -75px;
+  width: 13px;
+  height: 11px;
+  top: -1px;
+  position: relative; }
+
 .icon-l-scheme {
   background-image: url(../images/sprite.png);
-  background-position: 0px -81px;
+  background-position: -25px -75px;
   width: 13px;
   height: 10px; }
 
 .icon-l-drawing {
   background-image: url(../images/sprite.png);
-  background-position: -91px -12px;
+  background-position: -91px 0px;
   width: 10px;
   height: 11px; }
 
 .icon-l-assembly {
   background-image: url(../images/sprite.png);
-  background-position: -20px -61px;
+  background-position: 0px -61px;
   width: 14px;
   height: 14px; }
 
@@ -7456,12 +7464,20 @@ img.justifycenter, table.justifycenter {
     margin-left: 0.7rem; }
   .inner-catalogsearch .learn-more-box {
     position: relative; }
+    .inner-catalogsearch .learn-more-box:hover .learn-more-body {
+      opacity: 1;
+      z-index: 99; }
   .inner-catalogsearch .learn-more-body {
     position: absolute;
-    z-index: 99;
     left: 0;
     top: -28px;
-    padding-left: 40px; }
+    padding-left: 40px;
+    transition: opacity .3s;
+    opacity: 0;
+    z-index: -1; }
+    .inner-catalogsearch .learn-more-body.open {
+      opacity: 1;
+      z-index: 99; }
   .inner-catalogsearch .learn-more-bodyinner {
     background: #fff;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
@@ -7490,12 +7506,12 @@ img.justifycenter, table.justifycenter {
       margin-top: .5rem;
       text-align: center;
       transition: .3s; }
-      .inner-catalogsearch .learn-more-bodyinner .link:hover {
+      .inner-catalogsearch .learn-more-bodyinner .link.active, .inner-catalogsearch .learn-more-bodyinner .link:hover {
         background-color: #d82027;
         color: #fff; }
-        .inner-catalogsearch .learn-more-bodyinner .link:hover .icon {
+        .inner-catalogsearch .learn-more-bodyinner .link.active .icon, .inner-catalogsearch .learn-more-bodyinner .link:hover .icon {
           filter: none; }
-        .inner-catalogsearch .learn-more-bodyinner .link:hover .circle {
+        .inner-catalogsearch .learn-more-bodyinner .link.active .circle, .inner-catalogsearch .learn-more-bodyinner .link:hover .circle {
           background-color: #fff; }
   .inner-catalogsearch .learn-more-group .circle {
     background-color: #2065d8;
@@ -7950,13 +7966,15 @@ img.justifycenter, table.justifycenter {
   .popover .close {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAABLklEQVQ4T42UwWqDQBRFOwp+Q6HbLEIg0EJ/oSE7deM6IUK+KWBp1m7UXWl/oZCsQhZuA/kGQe2dwZHx6cxEGILMm5N377sje8KT5/mCMfbi+/4vf3/kKYrio23bWxAEFwbAEodOWC5AnwDFNggACQA71NVYb6wj/siDNpACEEdQv2KdnC/8bmwgCkD9EXK2ApKmqet5XmICTQGqqoqjKKoFxAYyAYQk1cSpjrBfYs2UuqPsoJdPJ6EBybIRYNQJkXYlHZToYM49oH88kCM3kZ3BtFQpfBpWyARg5AkFDTqZAHAP9hj/QR2/zMfIWA1A5EBjtghab6wJYMpRn1h6d/gGzYElkCuWZdkrLtEfCl0TQAOqcZvfhbEc5DjOMz4D33R8uncoWDdNcw/D8PwPkebOPDiiuIAAAAAASUVORK5CYII=);
     background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
     cursor: pointer;
     display: block;
     width: 17px;
     height: 17px;
     position: absolute;
-    right: 17px;
-    top: 18px;
+    right: 10px;
+    top: 10px;
     transition: transform .3s; }
     .popover .close:hover {
       transform: rotate(90deg); }
