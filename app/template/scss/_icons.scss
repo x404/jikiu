@@ -67,6 +67,12 @@
 	}
 }
 
+.icon-l-photo{
+	@include sprite($icon-l-photo);	
+	top: -1px;
+	position: relative;
+}
+
 .icon-l-scheme{
 	@include sprite($icon-l-scheme);	
 }
