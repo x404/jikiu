@@ -1,3 +1,8 @@
+:root {
+  --level1-color: #14183d;
+  --level2-color: #000;
+  --level3-color: #343646; }
+
 /**
  * @author zhixin wen <wenzhixin2010@gmail.com>
  */
@@ -61,7 +66,7 @@
   /*background: url("multiple-select.png") left top no-repeat;*/ }
   .ms-choice > div:before {
     background-image: url(../images/sprite.png);
-    background-position: -71px -20px;
+    background-position: -14px -61px;
     width: 17px;
     height: 9px;
     content: "";
