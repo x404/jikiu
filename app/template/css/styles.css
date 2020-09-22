@@ -7474,8 +7474,11 @@ img.justifycenter, table.justifycenter {
     padding-left: 40px;
     transition: opacity .3s;
     opacity: 0;
-    z-index: -1; }
+    z-index: -1;
+    display: none; }
     .inner-catalogsearch .learn-more-body.open {
+      display: block;
+      height: auto;
       opacity: 1;
       z-index: 99; }
   .inner-catalogsearch .learn-more-bodyinner {
@@ -7517,8 +7520,8 @@ img.justifycenter, table.justifycenter {
     background-color: #2065d8;
     border-radius: 50%;
     display: flex;
-    width: 2rem;
-    height: 2rem; }
+    width: 2.1rem;
+    height: 2.1rem; }
   .inner-catalogsearch .learn-more-group .icon {
     filter: brightness(10);
     margin: auto; }
@@ -7526,6 +7529,8 @@ img.justifycenter, table.justifycenter {
     font-size: 1.6rem;
     font-weight: bold;
     text-align: center; }
+  .inner-catalogsearch .groups.collapse.show .learn-more-body {
+    display: block; }
   .inner-catalogsearch .mobSubTitle {
     display: none;
     background: #14183d;
@@ -7908,9 +7913,11 @@ img.justifycenter, table.justifycenter {
   table-layout: fixed;
   font-size: 1.5rem;
   margin-bottom: 0; }
+  .table-details .td,
   .table-details td {
-    border: 1px solid #e9e9ea;
-    padding: 0; }
+    border-right: 1px solid #e9e9ea;
+    padding: 0;
+    width: 140px; }
   .table-details .partDesc {
     border-bottom: 1px solid #e9e9ea;
     padding: .5rem .4rem .5rem .8rem;
