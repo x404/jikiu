@@ -31,14 +31,6 @@
   transition: .3s;
 }
 
-.icon-photo{
-	display: block;
-	@include sprite($icon-l-photo);
-	// &:hover{
-		// @include sprite($icon-photo-hover);		
-	// }
-}
-
 .icon-arrow-right-white{
 	display: block; 
 	@include sprite($icon-arrow-right-white);
@@ -68,6 +60,25 @@
 }
 
 
+.icon-photo{
+	@include sprite($icon-photo);	
+	top: -1px;
+	position: relative;
+}
+
+.icon-scheme{
+	@include sprite($icon-scheme);	
+}
+
+.icon-drawing{
+	@include sprite($icon-drawing);	
+}
+
+.icon-assembly{
+	@include sprite($icon-assembly);	
+}
+
+
 
 .circle{
 	background-color: #2065d8;
@@ -89,22 +100,5 @@
 }
 
 
-.icon-l-photo{
-	@include sprite($icon-l-photo);	
-	top: -1px;
-	position: relative;
-}
-
-.icon-l-scheme{
-	@include sprite($icon-l-scheme);	
-}
-
-.icon-l-drawing{
-	@include sprite($icon-l-drawing);	
-}
-
-.icon-l-assembly{
-	@include sprite($icon-l-assembly);	
-}
 
 

@@ -3745,13 +3745,6 @@ a.text-dark:hover, a.text-dark:focus {
   margin-right: 1rem;
   transition: .3s; }
 
-.icon-photo {
-  display: block;
-  background-image: url(../images/sprite.png);
-  background-position: -12px -75px;
-  width: 13px;
-  height: 11px; }
-
 .icon-arrow-right-white {
   display: block;
   background-image: url(../images/sprite.png);
@@ -3782,6 +3775,32 @@ a.text-dark:hover, a.text-dark:focus {
   .icon-thumbs:hover {
     background-color: #d82027; }
 
+.icon-photo {
+  background-image: url(../images/sprite.png);
+  background-position: -12px -75px;
+  width: 13px;
+  height: 11px;
+  top: -1px;
+  position: relative; }
+
+.icon-scheme {
+  background-image: url(../images/sprite.png);
+  background-position: -25px -75px;
+  width: 13px;
+  height: 10px; }
+
+.icon-drawing {
+  background-image: url(../images/sprite.png);
+  background-position: -91px 0px;
+  width: 10px;
+  height: 11px; }
+
+.icon-assembly {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -61px;
+  width: 14px;
+  height: 14px; }
+
 .circle {
   background-color: #2065d8;
   border-radius: 50%;
@@ -3796,32 +3815,6 @@ a.text-dark:hover, a.text-dark:focus {
     .circle .icon-photo {
       position: relative;
       top: -1px; }
-
-.icon-l-photo {
-  background-image: url(../images/sprite.png);
-  background-position: -12px -75px;
-  width: 13px;
-  height: 11px;
-  top: -1px;
-  position: relative; }
-
-.icon-l-scheme {
-  background-image: url(../images/sprite.png);
-  background-position: -25px -75px;
-  width: 13px;
-  height: 10px; }
-
-.icon-l-drawing {
-  background-image: url(../images/sprite.png);
-  background-position: -91px 0px;
-  width: 10px;
-  height: 11px; }
-
-.icon-l-assembly {
-  background-image: url(../images/sprite.png);
-  background-position: 0px -61px;
-  width: 14px;
-  height: 14px; }
 
 /*** reset ***********/
 html, body, ul, ol, li, dl, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, a, img, label {
