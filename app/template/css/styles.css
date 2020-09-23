@@ -7819,6 +7819,7 @@ img.justifycenter, table.justifycenter {
     font-weight: normal;
     font-size: 1.5rem;
     min-height: 6rem;
+    margin-top: .1rem;
     padding-left: 4.2rem;
     position: relative;
     text-align: left;
@@ -7841,27 +7842,25 @@ img.justifycenter, table.justifycenter {
       background-color: #2065d8; }
       .searchresult .model-title.collapsed:before {
         transform: translateY(-50%) rotate(-90deg); }
+      .searchresult .model-title.collapsed:hover {
+        background-color: #d82027 !important; }
     .searchresult .model-title:hover {
       background-color: #d82027; }
     .searchresult .model-title-level2, .searchresult .model-title-level3, .searchresult .model-title-level4 {
       min-height: 5rem; }
-    .searchresult .model-title-level1 {
+    .searchresult .model-title-level1.collapsed {
       background-color: var(--level1-color); }
-      .searchresult .model-title-level1.collapsed, .searchresult .model-title-level1:hover {
-        background-color: var(--level1-color); }
     .searchresult .model-title-level2 {
-      background-color: var(--level2-color);
       padding-left: 58px; }
       .searchresult .model-title-level2:before {
         left: 24px; }
-      .searchresult .model-title-level2.collapsed, .searchresult .model-title-level2:hover {
+      .searchresult .model-title-level2.collapsed {
         background-color: var(--level2-color); }
     .searchresult .model-title-level3 {
-      background-color: var(--level3-color);
       padding-left: 72px; }
       .searchresult .model-title-level3:before {
         left: 40px; }
-      .searchresult .model-title-level3.collapsed, .searchresult .model-title-level3:hover {
+      .searchresult .model-title-level3.collapsed {
         background-color: var(--level3-color); }
 
 .filter-category-wrapper {
