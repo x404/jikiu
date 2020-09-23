@@ -3748,14 +3748,9 @@ a.text-dark:hover, a.text-dark:focus {
 .icon-photo {
   display: block;
   background-image: url(../images/sprite.png);
-  background-position: -71px -40px;
-  width: 20px;
-  height: 20px; }
-  .icon-photo:hover {
-    background-image: url(../images/sprite.png);
-    background-position: -71px -20px;
-    width: 20px;
-    height: 20px; }
+  background-position: -12px -75px;
+  width: 13px;
+  height: 11px; }
 
 .icon-arrow-right-white {
   display: block;
@@ -3786,6 +3781,21 @@ a.text-dark:hover, a.text-dark:focus {
     top: 4px; }
   .icon-thumbs:hover {
     background-color: #d82027; }
+
+.circle {
+  background-color: #2065d8;
+  border-radius: 50%;
+  display: flex;
+  width: 2.1rem;
+  height: 2.1rem; }
+  .circle:hover {
+    background-color: #d82027; }
+  .circle .icon {
+    filter: brightness(10);
+    margin: auto; }
+    .circle .icon-photo {
+      position: relative;
+      top: -1px; }
 
 .icon-l-photo {
   background-image: url(../images/sprite.png);
@@ -7516,15 +7526,6 @@ img.justifycenter, table.justifycenter {
           filter: none; }
         .inner-catalogsearch .learn-more-bodyinner .link.active .circle, .inner-catalogsearch .learn-more-bodyinner .link:hover .circle {
           background-color: #fff; }
-  .inner-catalogsearch .learn-more-group .circle {
-    background-color: #2065d8;
-    border-radius: 50%;
-    display: flex;
-    width: 2.1rem;
-    height: 2.1rem; }
-  .inner-catalogsearch .learn-more-group .icon {
-    filter: brightness(10);
-    margin: auto; }
   .inner-catalogsearch .learn-more-title {
     font-size: 1.6rem;
     font-weight: bold;

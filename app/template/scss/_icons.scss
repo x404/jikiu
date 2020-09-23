@@ -33,10 +33,10 @@
 
 .icon-photo{
 	display: block;
-	@include sprite($icon-photo);
-	&:hover{
-		@include sprite($icon-photo-hover);		
-	}
+	@include sprite($icon-l-photo);
+	// &:hover{
+		// @include sprite($icon-photo-hover);		
+	// }
 }
 
 .icon-arrow-right-white{
@@ -66,6 +66,28 @@
 		background-color: #d82027;
 	}
 }
+
+
+
+.circle{
+	background-color: #2065d8;
+	border-radius: 50%;
+	display: flex;
+	width: 2.1rem;
+	height: 2.1rem;
+	&:hover{
+		background-color: $color7
+	}
+	.icon{
+		filter: brightness(10);
+		margin: auto;
+		&-photo{
+			position: relative;
+			top: -1px;
+		}
+	}
+}
+
 
 .icon-l-photo{
 	@include sprite($icon-l-photo);	
