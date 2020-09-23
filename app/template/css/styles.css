@@ -8171,9 +8171,6 @@ img.justifycenter, table.justifycenter {
     flex-wrap: wrap;
     font-size: 1.6rem;
     width: 100% !important; }
-  .table-details .mobSubTitle {
-    display: block;
-    width: 100%; }
   .table-details .thumbs-photos {
     margin-right: -.5rem; }
     .table-details .thumbs-photos .icon-thumbs {
@@ -8273,7 +8270,14 @@ img.justifycenter, table.justifycenter {
     .inner-catalogsearch .neck .nav-tabs a {
       height: 4.5rem;
       padding-left: 1.5rem;
-      padding-right: 1.5rem; } }
+      padding-right: 1.5rem; }
+  .mobSubTitle {
+    display: block;
+    width: 100%; }
+  .table-details .td,
+  .table-details td {
+    width: auto;
+    flex-grow: 1; } }
 
 @media (max-width: 576px) {
   .table-details td {

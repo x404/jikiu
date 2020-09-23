@@ -1364,11 +1364,6 @@
 			width: 100% !important;
 		}
 
-		.mobSubTitle{
-			display: block;
-			width: 100%;
-		}
-
 		.thumbs-photos{
 			margin-right: -.5rem;
 			.icon-thumbs{
@@ -1550,6 +1545,18 @@
 				}
 			}
 		}
+	}
+
+		.mobSubTitle{
+			display: block;
+			width: 100%;
+		}
+
+
+	.table-details .td,
+	.table-details td{
+		width: auto;
+		flex-grow: 1;
 	}
 }
 
