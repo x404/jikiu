@@ -374,20 +374,6 @@
 			}
 		}
 
-		&-group{
-			// .circle{
-			// 	background-color: #2065d8;
-			// 	border-radius: 50%;
-			// 	display: flex;
-			// 	width: 2.1rem;
-			// 	height: 2.1rem;
-			// }
-			// .icon{
-			// 	filter: brightness(10);
-			// 	margin: auto;
-			// }
-		}
-
 		&-title{
 			font-size: 1.6rem;
 			font-weight: bold;
@@ -545,16 +531,11 @@
 		}
 
 		&__plate{
-			// margin-left: 1rem;
 			&-crosses{
 				border-top: 1px solid #ddddde;
 				margin-top: 3.5rem;
 				padding-top: 3rem;
 			}
-		}
-
-		.col-type{
-			// min-width: 20rem;
 		}
 	}
 
@@ -777,8 +758,6 @@
 			}
 		}
 	}
-
-
 }
 
 
@@ -851,17 +830,12 @@
 		}
 
 		&-level1{
-			// background-color: var(--level1-color);
 			&.collapsed{
 				background-color: var(--level1-color)
-			}
-			&:hover{
-				// background-color: $color7
 			}
 		}
 
 		&-level2{
-			// background-color: var(--level2-color);
 			padding-left: 58px;
 			&:before{
 				left: 24px;
@@ -879,13 +853,7 @@
 			&.collapsed{
 				background-color: var(--level3-color);
 			}
-			&:hover{
-				// background-color: var(--level3-color)
-			}
 		}
-
-
-
 	}
 }
 
