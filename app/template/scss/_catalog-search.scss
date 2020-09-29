@@ -456,44 +456,103 @@
 			margin-top: 0;
 		}
 		&-inner{
+
 			.model-title{
-				background: #f4f4f6;
-				font-size: 1.5rem;
-				color: #262626;
-				transition: color .3s;
-
-				.date,
-				.modify{
-					color: $color9;
-					margin-right: 4.2rem;
-					transition: color .3s;
-				}
-				&:before{
-					transition: transform .3s;
-				}
-
-				&.collapsed{
-					&:before{
-						transform: translateY(-50%) rotate(-90deg);
-					}
-
+				&-inner{
 					background: #f4f4f6;
 					color: #262626;
 					.date,
 					.modify{
+						color: $color9;
+						margin-right: 4.2rem;
+						transition: color .3s;
+					}
+
+
+					&.collapsed{
+						&:before{
+							transform: translateY(-50%) rotate(-90deg);
+						}
+
+						background: #f4f4f6;
 						color: #262626;
+						.date,
+						.modify{
+							color: #262626;
+						}
+					}
+
+					&:focus,
+					&:hover{
+						background: #2065d8;
+						color: #fff;
+						.date,
+						.modify{
+							color: #fff;
+						}
 					}
 				}
 
-				&:hover{
-					background: #2065d8;
-					color: #fff;
-					.date,
-					.modify{
-						color: #fff;
+				&-level1{
+					padding-left: 58px;
+					&:before{
+						left: 24px;
+					}					
+				}
+
+				&-level2{
+					padding-left: 72px;
+					&:before{
+						left: 40px;
 					}
-				}				
+				}
+
+				&-level3{
+					padding-left: 86px;
+					&:before{
+						left: 52px;
+					}
+				}
 			}
+
+			// .model-title{
+			// 	background: #f4f4f6;
+			// 	font-size: 1.5rem;
+			// 	color: #262626;
+			// 	transition: color .3s;
+
+			// 	.date,
+			// 	.modify{
+			// 		color: $color9;
+			// 		margin-right: 4.2rem;
+			// 		transition: color .3s;
+			// 	}
+			// 	&:before{
+			// 		transition: transform .3s;
+			// 	}
+
+			// 	&.collapsed{
+			// 		&:before{
+			// 			transform: translateY(-50%) rotate(-90deg);
+			// 		}
+
+			// 		background: #f4f4f6;
+			// 		color: #262626;
+			// 		.date,
+			// 		.modify{
+			// 			color: #262626;
+			// 		}
+			// 	}
+
+			// 	&:hover{
+			// 		background: #2065d8;
+			// 		color: #fff;
+			// 		.date,
+			// 		.modify{
+			// 			color: #fff;
+			// 		}
+			// 	}				
+			// }
 		}
 	}
 	.detail{

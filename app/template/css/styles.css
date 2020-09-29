@@ -7569,32 +7569,41 @@ img.justifycenter, table.justifycenter {
           max-width: 100%; } }
   .inner-catalogsearch .accordion .searchresult-tableheader {
     margin-top: 0; }
-  .inner-catalogsearch .accordion-inner .model-title {
+  .inner-catalogsearch .accordion-inner .model-title-inner {
     background: #f4f4f6;
-    font-size: 1.5rem;
-    color: #262626;
-    transition: color .3s; }
-    .inner-catalogsearch .accordion-inner .model-title .date,
-    .inner-catalogsearch .accordion-inner .model-title .modify {
+    color: #262626; }
+    .inner-catalogsearch .accordion-inner .model-title-inner .date,
+    .inner-catalogsearch .accordion-inner .model-title-inner .modify {
       color: #2065d8;
       margin-right: 4.2rem;
       transition: color .3s; }
-    .inner-catalogsearch .accordion-inner .model-title:before {
-      transition: transform .3s; }
-    .inner-catalogsearch .accordion-inner .model-title.collapsed {
+    .inner-catalogsearch .accordion-inner .model-title-inner.collapsed {
       background: #f4f4f6;
       color: #262626; }
-      .inner-catalogsearch .accordion-inner .model-title.collapsed:before {
+      .inner-catalogsearch .accordion-inner .model-title-inner.collapsed:before {
         transform: translateY(-50%) rotate(-90deg); }
-      .inner-catalogsearch .accordion-inner .model-title.collapsed .date,
-      .inner-catalogsearch .accordion-inner .model-title.collapsed .modify {
+      .inner-catalogsearch .accordion-inner .model-title-inner.collapsed .date,
+      .inner-catalogsearch .accordion-inner .model-title-inner.collapsed .modify {
         color: #262626; }
-    .inner-catalogsearch .accordion-inner .model-title:hover {
+    .inner-catalogsearch .accordion-inner .model-title-inner:focus, .inner-catalogsearch .accordion-inner .model-title-inner:hover {
       background: #2065d8;
       color: #fff; }
-      .inner-catalogsearch .accordion-inner .model-title:hover .date,
-      .inner-catalogsearch .accordion-inner .model-title:hover .modify {
+      .inner-catalogsearch .accordion-inner .model-title-inner:focus .date,
+      .inner-catalogsearch .accordion-inner .model-title-inner:focus .modify, .inner-catalogsearch .accordion-inner .model-title-inner:hover .date,
+      .inner-catalogsearch .accordion-inner .model-title-inner:hover .modify {
         color: #fff; }
+  .inner-catalogsearch .accordion-inner .model-title-level1 {
+    padding-left: 58px; }
+    .inner-catalogsearch .accordion-inner .model-title-level1:before {
+      left: 24px; }
+  .inner-catalogsearch .accordion-inner .model-title-level2 {
+    padding-left: 72px; }
+    .inner-catalogsearch .accordion-inner .model-title-level2:before {
+      left: 40px; }
+  .inner-catalogsearch .accordion-inner .model-title-level3 {
+    padding-left: 86px; }
+    .inner-catalogsearch .accordion-inner .model-title-level3:before {
+      left: 52px; }
   .inner-catalogsearch .detail a {
     color: #2065d8; }
   .inner-catalogsearch .detail h3 {
