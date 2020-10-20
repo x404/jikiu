@@ -36,12 +36,26 @@
 		width: auto;
 	}
 
-	.new-products #newproducts-carousel{
-		padding-top: 1rem;
+	.new-products{
+		background-image: url(../images/bg/top-black-line.png);
+		background-repeat: no-repeat;
+		background-position: left -3px;
+		padding-top: 6.5rem;
+		position: relative;
+		#newproducts-carousel{
+			padding-top: 1rem;
+		}
 	}
 
 
 	.lastnews{
+		background-image: url(../images/bg/bottom-black-line.jpg);
+		background-repeat: no-repeat;
+		background-position: left top;
+
+		margin-top: -27px;
+		padding-top: 17.5rem;
+
 		.show-all{
 			background-color: $color7;
 			color: #fff;
